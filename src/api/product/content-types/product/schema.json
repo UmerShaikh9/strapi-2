@@ -20,6 +20,38 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "summary": {
+      "type": "text",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "integer",
+      "required": true
     }
   }
 }

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "review",
     "pluralName": "reviews",
-    "displayName": "Review",
+    "displayName": "review",
     "description": ""
   },
   "options": {
@@ -21,6 +21,13 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::product.product"
+    },
+    "rating": {
+      "type": "decimal",
+      "required": false
+    },
+    "comment": {
+      "type": "text"
     }
   }
 }
