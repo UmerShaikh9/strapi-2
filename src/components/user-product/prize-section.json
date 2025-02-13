@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_user_product_prize_sections",
+  "info": {
+    "displayName": "Price_Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Price": {
+      "type": "integer"
+    },
+    "Option": {
+      "type": "string"
+    },
+    "Discounted_Price": {
+      "type": "integer"
+    }
+  }
+}

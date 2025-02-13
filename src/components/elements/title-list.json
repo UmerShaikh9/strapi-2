@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_elements_title_lists",
+  "info": {
+    "displayName": "Title_List"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.list"
+    }
+  }
+}

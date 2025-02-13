@@ -4,7 +4,7 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "product",
+    "displayName": "Product",
     "description": ""
   },
   "options": {
@@ -12,46 +12,114 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "Name": {
       "type": "string",
       "required": true
     },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
-    },
-    "thumbnail": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
+    "Thumbnail": {
       "type": "media",
       "multiple": false,
-      "required": true
-    },
-    "picture": {
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
-    "summary": {
+    "Picture": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Summary": {
       "type": "text",
       "required": false
     },
-    "description": {
+    "Description": {
       "type": "text"
     },
-    "price": {
+    "Size": {
+      "type": "customField",
+      "default": "[]",
+      "options": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "required": true,
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Quantity": {
       "type": "integer",
-      "required": true
+      "required": true,
+      "default": 0
+    },
+    "Color": {
+      "type": "customField",
+      "default": "[]",
+      "options": [
+        "RED",
+        "GREEN",
+        "BLUE",
+        "YELLOW",
+        "BLACK",
+        "WHITE",
+        "ORANGE",
+        "PURPLE",
+        "PINK",
+        "BROWN"
+      ],
+      "required": true,
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Fabric": {
+      "type": "customField",
+      "default": "[]",
+      "options": [
+        "option1",
+        "option2"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Price_Section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "user-product.prize-section"
+    },
+    "Badges": {
+      "type": "customField",
+      "default": "[]",
+      "options": [
+        "New Arrival",
+        "Ready To Ship",
+        "Popular"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Product_Details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.product-details"
+    },
+    "Collections": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::collection.collection",
+      "mappedBy": "Products"
+    },
+    "Categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "Products"
     }
   }
 }

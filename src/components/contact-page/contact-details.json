@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_contact_page_contact_details",
+  "info": {
+    "displayName": "Contact_Details",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Contact_Box": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.list-with-title"
+    },
+    "Contact_Form": {
+      "displayName": "Contact_Form",
+      "type": "component",
+      "repeatable": false,
+      "component": "contact-page.contact-form"
+    }
+  }
+}

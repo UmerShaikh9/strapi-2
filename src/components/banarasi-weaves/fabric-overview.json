@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_banarasi_weaves_fabric_overviews",
+  "info": {
+    "displayName": "Fabric_Overview",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.image-title"
+    },
+    "Descriptions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.description-list"
+    }
+  }
+}

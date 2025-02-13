@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_pages",
+  "info": {
+    "singularName": "contact-page",
+    "pluralName": "contact-pages",
+    "displayName": "Contact_Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Section_1": {
+      "displayName": "Section_1",
+      "type": "component",
+      "repeatable": false,
+      "component": "contact-page.section-1"
+    },
+    "Connect_Us": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.connect-us"
+    },
+    "Book_An_Appointment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.book-an-appointment"
+    },
+    "Location_Section": {
+      "displayName": "Section_2",
+      "type": "component",
+      "repeatable": false,
+      "component": "contact-page.section-2"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_management_section_2s",
+  "info": {
+    "displayName": "Section_2"
+  },
+  "options": {},
+  "attributes": {
+    "Profile": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.image-title"
+    }
+  }
+}

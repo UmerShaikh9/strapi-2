@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_history_lineage_section_1s",
+  "info": {
+    "displayName": "Section_1"
+  },
+  "options": {},
+  "attributes": {
+    "About_Card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "history-lineage.about-card"
+    }
+  }
+}

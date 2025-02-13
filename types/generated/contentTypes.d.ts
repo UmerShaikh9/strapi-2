@@ -369,13 +369,129 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiCartItemCartItem extends Struct.CollectionTypeSchema {
-  collectionName: 'cart_items';
+export interface ApiBanarasiWeaveDesignPatternBanarasiWeaveDesignPattern
+  extends Struct.SingleTypeSchema {
+  collectionName: 'banarasi_weave_design_patterns';
   info: {
     description: '';
-    displayName: 'cart';
-    pluralName: 'cart-items';
-    singularName: 'cart-item';
+    displayName: 'Banarasi_Weave_Design_Pattern';
+    pluralName: 'banarasi-weave-design-patterns';
+    singularName: 'banarasi-weave-design-pattern';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Book_An_Appointment: Schema.Attribute.Component<
+      'components.book-an-appointment',
+      false
+    >;
+    Connect_us: Schema.Attribute.Component<'layout.connect-us', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Design_And_Patterns: Schema.Attribute.Component<
+      'banarasi-weave-design-pattern.section-1',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::banarasi-weave-design-pattern.banarasi-weave-design-pattern'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiBanarasiWeaveTechniqueBanarasiWeaveTechnique
+  extends Struct.SingleTypeSchema {
+  collectionName: 'banarasi_weave_techniques';
+  info: {
+    description: '';
+    displayName: 'Banarasi_Weave_Technique';
+    pluralName: 'banarasi-weave-techniques';
+    singularName: 'banarasi-weave-technique';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Book_An_Appointment: Schema.Attribute.Component<
+      'components.book-an-appointment',
+      false
+    >;
+    Connect_Us: Schema.Attribute.Component<'layout.connect-us', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::banarasi-weave-technique.banarasi-weave-technique'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Weaving_Techniques: Schema.Attribute.Component<
+      'banarasi-weave-technique.section-1',
+      false
+    >;
+  };
+}
+
+export interface ApiBanarasiWeaveBanarasiWeave extends Struct.SingleTypeSchema {
+  collectionName: 'banarasi_weaves';
+  info: {
+    description: '';
+    displayName: 'Banarasi_Weave';
+    pluralName: 'banarasi-weaves';
+    singularName: 'banarasi-weave';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Book_An_Appointment: Schema.Attribute.Component<
+      'components.book-an-appointment',
+      false
+    >;
+    Connect_Us: Schema.Attribute.Component<'layout.connect-us', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Fabric_Overview: Schema.Attribute.Component<
+      'banarasi-weaves.fabric-overview',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::banarasi-weave.banarasi-weave'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCartCart extends Struct.CollectionTypeSchema {
+  collectionName: 'carts';
+  info: {
+    description: '';
+    displayName: 'Cart';
+    pluralName: 'carts';
+    singularName: 'cart';
   };
   options: {
     draftAndPublish: true;
@@ -385,18 +501,17 @@ export interface ApiCartItemCartItem extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::cart-item.cart-item'
-    > &
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::cart.cart'> &
       Schema.Attribute.Private;
-    productId: Schema.Attribute.Relation<'oneToOne', 'api::product.product'>;
+    Product: Schema.Attribute.Component<'user-product.product', false>;
     publishedAt: Schema.Attribute.DateTime;
+    Total_Price: Schema.Attribute.Integer & Schema.Attribute.Required;
+    Type: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    userId: Schema.Attribute.Relation<
-      'oneToOne',
+    User: Schema.Attribute.Relation<
+      'manyToOne',
       'plugin::users-permissions.user'
     >;
   };
@@ -405,7 +520,8 @@ export interface ApiCartItemCartItem extends Struct.CollectionTypeSchema {
 export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   collectionName: 'categories';
   info: {
-    displayName: 'category';
+    description: '';
+    displayName: 'Category';
     pluralName: 'categories';
     singularName: 'category';
   };
@@ -416,7 +532,7 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.Text &
+    Description: Schema.Attribute.Text &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -425,10 +541,212 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
       'api::category.category'
     > &
       Schema.Attribute.Private;
-    name: Schema.Attribute.String &
+    Media: Schema.Attribute.Media<'images' | 'videos', true> &
+      Schema.Attribute.Required;
+    Name: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
+    Products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCollectionCollection extends Struct.CollectionTypeSchema {
+  collectionName: 'collections';
+  info: {
+    description: '';
+    displayName: 'Collection';
+    pluralName: 'collections';
+    singularName: 'collection';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Description: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::collection.collection'
+    > &
+      Schema.Attribute.Private;
+    Media: Schema.Attribute.Media<'images' | 'videos', true>;
+    Name: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    Products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiContactPageContactPage extends Struct.SingleTypeSchema {
+  collectionName: 'contact_pages';
+  info: {
+    description: '';
+    displayName: 'Contact_Page';
+    pluralName: 'contact-pages';
+    singularName: 'contact-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Book_An_Appointment: Schema.Attribute.Component<
+      'components.book-an-appointment',
+      false
+    >;
+    Connect_Us: Schema.Attribute.Component<'layout.connect-us', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-page.contact-page'
+    > &
+      Schema.Attribute.Private;
+    Location_Section: Schema.Attribute.Component<
+      'contact-page.section-2',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    Section_1: Schema.Attribute.Component<'contact-page.section-1', false>;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHistoryAndLineageHistoryAndLineage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'history_and_lineages';
+  info: {
+    description: '';
+    displayName: 'History_&_Lineage';
+    pluralName: 'history-and-lineages';
+    singularName: 'history-and-lineage';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Connect_Us: Schema.Attribute.Component<'layout.connect-us', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    History_Section: Schema.Attribute.Component<
+      'banarasi-weaves.fabric-overview',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::history-and-lineage.history-and-lineage'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Section_1: Schema.Attribute.Component<'history-lineage.section-1', false>;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
+  collectionName: 'home_pages';
+  info: {
+    description: '';
+    displayName: 'Home_Page';
+    pluralName: 'home-pages';
+    singularName: 'home-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Advertisement_Section: Schema.Attribute.Component<
+      'home-page.advertisement-section',
+      true
+    >;
+    Book_An_Appointment: Schema.Attribute.Component<
+      'components.book-an-appointment',
+      false
+    >;
+    Connect_Us: Schema.Attribute.Component<'layout.connect-us', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Hero_Section: Schema.Attribute.Component<'home-page.hero-section', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::home-page.home-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Ready_To_Ship: Schema.Attribute.Component<'home-page.ready-to-ship', false>;
+    Shop_By_Category: Schema.Attribute.Component<
+      'home-page.shop-by-category',
+      false
+    >;
+    Shop_By_Collection: Schema.Attribute.Component<
+      'home-page.shop-by-collection',
+      false
+    >;
+    Shop_Section: Schema.Attribute.Component<'home-page.shop-section', false>;
+    Title: Schema.Attribute.String;
+    Top_Nav: Schema.Attribute.Component<'layout.top-nav', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiManagementPageManagementPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'management_pages';
+  info: {
+    description: '';
+    displayName: 'Management_Page';
+    pluralName: 'management-pages';
+    singularName: 'management-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Book_An_Appointment: Schema.Attribute.Component<
+      'components.book-an-appointment',
+      false
+    >;
+    Connect_Us: Schema.Attribute.Component<'layout.connect-us', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::management-page.management-page'
+    > &
+      Schema.Attribute.Private;
+    Our_Circle_Strength: Schema.Attribute.Component<
+      'management.section-2',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    Team_Details: Schema.Attribute.Component<'management.section-1', false>;
+    Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -438,7 +756,8 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
 export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
   collectionName: 'orders';
   info: {
-    displayName: 'order';
+    description: '';
+    displayName: 'Order';
     pluralName: 'orders';
     singularName: 'order';
   };
@@ -452,7 +771,7 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::order.order'> &
       Schema.Attribute.Private;
-    orderStatus: Schema.Attribute.Enumeration<
+    Order_Status: Schema.Attribute.Enumeration<
       [
         'PENDING',
         'CONFIRMED',
@@ -463,14 +782,14 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
       ]
     > &
       Schema.Attribute.DefaultTo<'PENDING'>;
-    price: Schema.Attribute.Integer & Schema.Attribute.Required;
-    productId: Schema.Attribute.Relation<'oneToOne', 'api::product.product'>;
+    Price: Schema.Attribute.Integer & Schema.Attribute.Required;
+    Product: Schema.Attribute.Relation<'oneToOne', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
-    quantity: Schema.Attribute.Integer & Schema.Attribute.Required;
+    Quantity: Schema.Attribute.Integer & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    userId: Schema.Attribute.Relation<
+    User: Schema.Attribute.Relation<
       'oneToOne',
       'plugin::users-permissions.user'
     >;
@@ -481,7 +800,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   collectionName: 'products';
   info: {
     description: '';
-    displayName: 'product';
+    displayName: 'Product';
     pluralName: 'products';
     singularName: 'product';
   };
@@ -489,29 +808,83 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    category: Schema.Attribute.Relation<'oneToOne', 'api::category.category'>;
+    Badges: Schema.Attribute.JSON &
+      Schema.Attribute.CustomField<
+        'plugin::multi-select.multi-select',
+        ['New Arrival', 'Ready To Ship', 'Popular']
+      > &
+      Schema.Attribute.DefaultTo<'[]'>;
+    Categories: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::category.category'
+    >;
+    Collections: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::collection.collection'
+    >;
+    Color: Schema.Attribute.JSON &
+      Schema.Attribute.Required &
+      Schema.Attribute.CustomField<
+        'plugin::multi-select.multi-select',
+        [
+          'RED',
+          'GREEN',
+          'BLUE',
+          'YELLOW',
+          'BLACK',
+          'WHITE',
+          'ORANGE',
+          'PURPLE',
+          'PINK',
+          'BROWN',
+        ]
+      > &
+      Schema.Attribute.DefaultTo<'[]'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.Text;
+    Description: Schema.Attribute.Text;
+    Fabric: Schema.Attribute.JSON &
+      Schema.Attribute.CustomField<
+        'plugin::multi-select.multi-select',
+        ['option1', 'option2']
+      > &
+      Schema.Attribute.DefaultTo<'[]'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::product.product'
     > &
       Schema.Attribute.Private;
-    picture: Schema.Attribute.Media<
+    Name: Schema.Attribute.String & Schema.Attribute.Required;
+    Picture: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
-    price: Schema.Attribute.Integer & Schema.Attribute.Required;
+    Price_Section: Schema.Attribute.Component<
+      'user-product.prize-section',
+      true
+    >;
+    Product_Details: Schema.Attribute.Component<
+      'product.product-details',
+      true
+    >;
     publishedAt: Schema.Attribute.DateTime;
-    summary: Schema.Attribute.Text;
-    thumbnail: Schema.Attribute.Media<
+    Quantity: Schema.Attribute.Integer &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<0>;
+    Size: Schema.Attribute.JSON &
+      Schema.Attribute.Required &
+      Schema.Attribute.CustomField<
+        'plugin::multi-select.multi-select',
+        ['S', 'M', 'L', 'XL']
+      > &
+      Schema.Attribute.DefaultTo<'[]'>;
+    Summary: Schema.Attribute.Text;
+    Thumbnail: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     > &
       Schema.Attribute.Required;
-    title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -522,7 +895,7 @@ export interface ApiReviewReview extends Struct.CollectionTypeSchema {
   collectionName: 'reviews';
   info: {
     description: '';
-    displayName: 'review';
+    displayName: 'Review';
     pluralName: 'reviews';
     singularName: 'review';
   };
@@ -530,7 +903,7 @@ export interface ApiReviewReview extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    comment: Schema.Attribute.Text;
+    Comment: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -540,14 +913,47 @@ export interface ApiReviewReview extends Struct.CollectionTypeSchema {
       'api::review.review'
     > &
       Schema.Attribute.Private;
-    productId: Schema.Attribute.Relation<'oneToOne', 'api::product.product'>;
+    Product: Schema.Attribute.Relation<'oneToOne', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
-    rating: Schema.Attribute.Decimal;
+    Rating: Schema.Attribute.Decimal;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    userId: Schema.Attribute.Relation<
+    User: Schema.Attribute.Relation<
       'oneToOne',
+      'plugin::users-permissions.user'
+    >;
+  };
+}
+
+export interface ApiWishlistWishlist extends Struct.CollectionTypeSchema {
+  collectionName: 'wishlists';
+  info: {
+    description: '';
+    displayName: 'Wishlist';
+    pluralName: 'wishlists';
+    singularName: 'wishlist';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::wishlist.wishlist'
+    > &
+      Schema.Attribute.Private;
+    Product: Schema.Attribute.Relation<'oneToOne', 'api::product.product'>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    User: Schema.Attribute.Relation<
+      'manyToOne',
       'plugin::users-permissions.user'
     >;
   };
@@ -1012,6 +1418,7 @@ export interface PluginUsersPermissionsUser
   attributes: {
     avatar: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     blocked: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    Carts: Schema.Attribute.Relation<'oneToMany', 'api::cart.cart'>;
     confirmationToken: Schema.Attribute.String & Schema.Attribute.Private;
     confirmed: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     createdAt: Schema.Attribute.DateTime;
@@ -1051,6 +1458,7 @@ export interface PluginUsersPermissionsUser
       Schema.Attribute.SetMinMaxLength<{
         minLength: 3;
       }>;
+    Wishlists: Schema.Attribute.Relation<'oneToMany', 'api::wishlist.wishlist'>;
   };
 }
 
@@ -1064,11 +1472,20 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
-      'api::cart-item.cart-item': ApiCartItemCartItem;
+      'api::banarasi-weave-design-pattern.banarasi-weave-design-pattern': ApiBanarasiWeaveDesignPatternBanarasiWeaveDesignPattern;
+      'api::banarasi-weave-technique.banarasi-weave-technique': ApiBanarasiWeaveTechniqueBanarasiWeaveTechnique;
+      'api::banarasi-weave.banarasi-weave': ApiBanarasiWeaveBanarasiWeave;
+      'api::cart.cart': ApiCartCart;
       'api::category.category': ApiCategoryCategory;
+      'api::collection.collection': ApiCollectionCollection;
+      'api::contact-page.contact-page': ApiContactPageContactPage;
+      'api::history-and-lineage.history-and-lineage': ApiHistoryAndLineageHistoryAndLineage;
+      'api::home-page.home-page': ApiHomePageHomePage;
+      'api::management-page.management-page': ApiManagementPageManagementPage;
       'api::order.order': ApiOrderOrder;
       'api::product.product': ApiProductProduct;
       'api::review.review': ApiReviewReview;
+      'api::wishlist.wishlist': ApiWishlistWishlist;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

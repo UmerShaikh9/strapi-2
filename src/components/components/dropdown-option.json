@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_components_dropdown_options",
+  "info": {
+    "displayName": "Dropdown_Option"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

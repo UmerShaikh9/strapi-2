@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_components_input_fields",
+  "info": {
+    "displayName": "Input_Field"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "input",
+        "select",
+        "multiselect",
+        "checkbox",
+        "radio",
+        "textarea"
+      ]
+    },
+    "main_Type": {
+      "type": "enumeration",
+      "enum": [
+        "alphanumeric",
+        "email",
+        "simplePhoneNumber",
+        "pincode"
+      ]
+    },
+    "Dropdown_Option": {
+      "displayName": "Dropdown_Option",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.dropdown-option"
+    }
+  }
+}

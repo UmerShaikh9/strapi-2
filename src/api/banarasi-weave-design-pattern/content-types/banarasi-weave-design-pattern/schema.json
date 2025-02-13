@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "banarasi_weave_design_patterns",
+  "info": {
+    "singularName": "banarasi-weave-design-pattern",
+    "pluralName": "banarasi-weave-design-patterns",
+    "displayName": "Banarasi_Weave_Design_Pattern",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Design_And_Patterns": {
+      "displayName": "Section_1",
+      "type": "component",
+      "repeatable": false,
+      "component": "banarasi-weave-design-pattern.section-1"
+    },
+    "Connect_us": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.connect-us"
+    },
+    "Book_An_Appointment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.book-an-appointment"
+    }
+  }
+}

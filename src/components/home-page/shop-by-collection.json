@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_home_page_shop_by_collections",
+  "info": {
+    "displayName": "Shop_By_Collection"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

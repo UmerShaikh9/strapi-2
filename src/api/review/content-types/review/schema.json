@@ -4,7 +4,7 @@
   "info": {
     "singularName": "review",
     "pluralName": "reviews",
-    "displayName": "review",
+    "displayName": "Review",
     "description": ""
   },
   "options": {
@@ -12,21 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "userId": {
+    "User": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "productId": {
+    "Product": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::product.product"
     },
-    "rating": {
+    "Rating": {
       "type": "decimal",
       "required": false
     },
-    "comment": {
+    "Comment": {
       "type": "text"
     }
   }

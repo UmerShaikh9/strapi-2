@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_banarasi_weave_technique_section_1s",
+  "info": {
+    "displayName": "Section_1",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Weave_Technique_Images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.image-title"
+    },
+    "Weave_Technique_Details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.title-description"
+    }
+  }
+}

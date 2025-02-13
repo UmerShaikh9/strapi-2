@@ -13,12 +13,14 @@
   "dependencies": {
     "@strapi/plugin-cloud": "5.5.0",
     "@strapi/plugin-users-permissions": "5.5.0",
+    "@strapi/provider-upload-aws-s3": "^5.5.2",
     "@strapi/strapi": "5.5.0",
     "better-sqlite3": "11.3.0",
     "mysql2": "^3.11.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "strapi-plugin-multi-select": "^2.1.1",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {

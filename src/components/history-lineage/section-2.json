@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_history_lineage_section_2s",
+  "info": {
+    "displayName": "Section_2",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "History_Card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "history-lineage.about-card"
+    },
+    "Family_Tree_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Founding_Team": {
+      "type": "component",
+      "repeatable": true,
+      "component": "history-lineage.founding-team"
+    }
+  }
+}

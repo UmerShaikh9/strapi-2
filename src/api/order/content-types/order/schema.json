@@ -4,33 +4,34 @@
   "info": {
     "singularName": "order",
     "pluralName": "orders",
-    "displayName": "order"
+    "displayName": "Order",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "price": {
+    "Price": {
       "type": "integer",
       "unique": false,
       "required": true
     },
-    "quantity": {
+    "Quantity": {
       "type": "integer",
       "required": true
     },
-    "productId": {
+    "Product": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::product.product"
     },
-    "userId": {
+    "User": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "orderStatus": {
+    "Order_Status": {
       "type": "enumeration",
       "enum": [
         "PENDING",

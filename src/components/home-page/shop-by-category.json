@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_home_page_shop_by_categories",
+  "info": {
+    "displayName": "Shop_By_Category"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

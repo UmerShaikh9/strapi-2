@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "banarasi_weave_techniques",
+  "info": {
+    "singularName": "banarasi-weave-technique",
+    "pluralName": "banarasi-weave-techniques",
+    "displayName": "Banarasi_Weave_Technique",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Weaving_Techniques": {
+      "displayName": "Section_1",
+      "type": "component",
+      "repeatable": false,
+      "component": "banarasi-weave-technique.section-1"
+    },
+    "Connect_Us": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.connect-us"
+    },
+    "Book_An_Appointment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.book-an-appointment"
+    }
+  }
+}

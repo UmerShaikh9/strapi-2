@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "management_pages",
+  "info": {
+    "singularName": "management-page",
+    "pluralName": "management-pages",
+    "displayName": "Management_Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Team_Details": {
+      "displayName": "Section_1",
+      "type": "component",
+      "repeatable": false,
+      "component": "management.section-1"
+    },
+    "Our_Circle_Strength": {
+      "displayName": "Section_2",
+      "type": "component",
+      "repeatable": false,
+      "component": "management.section-2"
+    },
+    "Book_An_Appointment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.book-an-appointment"
+    },
+    "Connect_Us": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.connect-us"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_layout_connect_uses",
+  "info": {
+    "displayName": "Connect_Us"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Connect_Us_Items": {
+      "displayName": "Connect_Us_Item",
+      "type": "component",
+      "repeatable": true,
+      "component": "items.connect-us-item"
+    }
+  }
+}

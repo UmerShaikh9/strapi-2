@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_components_social_networks",
+  "info": {
+    "displayName": "Social_Network"
+  },
+  "options": {},
+  "attributes": {
+    "Media": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Href": {
+      "type": "string"
+    }
+  }
+}

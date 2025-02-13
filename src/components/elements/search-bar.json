@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_elements_search_bars",
+  "info": {
+    "displayName": "Search_Bar"
+  },
+  "options": {},
+  "attributes": {
+    "Placeholder": {
+      "type": "string"
+    }
+  }
+}

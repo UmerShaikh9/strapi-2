@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_elements_list_with_titles",
+  "info": {
+    "displayName": "List_With_Title",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Social_Networks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.social-network"
+    },
+    "Descriptions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.description-list"
+    }
+  }
+}

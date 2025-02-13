@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_contact_page_section_1s",
+  "info": {
+    "displayName": "Section_1"
+  },
+  "options": {},
+  "attributes": {
+    "Contact_Details": {
+      "displayName": "Contact_Details",
+      "type": "component",
+      "repeatable": false,
+      "component": "contact-page.contact-details"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_components_image_boxes",
+  "info": {
+    "displayName": "Image_Box"
+  },
+  "options": {},
+  "attributes": {
+    "Media": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Image_Direction": {
+      "type": "enumeration",
+      "enum": [
+        "Left",
+        "Right"
+      ]
+    }
+  }
+}

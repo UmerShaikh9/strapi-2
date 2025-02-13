@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_banarasi_weave_design_pattern_section_1s",
+  "info": {
+    "displayName": "Section_1"
+  },
+  "options": {},
+  "attributes": {
+    "Patterns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "history-lineage.about-card"
+    }
+  }
+}

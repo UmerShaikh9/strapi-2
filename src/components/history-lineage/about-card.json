@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_history_lineage_about_cards",
+  "info": {
+    "displayName": "About_Card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image_Box": {
+      "displayName": "Image_Box",
+      "type": "component",
+      "repeatable": false,
+      "component": "components.image-box"
+    },
+    "Descriptions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.description-list"
+    }
+  }
+}

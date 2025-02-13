@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_home_page_shop_sections",
+  "info": {
+    "displayName": "Shop_Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}

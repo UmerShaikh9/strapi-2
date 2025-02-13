@@ -1,0 +1,70 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home_Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Top_Nav": {
+      "displayName": "Top Nav",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.top-nav"
+    },
+    "Hero_Section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.hero-section"
+    },
+    "Advertisement_Section": {
+      "displayName": "Advertisement_Section",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.advertisement-section"
+    },
+    "Connect_Us": {
+      "displayName": "Connect_Us",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.connect-us"
+    },
+    "Shop_Section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.shop-section"
+    },
+    "Ready_To_Ship": {
+      "displayName": "Ready_To_Ship",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.ready-to-ship"
+    },
+    "Shop_By_Category": {
+      "displayName": "Shop_By_Category",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.shop-by-category"
+    },
+    "Shop_By_Collection": {
+      "displayName": "Shop_By_Collection",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.shop-by-collection"
+    },
+    "Book_An_Appointment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.book-an-appointment"
+    }
+  }
+}
