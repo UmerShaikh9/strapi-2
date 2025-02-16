@@ -782,10 +782,14 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
       ]
     > &
       Schema.Attribute.DefaultTo<'PENDING'>;
-    Price: Schema.Attribute.Integer & Schema.Attribute.Required;
-    Product: Schema.Attribute.Relation<'oneToOne', 'api::product.product'>;
+    Payment_Details: Schema.Attribute.Component<
+      'user-product.payment-details',
+      false
+    > &
+      Schema.Attribute.Required;
+    Products: Schema.Attribute.Component<'user-product.product', true>;
     publishedAt: Schema.Attribute.DateTime;
-    Quantity: Schema.Attribute.Integer & Schema.Attribute.Required;
+    Total_Price: Schema.Attribute.Integer;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

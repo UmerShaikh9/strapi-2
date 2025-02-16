@@ -536,6 +536,23 @@ export interface ProductProductDetails extends Struct.ComponentSchema {
   };
 }
 
+export interface UserProductPaymentDetails extends Struct.ComponentSchema {
+  collectionName: 'components_user_product_payment_details';
+  info: {
+    description: '';
+    displayName: 'Payment_Details';
+  };
+  attributes: {
+    Amount: Schema.Attribute.Integer;
+    Payment_Status: Schema.Attribute.Enumeration<
+      ['INITIATED', 'PENDING', 'DONE', 'FAILED']
+    >;
+    Razorpay_Order_Uid: Schema.Attribute.String;
+    Razorpay_Payment_Uid: Schema.Attribute.String;
+    Razorpay_Signature: Schema.Attribute.String;
+  };
+}
+
 export interface UserProductPrizeSection extends Struct.ComponentSchema {
   collectionName: 'components_user_product_prize_sections';
   info: {
@@ -609,6 +626,7 @@ declare module '@strapi/strapi' {
       'management.section-1': ManagementSection1;
       'management.section-2': ManagementSection2;
       'product.product-details': ProductProductDetails;
+      'user-product.payment-details': UserProductPaymentDetails;
       'user-product.prize-section': UserProductPrizeSection;
       'user-product.product': UserProductProduct;
     }

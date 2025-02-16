@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_user_product_payment_details",
+  "info": {
+    "displayName": "Payment_Details",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Amount": {
+      "type": "integer"
+    },
+    "Payment_Status": {
+      "type": "enumeration",
+      "enum": [
+        "INITIATED",
+        "PENDING",
+        "DONE",
+        "FAILED"
+      ]
+    },
+    "Razorpay_Payment_Uid": {
+      "type": "string"
+    },
+    "Razorpay_Order_Uid": {
+      "type": "string"
+    },
+    "Razorpay_Signature": {
+      "type": "string"
+    }
+  }
+}

@@ -12,20 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Price": {
-      "type": "integer",
-      "unique": false,
-      "required": true
-    },
-    "Quantity": {
-      "type": "integer",
-      "required": true
-    },
-    "Product": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::product.product"
-    },
     "User": {
       "type": "relation",
       "relation": "oneToOne",
@@ -42,6 +28,20 @@
         "DELIVERED"
       ],
       "default": "PENDING"
+    },
+    "Total_Price": {
+      "type": "integer"
+    },
+    "Products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "user-product.product"
+    },
+    "Payment_Details": {
+      "type": "component",
+      "repeatable": false,
+      "component": "user-product.payment-details",
+      "required": true
     }
   }
 }
