@@ -13,7 +13,8 @@
       "type": "string"
     },
     "Discounted_Price": {
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "Discount_Available": {
       "type": "boolean",

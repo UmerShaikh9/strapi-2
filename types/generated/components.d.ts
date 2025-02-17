@@ -562,7 +562,7 @@ export interface UserProductPrizeSection extends Struct.ComponentSchema {
   attributes: {
     Discount_Available: Schema.Attribute.Boolean &
       Schema.Attribute.DefaultTo<false>;
-    Discounted_Price: Schema.Attribute.Integer;
+    Discounted_Price: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     Option: Schema.Attribute.String;
     Price: Schema.Attribute.Integer;
   };
