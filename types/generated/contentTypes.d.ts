@@ -881,7 +881,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       Schema.Attribute.Required &
       Schema.Attribute.CustomField<
         'plugin::multi-select.multi-select',
-        ['S', 'M', 'L', 'XL']
+        ['S', 'M', 'L', 'XL', 'FREE SIZE']
       > &
       Schema.Attribute.DefaultTo<'[]'>;
     Summary: Schema.Attribute.Text;

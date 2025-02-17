@@ -52,7 +52,8 @@
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "FREE SIZE"
       ],
       "required": true,
       "customField": "plugin::multi-select.multi-select"
