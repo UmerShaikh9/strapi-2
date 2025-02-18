@@ -831,16 +831,27 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       Schema.Attribute.CustomField<
         'plugin::multi-select.multi-select',
         [
+          'WHITE',
+          'BLACK',
           'RED',
           'GREEN',
           'BLUE',
-          'YELLOW',
-          'BLACK',
-          'WHITE',
           'ORANGE',
-          'PURPLE',
-          'PINK',
           'BROWN',
+          'PURPLE',
+          'YELLOW',
+          'MAROON',
+          'PINK',
+          'GOLD',
+          'TEAL',
+          'SILVER',
+          'GREY',
+          'MIDNIGHT',
+          'WINE',
+          'BEIGE',
+          'RUST',
+          'PEACH',
+          'TUSCAN',
         ]
       > &
       Schema.Attribute.DefaultTo<'[]'>;
