@@ -92,6 +92,14 @@
       "relation": "oneToMany",
       "target": "api::cart.cart",
       "mappedBy": "User"
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "INR",
+        "USD",
+        "EUR"
+      ]
     }
   }
 }

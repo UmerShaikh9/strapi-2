@@ -32,6 +32,10 @@
     },
     "Option": {
       "type": "string"
+    },
+    "Discount_Available": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

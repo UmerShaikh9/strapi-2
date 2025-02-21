@@ -10,7 +10,7 @@ export default {
             handler: "cart.myCart",
             config: {
                 auth: {
-                    enabled: true, // Ensure the user is authenticated
+                    enabled: true,
                 },
                 policies: [],
                 middlewares: [],
@@ -22,7 +22,19 @@ export default {
             handler: "cart.addToCart",
             config: {
                 auth: {
-                    enabled: true, // Ensure the user is authenticated
+                    enabled: true,
+                },
+                policies: [],
+                middlewares: [],
+            },
+        },
+        {
+            method: "PUT",
+            path: "/carts/user/all",
+            handler: "cart.addMultipleToCart",
+            config: {
+                auth: {
+                    enabled: true,
                 },
                 policies: [],
                 middlewares: [],
@@ -34,7 +46,7 @@ export default {
             handler: "cart.removeFromCart",
             config: {
                 auth: {
-                    enabled: true, // Ensure the user is authenticated
+                    enabled: true,
                 },
                 policies: [],
                 middlewares: [],

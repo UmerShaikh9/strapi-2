@@ -82,17 +82,23 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
 
             console.log("payload", payload);
             if (existingCartItem?.length > 0) {
+                console.log("updating existing product");
+
                 cartDetails = await strapi.documents("api::cart.cart").update({
                     documentId: existingCartItem?.[0]?.documentId,
 
                     data: {
-                        ...payload,
                         Total_Price: payload?.Total_Price,
+                        // // @ts-ignore
+                        // Product: {
+                        //     Quantity: payload?.Product?.Quantity,
+                        // },
                         User: { id: userId },
                     },
                     status: "published",
                 });
             } else {
+                console.log("adding existing product");
                 cartDetails = await strapi.documents("api::cart.cart").create({
                     data: {
                         ...payload,
@@ -106,6 +112,86 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             return ctx.send({
                 message: "Item added to cart.",
                 cart: cartDetails,
+            });
+        } catch (error) {
+            console.error("Error adding item to cart:", error);
+            return ctx.internalServerError("An error occurred while adding the item to the cart.");
+        }
+    },
+    async addMultipleToCart(ctx) {
+        try {
+            // Get the authenticated user ID
+            const userId = ctx.state.user?.id;
+
+            if (!userId) {
+                return ctx.unauthorized("You must be logged in to add items to the cart.");
+            }
+
+            const carts = ctx.request.body?.carts;
+
+            for (let cart of carts) {
+                const { Product, Type, Total_Price } = cart;
+                const productId = Product?.Product;
+
+                const payload = {
+                    Product: Product,
+                    Type: Type,
+                    Total_Price: Total_Price,
+                };
+
+                if (!productId) {
+                    return ctx.badRequest("Product document id is required.");
+                }
+
+                const productExists = await strapi.documents("api::product.product").findOne({ documentId: productId });
+
+                if (!productExists) {
+                    return ctx.notFound("Product not found.");
+                }
+
+                const existingCartItem = await strapi.documents("api::cart.cart").findMany({
+                    filters: {
+                        Product: {
+                            Product: {
+                                documentId: productId,
+                            },
+                        },
+                        User: { id: userId },
+                    },
+                });
+
+                let cartDetails = {};
+
+                console.log("payload", payload);
+                if (existingCartItem?.length > 0) {
+                    console.log("updating existing product");
+
+                    cartDetails = await strapi.documents("api::cart.cart").update({
+                        documentId: existingCartItem?.[0]?.documentId,
+
+                        data: {
+                            Type: Type,
+                            Total_Price: payload?.Total_Price,
+                            Product: {
+                                Discounted_Price: payload?.Product?.Discounted_Price,
+                                Price: payload?.Product?.Price,
+                                Size: payload?.Product?.Size,
+                                Color: payload?.Product?.Color,
+                                Discount_Available: payload?.Product?.Discount_Available,
+                                Option: payload?.Product?.Option,
+                                Product: payload?.Product?.Product,
+                                Quantity: payload?.Product?.Quantity,
+                            },
+                            User: { id: userId },
+                        },
+
+                        status: "published",
+                    });
+                }
+            }
+
+            return ctx.send({
+                message: "All Items added to a cart.",
             });
         } catch (error) {
             console.error("Error adding item to cart:", error);

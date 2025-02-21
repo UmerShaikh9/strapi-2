@@ -576,6 +576,8 @@ export interface UserProductProduct extends Struct.ComponentSchema {
   };
   attributes: {
     Color: Schema.Attribute.String;
+    Discount_Available: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
     Discounted_Price: Schema.Attribute.Integer & Schema.Attribute.Required;
     Option: Schema.Attribute.String;
     Price: Schema.Attribute.Integer & Schema.Attribute.Required;
