@@ -14,18 +14,15 @@
       "enum": [
         "INITIATED",
         "PENDING",
-        "DONE",
+        "COMPLETED",
         "FAILED"
       ]
     },
-    "Razorpay_Payment_Uid": {
+    "Order_Uid": {
       "type": "string"
     },
-    "Razorpay_Order_Uid": {
-      "type": "string"
-    },
-    "Razorpay_Signature": {
-      "type": "string"
+    "Paypal_Response": {
+      "type": "json"
     }
   }
 }

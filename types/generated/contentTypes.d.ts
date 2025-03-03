@@ -467,6 +467,7 @@ export interface ApiBanarasiWeaveBanarasiWeave extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Description: Schema.Attribute.Text;
     Fabric_Overview: Schema.Attribute.Component<
       'banarasi-weaves.fabric-overview',
       true
@@ -478,6 +479,39 @@ export interface ApiBanarasiWeaveBanarasiWeave extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiBlogPageBlogPage extends Struct.CollectionTypeSchema {
+  collectionName: 'blog_pages';
+  info: {
+    displayName: 'Blog_Page';
+    pluralName: 'blog-pages';
+    singularName: 'blog-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Blog_Section: Schema.Attribute.Component<
+      'banarasi-weaves.fabric-overview',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::blog-page.blog-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Thumbnail: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -765,9 +799,15 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    Address: Schema.Attribute.String;
+    City: Schema.Attribute.String;
+    Country: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Currency: Schema.Attribute.String;
+    Email: Schema.Attribute.String;
+    Full_Name: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::order.order'> &
       Schema.Attribute.Private;
@@ -787,8 +827,11 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
       false
     > &
       Schema.Attribute.Required;
+    Phone: Schema.Attribute.String;
+    Pincode: Schema.Attribute.String;
     Products: Schema.Attribute.Component<'user-product.product', true>;
     publishedAt: Schema.Attribute.DateTime;
+    State: Schema.Attribute.String;
     Total_Price: Schema.Attribute.Integer;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1491,6 +1534,7 @@ declare module '@strapi/strapi' {
       'api::banarasi-weave-design-pattern.banarasi-weave-design-pattern': ApiBanarasiWeaveDesignPatternBanarasiWeaveDesignPattern;
       'api::banarasi-weave-technique.banarasi-weave-technique': ApiBanarasiWeaveTechniqueBanarasiWeaveTechnique;
       'api::banarasi-weave.banarasi-weave': ApiBanarasiWeaveBanarasiWeave;
+      'api::blog-page.blog-page': ApiBlogPageBlogPage;
       'api::cart.cart': ApiCartCart;
       'api::category.category': ApiCategoryCategory;
       'api::collection.collection': ApiCollectionCollection;

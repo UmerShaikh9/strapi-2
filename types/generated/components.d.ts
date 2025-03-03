@@ -395,6 +395,7 @@ export interface HomePageAdvertisementSection extends Struct.ComponentSchema {
   };
   attributes: {
     Button: Schema.Attribute.Component<'elements.button', false>;
+    Description: Schema.Attribute.Text;
     Media: Schema.Attribute.Media<'images'>;
     Title: Schema.Attribute.String;
   };
@@ -544,12 +545,11 @@ export interface UserProductPaymentDetails extends Struct.ComponentSchema {
   };
   attributes: {
     Amount: Schema.Attribute.Integer;
+    Order_Uid: Schema.Attribute.String;
     Payment_Status: Schema.Attribute.Enumeration<
-      ['INITIATED', 'PENDING', 'DONE', 'FAILED']
+      ['INITIATED', 'PENDING', 'COMPLETED', 'FAILED']
     >;
-    Razorpay_Order_Uid: Schema.Attribute.String;
-    Razorpay_Payment_Uid: Schema.Attribute.String;
-    Razorpay_Signature: Schema.Attribute.String;
+    Paypal_Response: Schema.Attribute.JSON;
   };
 }
 

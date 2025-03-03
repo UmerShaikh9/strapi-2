@@ -21,6 +21,9 @@
       "type": "component",
       "repeatable": false,
       "component": "elements.button"
+    },
+    "Description": {
+      "type": "text"
     }
   }
 }

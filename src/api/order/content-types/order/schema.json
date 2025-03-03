@@ -42,6 +42,33 @@
       "repeatable": false,
       "component": "user-product.payment-details",
       "required": true
+    },
+    "Full_Name": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "string"
+    },
+    "State": {
+      "type": "string"
+    },
+    "Currency": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "Pincode": {
+      "type": "string"
     }
   }
 }

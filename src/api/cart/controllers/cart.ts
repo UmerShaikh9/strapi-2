@@ -120,78 +120,20 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
     },
     async addMultipleToCart(ctx) {
         try {
-            // Get the authenticated user ID
             const userId = ctx.state.user?.id;
-
             if (!userId) {
                 return ctx.unauthorized("You must be logged in to add items to the cart.");
             }
 
             const carts = ctx.request.body?.carts;
-
-            for (let cart of carts) {
-                const { Product, Type, Total_Price } = cart;
-                const productId = Product?.Product;
-
-                const payload = {
-                    Product: Product,
-                    Type: Type,
-                    Total_Price: Total_Price,
-                };
-
-                if (!productId) {
-                    return ctx.badRequest("Product document id is required.");
-                }
-
-                const productExists = await strapi.documents("api::product.product").findOne({ documentId: productId });
-
-                if (!productExists) {
-                    return ctx.notFound("Product not found.");
-                }
-
-                const existingCartItem = await strapi.documents("api::cart.cart").findMany({
-                    filters: {
-                        Product: {
-                            Product: {
-                                documentId: productId,
-                            },
-                        },
-                        User: { id: userId },
-                    },
-                });
-
-                let cartDetails = {};
-
-                console.log("payload", payload);
-                if (existingCartItem?.length > 0) {
-                    console.log("updating existing product");
-
-                    cartDetails = await strapi.documents("api::cart.cart").update({
-                        documentId: existingCartItem?.[0]?.documentId,
-
-                        data: {
-                            Type: Type,
-                            Total_Price: payload?.Total_Price,
-                            Product: {
-                                Discounted_Price: payload?.Product?.Discounted_Price,
-                                Price: payload?.Product?.Price,
-                                Size: payload?.Product?.Size,
-                                Color: payload?.Product?.Color,
-                                Discount_Available: payload?.Product?.Discount_Available,
-                                Option: payload?.Product?.Option,
-                                Product: payload?.Product?.Product,
-                                Quantity: payload?.Product?.Quantity,
-                            },
-                            User: { id: userId },
-                        },
-
-                        status: "published",
-                    });
-                }
+            if (!carts || carts.length === 0) {
+                return ctx.badRequest("No cart items provided.");
             }
 
+            await processCartItems(carts, userId);
+
             return ctx.send({
-                message: "All Items added to a cart.",
+                message: "All items added to the cart.",
             });
         } catch (error) {
             console.error("Error adding item to cart:", error);
@@ -235,6 +177,50 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             return ctx.internalServerError("An error occurred while removing the item from the cart.");
         }
     },
+
+    async suggestions(ctx) {
+        try {
+            const { search } = ctx.request.body;
+            const Products = await strapi.documents("api::product.product").findMany({
+                filters: {
+                    Name: {
+                        $containsi: search,
+                    },
+                },
+                populate: {
+                    Thumbnail: true,
+                    Price_Section: true,
+                },
+                status: "published",
+                limit: 10,
+            });
+            const Collections = await strapi.documents("api::collection.collection").findMany({
+                filters: {
+                    Name: {
+                        $containsi: search,
+                    },
+                },
+                fields: ["Name"],
+                status: "published",
+                limit: 10,
+            });
+            const Categories = await strapi.documents("api::collection.collection").findMany({
+                filters: {
+                    Name: {
+                        $containsi: search,
+                    },
+                },
+                fields: ["Name"],
+                status: "published",
+                limit: 10,
+            });
+
+            return ctx.send({ Products, Collections, Categories });
+        } catch (error) {
+            console.error("Error fetching suggetions:", error);
+            return ctx.internalServerError("An error occurred while fetching suggetions ");
+        }
+    },
 }));
 
 const validateRequestBody = async (body, keys) => {
@@ -258,3 +244,83 @@ const validateRequestBody = async (body, keys) => {
     }
     return payload;
 };
+
+export async function processCartItems(carts, userId) {
+    try {
+        console.log("[processCartItems]  execution started");
+        console.log("carts ", carts);
+        console.log("user id ", userId);
+        // Iterate over each cart item
+        for (let cart of carts) {
+            const { Product, Type, Total_Price } = cart;
+            const productId = Product?.Product;
+
+            // Validate product ID
+            if (!productId) {
+                throw new Error("Product document ID is required.");
+            }
+
+            // Fetch the product details along with the Price_Section
+            const products = await strapi.documents("api::product.product").findMany({
+                filters: { documentId: productId },
+                populate: { Price_Section: true },
+            });
+
+            const productExists = products[0];
+            if (!productExists) {
+                throw new Error(`Product with ID ${productId} not found.`);
+            }
+
+            // Find the price section that matches the selected option
+            const liveProduct = productExists?.Price_Section?.find((item) => item.Option === Product?.Option);
+
+            // Prepare the payload with updated pricing details
+            let payload = { Product, Type, Total_Price };
+            if (liveProduct) {
+                payload.Product.Price = liveProduct.Price;
+                payload.Product.Discounted_Price = liveProduct.Discounted_Price;
+                payload.Total_Price = liveProduct.Discount_Available ? liveProduct.Discounted_Price : liveProduct.Price;
+            }
+
+            // Check if the product already exists in the user's cart
+            const existingCartItem = await strapi.documents("api::cart.cart").findMany({
+                filters: {
+                    Product: {
+                        Product: {
+                            documentId: productId,
+                        },
+                    },
+                    User: { id: userId },
+                },
+            });
+
+            // If product exists in cart, update it
+            if (existingCartItem?.length > 0) {
+                await strapi.documents("api::cart.cart").update({
+                    documentId: existingCartItem?.[0]?.documentId,
+                    data: {
+                        Type,
+                        Total_Price: payload?.Total_Price,
+                        Product: {
+                            Discounted_Price: payload?.Product?.Discounted_Price,
+                            Price: payload?.Product?.Price,
+                            Size: payload?.Product?.Size,
+                            Color: payload?.Product?.Color,
+                            Discount_Available: payload?.Product?.Discount_Available,
+                            Option: payload?.Product?.Option,
+                            Product: payload?.Product?.Product,
+                            Quantity: payload?.Product?.Quantity,
+                        },
+                        User: { id: userId },
+                    },
+                    status: "published",
+                });
+            }
+
+            console.log("[processCartItems]  execution processed");
+        }
+    } catch (error) {
+        console.error("Error processing cart items:", error.message);
+        throw new Error("An error occurred while processing the cart items. Please try again later.");
+    }
+}
