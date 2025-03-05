@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_privacy_policy_sections",
+  "info": {
+    "displayName": "Section"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Descriptions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.description-list"
+    }
+  }
+}

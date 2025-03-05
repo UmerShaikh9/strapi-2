@@ -16,26 +16,6 @@
         "videos",
         "audios"
       ]
-    },
-    "Title": {
-      "type": "string"
-    },
-    "Subtitle": {
-      "type": "string"
-    },
-    "Location": {
-      "type": "text"
-    },
-    "Appointment_Number": {
-      "type": "string"
-    },
-    "Email": {
-      "type": "string"
-    },
-    "Button": {
-      "type": "component",
-      "repeatable": false,
-      "component": "elements.button"
     }
   }
 }

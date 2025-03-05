@@ -16,12 +16,6 @@
       "type": "component",
       "repeatable": true,
       "component": "elements.list-with-title"
-    },
-    "Contact_Form": {
-      "displayName": "Contact_Form",
-      "type": "component",
-      "repeatable": false,
-      "component": "contact-page.contact-form"
     }
   }
 }

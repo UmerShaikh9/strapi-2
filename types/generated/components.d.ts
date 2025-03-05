@@ -172,10 +172,6 @@ export interface ContactPageContactDetails extends Struct.ComponentSchema {
   };
   attributes: {
     Contact_Box: Schema.Attribute.Component<'elements.list-with-title', true>;
-    Contact_Form: Schema.Attribute.Component<
-      'contact-page.contact-form',
-      false
-    >;
     Description: Schema.Attribute.String;
     Title: Schema.Attribute.String;
   };
@@ -198,6 +194,7 @@ export interface ContactPageContactForm extends Struct.ComponentSchema {
 export interface ContactPageSection1 extends Struct.ComponentSchema {
   collectionName: 'components_contact_page_section_1s';
   info: {
+    description: '';
     displayName: 'Section_1';
   };
   attributes: {
@@ -205,6 +202,7 @@ export interface ContactPageSection1 extends Struct.ComponentSchema {
       'contact-page.contact-details',
       false
     >;
+    Media: Schema.Attribute.Media<'images'>;
   };
 }
 
@@ -215,13 +213,7 @@ export interface ContactPageSection2 extends Struct.ComponentSchema {
     displayName: 'Section_2';
   };
   attributes: {
-    Appointment_Number: Schema.Attribute.String;
-    Button: Schema.Attribute.Component<'elements.button', false>;
-    Email: Schema.Attribute.String;
-    Location: Schema.Attribute.Text;
     Media: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    Subtitle: Schema.Attribute.String;
-    Title: Schema.Attribute.String;
   };
 }
 
@@ -522,6 +514,31 @@ export interface ManagementSection2 extends Struct.ComponentSchema {
   };
 }
 
+export interface PrivacyPolicySection extends Struct.ComponentSchema {
+  collectionName: 'components_privacy_policy_sections';
+  info: {
+    displayName: 'Section';
+  };
+  attributes: {
+    Descriptions: Schema.Attribute.Component<
+      'components.description-list',
+      false
+    >;
+    Title: Schema.Attribute.String;
+  };
+}
+
+export interface ProductMeasurement extends Struct.ComponentSchema {
+  collectionName: 'components_product_measurements';
+  info: {
+    displayName: 'Measurement';
+  };
+  attributes: {
+    cm: Schema.Attribute.String;
+    inch: Schema.Attribute.String;
+  };
+}
+
 export interface ProductProductDetails extends Struct.ComponentSchema {
   collectionName: 'components_product_product_details';
   info: {
@@ -534,6 +551,26 @@ export interface ProductProductDetails extends Struct.ComponentSchema {
       false
     >;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface ProductProductGuide extends Struct.ComponentSchema {
+  collectionName: 'components_product_product_guides';
+  info: {
+    description: '';
+    displayName: 'Product_Guide';
+  };
+  attributes: {};
+}
+
+export interface ProductProductSizes extends Struct.ComponentSchema {
+  collectionName: 'components_product_product_sizes';
+  info: {
+    displayName: 'Product_Sizes';
+  };
+  attributes: {
+    Measurement: Schema.Attribute.Component<'product.measurement', true>;
+    Title: Schema.Attribute.String;
   };
 }
 
@@ -629,7 +666,11 @@ declare module '@strapi/strapi' {
       'layout.top-nav': LayoutTopNav;
       'management.section-1': ManagementSection1;
       'management.section-2': ManagementSection2;
+      'privacy-policy.section': PrivacyPolicySection;
+      'product.measurement': ProductMeasurement;
       'product.product-details': ProductProductDetails;
+      'product.product-guide': ProductProductGuide;
+      'product.product-sizes': ProductProductSizes;
       'user-product.payment-details': UserProductPaymentDetails;
       'user-product.prize-section': UserProductPrizeSection;
       'user-product.product': UserProductProduct;
