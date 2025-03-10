@@ -221,6 +221,95 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             return ctx.internalServerError("An error occurred while fetching suggetions ");
         }
     },
+
+    async allBlogs(ctx) {
+        try {
+            const name = ctx?.request?.body?.name;
+            const blogs = await strapi.documents("api::rasa-page.rasa-page").findMany({
+                populate: {
+                    Blogs: {
+                        populate: {
+                            Blog_Section: {
+                                populate: {
+                                    Descriptions: {
+                                        populate: {
+                                            Description: true,
+                                        },
+                                    },
+                                    Images: {
+                                        populate: {
+                                            Media: true,
+                                        },
+                                    },
+                                },
+                            },
+                            Thumbnail: true,
+                        },
+                    },
+                },
+                status: "published",
+            });
+
+            if (name) {
+                blogs.forEach((blog) => {
+                    if (blog.Blogs) {
+                        blog.Blogs = blog.Blogs.filter((b) => b.Title === name);
+                    }
+                });
+            }
+
+            console.log("filtered ", blogs);
+
+            return ctx.send({ blogs: blogs });
+        } catch (error) {
+            console.error("Error fetching blogs:", error);
+            return ctx.internalServerError("An error occurred while fetching the blogs.");
+        }
+    },
+    async pressAndMediaBlogs(ctx) {
+        try {
+            const { name } = ctx.request.body;
+            const blogs = await strapi.documents("api::press-and-media.press-and-media").findMany({
+                populate: {
+                    Blogs: {
+                        populate: {
+                            Blog_Section: {
+                                populate: {
+                                    Descriptions: {
+                                        populate: {
+                                            Description: true,
+                                        },
+                                    },
+                                    Images: {
+                                        populate: {
+                                            Media: true,
+                                        },
+                                    },
+                                },
+                            },
+                            Thumbnail: true,
+                        },
+                    },
+                },
+                status: "published",
+            });
+
+            if (name) {
+                blogs.forEach((blog) => {
+                    if (blog.Blogs) {
+                        blog.Blogs = blog.Blogs.filter((b) => b.Title === name);
+                    }
+                });
+            }
+
+            console.log("filtered ", blogs);
+
+            return ctx.send({ blogs: blogs });
+        } catch (error) {
+            console.error("Error fetching blogs:", error);
+            return ctx.internalServerError("An error occurred while fetching the blogs.");
+        }
+    },
 }));
 
 const validateRequestBody = async (body, keys) => {

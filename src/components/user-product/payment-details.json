@@ -7,7 +7,7 @@
   "options": {},
   "attributes": {
     "Amount": {
-      "type": "integer"
+      "type": "decimal"
     },
     "Payment_Status": {
       "type": "enumeration",

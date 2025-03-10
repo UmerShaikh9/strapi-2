@@ -1,11 +1,12 @@
 # Use the official Node.js image with Bullseye
 FROM node:20-bullseye
 
-# Install dependencies for sharp (used in Strapi)
+# Install dependencies for sharp (used in Strapi) and Git
 RUN apt-get update && apt-get install -y \
     build-essential \
     libvips-dev \
     python3 \
+    git \   
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 

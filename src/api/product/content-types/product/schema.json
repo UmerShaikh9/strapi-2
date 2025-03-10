@@ -96,8 +96,19 @@
       "type": "customField",
       "default": "[]",
       "options": [
-        "option1",
-        "option2"
+        "Muslin/Malmal (Sooti",
+        "Malmal Katan",
+        "Katan Silk",
+        "Kora Silk",
+        "Tissue Silk",
+        "Satin Silk",
+        "Chiniya Silk",
+        "Dupion Silk",
+        "Chiffon",
+        "Georgette",
+        "Muga Silk",
+        "Tussar Silk",
+        "Tussar Georgette"
       ],
       "customField": "plugin::multi-select.multi-select"
     },
@@ -112,7 +123,8 @@
       "options": [
         "New Arrival",
         "Ready To Ship",
-        "Popular"
+        "Popular",
+        "Sold Out"
       ],
       "customField": "plugin::multi-select.multi-select"
     },
@@ -134,11 +146,20 @@
       "inversedBy": "Products"
     },
     "Product_Guide": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "Preorder_Available": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "Preorder_Timeline": {
+      "type": "string"
     }
   }
 }

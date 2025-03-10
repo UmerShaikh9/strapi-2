@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "shipping_lists",
+  "collectionName": "terms_and_conditions",
   "info": {
-    "singularName": "shipping-list",
-    "pluralName": "shipping-lists",
-    "displayName": "Shipping Policy",
+    "singularName": "terms-and-condition",
+    "pluralName": "terms-and-conditions",
+    "displayName": "Terms_&_Condition",
     "description": ""
   },
   "options": {

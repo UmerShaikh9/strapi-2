@@ -18,12 +18,19 @@
       "default": false
     },
     "Media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "SubLinks": {
+      "displayName": "SubLinks",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.sub-links"
     }
   }
 }

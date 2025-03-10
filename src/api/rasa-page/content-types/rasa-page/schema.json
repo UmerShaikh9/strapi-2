@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "rasa_pages",
+  "info": {
+    "singularName": "rasa-page",
+    "pluralName": "rasa-pages",
+    "displayName": "Rasa_Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Blogs": {
+      "displayName": "Blog_Section",
+      "type": "component",
+      "repeatable": true,
+      "component": "blogs.blog-section"
+    }
+  }
+}

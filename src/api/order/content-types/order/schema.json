@@ -30,7 +30,7 @@
       "default": "PENDING"
     },
     "Total_Price": {
-      "type": "integer"
+      "type": "decimal"
     },
     "Products": {
       "type": "component",

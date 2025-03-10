@@ -46,6 +46,23 @@ export interface BanarasiWeavesFabricOverview extends Struct.ComponentSchema {
   };
 }
 
+export interface BlogsBlogSection extends Struct.ComponentSchema {
+  collectionName: 'components_blogs_blog_sections';
+  info: {
+    description: '';
+    displayName: 'Blog_Section';
+  };
+  attributes: {
+    Blog_Section: Schema.Attribute.Component<
+      'banarasi-weaves.fabric-overview',
+      true
+    >;
+    Description: Schema.Attribute.Text;
+    Thumbnail: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Title: Schema.Attribute.String;
+  };
+}
+
 export interface ComponentsBookAnAppointment extends Struct.ComponentSchema {
   collectionName: 'components_components_book_an_appointments';
   info: {
@@ -240,6 +257,7 @@ export interface ElementsLink extends Struct.ComponentSchema {
     Href: Schema.Attribute.String;
     isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     Media: Schema.Attribute.Media<'images' | 'files'>;
+    SubLinks: Schema.Attribute.Component<'elements.sub-links', true>;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -296,6 +314,19 @@ export interface ElementsSearchBar extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsSubLinks extends Struct.ComponentSchema {
+  collectionName: 'components_elements_sub_links';
+  info: {
+    description: '';
+    displayName: 'SubLinks';
+  };
+  attributes: {
+    Href: Schema.Attribute.String;
+    isExternal: Schema.Attribute.Boolean;
+    Title: Schema.Attribute.String;
+  };
+}
+
 export interface ElementsTitleList extends Struct.ComponentSchema {
   collectionName: 'components_elements_title_lists';
   info: {
@@ -303,6 +334,28 @@ export interface ElementsTitleList extends Struct.ComponentSchema {
   };
   attributes: {
     Options: Schema.Attribute.Component<'elements.list', true>;
+    Title: Schema.Attribute.String;
+  };
+}
+
+export interface FaqFaqQuestions extends Struct.ComponentSchema {
+  collectionName: 'components_faq_faq_questions';
+  info: {
+    displayName: 'Faq_Questions';
+  };
+  attributes: {
+    Answer: Schema.Attribute.Component<'components.description-list', false>;
+    Question: Schema.Attribute.String;
+  };
+}
+
+export interface FaqFaqSections extends Struct.ComponentSchema {
+  collectionName: 'components_faq_faq_sections';
+  info: {
+    displayName: 'Faq_Sections';
+  };
+  attributes: {
+    Faq_Questions: Schema.Attribute.Component<'faq.faq-questions', true>;
     Title: Schema.Attribute.String;
   };
 }
@@ -400,7 +453,31 @@ export interface HomePageHeroSection extends Struct.ComponentSchema {
     displayName: 'Hero_Section';
   };
   attributes: {
-    Media: Schema.Attribute.Media<'images', true>;
+    Media: Schema.Attribute.Media<'videos', true>;
+  };
+}
+
+export interface HomePageInstagramCards extends Struct.ComponentSchema {
+  collectionName: 'components_home_page_instagram_cards';
+  info: {
+    displayName: 'Instagram_Cards';
+  };
+  attributes: {
+    Href: Schema.Attribute.String;
+    Thumbnail: Schema.Attribute.Media<'images' | 'files'>;
+  };
+}
+
+export interface HomePageInstagramSection extends Struct.ComponentSchema {
+  collectionName: 'components_home_page_instagram_sections';
+  info: {
+    displayName: 'Instagram_Section';
+  };
+  attributes: {
+    Instagram_Cards: Schema.Attribute.Component<
+      'home-page.instagram-cards',
+      true
+    >;
   };
 }
 
@@ -581,7 +658,7 @@ export interface UserProductPaymentDetails extends Struct.ComponentSchema {
     displayName: 'Payment_Details';
   };
   attributes: {
-    Amount: Schema.Attribute.Integer;
+    Amount: Schema.Attribute.Decimal;
     Order_Uid: Schema.Attribute.String;
     Payment_Status: Schema.Attribute.Enumeration<
       ['INITIATED', 'PENDING', 'COMPLETED', 'FAILED']
@@ -630,6 +707,7 @@ declare module '@strapi/strapi' {
       'banarasi-weave-design-pattern.section-1': BanarasiWeaveDesignPatternSection1;
       'banarasi-weave-technique.section-1': BanarasiWeaveTechniqueSection1;
       'banarasi-weaves.fabric-overview': BanarasiWeavesFabricOverview;
+      'blogs.blog-section': BlogsBlogSection;
       'components.book-an-appointment': ComponentsBookAnAppointment;
       'components.description-list': ComponentsDescriptionList;
       'components.descriptions': ComponentsDescriptions;
@@ -649,7 +727,10 @@ declare module '@strapi/strapi' {
       'elements.list-with-title': ElementsListWithTitle;
       'elements.logo-link': ElementsLogoLink;
       'elements.search-bar': ElementsSearchBar;
+      'elements.sub-links': ElementsSubLinks;
       'elements.title-list': ElementsTitleList;
+      'faq.faq-questions': FaqFaqQuestions;
+      'faq.faq-sections': FaqFaqSections;
       'history-lineage.about-card': HistoryLineageAboutCard;
       'history-lineage.founding-team': HistoryLineageFoundingTeam;
       'history-lineage.section-1': HistoryLineageSection1;
@@ -657,6 +738,8 @@ declare module '@strapi/strapi' {
       'history-lineage.section-3': HistoryLineageSection3;
       'home-page.advertisement-section': HomePageAdvertisementSection;
       'home-page.hero-section': HomePageHeroSection;
+      'home-page.instagram-cards': HomePageInstagramCards;
+      'home-page.instagram-section': HomePageInstagramSection;
       'home-page.ready-to-ship': HomePageReadyToShip;
       'home-page.shop-by-category': HomePageShopByCategory;
       'home-page.shop-by-collection': HomePageShopByCollection;

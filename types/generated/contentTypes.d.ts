@@ -486,39 +486,6 @@ export interface ApiBanarasiWeaveBanarasiWeave extends Struct.SingleTypeSchema {
   };
 }
 
-export interface ApiBlogPageBlogPage extends Struct.CollectionTypeSchema {
-  collectionName: 'blog_pages';
-  info: {
-    displayName: 'Blog_Page';
-    pluralName: 'blog-pages';
-    singularName: 'blog-page';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Blog_Section: Schema.Attribute.Component<
-      'banarasi-weaves.fabric-overview',
-      true
-    >;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::blog-page.blog-page'
-    > &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    Thumbnail: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    Title: Schema.Attribute.String;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
 export interface ApiCartCart extends Struct.CollectionTypeSchema {
   collectionName: 'carts';
   info: {
@@ -661,6 +628,36 @@ export interface ApiContactPageContactPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiFaqPageFaqPage extends Struct.SingleTypeSchema {
+  collectionName: 'faq_pages';
+  info: {
+    displayName: 'Faq_Page';
+    pluralName: 'faq-pages';
+    singularName: 'faq-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Description: Schema.Attribute.Text;
+    Faq_Sections: Schema.Attribute.Component<'faq.faq-sections', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::faq-page.faq-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiHistoryAndLineageHistoryAndLineage
   extends Struct.SingleTypeSchema {
   collectionName: 'history_and_lineages';
@@ -722,6 +719,10 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     Hero_Section: Schema.Attribute.Component<'home-page.hero-section', false>;
+    Instagram_Section: Schema.Attribute.Component<
+      'home-page.instagram-section',
+      false
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -832,7 +833,7 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     Products: Schema.Attribute.Component<'user-product.product', true>;
     publishedAt: Schema.Attribute.DateTime;
     State: Schema.Attribute.String;
-    Total_Price: Schema.Attribute.Integer;
+    Total_Price: Schema.Attribute.Decimal;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -840,6 +841,37 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
       'oneToOne',
       'plugin::users-permissions.user'
     >;
+  };
+}
+
+export interface ApiPressAndMediaPressAndMedia extends Struct.SingleTypeSchema {
+  collectionName: 'press_and_medias';
+  info: {
+    description: '';
+    displayName: 'Press_&_Media';
+    pluralName: 'press-and-medias';
+    singularName: 'press-and-media';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Blogs: Schema.Attribute.Component<'blogs.blog-section', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Description: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::press-and-media.press-and-media'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
   };
 }
 
@@ -889,7 +921,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     Badges: Schema.Attribute.JSON &
       Schema.Attribute.CustomField<
         'plugin::multi-select.multi-select',
-        ['New Arrival', 'Ready To Ship', 'Popular']
+        ['New Arrival', 'Ready To Ship', 'Popular', 'Sold Out']
       > &
       Schema.Attribute.DefaultTo<'[]'>;
     Categories: Schema.Attribute.Relation<
@@ -936,7 +968,21 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     Fabric: Schema.Attribute.JSON &
       Schema.Attribute.CustomField<
         'plugin::multi-select.multi-select',
-        ['option1', 'option2']
+        [
+          'Muslin/Malmal (Sooti',
+          'Malmal Katan',
+          'Katan Silk',
+          'Kora Silk',
+          'Tissue Silk',
+          'Satin Silk',
+          'Chiniya Silk',
+          'Dupion Silk',
+          'Chiffon',
+          'Georgette',
+          'Muga Silk',
+          'Tussar Silk',
+          'Tussar Georgette',
+        ]
       > &
       Schema.Attribute.DefaultTo<'[]'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -950,6 +996,9 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
+    Preorder_Available: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    Preorder_Timeline: Schema.Attribute.String;
     Price_Section: Schema.Attribute.Component<
       'user-product.prize-section',
       true
@@ -975,6 +1024,37 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       'images' | 'files' | 'videos' | 'audios'
     > &
       Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiRasaPageRasaPage extends Struct.SingleTypeSchema {
+  collectionName: 'rasa_pages';
+  info: {
+    description: '';
+    displayName: 'Rasa_Page';
+    pluralName: 'rasa-pages';
+    singularName: 'rasa-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Blogs: Schema.Attribute.Component<'blogs.blog-section', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Description: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::rasa-page.rasa-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1049,7 +1129,8 @@ export interface ApiReviewReview extends Struct.CollectionTypeSchema {
 export interface ApiShippingListShippingList extends Struct.SingleTypeSchema {
   collectionName: 'shipping_lists';
   info: {
-    displayName: 'Shipping_List';
+    description: '';
+    displayName: 'Shipping Policy';
     pluralName: 'shipping-lists';
     singularName: 'shipping-list';
   };
@@ -1064,6 +1145,37 @@ export interface ApiShippingListShippingList extends Struct.SingleTypeSchema {
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::shipping-list.shipping-list'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Section: Schema.Attribute.Component<'privacy-policy.section', true>;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTermsAndConditionTermsAndCondition
+  extends Struct.SingleTypeSchema {
+  collectionName: 'terms_and_conditions';
+  info: {
+    description: '';
+    displayName: 'Terms_&_Condition';
+    pluralName: 'terms-and-conditions';
+    singularName: 'terms-and-condition';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::terms-and-condition.terms-and-condition'
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
@@ -1625,20 +1737,23 @@ declare module '@strapi/strapi' {
       'api::banarasi-weave-design-pattern.banarasi-weave-design-pattern': ApiBanarasiWeaveDesignPatternBanarasiWeaveDesignPattern;
       'api::banarasi-weave-technique.banarasi-weave-technique': ApiBanarasiWeaveTechniqueBanarasiWeaveTechnique;
       'api::banarasi-weave.banarasi-weave': ApiBanarasiWeaveBanarasiWeave;
-      'api::blog-page.blog-page': ApiBlogPageBlogPage;
       'api::cart.cart': ApiCartCart;
       'api::category.category': ApiCategoryCategory;
       'api::collection.collection': ApiCollectionCollection;
       'api::contact-page.contact-page': ApiContactPageContactPage;
+      'api::faq-page.faq-page': ApiFaqPageFaqPage;
       'api::history-and-lineage.history-and-lineage': ApiHistoryAndLineageHistoryAndLineage;
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::management-page.management-page': ApiManagementPageManagementPage;
       'api::order.order': ApiOrderOrder;
+      'api::press-and-media.press-and-media': ApiPressAndMediaPressAndMedia;
       'api::privacy-policy-page.privacy-policy-page': ApiPrivacyPolicyPagePrivacyPolicyPage;
       'api::product.product': ApiProductProduct;
+      'api::rasa-page.rasa-page': ApiRasaPageRasaPage;
       'api::refund-policy-page.refund-policy-page': ApiRefundPolicyPageRefundPolicyPage;
       'api::review.review': ApiReviewReview;
       'api::shipping-list.shipping-list': ApiShippingListShippingList;
+      'api::terms-and-condition.terms-and-condition': ApiTermsAndConditionTermsAndCondition;
       'api::wishlist.wishlist': ApiWishlistWishlist;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

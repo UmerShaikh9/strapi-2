@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_home_page_instagram_sections",
+  "info": {
+    "displayName": "Instagram_Section"
+  },
+  "options": {},
+  "attributes": {
+    "Instagram_Cards": {
+      "displayName": "Instagram_Cards",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.instagram-cards"
+    }
+  }
+}

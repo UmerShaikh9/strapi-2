@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_sub_links",
+  "info": {
+    "displayName": "SubLinks",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Href": {
+      "type": "string"
+    },
+    "isExternal": {
+      "type": "boolean"
+    }
+  }
+}

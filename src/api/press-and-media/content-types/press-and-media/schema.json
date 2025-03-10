@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "shipping_lists",
+  "collectionName": "press_and_medias",
   "info": {
-    "singularName": "shipping-list",
-    "pluralName": "shipping-lists",
-    "displayName": "Shipping Policy",
+    "singularName": "press-and-media",
+    "pluralName": "press-and-medias",
+    "displayName": "Press_&_Media",
     "description": ""
   },
   "options": {
@@ -15,10 +15,13 @@
     "Title": {
       "type": "string"
     },
-    "Section": {
+    "Description": {
+      "type": "text"
+    },
+    "Blogs": {
       "type": "component",
       "repeatable": true,
-      "component": "privacy-policy.section"
+      "component": "blogs.blog-section"
     }
   }
 }

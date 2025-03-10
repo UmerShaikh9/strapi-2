@@ -61,5 +61,23 @@ export default {
                 middlewares: [],
             },
         },
+        {
+            method: "POST",
+            path: "/rasa-page/blogs",
+            handler: "cart.allBlogs",
+            config: {
+                policies: [],
+                middlewares: [],
+            },
+        },
+        {
+            method: "POST",
+            path: "/press-and-media/blogs",
+            handler: "cart.pressAndMediaBlogs",
+            config: {
+                policies: [],
+                middlewares: [],
+            },
+        },
     ],
 };

@@ -17,6 +17,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
         try {
             // Get the authenticated user ID
             const id = ctx.state.user?.id;
+            console.log("user id", id);
 
             if (!id) {
                 return ctx.unauthorized("You must be logged in to view the orders.");
@@ -31,6 +32,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 populate: {
                     Products: { populate: { Product: { populate: { Thumbnail: true } } } },
                     User: true,
+                    Payment_Details: true,
                 },
                 status: "published",
             });
@@ -67,6 +69,8 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 status: "published",
             });
 
+            console.log("all  carts products are fetched", carts?.length);
+
             let cartsData = carts?.map((cart) => ({
                 ...cart,
                 Product: {
@@ -75,9 +79,12 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 },
             }));
 
+            console.log("processing carts data", carts?.length);
+
             // handling all price hand image things
             await processCartItems(cartsData, id);
 
+            console.log("fetching updated carts data", carts?.length);
             let updatedCarts = await strapi.documents("api::cart.cart").findMany({
                 filters: { User: { id: id } },
                 populate: {
@@ -92,8 +99,11 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
 
             for (let cart of updatedCarts) {
                 totalPriceINR += cart.Total_Price;
+                // @ts-ignore
+                cart.Product.Product = cart.Product?.Product?.documentId;
                 products.push(cart.Product);
             }
+            console.log("calculated total price", totalPriceINR);
 
             // Convert using static exchange rates
             const exchangeRate = exchangeRates[currency] || 1; // Default to 1 if currency not found
@@ -121,13 +131,39 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 }
             );
 
+            console.log("created order on paypal ");
+
+            const orderData = {
+                Products: products,
+                User: id,
+                Total_Price: Number(convertedAmount),
+                Payment_Details: {
+                    Amount: Number(convertedAmount),
+                    Payment_Status: "INITIATED",
+                    Order_Uid: response?.data?.id,
+                },
+                Order_Status: "PENDING",
+                Currency: currency,
+                Full_Name,
+                Address,
+                City,
+                Country,
+                State,
+                Pincode,
+                Email,
+                Phone,
+            };
+
+            console.log("order details ", orderData);
+            console.log("products ", products);
+
             const orderDetails = await strapi.documents("api::order.order").create({
                 data: {
                     Products: products,
                     User: id,
-                    Total_Price: convertedAmount,
+                    Total_Price: Number(convertedAmount),
                     Payment_Details: {
-                        Amount: convertedAmount,
+                        Amount: Number(convertedAmount),
                         Payment_Status: "INITIATED",
                         Order_Uid: response?.data?.id,
                     },
@@ -145,6 +181,8 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 status: "published",
             });
 
+            console.log("created order entry in strapi ");
+
             return ctx.send({
                 success: true,
                 message: "Order created successfully",
@@ -153,6 +191,11 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             });
         } catch (error) {
             console.error("Error creating order:", error);
+
+            if (error.details?.errors) {
+                console.error("Validation Errors:", error.details.errors);
+            }
+
             ctx.throw(500, error.response?.data || "Error creating order");
         }
     },
