@@ -20,6 +20,26 @@
       "type": "component",
       "repeatable": true,
       "component": "elements.link"
+    },
+    "Fabric_Types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fabric-type.fabric-type"
+    },
+    "Curation_And_Revivals": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::curation-and-revival.curation-and-revival"
+    },
+    "Motif_And_Designs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::motif-and-design.motif-and-design"
+    },
+    "Weaving_Techniques": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::weaving-technique.weaving-technique"
     }
   }
 }

@@ -564,7 +564,23 @@ export interface LayoutTopNav extends Struct.ComponentSchema {
       'oneToMany',
       'api::collection.collection'
     >;
+    Curation_And_Revivals: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::curation-and-revival.curation-and-revival'
+    >;
+    Fabric_Types: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::fabric-type.fabric-type'
+    >;
     Link: Schema.Attribute.Component<'elements.link', true>;
+    Motif_And_Designs: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::motif-and-design.motif-and-design'
+    >;
+    Weaving_Techniques: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::weaving-technique.weaving-technique'
+    >;
   };
 }
 

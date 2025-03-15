@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weaving_techniques",
+  "info": {
+    "singularName": "weaving-technique",
+    "pluralName": "weaving-techniques",
+    "displayName": "Weaving_Technique"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "weaving_techniques"
+    }
+  }
+}

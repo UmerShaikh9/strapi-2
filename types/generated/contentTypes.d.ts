@@ -628,6 +628,65 @@ export interface ApiContactPageContactPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiCurationAndRevivalCurationAndRevival
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'curation_and_revivals';
+  info: {
+    displayName: 'Curation_And_Revival';
+    pluralName: 'curation-and-revivals';
+    singularName: 'curation-and-revival';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::curation-and-revival.curation-and-revival'
+    > &
+      Schema.Attribute.Private;
+    Products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
+    publishedAt: Schema.Attribute.DateTime;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFabricTypeFabricType extends Struct.CollectionTypeSchema {
+  collectionName: 'fabric_types';
+  info: {
+    displayName: 'Fabric_Type';
+    pluralName: 'fabric-types';
+    singularName: 'fabric-type';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::fabric-type.fabric-type'
+    > &
+      Schema.Attribute.Private;
+    Name: Schema.Attribute.String;
+    Products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiFaqPageFaqPage extends Struct.SingleTypeSchema {
   collectionName: 'faq_pages';
   info: {
@@ -781,6 +840,36 @@ export interface ApiManagementPageManagementPage
     >;
     publishedAt: Schema.Attribute.DateTime;
     Team_Details: Schema.Attribute.Component<'management.section-1', false>;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiMotifAndDesignMotifAndDesign
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'motif_and_designs';
+  info: {
+    displayName: 'Motif_And_Design';
+    pluralName: 'motif-and-designs';
+    singularName: 'motif-and-design';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::motif-and-design.motif-and-design'
+    > &
+      Schema.Attribute.Private;
+    Product: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
+    publishedAt: Schema.Attribute.DateTime;
     Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -964,6 +1053,10 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    curation_and_revivals: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::curation-and-revival.curation-and-revival'
+    >;
     Description: Schema.Attribute.Text;
     Fabric: Schema.Attribute.JSON &
       Schema.Attribute.CustomField<
@@ -985,12 +1078,20 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
         ]
       > &
       Schema.Attribute.DefaultTo<'[]'>;
+    fabric_types: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::fabric-type.fabric-type'
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::product.product'
     > &
       Schema.Attribute.Private;
+    motif_and_designs: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::motif-and-design.motif-and-design'
+    >;
     Name: Schema.Attribute.String & Schema.Attribute.Required;
     Picture: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
@@ -1027,6 +1128,10 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    weaving_techniques: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::weaving-technique.weaving-technique'
+    >;
   };
 }
 
@@ -1180,6 +1285,36 @@ export interface ApiTermsAndConditionTermsAndCondition
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     Section: Schema.Attribute.Component<'privacy-policy.section', true>;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiWeavingTechniqueWeavingTechnique
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'weaving_techniques';
+  info: {
+    displayName: 'Weaving_Technique';
+    pluralName: 'weaving-techniques';
+    singularName: 'weaving-technique';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::weaving-technique.weaving-technique'
+    > &
+      Schema.Attribute.Private;
+    Products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
+    publishedAt: Schema.Attribute.DateTime;
     Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1741,10 +1876,13 @@ declare module '@strapi/strapi' {
       'api::category.category': ApiCategoryCategory;
       'api::collection.collection': ApiCollectionCollection;
       'api::contact-page.contact-page': ApiContactPageContactPage;
+      'api::curation-and-revival.curation-and-revival': ApiCurationAndRevivalCurationAndRevival;
+      'api::fabric-type.fabric-type': ApiFabricTypeFabricType;
       'api::faq-page.faq-page': ApiFaqPageFaqPage;
       'api::history-and-lineage.history-and-lineage': ApiHistoryAndLineageHistoryAndLineage;
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::management-page.management-page': ApiManagementPageManagementPage;
+      'api::motif-and-design.motif-and-design': ApiMotifAndDesignMotifAndDesign;
       'api::order.order': ApiOrderOrder;
       'api::press-and-media.press-and-media': ApiPressAndMediaPressAndMedia;
       'api::privacy-policy-page.privacy-policy-page': ApiPrivacyPolicyPagePrivacyPolicyPage;
@@ -1754,6 +1892,7 @@ declare module '@strapi/strapi' {
       'api::review.review': ApiReviewReview;
       'api::shipping-list.shipping-list': ApiShippingListShippingList;
       'api::terms-and-condition.terms-and-condition': ApiTermsAndConditionTermsAndCondition;
+      'api::weaving-technique.weaving-technique': ApiWeavingTechniqueWeavingTechnique;
       'api::wishlist.wishlist': ApiWishlistWishlist;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
