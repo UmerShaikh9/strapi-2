@@ -4,7 +4,8 @@
   "info": {
     "singularName": "fabric-type",
     "pluralName": "fabric-types",
-    "displayName": "Fabric_Type"
+    "displayName": "Fabric_Type",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,11 +15,21 @@
     "Name": {
       "type": "string"
     },
+    "Media": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Description": {
+      "type": "string"
+    },
     "Products": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::product.product",
-      "inversedBy": "fabric_types"
+      "mappedBy": "Fabric_Types"
     }
   }
 }

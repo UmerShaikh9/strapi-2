@@ -628,10 +628,42 @@ export interface ApiContactPageContactPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiCouponCoupon extends Struct.CollectionTypeSchema {
+  collectionName: 'coupons';
+  info: {
+    displayName: 'Coupon';
+    pluralName: 'coupons';
+    singularName: 'coupon';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Active: Schema.Attribute.Boolean;
+    Coupon_Code: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::coupon.coupon'
+    > &
+      Schema.Attribute.Private;
+    Orders: Schema.Attribute.Relation<'oneToMany', 'api::order.order'>;
+    Price: Schema.Attribute.Decimal;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCurationAndRevivalCurationAndRevival
   extends Struct.CollectionTypeSchema {
   collectionName: 'curation_and_revivals';
   info: {
+    description: '';
     displayName: 'Curation_And_Revival';
     pluralName: 'curation-and-revivals';
     singularName: 'curation-and-revival';
@@ -643,15 +675,17 @@ export interface ApiCurationAndRevivalCurationAndRevival
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Description: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::curation-and-revival.curation-and-revival'
     > &
       Schema.Attribute.Private;
+    Media: Schema.Attribute.Media<'images', true>;
+    Name: Schema.Attribute.String;
     Products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
-    Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -661,6 +695,7 @@ export interface ApiCurationAndRevivalCurationAndRevival
 export interface ApiFabricTypeFabricType extends Struct.CollectionTypeSchema {
   collectionName: 'fabric_types';
   info: {
+    description: '';
     displayName: 'Fabric_Type';
     pluralName: 'fabric-types';
     singularName: 'fabric-type';
@@ -672,12 +707,14 @@ export interface ApiFabricTypeFabricType extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Description: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::fabric-type.fabric-type'
     > &
       Schema.Attribute.Private;
+    Media: Schema.Attribute.Media<'images', true>;
     Name: Schema.Attribute.String;
     Products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
@@ -851,6 +888,7 @@ export interface ApiMotifAndDesignMotifAndDesign
   extends Struct.CollectionTypeSchema {
   collectionName: 'motif_and_designs';
   info: {
+    description: '';
     displayName: 'Motif_And_Design';
     pluralName: 'motif-and-designs';
     singularName: 'motif-and-design';
@@ -862,15 +900,17 @@ export interface ApiMotifAndDesignMotifAndDesign
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Description: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::motif-and-design.motif-and-design'
     > &
       Schema.Attribute.Private;
+    Media: Schema.Attribute.Media<'images', true>;
+    Name: Schema.Attribute.String;
     Product: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
-    Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -892,6 +932,7 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     Address: Schema.Attribute.String;
     City: Schema.Attribute.String;
     Country: Schema.Attribute.String;
+    Coupon: Schema.Attribute.Relation<'manyToOne', 'api::coupon.coupon'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -937,7 +978,7 @@ export interface ApiPressAndMediaPressAndMedia extends Struct.SingleTypeSchema {
   collectionName: 'press_and_medias';
   info: {
     description: '';
-    displayName: 'Press_&_Media';
+    displayName: 'Press_And_Media';
     pluralName: 'press-and-medias';
     singularName: 'press-and-media';
   };
@@ -949,7 +990,7 @@ export interface ApiPressAndMediaPressAndMedia extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Description: Schema.Attribute.Text;
+    Description: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1053,7 +1094,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    curation_and_revivals: Schema.Attribute.Relation<
+    Curation_And_Revivals: Schema.Attribute.Relation<
       'manyToMany',
       'api::curation-and-revival.curation-and-revival'
     >;
@@ -1078,7 +1119,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
         ]
       > &
       Schema.Attribute.DefaultTo<'[]'>;
-    fabric_types: Schema.Attribute.Relation<
+    Fabric_Types: Schema.Attribute.Relation<
       'manyToMany',
       'api::fabric-type.fabric-type'
     >;
@@ -1088,7 +1129,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       'api::product.product'
     > &
       Schema.Attribute.Private;
-    motif_and_designs: Schema.Attribute.Relation<
+    Motif_And_Designs: Schema.Attribute.Relation<
       'manyToMany',
       'api::motif-and-design.motif-and-design'
     >;
@@ -1128,7 +1169,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    weaving_techniques: Schema.Attribute.Relation<
+    Weaving_Techniques: Schema.Attribute.Relation<
       'manyToMany',
       'api::weaving-technique.weaving-technique'
     >;
@@ -1296,6 +1337,7 @@ export interface ApiWeavingTechniqueWeavingTechnique
   extends Struct.CollectionTypeSchema {
   collectionName: 'weaving_techniques';
   info: {
+    description: '';
     displayName: 'Weaving_Technique';
     pluralName: 'weaving-techniques';
     singularName: 'weaving-technique';
@@ -1307,15 +1349,17 @@ export interface ApiWeavingTechniqueWeavingTechnique
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Description: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::weaving-technique.weaving-technique'
     > &
       Schema.Attribute.Private;
+    Media: Schema.Attribute.Media<'images', true>;
+    Name: Schema.Attribute.String;
     Products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
-    Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1876,6 +1920,7 @@ declare module '@strapi/strapi' {
       'api::category.category': ApiCategoryCategory;
       'api::collection.collection': ApiCollectionCollection;
       'api::contact-page.contact-page': ApiContactPageContactPage;
+      'api::coupon.coupon': ApiCouponCoupon;
       'api::curation-and-revival.curation-and-revival': ApiCurationAndRevivalCurationAndRevival;
       'api::fabric-type.fabric-type': ApiFabricTypeFabricType;
       'api::faq-page.faq-page': ApiFaqPageFaqPage;

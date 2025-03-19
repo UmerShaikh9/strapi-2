@@ -4,7 +4,7 @@
   "info": {
     "singularName": "press-and-media",
     "pluralName": "press-and-medias",
-    "displayName": "Press_&_Media",
+    "displayName": "Press_And_Media",
     "description": ""
   },
   "options": {
@@ -16,7 +16,7 @@
       "type": "string"
     },
     "Description": {
-      "type": "text"
+      "type": "string"
     },
     "Blogs": {
       "type": "component",

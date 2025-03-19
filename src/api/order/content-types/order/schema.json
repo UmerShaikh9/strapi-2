@@ -69,6 +69,12 @@
     },
     "Pincode": {
       "type": "string"
+    },
+    "Coupon": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::coupon.coupon",
+      "inversedBy": "Orders"
     }
   }
 }

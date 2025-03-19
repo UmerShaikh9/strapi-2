@@ -225,6 +225,7 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
     async allBlogs(ctx) {
         try {
             const name = ctx?.request?.body?.name;
+            const type = ctx?.request?.body?.type;
             const blogs = await strapi.documents("api::rasa-page.rasa-page").findMany({
                 populate: {
                     Blogs: {
@@ -256,9 +257,14 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                         blog.Blogs = blog.Blogs.filter((b) => b.Title === name);
                     }
                 });
-            }
+            } else if (type) {
+                const filteredBlogs = blogs.map((blog) => ({
+                    ...blog,
+                    Blogs: blog.Blogs.filter((b) => !type || b.Type === type).map(({ Blog_Section, ...rest }) => rest),
+                }));
 
-            console.log("filtered ", blogs);
+                return ctx.send({ blogs: filteredBlogs });
+            }
 
             return ctx.send({ blogs: blogs });
         } catch (error) {
@@ -268,7 +274,8 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
     },
     async pressAndMediaBlogs(ctx) {
         try {
-            const { name } = ctx.request.body;
+            const name = ctx?.request?.body?.name;
+            const type = ctx?.request?.body?.type;
             const blogs = await strapi.documents("api::press-and-media.press-and-media").findMany({
                 populate: {
                     Blogs: {
@@ -300,6 +307,13 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                         blog.Blogs = blog.Blogs.filter((b) => b.Title === name);
                     }
                 });
+            } else if (type) {
+                const filteredBlogs = blogs.map((blog) => ({
+                    ...blog,
+                    Blogs: blog.Blogs.filter((b) => !type || b.Type === type).map(({ Blog_Section, ...rest }) => rest),
+                }));
+
+                return ctx.send({ blogs: filteredBlogs });
             }
 
             console.log("filtered ", blogs);

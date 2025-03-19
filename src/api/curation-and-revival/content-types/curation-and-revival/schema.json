@@ -4,21 +4,33 @@
   "info": {
     "singularName": "curation-and-revival",
     "pluralName": "curation-and-revivals",
-    "displayName": "Curation_And_Revival"
+    "displayName": "Curation_And_Revival",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "Name": {
       "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "Products": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::product.product",
-      "inversedBy": "curation_and_revivals"
+      "mappedBy": "Curation_And_Revivals"
     }
   }
 }

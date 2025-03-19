@@ -6,12 +6,6 @@ const PAYPAL_CLIENT_ID = process.env.PAYPAL_CLIENT_ID;
 const PAYPAL_SECRET = process.env.PAYPAL_SECRET_KEY;
 const PAYPAL_API = process.env.PAYPAL_API;
 
-const exchangeRates = {
-    USD: 0.012,
-    EUR: 0.011,
-    INR: 1,
-};
-
 export default factories.createCoreController("api::order.order", ({ strapi }) => ({
     async myOrder(ctx) {
         try {
@@ -47,14 +41,15 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
         try {
             // Get the authenticated user ID
             const id = ctx.state.user?.id;
-            console.log("create order called");
 
             if (!id) {
                 return ctx.unauthorized("You must be logged in to view the cart.");
             }
 
-            const { Full_Name, Address, City, Country, currency, Email, Phone, State, Pincode } = ctx.request.body;
-            console.log("Requested Currency:", currency);
+            const { Full_Name, Address, City, Country, currency, Email, Phone, State, Pincode, couponId } =
+                ctx.request.body;
+
+            console.log("coupon code", couponId);
 
             if (!currency) {
                 return ctx.badRequest("Currency is required.");
@@ -69,8 +64,6 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 status: "published",
             });
 
-            console.log("all  carts products are fetched", carts?.length);
-
             let cartsData = carts?.map((cart) => ({
                 ...cart,
                 Product: {
@@ -79,12 +72,9 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 },
             }));
 
-            console.log("processing carts data", carts?.length);
-
             // handling all price hand image things
             await processCartItems(cartsData, id);
 
-            console.log("fetching updated carts data", carts?.length);
             let updatedCarts = await strapi.documents("api::cart.cart").findMany({
                 filters: { User: { id: id } },
                 populate: {
@@ -103,15 +93,35 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 cart.Product.Product = cart.Product?.Product?.documentId;
                 products.push(cart.Product);
             }
-            console.log("calculated total price", totalPriceINR);
 
-            // Convert using static exchange rates
-            const exchangeRate = exchangeRates[currency] || 1; // Default to 1 if currency not found
-            const convertedAmount = (totalPriceINR * exchangeRate).toFixed(2);
-
+            const convertedAmount = convertCurrency({ totalPriceINR, currency });
             console.log(`Converted ${totalPriceINR} INR to ${convertedAmount} ${currency}`);
 
             // Create PayPal Order with converted amount
+
+            let TotalPrice = Number(convertedAmount);
+            let couponPayload = {};
+            if (couponId) {
+                console.log("coupon code present ", couponId);
+                const couponDetails = await strapi.documents("api::coupon.coupon").findOne({ documentId: couponId });
+                if (!couponDetails) {
+                    return ctx.badRequest("Invalid Coupon Code");
+                }
+
+                console.log("coupon details ", couponDetails);
+                const convertedAmount = convertCurrency({
+                    totalPriceINR: totalPriceINR - couponDetails?.Price,
+                    currency,
+                });
+                TotalPrice = Number(convertedAmount);
+                couponPayload = {
+                    Coupon: couponId,
+                };
+
+                console.log("coupon code payload ", couponPayload);
+                console.log("total price ", TotalPrice);
+            }
+
             const response = await axios.post(
                 `${PAYPAL_API}/v2/checkout/orders`,
                 {
@@ -120,7 +130,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                         {
                             amount: {
                                 currency_code: currency,
-                                value: convertedAmount,
+                                value: TotalPrice,
                             },
                         },
                     ],
@@ -131,39 +141,13 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 }
             );
 
-            console.log("created order on paypal ");
-
-            const orderData = {
-                Products: products,
-                User: id,
-                Total_Price: Number(convertedAmount),
-                Payment_Details: {
-                    Amount: Number(convertedAmount),
-                    Payment_Status: "INITIATED",
-                    Order_Uid: response?.data?.id,
-                },
-                Order_Status: "PENDING",
-                Currency: currency,
-                Full_Name,
-                Address,
-                City,
-                Country,
-                State,
-                Pincode,
-                Email,
-                Phone,
-            };
-
-            console.log("order details ", orderData);
-            console.log("products ", products);
-
             const orderDetails = await strapi.documents("api::order.order").create({
                 data: {
                     Products: products,
                     User: id,
-                    Total_Price: Number(convertedAmount),
+                    Total_Price: TotalPrice,
                     Payment_Details: {
-                        Amount: Number(convertedAmount),
+                        Amount: TotalPrice,
                         Payment_Status: "INITIATED",
                         Order_Uid: response?.data?.id,
                     },
@@ -177,11 +161,10 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                     Pincode,
                     Email,
                     Phone,
+                    ...couponPayload,
                 },
                 status: "published",
             });
-
-            console.log("created order entry in strapi ");
 
             return ctx.send({
                 success: true,
@@ -232,8 +215,6 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 return ctx.notFound("Payment record not found");
             }
 
-            console.log("order ", orders);
-
             // Capture PayPal Payment
             const response = await axios.post(
                 `${PAYPAL_API}/v2/checkout/orders/${orderID}/capture`,
@@ -245,7 +226,6 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             );
 
             const order = orders[0];
-            console.log("response", response);
 
             await strapi.documents("api::order.order").update({
                 documentId: order.documentId,
@@ -259,8 +239,6 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 },
                 status: "published",
             });
-
-            console.log("orders", order.Products);
 
             if (response?.data?.status === "COMPLETED") {
                 for (let product of order.Products) {
@@ -291,4 +269,39 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             ctx.throw(500, error.response?.data || "Error capturing payment");
         }
     },
+
+    async validateCoupon(ctx) {
+        try {
+            // Get the authenticated user ID
+            const id = ctx.state.user?.id;
+            const couponCode = ctx.request.body?.couponCode;
+
+            if (!id) {
+                return ctx.unauthorized("You must be logged in to view the orders.");
+            }
+            if (!couponCode) {
+                return ctx.unauthorized("Coupon Code must be provided");
+            }
+
+            const couponDetails = await strapi
+                .documents("api::coupon.coupon")
+                .findMany({ filters: { Coupon_Code: couponCode, Active: true }, status: "published" });
+
+            return ctx.send({ couponDetails: couponDetails });
+        } catch (error) {
+            console.error("Error fetching user cart:", error);
+            return ctx.internalServerError("An error occurred while fetching the cart. ");
+        }
+    },
 }));
+
+const exchangeRates = {
+    USD: 0.012,
+    EUR: 0.011,
+    INR: 1,
+};
+
+function convertCurrency({ totalPriceINR, currency }) {
+    const exchangeRate = exchangeRates[currency] || 1; // Default to 1 if currency not found
+    return (totalPriceINR * exchangeRate).toFixed(2);
+}

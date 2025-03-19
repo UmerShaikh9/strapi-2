@@ -4,21 +4,33 @@
   "info": {
     "singularName": "motif-and-design",
     "pluralName": "motif-and-designs",
-    "displayName": "Motif_And_Design"
+    "displayName": "Motif_And_Design",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "Name": {
       "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "Product": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::product.product",
-      "inversedBy": "motif_and_designs"
+      "mappedBy": "Motif_And_Designs"
     }
   }
 }

@@ -60,6 +60,7 @@ export interface BlogsBlogSection extends Struct.ComponentSchema {
     Description: Schema.Attribute.Text;
     Thumbnail: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     Title: Schema.Attribute.String;
+    Type: Schema.Attribute.String;
   };
 }
 

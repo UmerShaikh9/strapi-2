@@ -28,5 +28,11 @@ export default {
             handler: "order.captureOrder",
             config: { policies: [] },
         },
+        {
+            method: "POST",
+            path: "/coupon/validate",
+            handler: "order.validateCoupon",
+            config: { policies: [] },
+        },
     ],
 };

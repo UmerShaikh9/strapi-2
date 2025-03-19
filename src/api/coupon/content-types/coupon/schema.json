@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coupons",
+  "info": {
+    "singularName": "coupon",
+    "pluralName": "coupons",
+    "displayName": "Coupon"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Coupon_Code": {
+      "type": "string"
+    },
+    "Active": {
+      "type": "boolean"
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "Orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "Coupon"
+    }
+  }
+}

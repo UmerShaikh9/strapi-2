@@ -4,21 +4,33 @@
   "info": {
     "singularName": "weaving-technique",
     "pluralName": "weaving-techniques",
-    "displayName": "Weaving_Technique"
+    "displayName": "Weaving_Technique",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "Name": {
       "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "Products": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::product.product",
-      "inversedBy": "weaving_techniques"
+      "mappedBy": "Weaving_Techniques"
     }
   }
 }

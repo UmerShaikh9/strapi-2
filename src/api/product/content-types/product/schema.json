@@ -161,29 +161,29 @@
     "Preorder_Timeline": {
       "type": "string"
     },
-    "fabric_types": {
+    "Fabric_Types": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::fabric-type.fabric-type",
-      "mappedBy": "Products"
+      "inversedBy": "Products"
     },
-    "weaving_techniques": {
+    "Weaving_Techniques": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::weaving-technique.weaving-technique",
-      "mappedBy": "Products"
+      "inversedBy": "Products"
     },
-    "motif_and_designs": {
+    "Motif_And_Designs": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::motif-and-design.motif-and-design",
-      "mappedBy": "Product"
+      "inversedBy": "Product"
     },
-    "curation_and_revivals": {
+    "Curation_And_Revivals": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::curation-and-revival.curation-and-revival",
-      "mappedBy": "Products"
+      "inversedBy": "Products"
     }
   }
 }
