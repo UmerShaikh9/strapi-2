@@ -184,6 +184,10 @@
       "relation": "manyToMany",
       "target": "api::curation-and-revival.curation-and-revival",
       "inversedBy": "Products"
+    },
+    "Product_Guide_Available": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

@@ -1150,6 +1150,8 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       true
     >;
     Product_Guide: Schema.Attribute.Media<'images'>;
+    Product_Guide_Available: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
     publishedAt: Schema.Attribute.DateTime;
     Quantity: Schema.Attribute.Integer &
       Schema.Attribute.Required &

@@ -260,7 +260,24 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             } else if (type) {
                 const filteredBlogs = blogs.map((blog) => ({
                     ...blog,
-                    Blogs: blog.Blogs.filter((b) => !type || b.Type === type).map(({ Blog_Section, ...rest }) => rest),
+                    Blogs: blog.Blogs.filter((b) => {
+                        // If no type is specified, include all blogs
+                        if (!type) return true;
+
+                        console.log("type ", type, "type of ", typeof type);
+
+                        // Check if b.Type exists, if not, we can't match it with the filter
+                        if (!b.Type) return false;
+
+                        // Normalize both strings by trimming and converting to lowercase
+                        const normalizedType = type.trim().toLowerCase();
+                        console.log("type is correct", type);
+                        const normalizedBlogType = b?.Type?.trim()?.toLowerCase();
+                        console.log("b type is correct", b.Type);
+
+                        // Check if they match exactly or if the blog type contains the search type
+                        return normalizedBlogType === normalizedType;
+                    }).map(({ Blog_Section, ...rest }) => rest),
                 }));
 
                 return ctx.send({ blogs: filteredBlogs });
@@ -310,7 +327,24 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             } else if (type) {
                 const filteredBlogs = blogs.map((blog) => ({
                     ...blog,
-                    Blogs: blog.Blogs.filter((b) => !type || b.Type === type).map(({ Blog_Section, ...rest }) => rest),
+                    Blogs: blog.Blogs.filter((b) => {
+                        // If no type is specified, include all blogs
+                        if (!type) return true;
+
+                        console.log("type ", type, "type of ", typeof type);
+
+                        // Check if b.Type exists, if not, we can't match it with the filter
+                        if (!b.Type) return false;
+
+                        // Normalize both strings by trimming and converting to lowercase
+                        const normalizedType = type.trim().toLowerCase();
+                        console.log("type is correct", type);
+                        const normalizedBlogType = b?.Type?.trim()?.toLowerCase();
+                        console.log("b type is correct", b.Type);
+
+                        // Check if they match exactly or if the blog type contains the search type
+                        return normalizedBlogType === normalizedType;
+                    }).map(({ Blog_Section, ...rest }) => rest),
                 }));
 
                 return ctx.send({ blogs: filteredBlogs });
