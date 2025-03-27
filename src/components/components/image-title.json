@@ -1,16 +1,19 @@
 {
   "collectionName": "components_components_image_titles",
   "info": {
-    "displayName": "Image_Title"
+    "displayName": "Image_Title",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Media": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
     },
     "Title": {
       "type": "text"

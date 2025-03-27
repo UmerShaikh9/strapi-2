@@ -18,6 +18,9 @@
       "type": "component",
       "repeatable": false,
       "component": "components.description-list"
+    },
+    "Testing": {
+      "type": "blocks"
     }
   }
 }

@@ -42,6 +42,7 @@ export interface BanarasiWeavesFabricOverview extends Struct.ComponentSchema {
       false
     >;
     Images: Schema.Attribute.Component<'components.image-title', true>;
+    Testing: Schema.Attribute.Blocks;
     Title: Schema.Attribute.String;
   };
 }
@@ -125,10 +126,11 @@ export interface ComponentsImageBox extends Struct.ComponentSchema {
 export interface ComponentsImageTitle extends Struct.ComponentSchema {
   collectionName: 'components_components_image_titles';
   info: {
+    description: '';
     displayName: 'Image_Title';
   };
   attributes: {
-    Media: Schema.Attribute.Media<'images'>;
+    Media: Schema.Attribute.Media<'images' | 'videos'>;
     Title: Schema.Attribute.Text;
   };
 }

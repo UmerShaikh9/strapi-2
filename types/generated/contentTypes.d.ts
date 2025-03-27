@@ -1088,6 +1088,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
           'RUST',
           'PEACH',
           'TUSCAN',
+          'MULTIPLE',
         ]
       > &
       Schema.Attribute.DefaultTo<'[]'>;

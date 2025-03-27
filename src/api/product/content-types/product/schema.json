@@ -87,7 +87,8 @@
         "BEIGE",
         "RUST",
         "PEACH",
-        "TUSCAN"
+        "TUSCAN",
+        "MULTIPLE"
       ],
       "required": true,
       "customField": "plugin::multi-select.multi-select"
