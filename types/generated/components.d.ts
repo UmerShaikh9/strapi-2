@@ -173,10 +173,6 @@ export interface ComponentsTitleDescription extends Struct.ComponentSchema {
   };
   attributes: {
     Description: Schema.Attribute.Blocks;
-    Descriptions: Schema.Attribute.Component<
-      'components.description-list',
-      false
-    >;
     Title: Schema.Attribute.String;
   };
 }
@@ -368,10 +364,6 @@ export interface HistoryLineageAboutCard extends Struct.ComponentSchema {
   };
   attributes: {
     Description: Schema.Attribute.Blocks;
-    Descriptions: Schema.Attribute.Component<
-      'components.description-list',
-      false
-    >;
     Image_Box: Schema.Attribute.Component<'components.image-box', false>;
     Title: Schema.Attribute.String;
   };

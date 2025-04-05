@@ -1099,7 +1099,6 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       'manyToMany',
       'api::curation-and-revival.curation-and-revival'
     >;
-    Description: Schema.Attribute.Text;
     Descriptions: Schema.Attribute.Blocks;
     Fabric: Schema.Attribute.JSON &
       Schema.Attribute.CustomField<

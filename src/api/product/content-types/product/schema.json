@@ -1,174 +1,194 @@
 {
-    "kind": "collectionType",
-    "collectionName": "products",
-    "info": {
-        "singularName": "product",
-        "pluralName": "products",
-        "displayName": "Product",
-        "description": ""
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
     },
-    "options": {
-        "draftAndPublish": true
+    "Thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     },
-    "pluginOptions": {},
-    "attributes": {
-        "Name": {
-            "type": "string",
-            "required": true
-        },
-        "Thumbnail": {
-            "type": "media",
-            "multiple": false,
-            "required": true,
-            "allowedTypes": ["images", "files", "videos", "audios"]
-        },
-        "Picture": {
-            "type": "media",
-            "multiple": true,
-            "required": false,
-            "allowedTypes": ["images", "files", "videos", "audios"]
-        },
-        "Summary": {
-            "type": "text",
-            "required": false
-        },
-        "Description": {
-            "type": "text"
-        },
-        "Descriptions": {
-            "type": "blocks"
-        },
-        "Size": {
-            "type": "customField",
-            "default": "[]",
-            "options": ["S", "M", "L", "XL", "FREE SIZE"],
-            "required": true,
-            "customField": "plugin::multi-select.multi-select"
-        },
-        "Quantity": {
-            "type": "integer",
-            "required": true,
-            "default": 0
-        },
-        "Color": {
-            "type": "customField",
-            "default": "[]",
-            "options": [
-                "WHITE",
-                "BLACK",
-                "RED",
-                "GREEN",
-                "BLUE",
-                "ORANGE",
-                "BROWN",
-                "PURPLE",
-                "YELLOW",
-                "MAROON",
-                "PINK",
-                "GOLD",
-                "TEAL",
-                "SILVER",
-                "GREY",
-                "MIDNIGHT",
-                "WINE",
-                "BEIGE",
-                "RUST",
-                "PEACH",
-                "TUSCAN",
-                "MULTIPLE"
-            ],
-            "required": true,
-            "customField": "plugin::multi-select.multi-select"
-        },
-        "Fabric": {
-            "type": "customField",
-            "default": "[]",
-            "options": [
-                "Muslin/Malmal (Sooti",
-                "Malmal Katan",
-                "Katan Silk",
-                "Kora Silk",
-                "Tissue Silk",
-                "Satin Silk",
-                "Chiniya Silk",
-                "Dupion Silk",
-                "Chiffon",
-                "Georgette",
-                "Muga Silk",
-                "Tussar Silk",
-                "Tussar Georgette"
-            ],
-            "customField": "plugin::multi-select.multi-select"
-        },
-        "Price_Section": {
-            "type": "component",
-            "repeatable": true,
-            "component": "user-product.prize-section"
-        },
-        "Badges": {
-            "type": "customField",
-            "default": "[]",
-            "options": ["New Arrival", "Ready To Ship", "Popular", "Sold Out"],
-            "customField": "plugin::multi-select.multi-select"
-        },
-        "Product_Details": {
-            "type": "component",
-            "repeatable": true,
-            "component": "product.product-details"
-        },
-        "Collections": {
-            "type": "relation",
-            "relation": "manyToMany",
-            "target": "api::collection.collection",
-            "mappedBy": "Products"
-        },
-        "Categories": {
-            "type": "relation",
-            "relation": "manyToMany",
-            "target": "api::category.category",
-            "inversedBy": "Products"
-        },
-        "Product_Guide": {
-            "type": "media",
-            "multiple": false,
-            "required": false,
-            "allowedTypes": ["images"]
-        },
-        "Preorder_Available": {
-            "type": "boolean",
-            "default": false,
-            "required": false
-        },
-        "Preorder_Timeline": {
-            "type": "string"
-        },
-        "Fabric_Types": {
-            "type": "relation",
-            "relation": "manyToMany",
-            "target": "api::fabric-type.fabric-type",
-            "inversedBy": "Products"
-        },
-        "Weaving_Techniques": {
-            "type": "relation",
-            "relation": "manyToMany",
-            "target": "api::weaving-technique.weaving-technique",
-            "inversedBy": "Products"
-        },
-        "Motif_And_Designs": {
-            "type": "relation",
-            "relation": "manyToMany",
-            "target": "api::motif-and-design.motif-and-design",
-            "inversedBy": "Product"
-        },
-        "Curation_And_Revivals": {
-            "type": "relation",
-            "relation": "manyToMany",
-            "target": "api::curation-and-revival.curation-and-revival",
-            "inversedBy": "Products"
-        },
-        "Product_Guide_Available": {
-            "type": "boolean",
-            "default": false
-        }
+    "Picture": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Summary": {
+      "type": "text",
+      "required": false
+    },
+    "Descriptions": {
+      "type": "blocks"
+    },
+    "Size": {
+      "type": "customField",
+      "default": "[]",
+      "options": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "FREE SIZE"
+      ],
+      "required": true,
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Quantity": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "Color": {
+      "type": "customField",
+      "default": "[]",
+      "options": [
+        "WHITE",
+        "BLACK",
+        "RED",
+        "GREEN",
+        "BLUE",
+        "ORANGE",
+        "BROWN",
+        "PURPLE",
+        "YELLOW",
+        "MAROON",
+        "PINK",
+        "GOLD",
+        "TEAL",
+        "SILVER",
+        "GREY",
+        "MIDNIGHT",
+        "WINE",
+        "BEIGE",
+        "RUST",
+        "PEACH",
+        "TUSCAN",
+        "MULTIPLE"
+      ],
+      "required": true,
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Fabric": {
+      "type": "customField",
+      "default": "[]",
+      "options": [
+        "Muslin/Malmal (Sooti",
+        "Malmal Katan",
+        "Katan Silk",
+        "Kora Silk",
+        "Tissue Silk",
+        "Satin Silk",
+        "Chiniya Silk",
+        "Dupion Silk",
+        "Chiffon",
+        "Georgette",
+        "Muga Silk",
+        "Tussar Silk",
+        "Tussar Georgette"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Price_Section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "user-product.prize-section"
+    },
+    "Badges": {
+      "type": "customField",
+      "default": "[]",
+      "options": [
+        "New Arrival",
+        "Ready To Ship",
+        "Popular",
+        "Sold Out"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Product_Details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.product-details"
+    },
+    "Collections": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::collection.collection",
+      "mappedBy": "Products"
+    },
+    "Categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "Products"
+    },
+    "Product_Guide": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Preorder_Available": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "Preorder_Timeline": {
+      "type": "string"
+    },
+    "Fabric_Types": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::fabric-type.fabric-type",
+      "inversedBy": "Products"
+    },
+    "Weaving_Techniques": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::weaving-technique.weaving-technique",
+      "inversedBy": "Products"
+    },
+    "Motif_And_Designs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::motif-and-design.motif-and-design",
+      "inversedBy": "Product"
+    },
+    "Curation_And_Revivals": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::curation-and-revival.curation-and-revival",
+      "inversedBy": "Products"
+    },
+    "Product_Guide_Available": {
+      "type": "boolean",
+      "default": false
     }
+  }
 }
