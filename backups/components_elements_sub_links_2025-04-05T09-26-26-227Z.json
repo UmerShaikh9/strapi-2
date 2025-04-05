@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "title": "History & Lineage",
+    "href": "/history",
+    "is_external": null
+  },
+  {
+    "id": 2,
+    "title": "Management",
+    "href": "/management",
+    "is_external": null
+  },
+  {
+    "id": 5,
+    "title": "Banarasi Fabrics",
+    "href": "/weaves",
+    "is_external": 0
+  },
+  {
+    "id": 6,
+    "title": "Weaving Techniques",
+    "href": "/weaving-techniques",
+    "is_external": 0
+  },
+  {
+    "id": 7,
+    "title": "Design & Patterns",
+    "href": "/design",
+    "is_external": 0
+  },
+  {
+    "id": 18,
+    "title": "India",
+    "href": "/rasa?Type=India",
+    "is_external": null
+  },
+  {
+    "id": 19,
+    "title": "Beyond India",
+    "href": "/rasa?Type=Beyond India",
+    "is_external": null
+  },
+  {
+    "id": 20,
+    "title": "In The Press",
+    "href": "/press-&-media?Type=In the press",
+    "is_external": null
+  },
+  {
+    "id": 21,
+    "title": "Celebrity Speaks",
+    "href": "/press-&-media?Type=Celebrity speak",
+    "is_external": null
+  },
+  {
+    "id": 22,
+    "title": "Art Afficianados On Banarasi Baithak",
+    "href": "/press-&-media?Type=Art Afficianados on Banarasi Baithak",
+    "is_external": null
+  },
+  {
+    "id": 23,
+    "title": "Collaborations",
+    "href": "/press-&-media?Type=Collaborations",
+    "is_external": null
+  },
+  {
+    "id": 24,
+    "title": "Events",
+    "href": "/press-&-media?Type=Events",
+    "is_external": null
+  },
+  {
+    "id": 25,
+    "title": "Photogallery",
+    "href": "/press-&-media?Type=Photogallery",
+    "is_external": null
+  },
+  {
+    "id": 975,
+    "title": null,
+    "href": null,
+    "is_external": null
+  },
+  {
+    "id": 1102,
+    "title": "History & Lineage",
+    "href": "/history",
+    "is_external": null
+  },
+  {
+    "id": 1103,
+    "title": "Management",
+    "href": "/management",
+    "is_external": null
+  },
+  {
+    "id": 1104,
+    "title": "Banarasi Fabrics",
+    "href": "/weaves",
+    "is_external": 0
+  },
+  {
+    "id": 1105,
+    "title": "Weaving Techniques",
+    "href": "/weaving-techniques",
+    "is_external": 0
+  },
+  {
+    "id": 1106,
+    "title": "Design & Patterns",
+    "href": "/design",
+    "is_external": 0
+  },
+  {
+    "id": 1107,
+    "title": null,
+    "href": null,
+    "is_external": null
+  },
+  {
+    "id": 1108,
+    "title": "India",
+    "href": "/rasa?Type=India",
+    "is_external": null
+  },
+  {
+    "id": 1109,
+    "title": "Beyond India",
+    "href": "/rasa?Type=Beyond India",
+    "is_external": null
+  },
+  {
+    "id": 1110,
+    "title": "In The Press",
+    "href": "/press-&-media?Type=In the press",
+    "is_external": null
+  },
+  {
+    "id": 1111,
+    "title": "Celebrity Speaks",
+    "href": "/press-&-media?Type=Celebrity speak",
+    "is_external": null
+  },
+  {
+    "id": 1112,
+    "title": "Art Afficianados On Banarasi Baithak",
+    "href": "/press-&-media?Type=Art Afficianados on Banarasi Baithak",
+    "is_external": null
+  },
+  {
+    "id": 1113,
+    "title": "Collaborations",
+    "href": "/press-&-media?Type=Collaborations",
+    "is_external": null
+  },
+  {
+    "id": 1114,
+    "title": "Events",
+    "href": "/press-&-media?Type=Events",
+    "is_external": null
+  },
+  {
+    "id": 1115,
+    "title": "Photogallery",
+    "href": "/press-&-media?Type=Photogallery",
+    "is_external": null
+  }
+]

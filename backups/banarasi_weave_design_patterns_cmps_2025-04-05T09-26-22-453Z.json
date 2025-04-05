@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "entity_id": 1,
+    "cmp_id": 1,
+    "component_type": "banarasi-weave-design-pattern.section-1",
+    "field": "Design_And_Patterns",
+    "order": null
+  },
+  {
+    "id": 14,
+    "entity_id": 1,
+    "cmp_id": 54,
+    "component_type": "layout.connect-us",
+    "field": "Connect_us",
+    "order": null
+  },
+  {
+    "id": 15,
+    "entity_id": 1,
+    "cmp_id": 26,
+    "component_type": "components.book-an-appointment",
+    "field": "Book_An_Appointment",
+    "order": null
+  },
+  {
+    "id": 140,
+    "entity_id": 29,
+    "cmp_id": 29,
+    "component_type": "banarasi-weave-design-pattern.section-1",
+    "field": "Design_And_Patterns",
+    "order": null
+  },
+  {
+    "id": 141,
+    "entity_id": 29,
+    "cmp_id": 394,
+    "component_type": "layout.connect-us",
+    "field": "Connect_us",
+    "order": null
+  },
+  {
+    "id": 142,
+    "entity_id": 29,
+    "cmp_id": 307,
+    "component_type": "components.book-an-appointment",
+    "field": "Book_An_Appointment",
+    "order": null
+  }
+]

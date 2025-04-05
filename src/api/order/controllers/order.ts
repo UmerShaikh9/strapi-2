@@ -1,6 +1,6 @@
 import { factories } from "@strapi/strapi";
 import axios from "axios";
-import { processCartItems } from "../../cart/controllers/cart";
+import { processCartItems } from "../../cart/controllers/helpers";
 
 const PAYPAL_CLIENT_ID = process.env.PAYPAL_CLIENT_ID;
 const PAYPAL_SECRET = process.env.PAYPAL_SECRET_KEY;
@@ -98,7 +98,6 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             console.log(`Converted ${totalPriceINR} INR to ${convertedAmount} ${currency}`);
 
             // Create PayPal Order with converted amount
-
             let TotalPrice = Number(convertedAmount);
             let couponPayload = {};
             if (couponId) {
@@ -140,6 +139,8 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                     headers: { "Content-Type": "application/json" },
                 }
             );
+
+            console.log("order response ", response);
 
             const orderDetails = await strapi.documents("api::order.order").create({
                 data: {

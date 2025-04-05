@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "entity_id": 1,
+    "cmp_id": 1,
+    "component_type": "faq.faq-questions",
+    "field": "Faq_Questions",
+    "order": 1
+  },
+  {
+    "id": 2,
+    "entity_id": 1,
+    "cmp_id": 2,
+    "component_type": "faq.faq-questions",
+    "field": "Faq_Questions",
+    "order": 2
+  },
+  {
+    "id": 3,
+    "entity_id": 2,
+    "cmp_id": 3,
+    "component_type": "faq.faq-questions",
+    "field": "Faq_Questions",
+    "order": 1
+  },
+  {
+    "id": 9,
+    "entity_id": 2,
+    "cmp_id": 7,
+    "component_type": "faq.faq-questions",
+    "field": "Faq_Questions",
+    "order": 2
+  },
+  {
+    "id": 51,
+    "entity_id": 15,
+    "cmp_id": 28,
+    "component_type": "faq.faq-questions",
+    "field": "Faq_Questions",
+    "order": 1
+  },
+  {
+    "id": 52,
+    "entity_id": 15,
+    "cmp_id": 29,
+    "component_type": "faq.faq-questions",
+    "field": "Faq_Questions",
+    "order": 2
+  },
+  {
+    "id": 53,
+    "entity_id": 16,
+    "cmp_id": 30,
+    "component_type": "faq.faq-questions",
+    "field": "Faq_Questions",
+    "order": 1
+  },
+  {
+    "id": 54,
+    "entity_id": 16,
+    "cmp_id": 31,
+    "component_type": "faq.faq-questions",
+    "field": "Faq_Questions",
+    "order": 2
+  }
+]

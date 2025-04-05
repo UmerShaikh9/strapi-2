@@ -1,0 +1,5476 @@
+[
+  {
+    "id": 9,
+    "product_id": 3508,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 11,
+    "product_id": 1066,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 17,
+    "product_id": 5656,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 18,
+    "product_id": 3526,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 20,
+    "product_id": 3528,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 23,
+    "product_id": 2327,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 25,
+    "product_id": 2355,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 27,
+    "product_id": 2367,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 29,
+    "product_id": 2385,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 31,
+    "product_id": 2359,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 35,
+    "product_id": 3530,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 38,
+    "product_id": 5669,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 39,
+    "product_id": 1064,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 44,
+    "product_id": 5672,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 45,
+    "product_id": 5673,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 46,
+    "product_id": 5674,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 49,
+    "product_id": 1052,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 50,
+    "product_id": 5677,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 51,
+    "product_id": 3107,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 52,
+    "product_id": 5678,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 53,
+    "product_id": 3234,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 54,
+    "product_id": 5679,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 55,
+    "product_id": 2974,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 56,
+    "product_id": 5681,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 57,
+    "product_id": 3532,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 60,
+    "product_id": 5683,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 61,
+    "product_id": 2972,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 62,
+    "product_id": 5684,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 63,
+    "product_id": 3232,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 66,
+    "product_id": 5686,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 67,
+    "product_id": 3228,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 68,
+    "product_id": 5687,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 69,
+    "product_id": 3220,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 70,
+    "product_id": 5688,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 71,
+    "product_id": 3216,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 72,
+    "product_id": 5689,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 73,
+    "product_id": 3222,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 74,
+    "product_id": 5690,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 75,
+    "product_id": 3218,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 76,
+    "product_id": 5691,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 77,
+    "product_id": 3534,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 79,
+    "product_id": 3093,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 80,
+    "product_id": 5693,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 81,
+    "product_id": 3002,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 82,
+    "product_id": 5694,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 84,
+    "product_id": 3536,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 15
+  },
+  {
+    "id": 85,
+    "product_id": 5697,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 86,
+    "product_id": 3008,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 87,
+    "product_id": 5698,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 88,
+    "product_id": 3109,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 89,
+    "product_id": 5699,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 90,
+    "product_id": 3021,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 15
+  },
+  {
+    "id": 91,
+    "product_id": 5700,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 15
+  },
+  {
+    "id": 92,
+    "product_id": 3087,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 93,
+    "product_id": 5701,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 96,
+    "product_id": 5704,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 97,
+    "product_id": 3280,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 98,
+    "product_id": 5705,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 99,
+    "product_id": 2970,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 100,
+    "product_id": 5706,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 101,
+    "product_id": 2968,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 102,
+    "product_id": 5707,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 103,
+    "product_id": 3097,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 104,
+    "product_id": 5708,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 105,
+    "product_id": 3095,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 106,
+    "product_id": 5709,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 107,
+    "product_id": 2986,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 108,
+    "product_id": 5710,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 109,
+    "product_id": 3238,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 110,
+    "product_id": 5711,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 111,
+    "product_id": 3099,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 112,
+    "product_id": 5712,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 113,
+    "product_id": 3256,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 114,
+    "product_id": 5713,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 115,
+    "product_id": 3240,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 116,
+    "product_id": 5714,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 117,
+    "product_id": 3105,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 118,
+    "product_id": 5715,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 119,
+    "product_id": 2994,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 120,
+    "product_id": 5716,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 121,
+    "product_id": 3250,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 29
+  },
+  {
+    "id": 122,
+    "product_id": 5717,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 29
+  },
+  {
+    "id": 123,
+    "product_id": 3278,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 124,
+    "product_id": 5718,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 125,
+    "product_id": 3066,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 31
+  },
+  {
+    "id": 128,
+    "product_id": 5720,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 31
+  },
+  {
+    "id": 129,
+    "product_id": 3272,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 32
+  },
+  {
+    "id": 130,
+    "product_id": 5721,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 32
+  },
+  {
+    "id": 131,
+    "product_id": 3254,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 33
+  },
+  {
+    "id": 132,
+    "product_id": 5722,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 33
+  },
+  {
+    "id": 133,
+    "product_id": 3101,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 34
+  },
+  {
+    "id": 134,
+    "product_id": 5724,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 34
+  },
+  {
+    "id": 135,
+    "product_id": 1060,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 136,
+    "product_id": 5725,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 137,
+    "product_id": 3030,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 138,
+    "product_id": 5726,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 139,
+    "product_id": 2055,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 140,
+    "product_id": 5727,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 141,
+    "product_id": 1804,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 142,
+    "product_id": 5728,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 143,
+    "product_id": 3201,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 144,
+    "product_id": 5729,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 145,
+    "product_id": 2071,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 146,
+    "product_id": 5730,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 147,
+    "product_id": 2198,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 148,
+    "product_id": 5731,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 149,
+    "product_id": 944,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 151,
+    "product_id": 3054,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 152,
+    "product_id": 5733,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 29
+  },
+  {
+    "id": 153,
+    "product_id": 2051,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 154,
+    "product_id": 5734,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 155,
+    "product_id": 938,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 156,
+    "product_id": 5735,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 31
+  },
+  {
+    "id": 157,
+    "product_id": 1788,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 158,
+    "product_id": 5736,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 32
+  },
+  {
+    "id": 159,
+    "product_id": 2187,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 160,
+    "product_id": 5737,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 33
+  },
+  {
+    "id": 161,
+    "product_id": 1784,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 29
+  },
+  {
+    "id": 162,
+    "product_id": 5738,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 34
+  },
+  {
+    "id": 163,
+    "product_id": 2202,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 164,
+    "product_id": 5739,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 165,
+    "product_id": 2194,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 31
+  },
+  {
+    "id": 166,
+    "product_id": 5740,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 36
+  },
+  {
+    "id": 167,
+    "product_id": 1802,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 32
+  },
+  {
+    "id": 168,
+    "product_id": 5741,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 37
+  },
+  {
+    "id": 169,
+    "product_id": 2179,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 33
+  },
+  {
+    "id": 170,
+    "product_id": 5742,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 38
+  },
+  {
+    "id": 171,
+    "product_id": 2185,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 34
+  },
+  {
+    "id": 172,
+    "product_id": 5743,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 39
+  },
+  {
+    "id": 173,
+    "product_id": 2192,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 174,
+    "product_id": 5744,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 40
+  },
+  {
+    "id": 175,
+    "product_id": 3224,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 36
+  },
+  {
+    "id": 176,
+    "product_id": 5745,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 41
+  },
+  {
+    "id": 177,
+    "product_id": 1014,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 37
+  },
+  {
+    "id": 178,
+    "product_id": 5747,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 42
+  },
+  {
+    "id": 179,
+    "product_id": 3064,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 38
+  },
+  {
+    "id": 180,
+    "product_id": 5748,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 43
+  },
+  {
+    "id": 181,
+    "product_id": 1062,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 39
+  },
+  {
+    "id": 182,
+    "product_id": 5749,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 44
+  },
+  {
+    "id": 183,
+    "product_id": 3062,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 40
+  },
+  {
+    "id": 184,
+    "product_id": 5750,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 45
+  },
+  {
+    "id": 185,
+    "product_id": 3060,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 41
+  },
+  {
+    "id": 186,
+    "product_id": 5751,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 46
+  },
+  {
+    "id": 187,
+    "product_id": 1046,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 42
+  },
+  {
+    "id": 188,
+    "product_id": 5752,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 47
+  },
+  {
+    "id": 189,
+    "product_id": 3014,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 43
+  },
+  {
+    "id": 190,
+    "product_id": 5753,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 48
+  },
+  {
+    "id": 191,
+    "product_id": 3028,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 44
+  },
+  {
+    "id": 192,
+    "product_id": 5754,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 49
+  },
+  {
+    "id": 193,
+    "product_id": 2045,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 45
+  },
+  {
+    "id": 194,
+    "product_id": 5755,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 50
+  },
+  {
+    "id": 195,
+    "product_id": 1048,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 46
+  },
+  {
+    "id": 196,
+    "product_id": 5756,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 51
+  },
+  {
+    "id": 197,
+    "product_id": 2057,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 47
+  },
+  {
+    "id": 198,
+    "product_id": 5757,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 52
+  },
+  {
+    "id": 199,
+    "product_id": 971,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 48
+  },
+  {
+    "id": 200,
+    "product_id": 5758,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 53
+  },
+  {
+    "id": 201,
+    "product_id": 979,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 49
+  },
+  {
+    "id": 202,
+    "product_id": 5759,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 54
+  },
+  {
+    "id": 203,
+    "product_id": 967,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 50
+  },
+  {
+    "id": 204,
+    "product_id": 5760,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 55
+  },
+  {
+    "id": 205,
+    "product_id": 1010,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 51
+  },
+  {
+    "id": 206,
+    "product_id": 5761,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 56
+  },
+  {
+    "id": 207,
+    "product_id": 961,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 52
+  },
+  {
+    "id": 208,
+    "product_id": 5762,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 57
+  },
+  {
+    "id": 209,
+    "product_id": 2059,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 53
+  },
+  {
+    "id": 212,
+    "product_id": 5764,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 58
+  },
+  {
+    "id": 213,
+    "product_id": 1796,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 54
+  },
+  {
+    "id": 214,
+    "product_id": 5765,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 59
+  },
+  {
+    "id": 215,
+    "product_id": 963,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 55
+  },
+  {
+    "id": 216,
+    "product_id": 5766,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 60
+  },
+  {
+    "id": 217,
+    "product_id": 3210,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 56
+  },
+  {
+    "id": 218,
+    "product_id": 5767,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 61
+  },
+  {
+    "id": 219,
+    "product_id": 1800,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 57
+  },
+  {
+    "id": 220,
+    "product_id": 5768,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 62
+  },
+  {
+    "id": 221,
+    "product_id": 1786,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 58
+  },
+  {
+    "id": 222,
+    "product_id": 5769,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 63
+  },
+  {
+    "id": 223,
+    "product_id": 3266,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 59
+  },
+  {
+    "id": 224,
+    "product_id": 5770,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 64
+  },
+  {
+    "id": 225,
+    "product_id": 965,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 60
+  },
+  {
+    "id": 226,
+    "product_id": 5771,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 65
+  },
+  {
+    "id": 227,
+    "product_id": 3264,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 61
+  },
+  {
+    "id": 228,
+    "product_id": 5772,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 66
+  },
+  {
+    "id": 229,
+    "product_id": 955,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 62
+  },
+  {
+    "id": 230,
+    "product_id": 5773,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 67
+  },
+  {
+    "id": 231,
+    "product_id": 3538,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 63
+  },
+  {
+    "id": 233,
+    "product_id": 2167,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 64
+  },
+  {
+    "id": 234,
+    "product_id": 5775,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 69
+  },
+  {
+    "id": 235,
+    "product_id": 3056,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 65
+  },
+  {
+    "id": 236,
+    "product_id": 5776,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 70
+  },
+  {
+    "id": 238,
+    "product_id": 3050,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 66
+  },
+  {
+    "id": 239,
+    "product_id": 5778,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 72
+  },
+  {
+    "id": 240,
+    "product_id": 5779,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 73
+  },
+  {
+    "id": 241,
+    "product_id": 983,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 67
+  },
+  {
+    "id": 242,
+    "product_id": 5780,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 74
+  },
+  {
+    "id": 243,
+    "product_id": 3042,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 68
+  },
+  {
+    "id": 244,
+    "product_id": 5781,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 75
+  },
+  {
+    "id": 245,
+    "product_id": 3205,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 69
+  },
+  {
+    "id": 246,
+    "product_id": 5782,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 76
+  },
+  {
+    "id": 247,
+    "product_id": 919,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 70
+  },
+  {
+    "id": 248,
+    "product_id": 5783,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 77
+  },
+  {
+    "id": 249,
+    "product_id": 981,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 71
+  },
+  {
+    "id": 250,
+    "product_id": 5784,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 78
+  },
+  {
+    "id": 251,
+    "product_id": 2047,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 72
+  },
+  {
+    "id": 252,
+    "product_id": 5785,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 79
+  },
+  {
+    "id": 253,
+    "product_id": 3032,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 73
+  },
+  {
+    "id": 254,
+    "product_id": 5786,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 80
+  },
+  {
+    "id": 255,
+    "product_id": 1041,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 74
+  },
+  {
+    "id": 256,
+    "product_id": 5787,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 81
+  },
+  {
+    "id": 257,
+    "product_id": 2204,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 75
+  },
+  {
+    "id": 258,
+    "product_id": 5788,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 82
+  },
+  {
+    "id": 259,
+    "product_id": 2165,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 76
+  },
+  {
+    "id": 260,
+    "product_id": 5789,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 83
+  },
+  {
+    "id": 261,
+    "product_id": 3542,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 77
+  },
+  {
+    "id": 263,
+    "product_id": 3058,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 78
+  },
+  {
+    "id": 264,
+    "product_id": 5791,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 84
+  },
+  {
+    "id": 265,
+    "product_id": 1806,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 79
+  },
+  {
+    "id": 266,
+    "product_id": 5792,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 85
+  },
+  {
+    "id": 267,
+    "product_id": 3242,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 80
+  },
+  {
+    "id": 268,
+    "product_id": 5793,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 86
+  },
+  {
+    "id": 269,
+    "product_id": 1056,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 81
+  },
+  {
+    "id": 270,
+    "product_id": 5794,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 87
+  },
+  {
+    "id": 271,
+    "product_id": 1782,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 82
+  },
+  {
+    "id": 272,
+    "product_id": 5795,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 88
+  },
+  {
+    "id": 273,
+    "product_id": 2196,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 83
+  },
+  {
+    "id": 274,
+    "product_id": 5796,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 89
+  },
+  {
+    "id": 275,
+    "product_id": 942,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 84
+  },
+  {
+    "id": 276,
+    "product_id": 5797,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 90
+  },
+  {
+    "id": 277,
+    "product_id": 2181,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 85
+  },
+  {
+    "id": 278,
+    "product_id": 5798,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 91
+  },
+  {
+    "id": 279,
+    "product_id": 2189,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 86
+  },
+  {
+    "id": 280,
+    "product_id": 5799,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 92
+  },
+  {
+    "id": 281,
+    "product_id": 1044,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 87
+  },
+  {
+    "id": 282,
+    "product_id": 5800,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 93
+  },
+  {
+    "id": 283,
+    "product_id": 2169,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 88
+  },
+  {
+    "id": 284,
+    "product_id": 5801,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 94
+  },
+  {
+    "id": 285,
+    "product_id": 959,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 89
+  },
+  {
+    "id": 286,
+    "product_id": 5802,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 95
+  },
+  {
+    "id": 287,
+    "product_id": 2038,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 90
+  },
+  {
+    "id": 288,
+    "product_id": 5803,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 96
+  },
+  {
+    "id": 289,
+    "product_id": 3025,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 91
+  },
+  {
+    "id": 290,
+    "product_id": 5804,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 97
+  },
+  {
+    "id": 291,
+    "product_id": 977,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 92
+  },
+  {
+    "id": 292,
+    "product_id": 5805,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 98
+  },
+  {
+    "id": 293,
+    "product_id": 1006,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 93
+  },
+  {
+    "id": 294,
+    "product_id": 5806,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 99
+  },
+  {
+    "id": 295,
+    "product_id": 1008,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 94
+  },
+  {
+    "id": 296,
+    "product_id": 5807,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 100
+  },
+  {
+    "id": 297,
+    "product_id": 2200,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 95
+  },
+  {
+    "id": 298,
+    "product_id": 5808,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 101
+  },
+  {
+    "id": 299,
+    "product_id": 2171,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 96
+  },
+  {
+    "id": 300,
+    "product_id": 5809,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 102
+  },
+  {
+    "id": 301,
+    "product_id": 3052,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 97
+  },
+  {
+    "id": 302,
+    "product_id": 5810,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 103
+  },
+  {
+    "id": 303,
+    "product_id": 3046,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 98
+  },
+  {
+    "id": 304,
+    "product_id": 5811,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 104
+  },
+  {
+    "id": 305,
+    "product_id": 1808,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 99
+  },
+  {
+    "id": 306,
+    "product_id": 5812,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 105
+  },
+  {
+    "id": 307,
+    "product_id": 3048,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 100
+  },
+  {
+    "id": 308,
+    "product_id": 5813,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 106
+  },
+  {
+    "id": 309,
+    "product_id": 1016,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 101
+  },
+  {
+    "id": 310,
+    "product_id": 5814,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 107
+  },
+  {
+    "id": 311,
+    "product_id": 2062,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 102
+  },
+  {
+    "id": 312,
+    "product_id": 5815,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 108
+  },
+  {
+    "id": 313,
+    "product_id": 949,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 103
+  },
+  {
+    "id": 317,
+    "product_id": 969,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 104
+  },
+  {
+    "id": 318,
+    "product_id": 5818,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 110
+  },
+  {
+    "id": 319,
+    "product_id": 1012,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 105
+  },
+  {
+    "id": 320,
+    "product_id": 5819,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 111
+  },
+  {
+    "id": 321,
+    "product_id": 3068,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 106
+  },
+  {
+    "id": 322,
+    "product_id": 5820,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 112
+  },
+  {
+    "id": 323,
+    "product_id": 2177,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 107
+  },
+  {
+    "id": 324,
+    "product_id": 5821,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 113
+  },
+  {
+    "id": 325,
+    "product_id": 2980,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 108
+  },
+  {
+    "id": 326,
+    "product_id": 5822,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 114
+  },
+  {
+    "id": 327,
+    "product_id": 3199,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 109
+  },
+  {
+    "id": 328,
+    "product_id": 5823,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 115
+  },
+  {
+    "id": 329,
+    "product_id": 3203,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 110
+  },
+  {
+    "id": 330,
+    "product_id": 5824,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 116
+  },
+  {
+    "id": 331,
+    "product_id": 3197,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 111
+  },
+  {
+    "id": 332,
+    "product_id": 5825,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 117
+  },
+  {
+    "id": 333,
+    "product_id": 3195,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 112
+  },
+  {
+    "id": 334,
+    "product_id": 5826,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 118
+  },
+  {
+    "id": 335,
+    "product_id": 975,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 113
+  },
+  {
+    "id": 336,
+    "product_id": 5827,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 119
+  },
+  {
+    "id": 337,
+    "product_id": 1054,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 114
+  },
+  {
+    "id": 338,
+    "product_id": 5828,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 120
+  },
+  {
+    "id": 339,
+    "product_id": 1798,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 115
+  },
+  {
+    "id": 340,
+    "product_id": 5829,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 121
+  },
+  {
+    "id": 341,
+    "product_id": 1794,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 116
+  },
+  {
+    "id": 342,
+    "product_id": 5830,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 122
+  },
+  {
+    "id": 343,
+    "product_id": 946,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 117
+  },
+  {
+    "id": 345,
+    "product_id": 2823,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 118
+  },
+  {
+    "id": 348,
+    "product_id": 5833,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 124
+  },
+  {
+    "id": 349,
+    "product_id": 3044,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 119
+  },
+  {
+    "id": 350,
+    "product_id": 5834,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 125
+  },
+  {
+    "id": 351,
+    "product_id": 1024,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 120
+  },
+  {
+    "id": 352,
+    "product_id": 5835,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 126
+  },
+  {
+    "id": 353,
+    "product_id": 3236,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 121
+  },
+  {
+    "id": 354,
+    "product_id": 5836,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 127
+  },
+  {
+    "id": 355,
+    "product_id": 3268,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 122
+  },
+  {
+    "id": 356,
+    "product_id": 5837,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 128
+  },
+  {
+    "id": 357,
+    "product_id": 3038,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 123
+  },
+  {
+    "id": 358,
+    "product_id": 5838,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 129
+  },
+  {
+    "id": 359,
+    "product_id": 3544,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 124
+  },
+  {
+    "id": 360,
+    "product_id": 5839,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 130
+  },
+  {
+    "id": 361,
+    "product_id": 3034,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 125
+  },
+  {
+    "id": 362,
+    "product_id": 5840,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 131
+  },
+  {
+    "id": 363,
+    "product_id": 3248,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 126
+  },
+  {
+    "id": 364,
+    "product_id": 5841,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 132
+  },
+  {
+    "id": 365,
+    "product_id": 3040,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 127
+  },
+  {
+    "id": 366,
+    "product_id": 5842,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 133
+  },
+  {
+    "id": 367,
+    "product_id": 3244,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 128
+  },
+  {
+    "id": 368,
+    "product_id": 5843,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 134
+  },
+  {
+    "id": 369,
+    "product_id": 3276,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 129
+  },
+  {
+    "id": 370,
+    "product_id": 5844,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 135
+  },
+  {
+    "id": 371,
+    "product_id": 953,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 130
+  },
+  {
+    "id": 372,
+    "product_id": 5845,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 136
+  },
+  {
+    "id": 373,
+    "product_id": 2049,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 131
+  },
+  {
+    "id": 374,
+    "product_id": 5846,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 137
+  },
+  {
+    "id": 375,
+    "product_id": 2173,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 132
+  },
+  {
+    "id": 376,
+    "product_id": 5847,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 138
+  },
+  {
+    "id": 377,
+    "product_id": 5643,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 133
+  },
+  {
+    "id": 378,
+    "product_id": 5848,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 139
+  },
+  {
+    "id": 379,
+    "product_id": 3510,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 134
+  },
+  {
+    "id": 380,
+    "product_id": 5849,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 140
+  },
+  {
+    "id": 381,
+    "product_id": 2067,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 135
+  },
+  {
+    "id": 382,
+    "product_id": 5850,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 141
+  },
+  {
+    "id": 383,
+    "product_id": 3226,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 136
+  },
+  {
+    "id": 384,
+    "product_id": 5851,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 142
+  },
+  {
+    "id": 385,
+    "product_id": 2206,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 137
+  },
+  {
+    "id": 386,
+    "product_id": 5852,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 143
+  },
+  {
+    "id": 387,
+    "product_id": 2183,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 138
+  },
+  {
+    "id": 388,
+    "product_id": 5853,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 144
+  },
+  {
+    "id": 389,
+    "product_id": 3246,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 139
+  },
+  {
+    "id": 390,
+    "product_id": 5854,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 145
+  },
+  {
+    "id": 391,
+    "product_id": 1792,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 140
+  },
+  {
+    "id": 392,
+    "product_id": 5855,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 146
+  },
+  {
+    "id": 393,
+    "product_id": 957,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 141
+  },
+  {
+    "id": 394,
+    "product_id": 5856,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 147
+  },
+  {
+    "id": 395,
+    "product_id": 3546,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 142
+  },
+  {
+    "id": 397,
+    "product_id": 2175,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 143
+  },
+  {
+    "id": 398,
+    "product_id": 5858,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 149
+  },
+  {
+    "id": 399,
+    "product_id": 1058,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 144
+  },
+  {
+    "id": 400,
+    "product_id": 5859,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 150
+  },
+  {
+    "id": 402,
+    "product_id": 2043,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 145
+  },
+  {
+    "id": 403,
+    "product_id": 5861,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 152
+  },
+  {
+    "id": 404,
+    "product_id": 1050,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 146
+  },
+  {
+    "id": 405,
+    "product_id": 5862,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 153
+  },
+  {
+    "id": 407,
+    "product_id": 3036,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 147
+  },
+  {
+    "id": 408,
+    "product_id": 5864,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 155
+  },
+  {
+    "id": 409,
+    "product_id": 951,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 148
+  },
+  {
+    "id": 410,
+    "product_id": 5865,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 156
+  },
+  {
+    "id": 411,
+    "product_id": 973,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 149
+  },
+  {
+    "id": 412,
+    "product_id": 5866,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 157
+  },
+  {
+    "id": 413,
+    "product_id": 3548,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 150
+  },
+  {
+    "id": 415,
+    "product_id": 3550,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 151
+  },
+  {
+    "id": 417,
+    "product_id": 2349,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 152
+  },
+  {
+    "id": 420,
+    "product_id": 5872,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 160
+  },
+  {
+    "id": 421,
+    "product_id": 3553,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 153
+  },
+  {
+    "id": 424,
+    "product_id": 749,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 427,
+    "product_id": 5877,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 428,
+    "product_id": 767,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 429,
+    "product_id": 5880,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 430,
+    "product_id": 769,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 431,
+    "product_id": 5882,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 432,
+    "product_id": 771,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 154
+  },
+  {
+    "id": 433,
+    "product_id": 5884,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 162
+  },
+  {
+    "id": 435,
+    "product_id": 5886,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 163
+  },
+  {
+    "id": 436,
+    "product_id": 773,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 155
+  },
+  {
+    "id": 437,
+    "product_id": 5887,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 164
+  },
+  {
+    "id": 438,
+    "product_id": 775,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 156
+  },
+  {
+    "id": 439,
+    "product_id": 5888,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 165
+  },
+  {
+    "id": 442,
+    "product_id": 3558,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 157
+  },
+  {
+    "id": 446,
+    "product_id": 3561,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 158
+  },
+  {
+    "id": 449,
+    "product_id": 5904,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 167
+  },
+  {
+    "id": 452,
+    "product_id": 3565,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 159
+  },
+  {
+    "id": 453,
+    "product_id": 5909,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 169
+  },
+  {
+    "id": 454,
+    "product_id": 3512,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 160
+  },
+  {
+    "id": 456,
+    "product_id": 3567,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 161
+  },
+  {
+    "id": 458,
+    "product_id": 3571,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 162
+  },
+  {
+    "id": 459,
+    "product_id": 5912,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 172
+  },
+  {
+    "id": 461,
+    "product_id": 5914,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 174
+  },
+  {
+    "id": 462,
+    "product_id": 5916,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 175
+  },
+  {
+    "id": 463,
+    "product_id": 5917,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 176
+  },
+  {
+    "id": 464,
+    "product_id": 3575,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 163
+  },
+  {
+    "id": 466,
+    "product_id": 751,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 164
+  },
+  {
+    "id": 467,
+    "product_id": 5919,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 178
+  },
+  {
+    "id": 468,
+    "product_id": 795,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 165
+  },
+  {
+    "id": 469,
+    "product_id": 5928,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 179
+  },
+  {
+    "id": 470,
+    "product_id": 799,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 166
+  },
+  {
+    "id": 472,
+    "product_id": 5932,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 180
+  },
+  {
+    "id": 473,
+    "product_id": 801,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 167
+  },
+  {
+    "id": 475,
+    "product_id": 5934,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 181
+  },
+  {
+    "id": 476,
+    "product_id": 803,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 479,
+    "product_id": 753,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 168
+  },
+  {
+    "id": 480,
+    "product_id": 5937,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 182
+  },
+  {
+    "id": 481,
+    "product_id": 763,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 169
+  },
+  {
+    "id": 482,
+    "product_id": 5939,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 183
+  },
+  {
+    "id": 483,
+    "product_id": 903,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 484,
+    "product_id": 5940,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 485,
+    "product_id": 3540,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 170
+  },
+  {
+    "id": 486,
+    "product_id": 5941,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 184
+  },
+  {
+    "id": 487,
+    "product_id": 2373,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 171
+  },
+  {
+    "id": 489,
+    "product_id": 2345,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 172
+  },
+  {
+    "id": 491,
+    "product_id": 2351,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 173
+  },
+  {
+    "id": 493,
+    "product_id": 2353,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 174
+  },
+  {
+    "id": 495,
+    "product_id": 2357,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 175
+  },
+  {
+    "id": 497,
+    "product_id": 2371,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 176
+  },
+  {
+    "id": 499,
+    "product_id": 2508,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 177
+  },
+  {
+    "id": 501,
+    "product_id": 2369,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 178
+  },
+  {
+    "id": 503,
+    "product_id": 2333,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 179
+  },
+  {
+    "id": 505,
+    "product_id": 2331,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 180
+  },
+  {
+    "id": 507,
+    "product_id": 2329,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 181
+  },
+  {
+    "id": 509,
+    "product_id": 2361,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 182
+  },
+  {
+    "id": 511,
+    "product_id": 2343,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 183
+  },
+  {
+    "id": 513,
+    "product_id": 2341,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 184
+  },
+  {
+    "id": 515,
+    "product_id": 2305,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 185
+  },
+  {
+    "id": 517,
+    "product_id": 2339,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 186
+  },
+  {
+    "id": 519,
+    "product_id": 2311,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 187
+  },
+  {
+    "id": 521,
+    "product_id": 2307,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 188
+  },
+  {
+    "id": 523,
+    "product_id": 2309,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 189
+  },
+  {
+    "id": 525,
+    "product_id": 2365,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 190
+  },
+  {
+    "id": 527,
+    "product_id": 2323,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 191
+  },
+  {
+    "id": 529,
+    "product_id": 2363,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 192
+  },
+  {
+    "id": 533,
+    "product_id": 3577,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 193
+  },
+  {
+    "id": 535,
+    "product_id": 3579,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 194
+  },
+  {
+    "id": 537,
+    "product_id": 3581,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 195
+  },
+  {
+    "id": 539,
+    "product_id": 3583,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 196
+  },
+  {
+    "id": 545,
+    "product_id": 3587,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 197
+  },
+  {
+    "id": 551,
+    "product_id": 3594,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 198
+  },
+  {
+    "id": 553,
+    "product_id": 3596,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 199
+  },
+  {
+    "id": 555,
+    "product_id": 3598,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 200
+  },
+  {
+    "id": 557,
+    "product_id": 3600,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 201
+  },
+  {
+    "id": 559,
+    "product_id": 2943,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 202
+  },
+  {
+    "id": 561,
+    "product_id": 3602,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 203
+  },
+  {
+    "id": 563,
+    "product_id": 3604,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 204
+  },
+  {
+    "id": 565,
+    "product_id": 3606,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 205
+  },
+  {
+    "id": 567,
+    "product_id": 3608,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 206
+  },
+  {
+    "id": 569,
+    "product_id": 3610,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 207
+  },
+  {
+    "id": 573,
+    "product_id": 2313,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 208
+  },
+  {
+    "id": 575,
+    "product_id": 3614,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 209
+  },
+  {
+    "id": 577,
+    "product_id": 3616,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 210
+  },
+  {
+    "id": 579,
+    "product_id": 3620,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 211
+  },
+  {
+    "id": 581,
+    "product_id": 3765,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 212
+  },
+  {
+    "id": 585,
+    "product_id": 3767,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 213
+  },
+  {
+    "id": 587,
+    "product_id": 3769,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 214
+  },
+  {
+    "id": 591,
+    "product_id": 3771,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 215
+  },
+  {
+    "id": 593,
+    "product_id": 3773,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 216
+  },
+  {
+    "id": 597,
+    "product_id": 3775,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 217
+  },
+  {
+    "id": 599,
+    "product_id": 3779,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 218
+  },
+  {
+    "id": 607,
+    "product_id": 3785,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 219
+  },
+  {
+    "id": 609,
+    "product_id": 3787,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 220
+  },
+  {
+    "id": 611,
+    "product_id": 3789,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 221
+  },
+  {
+    "id": 613,
+    "product_id": 2317,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 222
+  },
+  {
+    "id": 619,
+    "product_id": 3522,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 223
+  },
+  {
+    "id": 623,
+    "product_id": 2337,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 224
+  },
+  {
+    "id": 625,
+    "product_id": 3524,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 225
+  },
+  {
+    "id": 627,
+    "product_id": 6012,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 628,
+    "product_id": 807,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 226
+  },
+  {
+    "id": 629,
+    "product_id": 6035,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 251
+  },
+  {
+    "id": 635,
+    "product_id": 3585,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 227
+  },
+  {
+    "id": 639,
+    "product_id": 6109,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 256
+  },
+  {
+    "id": 640,
+    "product_id": 6110,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 257
+  },
+  {
+    "id": 641,
+    "product_id": 6111,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 258
+  },
+  {
+    "id": 642,
+    "product_id": 6112,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 259
+  },
+  {
+    "id": 644,
+    "product_id": 6114,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 261
+  },
+  {
+    "id": 645,
+    "product_id": 6115,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 262
+  },
+  {
+    "id": 646,
+    "product_id": 6116,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 263
+  },
+  {
+    "id": 647,
+    "product_id": 6117,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 264
+  },
+  {
+    "id": 648,
+    "product_id": 6118,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 265
+  },
+  {
+    "id": 649,
+    "product_id": 6119,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 266
+  },
+  {
+    "id": 650,
+    "product_id": 6120,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 267
+  },
+  {
+    "id": 651,
+    "product_id": 6121,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 268
+  },
+  {
+    "id": 652,
+    "product_id": 6122,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 269
+  },
+  {
+    "id": 653,
+    "product_id": 6123,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 270
+  },
+  {
+    "id": 654,
+    "product_id": 6124,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 271
+  },
+  {
+    "id": 655,
+    "product_id": 6125,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 272
+  },
+  {
+    "id": 657,
+    "product_id": 6127,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 274
+  },
+  {
+    "id": 658,
+    "product_id": 6128,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 275
+  },
+  {
+    "id": 660,
+    "product_id": 6130,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 277
+  },
+  {
+    "id": 661,
+    "product_id": 6131,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 278
+  },
+  {
+    "id": 662,
+    "product_id": 6132,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 279
+  },
+  {
+    "id": 663,
+    "product_id": 6133,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 280
+  },
+  {
+    "id": 664,
+    "product_id": 6134,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 281
+  },
+  {
+    "id": 665,
+    "product_id": 6135,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 282
+  },
+  {
+    "id": 666,
+    "product_id": 6136,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 283
+  },
+  {
+    "id": 667,
+    "product_id": 6137,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 284
+  },
+  {
+    "id": 668,
+    "product_id": 6138,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 285
+  },
+  {
+    "id": 671,
+    "product_id": 6141,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 288
+  },
+  {
+    "id": 674,
+    "product_id": 6144,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 291
+  },
+  {
+    "id": 679,
+    "product_id": 6149,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 296
+  },
+  {
+    "id": 680,
+    "product_id": 6150,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 297
+  },
+  {
+    "id": 685,
+    "product_id": 6155,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 302
+  },
+  {
+    "id": 701,
+    "product_id": 6171,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 317
+  },
+  {
+    "id": 706,
+    "product_id": 6176,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 321
+  },
+  {
+    "id": 726,
+    "product_id": 6196,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 341
+  },
+  {
+    "id": 727,
+    "product_id": 6197,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 342
+  },
+  {
+    "id": 728,
+    "product_id": 521,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 228
+  },
+  {
+    "id": 732,
+    "product_id": 6237,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 343
+  },
+  {
+    "id": 737,
+    "product_id": 443,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 229
+  },
+  {
+    "id": 745,
+    "product_id": 455,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 230
+  },
+  {
+    "id": 751,
+    "product_id": 471,
+    "weaving_technique_id": 44,
+    "weaving_technique_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 755,
+    "product_id": 6260,
+    "weaving_technique_id": 45,
+    "weaving_technique_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 760,
+    "product_id": 6317,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 349
+  },
+  {
+    "id": 761,
+    "product_id": 6318,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 350
+  },
+  {
+    "id": 762,
+    "product_id": 6319,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 351
+  },
+  {
+    "id": 765,
+    "product_id": 6322,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 352
+  },
+  {
+    "id": 770,
+    "product_id": 6327,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 353
+  },
+  {
+    "id": 773,
+    "product_id": 6330,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 354
+  },
+  {
+    "id": 777,
+    "product_id": 6334,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 355
+  },
+  {
+    "id": 780,
+    "product_id": 6337,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 356
+  },
+  {
+    "id": 781,
+    "product_id": 6338,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 357
+  },
+  {
+    "id": 782,
+    "product_id": 6339,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 358
+  },
+  {
+    "id": 787,
+    "product_id": 6344,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 359
+  },
+  {
+    "id": 789,
+    "product_id": 6346,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 360
+  },
+  {
+    "id": 791,
+    "product_id": 6348,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 361
+  },
+  {
+    "id": 794,
+    "product_id": 6351,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 362
+  },
+  {
+    "id": 798,
+    "product_id": 6355,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 363
+  },
+  {
+    "id": 802,
+    "product_id": 6359,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 364
+  },
+  {
+    "id": 805,
+    "product_id": 6362,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 365
+  },
+  {
+    "id": 810,
+    "product_id": 6367,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 366
+  },
+  {
+    "id": 815,
+    "product_id": 6372,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 367
+  },
+  {
+    "id": 822,
+    "product_id": 6380,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 368
+  },
+  {
+    "id": 824,
+    "product_id": 6382,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 369
+  },
+  {
+    "id": 827,
+    "product_id": 6386,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 370
+  },
+  {
+    "id": 828,
+    "product_id": 1091,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 231
+  },
+  {
+    "id": 829,
+    "product_id": 6387,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 371
+  },
+  {
+    "id": 830,
+    "product_id": 3781,
+    "weaving_technique_id": 34,
+    "weaving_technique_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 833,
+    "product_id": 6389,
+    "weaving_technique_id": 35,
+    "weaving_technique_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 840,
+    "product_id": 6398,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 372
+  },
+  {
+    "id": 841,
+    "product_id": 6399,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 373
+  },
+  {
+    "id": 844,
+    "product_id": 6402,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 374
+  },
+  {
+    "id": 845,
+    "product_id": 6403,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 375
+  },
+  {
+    "id": 848,
+    "product_id": 6406,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 376
+  },
+  {
+    "id": 852,
+    "product_id": 6410,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 377
+  },
+  {
+    "id": 854,
+    "product_id": 6412,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 378
+  },
+  {
+    "id": 855,
+    "product_id": 6413,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 379
+  },
+  {
+    "id": 856,
+    "product_id": 6414,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 232
+  },
+  {
+    "id": 857,
+    "product_id": 6415,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 380
+  },
+  {
+    "id": 858,
+    "product_id": 6417,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 233
+  },
+  {
+    "id": 862,
+    "product_id": 6421,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 381
+  },
+  {
+    "id": 863,
+    "product_id": 6422,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 234
+  },
+  {
+    "id": 865,
+    "product_id": 6424,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 382
+  },
+  {
+    "id": 866,
+    "product_id": 6425,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 235
+  },
+  {
+    "id": 868,
+    "product_id": 6427,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 383
+  },
+  {
+    "id": 869,
+    "product_id": 6428,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 236
+  },
+  {
+    "id": 873,
+    "product_id": 6432,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 384
+  },
+  {
+    "id": 874,
+    "product_id": 6433,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 237
+  },
+  {
+    "id": 876,
+    "product_id": 6435,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 385
+  },
+  {
+    "id": 877,
+    "product_id": 6436,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 238
+  },
+  {
+    "id": 879,
+    "product_id": 6438,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 386
+  },
+  {
+    "id": 880,
+    "product_id": 6439,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 239
+  },
+  {
+    "id": 881,
+    "product_id": 6440,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 387
+  },
+  {
+    "id": 882,
+    "product_id": 6445,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 240
+  },
+  {
+    "id": 884,
+    "product_id": 6447,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 388
+  },
+  {
+    "id": 885,
+    "product_id": 6451,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 241
+  },
+  {
+    "id": 887,
+    "product_id": 6453,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 242
+  },
+  {
+    "id": 889,
+    "product_id": 6457,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 243
+  },
+  {
+    "id": 891,
+    "product_id": 6461,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 392
+  },
+  {
+    "id": 892,
+    "product_id": 6462,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 393
+  },
+  {
+    "id": 893,
+    "product_id": 6463,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 394
+  },
+  {
+    "id": 894,
+    "product_id": 1470,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 896,
+    "product_id": 6466,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 897,
+    "product_id": 504,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 898,
+    "product_id": 6468,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 899,
+    "product_id": 6472,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 395
+  },
+  {
+    "id": 900,
+    "product_id": 492,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 244
+  },
+  {
+    "id": 903,
+    "product_id": 6476,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 396
+  },
+  {
+    "id": 904,
+    "product_id": 508,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 245
+  },
+  {
+    "id": 906,
+    "product_id": 494,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 908,
+    "product_id": 496,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 911,
+    "product_id": 6482,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 913,
+    "product_id": 6484,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 914,
+    "product_id": 6485,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 398
+  },
+  {
+    "id": 915,
+    "product_id": 498,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 917,
+    "product_id": 6487,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 918,
+    "product_id": 488,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 920,
+    "product_id": 6490,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 15
+  },
+  {
+    "id": 921,
+    "product_id": 1472,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 246
+  },
+  {
+    "id": 924,
+    "product_id": 6495,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 399
+  },
+  {
+    "id": 925,
+    "product_id": 479,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 247
+  },
+  {
+    "id": 926,
+    "product_id": 479,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 2,
+    "product_ord": 12
+  },
+  {
+    "id": 929,
+    "product_id": 6502,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 400
+  },
+  {
+    "id": 930,
+    "product_id": 6502,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 2,
+    "product_ord": 16
+  },
+  {
+    "id": 931,
+    "product_id": 457,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 248
+  },
+  {
+    "id": 935,
+    "product_id": 6512,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 401
+  },
+  {
+    "id": 936,
+    "product_id": 459,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 249
+  },
+  {
+    "id": 942,
+    "product_id": 6518,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 402
+  },
+  {
+    "id": 943,
+    "product_id": 1490,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 250
+  },
+  {
+    "id": 946,
+    "product_id": 6536,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 403
+  },
+  {
+    "id": 947,
+    "product_id": 441,
+    "weaving_technique_id": 48,
+    "weaving_technique_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 950,
+    "product_id": 6560,
+    "weaving_technique_id": 49,
+    "weaving_technique_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 951,
+    "product_id": 453,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 251
+  },
+  {
+    "id": 952,
+    "product_id": 6568,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 404
+  },
+  {
+    "id": 953,
+    "product_id": 449,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 252
+  },
+  {
+    "id": 958,
+    "product_id": 451,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 253
+  },
+  {
+    "id": 963,
+    "product_id": 6577,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 406
+  },
+  {
+    "id": 964,
+    "product_id": 6578,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 407
+  },
+  {
+    "id": 965,
+    "product_id": 6579,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 408
+  },
+  {
+    "id": 968,
+    "product_id": 445,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 254
+  },
+  {
+    "id": 972,
+    "product_id": 6598,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 409
+  },
+  {
+    "id": 973,
+    "product_id": 447,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 255
+  },
+  {
+    "id": 974,
+    "product_id": 6600,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 410
+  },
+  {
+    "id": 975,
+    "product_id": 6603,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 411
+  },
+  {
+    "id": 976,
+    "product_id": 6604,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 412
+  },
+  {
+    "id": 981,
+    "product_id": 6687,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 413
+  },
+  {
+    "id": 982,
+    "product_id": 6695,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 256
+  },
+  {
+    "id": 984,
+    "product_id": 6700,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 257
+  },
+  {
+    "id": 992,
+    "product_id": 6709,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 258
+  },
+  {
+    "id": 995,
+    "product_id": 6718,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 259
+  },
+  {
+    "id": 997,
+    "product_id": 4464,
+    "weaving_technique_id": 54,
+    "weaving_technique_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 998,
+    "product_id": 6722,
+    "weaving_technique_id": 55,
+    "weaving_technique_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 999,
+    "product_id": 6712,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 260
+  },
+  {
+    "id": 1006,
+    "product_id": 3004,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 261
+  },
+  {
+    "id": 1012,
+    "product_id": 3000,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 262
+  },
+  {
+    "id": 1022,
+    "product_id": 3010,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 263
+  },
+  {
+    "id": 1025,
+    "product_id": 3017,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 1028,
+    "product_id": 2992,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 264
+  },
+  {
+    "id": 1034,
+    "product_id": 3006,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 265
+  },
+  {
+    "id": 1039,
+    "product_id": 1264,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 266
+  },
+  {
+    "id": 1041,
+    "product_id": 6764,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 433
+  },
+  {
+    "id": 1045,
+    "product_id": 6768,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 436
+  },
+  {
+    "id": 1046,
+    "product_id": 1266,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 267
+  },
+  {
+    "id": 1054,
+    "product_id": 6776,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 441
+  },
+  {
+    "id": 1055,
+    "product_id": 6777,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 1058,
+    "product_id": 1268,
+    "weaving_technique_id": 48,
+    "weaving_technique_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 1064,
+    "product_id": 1270,
+    "weaving_technique_id": 48,
+    "weaving_technique_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 1070,
+    "product_id": 6793,
+    "weaving_technique_id": 49,
+    "weaving_technique_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 1073,
+    "product_id": 6799,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 268
+  },
+  {
+    "id": 1075,
+    "product_id": 6801,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 443
+  },
+  {
+    "id": 1076,
+    "product_id": 6802,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 269
+  },
+  {
+    "id": 1078,
+    "product_id": 6804,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 444
+  },
+  {
+    "id": 1079,
+    "product_id": 6805,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 270
+  },
+  {
+    "id": 1082,
+    "product_id": 6808,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 445
+  },
+  {
+    "id": 1083,
+    "product_id": 6809,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 271
+  },
+  {
+    "id": 1095,
+    "product_id": 6821,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 272
+  },
+  {
+    "id": 1100,
+    "product_id": 6827,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 448
+  },
+  {
+    "id": 1102,
+    "product_id": 6829,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 449
+  },
+  {
+    "id": 1103,
+    "product_id": 6838,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 273
+  },
+  {
+    "id": 1107,
+    "product_id": 6843,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 274
+  },
+  {
+    "id": 1112,
+    "product_id": 6850,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 275
+  },
+  {
+    "id": 1114,
+    "product_id": 6852,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 453
+  },
+  {
+    "id": 1120,
+    "product_id": 6860,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 458
+  },
+  {
+    "id": 1124,
+    "product_id": 6864,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 459
+  },
+  {
+    "id": 1126,
+    "product_id": 6866,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 460
+  },
+  {
+    "id": 1127,
+    "product_id": 3081,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 276
+  },
+  {
+    "id": 1128,
+    "product_id": 3081,
+    "weaving_technique_id": 48,
+    "weaving_technique_ord": 2,
+    "product_ord": 4
+  },
+  {
+    "id": 1141,
+    "product_id": 6875,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 461
+  },
+  {
+    "id": 1142,
+    "product_id": 6875,
+    "weaving_technique_id": 49,
+    "weaving_technique_ord": 2,
+    "product_ord": 7
+  },
+  {
+    "id": 1143,
+    "product_id": 1274,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 277
+  },
+  {
+    "id": 1147,
+    "product_id": 5511,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 278
+  },
+  {
+    "id": 1149,
+    "product_id": 6881,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 279
+  },
+  {
+    "id": 1157,
+    "product_id": 6888,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 468
+  },
+  {
+    "id": 1159,
+    "product_id": 6889,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 469
+  },
+  {
+    "id": 1171,
+    "product_id": 6901,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 470
+  },
+  {
+    "id": 1172,
+    "product_id": 1276,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 280
+  },
+  {
+    "id": 1178,
+    "product_id": 6907,
+    "weaving_technique_id": 49,
+    "weaving_technique_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 1181,
+    "product_id": 6910,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 473
+  },
+  {
+    "id": 1182,
+    "product_id": 1278,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 1189,
+    "product_id": 6917,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 474
+  },
+  {
+    "id": 1193,
+    "product_id": 1280,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 15
+  },
+  {
+    "id": 1197,
+    "product_id": 6924,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 1198,
+    "product_id": 6925,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 1199,
+    "product_id": 1282,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 1206,
+    "product_id": 6932,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 1207,
+    "product_id": 1284,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 1209,
+    "product_id": 6934,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 1210,
+    "product_id": 1286,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 1216,
+    "product_id": 6940,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 1217,
+    "product_id": 1288,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 1221,
+    "product_id": 6944,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 1222,
+    "product_id": 1290,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 1226,
+    "product_id": 6948,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 1227,
+    "product_id": 1294,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 281
+  },
+  {
+    "id": 1231,
+    "product_id": 6955,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 475
+  },
+  {
+    "id": 1232,
+    "product_id": 1298,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 1240,
+    "product_id": 6963,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 476
+  },
+  {
+    "id": 1241,
+    "product_id": 6964,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 1242,
+    "product_id": 1302,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 1245,
+    "product_id": 1304,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 282
+  },
+  {
+    "id": 1253,
+    "product_id": 1300,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 1263,
+    "product_id": 6983,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 480
+  },
+  {
+    "id": 1264,
+    "product_id": 6984,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 481
+  },
+  {
+    "id": 1265,
+    "product_id": 6985,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 1266,
+    "product_id": 1306,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 1270,
+    "product_id": 6989,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 29
+  },
+  {
+    "id": 1271,
+    "product_id": 1308,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 283
+  },
+  {
+    "id": 1277,
+    "product_id": 6995,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 482
+  },
+  {
+    "id": 1278,
+    "product_id": 1310,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 284
+  },
+  {
+    "id": 1281,
+    "product_id": 6998,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 483
+  },
+  {
+    "id": 1282,
+    "product_id": 541,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 285
+  },
+  {
+    "id": 1284,
+    "product_id": 7000,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 484
+  },
+  {
+    "id": 1285,
+    "product_id": 543,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 1289,
+    "product_id": 7005,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 1290,
+    "product_id": 545,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 286
+  },
+  {
+    "id": 1293,
+    "product_id": 7008,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 485
+  },
+  {
+    "id": 1294,
+    "product_id": 547,
+    "weaving_technique_id": 44,
+    "weaving_technique_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 1303,
+    "product_id": 7019,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 486
+  },
+  {
+    "id": 1304,
+    "product_id": 7020,
+    "weaving_technique_id": 45,
+    "weaving_technique_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 1305,
+    "product_id": 7024,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 31
+  },
+  {
+    "id": 1306,
+    "product_id": 549,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 287
+  },
+  {
+    "id": 1307,
+    "product_id": 549,
+    "weaving_technique_id": 44,
+    "weaving_technique_ord": 2,
+    "product_ord": 3
+  },
+  {
+    "id": 1318,
+    "product_id": 7029,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 487
+  },
+  {
+    "id": 1319,
+    "product_id": 7029,
+    "weaving_technique_id": 45,
+    "weaving_technique_ord": 2,
+    "product_ord": 3
+  },
+  {
+    "id": 1320,
+    "product_id": 551,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 288
+  },
+  {
+    "id": 1323,
+    "product_id": 7032,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 488
+  },
+  {
+    "id": 1324,
+    "product_id": 553,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 289
+  },
+  {
+    "id": 1330,
+    "product_id": 7038,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 489
+  },
+  {
+    "id": 1331,
+    "product_id": 523,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 290
+  },
+  {
+    "id": 1337,
+    "product_id": 7055,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 491
+  },
+  {
+    "id": 1338,
+    "product_id": 7056,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 492
+  },
+  {
+    "id": 1339,
+    "product_id": 7057,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 493
+  },
+  {
+    "id": 1340,
+    "product_id": 7058,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 494
+  },
+  {
+    "id": 1342,
+    "product_id": 7060,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 495
+  },
+  {
+    "id": 1343,
+    "product_id": 7064,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 291
+  },
+  {
+    "id": 1347,
+    "product_id": 7068,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 292
+  },
+  {
+    "id": 1354,
+    "product_id": 7088,
+    "weaving_technique_id": 48,
+    "weaving_technique_ord": 0,
+    "product_ord": 5
+  },
+  {
+    "id": 1358,
+    "product_id": 7092,
+    "weaving_technique_id": 48,
+    "weaving_technique_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 1360,
+    "product_id": 7096,
+    "weaving_technique_id": 49,
+    "weaving_technique_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 1363,
+    "product_id": 7099,
+    "weaving_technique_id": 49,
+    "weaving_technique_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 1364,
+    "product_id": 7100,
+    "weaving_technique_id": 48,
+    "weaving_technique_ord": 0,
+    "product_ord": 7
+  },
+  {
+    "id": 1366,
+    "product_id": 7102,
+    "weaving_technique_id": 49,
+    "weaving_technique_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 1367,
+    "product_id": 7105,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 293
+  },
+  {
+    "id": 1371,
+    "product_id": 7109,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 498
+  },
+  {
+    "id": 1372,
+    "product_id": 7117,
+    "weaving_technique_id": 42,
+    "weaving_technique_ord": 0,
+    "product_ord": 1
+  },
+  {
+    "id": 1373,
+    "product_id": 7117,
+    "weaving_technique_id": 44,
+    "weaving_technique_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 1384,
+    "product_id": 7123,
+    "weaving_technique_id": 43,
+    "weaving_technique_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 1385,
+    "product_id": 7123,
+    "weaving_technique_id": 45,
+    "weaving_technique_ord": 2,
+    "product_ord": 4
+  },
+  {
+    "id": 1386,
+    "product_id": 7128,
+    "weaving_technique_id": 38,
+    "weaving_technique_ord": 0,
+    "product_ord": 1
+  },
+  {
+    "id": 1387,
+    "product_id": 7128,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 294
+  },
+  {
+    "id": 1396,
+    "product_id": 7133,
+    "weaving_technique_id": 39,
+    "weaving_technique_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 1397,
+    "product_id": 7133,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 2,
+    "product_ord": 499
+  },
+  {
+    "id": 1398,
+    "product_id": 7138,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 295
+  },
+  {
+    "id": 1402,
+    "product_id": 7142,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 296
+  },
+  {
+    "id": 1405,
+    "product_id": 7145,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 501
+  },
+  {
+    "id": 1406,
+    "product_id": 7146,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 502
+  },
+  {
+    "id": 1407,
+    "product_id": 7147,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 297
+  },
+  {
+    "id": 1409,
+    "product_id": 7151,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 503
+  },
+  {
+    "id": 1415,
+    "product_id": 7174,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 298
+  },
+  {
+    "id": 1417,
+    "product_id": 7259,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 506
+  },
+  {
+    "id": 1418,
+    "product_id": 525,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 299
+  },
+  {
+    "id": 1424,
+    "product_id": 7286,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 507
+  },
+  {
+    "id": 1425,
+    "product_id": 1146,
+    "weaving_technique_id": 44,
+    "weaving_technique_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 1428,
+    "product_id": 7297,
+    "weaving_technique_id": 45,
+    "weaving_technique_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 1431,
+    "product_id": 575,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 300
+  },
+  {
+    "id": 1433,
+    "product_id": 7311,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 508
+  },
+  {
+    "id": 1434,
+    "product_id": 7436,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 509
+  },
+  {
+    "id": 1436,
+    "product_id": 7438,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 510
+  },
+  {
+    "id": 1437,
+    "product_id": 7293,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 301
+  },
+  {
+    "id": 1439,
+    "product_id": 7444,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 511
+  },
+  {
+    "id": 1440,
+    "product_id": 7287,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 1442,
+    "product_id": 7481,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 32
+  },
+  {
+    "id": 1443,
+    "product_id": 7322,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 302
+  },
+  {
+    "id": 1447,
+    "product_id": 7597,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 512
+  },
+  {
+    "id": 1448,
+    "product_id": 7330,
+    "weaving_technique_id": 36,
+    "weaving_technique_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 1453,
+    "product_id": 7607,
+    "weaving_technique_id": 37,
+    "weaving_technique_ord": 1,
+    "product_ord": 33
+  },
+  {
+    "id": 1454,
+    "product_id": 7334,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 303
+  },
+  {
+    "id": 1457,
+    "product_id": 7616,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 513
+  },
+  {
+    "id": 1458,
+    "product_id": 7336,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 304
+  },
+  {
+    "id": 1459,
+    "product_id": 7617,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 514
+  },
+  {
+    "id": 1460,
+    "product_id": 7346,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 305
+  },
+  {
+    "id": 1462,
+    "product_id": 7624,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 515
+  },
+  {
+    "id": 1463,
+    "product_id": 7358,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 306
+  },
+  {
+    "id": 1466,
+    "product_id": 7627,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 516
+  },
+  {
+    "id": 1467,
+    "product_id": 7372,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 307
+  },
+  {
+    "id": 1469,
+    "product_id": 7678,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 517
+  },
+  {
+    "id": 1470,
+    "product_id": 7374,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 308
+  },
+  {
+    "id": 1472,
+    "product_id": 7681,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 518
+  },
+  {
+    "id": 1473,
+    "product_id": 7378,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 309
+  },
+  {
+    "id": 1474,
+    "product_id": 7682,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 519
+  },
+  {
+    "id": 1475,
+    "product_id": 7382,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 310
+  },
+  {
+    "id": 1476,
+    "product_id": 7684,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 520
+  },
+  {
+    "id": 1477,
+    "product_id": 7386,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 311
+  },
+  {
+    "id": 1478,
+    "product_id": 7685,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 521
+  },
+  {
+    "id": 1479,
+    "product_id": 7686,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 522
+  },
+  {
+    "id": 1480,
+    "product_id": 7687,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 0,
+    "product_ord": 312
+  },
+  {
+    "id": 1481,
+    "product_id": 7688,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 523
+  },
+  {
+    "id": 1482,
+    "product_id": 7689,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 313
+  },
+  {
+    "id": 1485,
+    "product_id": 7693,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 524
+  },
+  {
+    "id": 1486,
+    "product_id": 7694,
+    "weaving_technique_id": 46,
+    "weaving_technique_ord": 1,
+    "product_ord": 314
+  },
+  {
+    "id": 1490,
+    "product_id": 7699,
+    "weaving_technique_id": 47,
+    "weaving_technique_ord": 1,
+    "product_ord": 525
+  }
+]

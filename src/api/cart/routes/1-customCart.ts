@@ -79,5 +79,45 @@ export default {
                 middlewares: [],
             },
         },
+        {
+            method: "POST",
+            path: "/migrate-weaving-technique-descriptions",
+            handler: "cart.migrateWeavingTechniqueDescriptionsToDescription",
+            config: {
+                auth: false,
+            },
+        },
+        {
+            method: "POST",
+            path: "/migrate-management-team-descriptions",
+            handler: "cart.migrateManagementTeamDescriptionsToDescription",
+            config: {
+                auth: false,
+            },
+        },
+        {
+            method: "POST",
+            path: "/migrate-weave-design-pattern-descriptions",
+            handler: "cart.migrateWeaveDesignPatternDescriptionsToDescription",
+            config: {
+                auth: false,
+            },
+        },
+        {
+            method: "POST",
+            path: "/migrate-product-description-to-descriptions",
+            handler: "cart.migrateProductDescriptionToDescriptions",
+            config: {
+                auth: false,
+            },
+        },
+        {
+            method: "GET",
+            path: "/count-product-description-fields",
+            handler: "cart.countProductDescriptionFields",
+            config: {
+                auth: false,
+            },
+        },
     ],
 };

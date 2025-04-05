@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "entity_id": 1,
+    "cmp_id": 3,
+    "component_type": "elements.button",
+    "field": "Button",
+    "order": null
+  },
+  {
+    "id": 256,
+    "entity_id": 128,
+    "cmp_id": 683,
+    "component_type": "elements.button",
+    "field": "Button",
+    "order": null
+  }
+]

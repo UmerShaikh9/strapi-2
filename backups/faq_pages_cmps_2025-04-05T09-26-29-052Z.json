@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "entity_id": 1,
+    "cmp_id": 1,
+    "component_type": "faq.faq-sections",
+    "field": "Faq_Sections",
+    "order": 1
+  },
+  {
+    "id": 2,
+    "entity_id": 1,
+    "cmp_id": 2,
+    "component_type": "faq.faq-sections",
+    "field": "Faq_Sections",
+    "order": 2
+  },
+  {
+    "id": 27,
+    "entity_id": 8,
+    "cmp_id": 15,
+    "component_type": "faq.faq-sections",
+    "field": "Faq_Sections",
+    "order": 1
+  },
+  {
+    "id": 28,
+    "entity_id": 8,
+    "cmp_id": 16,
+    "component_type": "faq.faq-sections",
+    "field": "Faq_Sections",
+    "order": 2
+  }
+]

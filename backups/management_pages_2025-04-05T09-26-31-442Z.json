@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "document_id": "jqlt4tg54m9lte0n1uut4i6e",
+    "title": "Management Page",
+    "created_at": "2025-02-12T07:23:23.765Z",
+    "updated_at": "2025-04-05T07:21:43.964Z",
+    "published_at": null,
+    "created_by_id": 1,
+    "updated_by_id": 1,
+    "locale": null
+  },
+  {
+    "id": 29,
+    "document_id": "jqlt4tg54m9lte0n1uut4i6e",
+    "title": "Management Page",
+    "created_at": "2025-02-12T07:23:23.765Z",
+    "updated_at": "2025-04-05T07:21:43.964Z",
+    "published_at": "2025-04-05T07:21:50.837Z",
+    "created_by_id": 1,
+    "updated_by_id": 1,
+    "locale": null
+  }
+]

@@ -37,12 +37,8 @@ export interface BanarasiWeavesFabricOverview extends Struct.ComponentSchema {
     displayName: 'Fabric_Overview';
   };
   attributes: {
-    Descriptions: Schema.Attribute.Component<
-      'components.description-list',
-      false
-    >;
+    Description: Schema.Attribute.Blocks;
     Images: Schema.Attribute.Component<'components.image-title', true>;
-    Testing: Schema.Attribute.Blocks;
     Title: Schema.Attribute.String;
   };
 }
@@ -176,6 +172,7 @@ export interface ComponentsTitleDescription extends Struct.ComponentSchema {
     displayName: 'Title_Description';
   };
   attributes: {
+    Description: Schema.Attribute.Blocks;
     Descriptions: Schema.Attribute.Component<
       'components.description-list',
       false
@@ -347,7 +344,7 @@ export interface FaqFaqQuestions extends Struct.ComponentSchema {
     displayName: 'Faq_Questions';
   };
   attributes: {
-    Answer: Schema.Attribute.Component<'components.description-list', false>;
+    Answer: Schema.Attribute.Blocks;
     Question: Schema.Attribute.String;
   };
 }
@@ -370,6 +367,7 @@ export interface HistoryLineageAboutCard extends Struct.ComponentSchema {
     displayName: 'About_Card';
   };
   attributes: {
+    Description: Schema.Attribute.Blocks;
     Descriptions: Schema.Attribute.Component<
       'components.description-list',
       false

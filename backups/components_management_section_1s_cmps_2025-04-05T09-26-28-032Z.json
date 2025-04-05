@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "entity_id": 1,
+    "cmp_id": 14,
+    "component_type": "history-lineage.about-card",
+    "field": "Member_Details",
+    "order": 1
+  },
+  {
+    "id": 3,
+    "entity_id": 1,
+    "cmp_id": 16,
+    "component_type": "history-lineage.about-card",
+    "field": "Member_Details",
+    "order": 2
+  },
+  {
+    "id": 7,
+    "entity_id": 1,
+    "cmp_id": 19,
+    "component_type": "history-lineage.about-card",
+    "field": "Member_Details",
+    "order": 3
+  },
+  {
+    "id": 13,
+    "entity_id": 1,
+    "cmp_id": 23,
+    "component_type": "history-lineage.about-card",
+    "field": "Member_Details",
+    "order": 4
+  },
+  {
+    "id": 21,
+    "entity_id": 1,
+    "cmp_id": 28,
+    "component_type": "history-lineage.about-card",
+    "field": "Member_Details",
+    "order": 6
+  },
+  {
+    "id": 41,
+    "entity_id": 1,
+    "cmp_id": 39,
+    "component_type": "history-lineage.about-card",
+    "field": "Member_Details",
+    "order": 5
+  },
+  {
+    "id": 53,
+    "entity_id": 1,
+    "cmp_id": 46,
+    "component_type": "history-lineage.about-card",
+    "field": "Member_Details",
+    "order": 7
+  },
+  {
+    "id": 340,
+    "entity_id": 29,
+    "cmp_id": 391,
+    "component_type": "history-lineage.about-card",
+    "field": "Member_Details",
+    "order": 1
+  },
+  {
+    "id": 341,
+    "entity_id": 29,
+    "cmp_id": 392,
+    "component_type": "history-lineage.about-card",
+    "field": "Member_Details",
+    "order": 2
+  },
+  {
+    "id": 342,
+    "entity_id": 29,
+    "cmp_id": 393,
+    "component_type": "history-lineage.about-card",
+    "field": "Member_Details",
+    "order": 3
+  },
+  {
+    "id": 343,
+    "entity_id": 29,
+    "cmp_id": 394,
+    "component_type": "history-lineage.about-card",
+    "field": "Member_Details",
+    "order": 4
+  },
+  {
+    "id": 344,
+    "entity_id": 29,
+    "cmp_id": 395,
+    "component_type": "history-lineage.about-card",
+    "field": "Member_Details",
+    "order": 5
+  },
+  {
+    "id": 345,
+    "entity_id": 29,
+    "cmp_id": 396,
+    "component_type": "history-lineage.about-card",
+    "field": "Member_Details",
+    "order": 6
+  },
+  {
+    "id": 346,
+    "entity_id": 29,
+    "cmp_id": 397,
+    "component_type": "history-lineage.about-card",
+    "field": "Member_Details",
+    "order": 7
+  }
+]

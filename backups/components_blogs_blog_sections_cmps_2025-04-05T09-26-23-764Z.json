@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "entity_id": 1,
+    "cmp_id": 609,
+    "component_type": "banarasi-weaves.fabric-overview",
+    "field": "Blog_Section",
+    "order": 1
+  },
+  {
+    "id": 17,
+    "entity_id": 21,
+    "cmp_id": 1192,
+    "component_type": "banarasi-weaves.fabric-overview",
+    "field": "Blog_Section",
+    "order": 1
+  },
+  {
+    "id": 27,
+    "entity_id": 27,
+    "cmp_id": 1313,
+    "component_type": "banarasi-weaves.fabric-overview",
+    "field": "Blog_Section",
+    "order": 1
+  },
+  {
+    "id": 39,
+    "entity_id": 2,
+    "cmp_id": 1320,
+    "component_type": "banarasi-weaves.fabric-overview",
+    "field": "Blog_Section",
+    "order": 1
+  },
+  {
+    "id": 115,
+    "entity_id": 74,
+    "cmp_id": 1366,
+    "component_type": "banarasi-weaves.fabric-overview",
+    "field": "Blog_Section",
+    "order": 1
+  },
+  {
+    "id": 116,
+    "entity_id": 75,
+    "cmp_id": 1367,
+    "component_type": "banarasi-weaves.fabric-overview",
+    "field": "Blog_Section",
+    "order": 1
+  },
+  {
+    "id": 123,
+    "entity_id": 78,
+    "cmp_id": 1460,
+    "component_type": "banarasi-weaves.fabric-overview",
+    "field": "Blog_Section",
+    "order": 1
+  },
+  {
+    "id": 124,
+    "entity_id": 79,
+    "cmp_id": 1461,
+    "component_type": "banarasi-weaves.fabric-overview",
+    "field": "Blog_Section",
+    "order": 1
+  }
+]

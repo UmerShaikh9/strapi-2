@@ -232,11 +232,6 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                         populate: {
                             Blog_Section: {
                                 populate: {
-                                    Descriptions: {
-                                        populate: {
-                                            Description: true,
-                                        },
-                                    },
                                     Images: {
                                         populate: {
                                             Media: true,
@@ -299,11 +294,6 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                         populate: {
                             Blog_Section: {
                                 populate: {
-                                    Descriptions: {
-                                        populate: {
-                                            Description: true,
-                                        },
-                                    },
                                     Images: {
                                         populate: {
                                             Media: true,
@@ -356,6 +346,349 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
         } catch (error) {
             console.error("Error fetching blogs:", error);
             return ctx.internalServerError("An error occurred while fetching the blogs.");
+        }
+    },
+    async migrateManagementTeamDescriptionsToDescription(ctx) {
+        try {
+            const documents = await strapi.documents("api::management-page.management-page").findMany({
+                populate: {
+                    Team_Details: {
+                        populate: {
+                            Member_Details: {
+                                populate: {
+                                    Descriptions: {
+                                        populate: {
+                                            Description: true,
+                                        },
+                                    },
+                                },
+                            },
+                        },
+                    },
+                },
+            });
+
+            let updatedCount = 0;
+            for (const doc of documents) {
+                if (doc.Team_Details?.Member_Details) {
+                    const updatedEntry = { ...doc };
+                    let hasChanges = false;
+
+                    for (const member of doc.Team_Details.Member_Details) {
+                        if (member.Descriptions?.Description) {
+                            const blocks = member.Descriptions.Description.map((item) => ({
+                                type: "paragraph",
+                                children: [
+                                    {
+                                        type: "text",
+                                        text: item.Text,
+                                        bold: false,
+                                        italic: false,
+                                        underline: false,
+                                        strikethrough: false,
+                                        code: false,
+                                    },
+                                ],
+                            }));
+
+                            if (blocks.length > 0) {
+                                member.Description = blocks as any;
+                                hasChanges = true;
+                            }
+                        }
+                    }
+
+                    if (hasChanges) {
+                        await strapi.documents("api::management-page.management-page").update({
+                            documentId: doc.documentId,
+                            data: {
+                                Team_Details: updatedEntry.Team_Details,
+                            },
+                            status: "published",
+                        });
+                        updatedCount++;
+                    }
+                }
+            }
+
+            return ctx.send({
+                message: `Migration completed. Updated ${updatedCount} documents.`,
+            });
+        } catch (error) {
+            console.error("Error in migrateManagementTeamDescriptionsToDescription:", error);
+            return ctx.internalServerError("An error occurred during migration");
+        }
+    },
+    async migrateWeavingTechniqueDescriptionsToDescription(ctx) {
+        try {
+            const documents = await strapi
+                .documents("api::banarasi-weave-technique.banarasi-weave-technique")
+                .findMany({
+                    populate: {
+                        Weaving_Techniques: {
+                            populate: {
+                                Weave_Technique_Details: {
+                                    populate: {
+                                        Descriptions: {
+                                            populate: {
+                                                Description: true,
+                                            },
+                                        },
+                                    },
+                                },
+                            },
+                        },
+                    },
+                });
+
+            let updatedCount = 0;
+            for (const doc of documents) {
+                if (doc.Weaving_Techniques?.Weave_Technique_Details) {
+                    const updatedEntry = { ...doc };
+                    let hasChanges = false;
+
+                    for (const detail of doc.Weaving_Techniques.Weave_Technique_Details) {
+                        if (detail.Descriptions?.Description) {
+                            const blocks = detail.Descriptions.Description.map((item) => ({
+                                type: "paragraph",
+                                children: [
+                                    {
+                                        type: "text",
+                                        text: item.Text,
+                                        bold: false,
+                                        italic: false,
+                                        underline: false,
+                                        strikethrough: false,
+                                        code: false,
+                                    },
+                                ],
+                            }));
+
+                            if (blocks.length > 0) {
+                                detail.Description = blocks as any;
+                                hasChanges = true;
+                            }
+                        }
+                    }
+
+                    if (hasChanges) {
+                        await strapi.documents("api::banarasi-weave-technique.banarasi-weave-technique").update({
+                            documentId: doc.documentId,
+                            data: {
+                                Weaving_Techniques: updatedEntry.Weaving_Techniques,
+                            },
+                            status: "published",
+                        });
+                        updatedCount++;
+                    }
+                }
+            }
+
+            return ctx.send({
+                message: `Migration completed. Updated ${updatedCount} documents.`,
+            });
+        } catch (error) {
+            console.error("Error in migrateWeavingTechniqueDescriptionsToDescription:", error);
+            return ctx.internalServerError("An error occurred during migration");
+        }
+    },
+    async migrateWeaveDesignPatternDescriptionsToDescription(ctx) {
+        try {
+            const documents = await strapi
+                .documents("api::banarasi-weave-design-pattern.banarasi-weave-design-pattern")
+                .findMany({
+                    populate: {
+                        Design_And_Patterns: {
+                            populate: {
+                                Patterns: {
+                                    populate: {
+                                        Descriptions: {
+                                            populate: {
+                                                Description: true,
+                                            },
+                                        },
+                                    },
+                                },
+                            },
+                        },
+                    },
+                });
+
+            let updatedCount = 0;
+            for (const doc of documents) {
+                if (doc.Design_And_Patterns?.Patterns) {
+                    const updatedEntry = { ...doc };
+                    let hasChanges = false;
+
+                    for (const pattern of doc.Design_And_Patterns.Patterns) {
+                        if (pattern.Descriptions?.Description) {
+                            const blocks = pattern.Descriptions.Description.map((item) => ({
+                                type: "paragraph",
+                                children: [
+                                    {
+                                        type: "text",
+                                        text: item.Text,
+                                        bold: false,
+                                        italic: false,
+                                        underline: false,
+                                        strikethrough: false,
+                                        code: false,
+                                    },
+                                ],
+                            }));
+
+                            if (blocks.length > 0) {
+                                pattern.Description = blocks as any;
+                                hasChanges = true;
+                            }
+                        }
+                    }
+
+                    if (hasChanges) {
+                        await strapi
+                            .documents("api::banarasi-weave-design-pattern.banarasi-weave-design-pattern")
+                            .update({
+                                documentId: doc.documentId,
+                                data: {
+                                    Design_And_Patterns: updatedEntry.Design_And_Patterns,
+                                },
+                                status: "published",
+                            });
+                        updatedCount++;
+                    }
+                }
+            }
+
+            return ctx.send({
+                message: `Migration completed. Updated ${updatedCount} documents.`,
+            });
+        } catch (error) {
+            console.error("Error in migrateWeaveDesignPatternDescriptionsToDescription:", error);
+            return ctx.internalServerError("An error occurred during migration");
+        }
+    },
+    async migrateProductDescriptionToDescriptions(ctx) {
+        try {
+            const documents = await strapi.documents("api::product.product").findMany({});
+
+            let updatedCount = 0;
+            const batchSize = 50; // Process 50 products at a time
+            const batches = [];
+
+            // Create batches of products
+            for (let i = 0; i < documents.length; i += batchSize) {
+                batches.push(documents.slice(i, i + batchSize));
+            }
+
+            console.log(`Processing ${documents.length} products in ${batches.length} batches of ${batchSize}`);
+
+            // Process each batch in parallel
+            for (const batch of batches) {
+                const batchPromises = batch.map(async (doc) => {
+                    if (doc.Description) {
+                        // Create a blocks format from the Description text
+                        const blocks = [
+                            {
+                                type: "paragraph",
+                                children: [
+                                    {
+                                        type: "text",
+                                        text: doc.Description,
+                                        bold: false,
+                                        italic: false,
+                                        underline: false,
+                                        strikethrough: false,
+                                        code: false,
+                                    },
+                                ],
+                            },
+                        ];
+
+                        // Set the Descriptions field with the blocks format
+                        const updateData: any = {
+                            Descriptions: blocks,
+                        };
+
+                        try {
+                            await strapi.documents("api::product.product").update({
+                                documentId: doc.documentId,
+                                data: updateData,
+                                status: "published",
+                            });
+
+                            console.log("Product updated:", doc.Name || doc.documentId);
+                            return true;
+                        } catch (error) {
+                            console.error(`Error updating product ${doc.Name || doc.documentId}:`, error);
+                            return false;
+                        }
+                    }
+                    return false;
+                });
+
+                // Wait for all products in this batch to be processed
+                const results = await Promise.all(batchPromises);
+                updatedCount += results.filter((result) => result).length;
+
+                console.log(`Batch completed. Updated ${updatedCount} products so far.`);
+            }
+
+            return ctx.send({
+                message: `Migration completed. Updated ${updatedCount} documents.`,
+            });
+        } catch (error) {
+            console.error("Error in migrateProductDescriptionToDescriptions:", error);
+            return ctx.internalServerError("An error occurred during migration");
+        }
+    },
+
+    async countProductDescriptionFields(ctx) {
+        try {
+            const documents = await strapi.documents("api::product.product").findMany({});
+
+            let descriptionCount = 0;
+            let descriptionsCount = 0;
+
+            // Arrays to store product names
+            const descriptionProducts = [];
+            const descriptionsProducts = [];
+            const missingDescriptionsProducts = []; // Products with Description but not Descriptions
+
+            for (const doc of documents) {
+                const hasDescription = !!doc.Description;
+                const hasDescriptions = !!doc.Descriptions;
+                const productName = doc.Name || `Product ${doc.documentId}`;
+
+                if (hasDescription) {
+                    descriptionCount++;
+                    descriptionProducts.push(productName);
+
+                    // Check if this product has Description but not Descriptions
+                    if (!hasDescriptions) {
+                        missingDescriptionsProducts.push(productName);
+                    }
+                }
+
+                if (hasDescriptions) {
+                    descriptionsCount++;
+                    descriptionsProducts.push(productName);
+                }
+            }
+
+            return ctx.send({
+                total: documents.length,
+                descriptionCount,
+                descriptionsCount,
+                match: descriptionCount === descriptionsCount,
+                descriptionProducts,
+                descriptionsProducts,
+                missingDescriptionsProducts, // Products that need migration
+                missingCount: missingDescriptionsProducts.length,
+                message: `Found ${documents.length} products. ${descriptionCount} have Description field, ${descriptionsCount} have Descriptions field. ${missingDescriptionsProducts.length} products have Description but not Descriptions.`,
+            });
+        } catch (error) {
+            console.error("Error counting product description fields:", error);
+            return ctx.internalServerError("An error occurred while counting product description fields");
         }
     },
 }));

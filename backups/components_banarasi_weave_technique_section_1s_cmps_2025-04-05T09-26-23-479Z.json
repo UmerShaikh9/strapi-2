@@ -1,0 +1,242 @@
+[
+  {
+    "id": 11,
+    "entity_id": 3,
+    "cmp_id": 358,
+    "component_type": "components.image-title",
+    "field": "Weave_Technique_Images",
+    "order": 2
+  },
+  {
+    "id": 12,
+    "entity_id": 3,
+    "cmp_id": 359,
+    "component_type": "components.image-title",
+    "field": "Weave_Technique_Images",
+    "order": 4
+  },
+  {
+    "id": 13,
+    "entity_id": 3,
+    "cmp_id": 360,
+    "component_type": "components.image-title",
+    "field": "Weave_Technique_Images",
+    "order": 5
+  },
+  {
+    "id": 14,
+    "entity_id": 3,
+    "cmp_id": 361,
+    "component_type": "components.image-title",
+    "field": "Weave_Technique_Images",
+    "order": 7
+  },
+  {
+    "id": 26,
+    "entity_id": 3,
+    "cmp_id": 2,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 1
+  },
+  {
+    "id": 54,
+    "entity_id": 3,
+    "cmp_id": 7,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 2
+  },
+  {
+    "id": 70,
+    "entity_id": 3,
+    "cmp_id": 11,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 3
+  },
+  {
+    "id": 71,
+    "entity_id": 3,
+    "cmp_id": 12,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 4
+  },
+  {
+    "id": 72,
+    "entity_id": 3,
+    "cmp_id": 13,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 5
+  },
+  {
+    "id": 92,
+    "entity_id": 3,
+    "cmp_id": 20,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 6
+  },
+  {
+    "id": 93,
+    "entity_id": 3,
+    "cmp_id": 21,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 7
+  },
+  {
+    "id": 116,
+    "entity_id": 3,
+    "cmp_id": 29,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 8
+  },
+  {
+    "id": 142,
+    "entity_id": 3,
+    "cmp_id": 38,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 9
+  },
+  {
+    "id": 170,
+    "entity_id": 3,
+    "cmp_id": 48,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 10
+  },
+  {
+    "id": 200,
+    "entity_id": 3,
+    "cmp_id": 59,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 11
+  },
+  {
+    "id": 1352,
+    "entity_id": 49,
+    "cmp_id": 2415,
+    "component_type": "components.image-title",
+    "field": "Weave_Technique_Images",
+    "order": 1
+  },
+  {
+    "id": 1353,
+    "entity_id": 49,
+    "cmp_id": 2416,
+    "component_type": "components.image-title",
+    "field": "Weave_Technique_Images",
+    "order": 2
+  },
+  {
+    "id": 1354,
+    "entity_id": 49,
+    "cmp_id": 2417,
+    "component_type": "components.image-title",
+    "field": "Weave_Technique_Images",
+    "order": 3
+  },
+  {
+    "id": 1355,
+    "entity_id": 49,
+    "cmp_id": 2418,
+    "component_type": "components.image-title",
+    "field": "Weave_Technique_Images",
+    "order": 4
+  },
+  {
+    "id": 1356,
+    "entity_id": 49,
+    "cmp_id": 456,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 1
+  },
+  {
+    "id": 1357,
+    "entity_id": 49,
+    "cmp_id": 457,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 2
+  },
+  {
+    "id": 1358,
+    "entity_id": 49,
+    "cmp_id": 458,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 3
+  },
+  {
+    "id": 1359,
+    "entity_id": 49,
+    "cmp_id": 459,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 4
+  },
+  {
+    "id": 1360,
+    "entity_id": 49,
+    "cmp_id": 466,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 5
+  },
+  {
+    "id": 1361,
+    "entity_id": 49,
+    "cmp_id": 460,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 6
+  },
+  {
+    "id": 1362,
+    "entity_id": 49,
+    "cmp_id": 461,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 7
+  },
+  {
+    "id": 1363,
+    "entity_id": 49,
+    "cmp_id": 462,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 8
+  },
+  {
+    "id": 1364,
+    "entity_id": 49,
+    "cmp_id": 463,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 9
+  },
+  {
+    "id": 1365,
+    "entity_id": 49,
+    "cmp_id": 464,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 10
+  },
+  {
+    "id": 1366,
+    "entity_id": 49,
+    "cmp_id": 465,
+    "component_type": "components.title-description",
+    "field": "Weave_Technique_Details",
+    "order": 11
+  }
+]

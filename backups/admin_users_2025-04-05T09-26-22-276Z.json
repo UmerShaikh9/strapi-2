@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "document_id": "o8ao6hp2fv4ex63ogr5mlc0o",
+    "firstname": "umer",
+    "lastname": "shaikh",
+    "username": null,
+    "email": "umershaikh8805@gmail.com",
+    "password": "$2a$10$qXdqMZQu0Z3Y.tuV.6l8Eem.VmigHHkzTwECAlGQJFqvqQbeHABwe",
+    "reset_password_token": null,
+    "registration_token": null,
+    "is_active": 1,
+    "blocked": 0,
+    "prefered_language": null,
+    "created_at": "2024-12-25T07:06:08.945Z",
+    "updated_at": "2024-12-25T07:06:08.945Z",
+    "published_at": "2024-12-25T07:06:08.946Z",
+    "created_by_id": null,
+    "updated_by_id": null,
+    "locale": null
+  }
+]

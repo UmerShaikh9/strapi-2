@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "entity_id": 1,
+    "cmp_id": 1,
+    "component_type": "blogs.blog-section",
+    "field": "Blogs",
+    "order": 1
+  },
+  {
+    "id": 2,
+    "entity_id": 1,
+    "cmp_id": 2,
+    "component_type": "blogs.blog-section",
+    "field": "Blogs",
+    "order": 2
+  },
+  {
+    "id": 59,
+    "entity_id": 1,
+    "cmp_id": 18959,
+    "component_type": "components.description-list",
+    "field": "Descriptions",
+    "order": 3
+  },
+  {
+    "id": 139,
+    "entity_id": 33,
+    "cmp_id": 78,
+    "component_type": "blogs.blog-section",
+    "field": "Blogs",
+    "order": 1
+  },
+  {
+    "id": 140,
+    "entity_id": 33,
+    "cmp_id": 79,
+    "component_type": "blogs.blog-section",
+    "field": "Blogs",
+    "order": 2
+  },
+  {
+    "id": 141,
+    "entity_id": 33,
+    "cmp_id": 19408,
+    "component_type": "components.description-list",
+    "field": "Descriptions",
+    "order": null
+  }
+]

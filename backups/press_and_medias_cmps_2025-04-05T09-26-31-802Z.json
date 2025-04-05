@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "entity_id": 1,
+    "cmp_id": 21,
+    "component_type": "blogs.blog-section",
+    "field": "Blogs",
+    "order": 1
+  },
+  {
+    "id": 11,
+    "entity_id": 1,
+    "cmp_id": 27,
+    "component_type": "blogs.blog-section",
+    "field": "Blogs",
+    "order": 2
+  },
+  {
+    "id": 29,
+    "entity_id": 11,
+    "cmp_id": 74,
+    "component_type": "blogs.blog-section",
+    "field": "Blogs",
+    "order": 1
+  },
+  {
+    "id": 30,
+    "entity_id": 11,
+    "cmp_id": 75,
+    "component_type": "blogs.blog-section",
+    "field": "Blogs",
+    "order": 2
+  }
+]

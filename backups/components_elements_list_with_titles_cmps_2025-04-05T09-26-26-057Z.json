@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "entity_id": 1,
+    "cmp_id": 27,
+    "component_type": "elements.list",
+    "field": "Options",
+    "order": 2
+  },
+  {
+    "id": 5,
+    "entity_id": 3,
+    "cmp_id": 2,
+    "component_type": "components.social-network",
+    "field": "Social_Networks",
+    "order": 1
+  },
+  {
+    "id": 7,
+    "entity_id": 3,
+    "cmp_id": 4,
+    "component_type": "components.social-network",
+    "field": "Social_Networks",
+    "order": 2
+  },
+  {
+    "id": 17,
+    "entity_id": 7,
+    "cmp_id": 4,
+    "component_type": "components.description-list",
+    "field": "Descriptions",
+    "order": 1
+  },
+  {
+    "id": 18,
+    "entity_id": 8,
+    "cmp_id": 5,
+    "component_type": "components.description-list",
+    "field": "Descriptions",
+    "order": 1
+  },
+  {
+    "id": 27,
+    "entity_id": 1,
+    "cmp_id": 6,
+    "component_type": "components.description-list",
+    "field": "Descriptions",
+    "order": 1
+  },
+  {
+    "id": 562,
+    "entity_id": 146,
+    "cmp_id": 1122,
+    "component_type": "components.description-list",
+    "field": "Descriptions",
+    "order": 1
+  },
+  {
+    "id": 722,
+    "entity_id": 207,
+    "cmp_id": 219,
+    "component_type": "components.social-network",
+    "field": "Social_Networks",
+    "order": 1
+  },
+  {
+    "id": 723,
+    "entity_id": 207,
+    "cmp_id": 220,
+    "component_type": "components.social-network",
+    "field": "Social_Networks",
+    "order": 2
+  },
+  {
+    "id": 724,
+    "entity_id": 208,
+    "cmp_id": 18533,
+    "component_type": "components.description-list",
+    "field": "Descriptions",
+    "order": null
+  },
+  {
+    "id": 725,
+    "entity_id": 209,
+    "cmp_id": 18534,
+    "component_type": "components.description-list",
+    "field": "Descriptions",
+    "order": null
+  },
+  {
+    "id": 726,
+    "entity_id": 210,
+    "cmp_id": 18535,
+    "component_type": "components.description-list",
+    "field": "Descriptions",
+    "order": null
+  },
+  {
+    "id": 727,
+    "entity_id": 211,
+    "cmp_id": 18536,
+    "component_type": "components.description-list",
+    "field": "Descriptions",
+    "order": null
+  }
+]

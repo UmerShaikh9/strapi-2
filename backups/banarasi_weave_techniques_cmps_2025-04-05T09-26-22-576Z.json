@@ -1,0 +1,50 @@
+[
+  {
+    "id": 3,
+    "entity_id": 1,
+    "cmp_id": 3,
+    "component_type": "banarasi-weave-technique.section-1",
+    "field": "Weaving_Techniques",
+    "order": 3
+  },
+  {
+    "id": 26,
+    "entity_id": 1,
+    "cmp_id": 51,
+    "component_type": "layout.connect-us",
+    "field": "Connect_Us",
+    "order": 1
+  },
+  {
+    "id": 31,
+    "entity_id": 1,
+    "cmp_id": 24,
+    "component_type": "components.book-an-appointment",
+    "field": "Book_An_Appointment",
+    "order": 1
+  },
+  {
+    "id": 228,
+    "entity_id": 48,
+    "cmp_id": 49,
+    "component_type": "banarasi-weave-technique.section-1",
+    "field": "Weaving_Techniques",
+    "order": null
+  },
+  {
+    "id": 229,
+    "entity_id": 48,
+    "cmp_id": 395,
+    "component_type": "layout.connect-us",
+    "field": "Connect_Us",
+    "order": 1
+  },
+  {
+    "id": 230,
+    "entity_id": 48,
+    "cmp_id": 308,
+    "component_type": "components.book-an-appointment",
+    "field": "Book_An_Appointment",
+    "order": null
+  }
+]

@@ -1,24 +1,27 @@
 {
-  "collectionName": "components_history_lineage_about_cards",
-  "info": {
-    "displayName": "About_Card",
-    "description": ""
-  },
-  "options": {},
-  "attributes": {
-    "Title": {
-      "type": "string"
+    "collectionName": "components_history_lineage_about_cards",
+    "info": {
+        "displayName": "About_Card",
+        "description": ""
     },
-    "Image_Box": {
-      "displayName": "Image_Box",
-      "type": "component",
-      "repeatable": false,
-      "component": "components.image-box"
-    },
-    "Descriptions": {
-      "type": "component",
-      "repeatable": false,
-      "component": "components.description-list"
+    "options": {},
+    "attributes": {
+        "Title": {
+            "type": "string"
+        },
+        "Image_Box": {
+            "displayName": "Image_Box",
+            "type": "component",
+            "repeatable": false,
+            "component": "components.image-box"
+        },
+        "Descriptions": {
+            "type": "component",
+            "repeatable": false,
+            "component": "components.description-list"
+        },
+        "Description": {
+            "type": "blocks"
+        }
     }
-  }
 }

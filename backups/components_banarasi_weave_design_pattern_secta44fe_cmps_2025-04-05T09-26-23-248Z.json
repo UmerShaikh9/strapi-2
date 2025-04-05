@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "entity_id": 1,
+    "cmp_id": 75,
+    "component_type": "history-lineage.about-card",
+    "field": "Patterns",
+    "order": 1
+  },
+  {
+    "id": 3,
+    "entity_id": 1,
+    "cmp_id": 77,
+    "component_type": "history-lineage.about-card",
+    "field": "Patterns",
+    "order": 2
+  },
+  {
+    "id": 7,
+    "entity_id": 1,
+    "cmp_id": 80,
+    "component_type": "history-lineage.about-card",
+    "field": "Patterns",
+    "order": 3
+  },
+  {
+    "id": 17,
+    "entity_id": 1,
+    "cmp_id": 86,
+    "component_type": "history-lineage.about-card",
+    "field": "Patterns",
+    "order": 4
+  },
+  {
+    "id": 18,
+    "entity_id": 1,
+    "cmp_id": 87,
+    "component_type": "history-lineage.about-card",
+    "field": "Patterns",
+    "order": 5
+  },
+  {
+    "id": 27,
+    "entity_id": 1,
+    "cmp_id": 93,
+    "component_type": "history-lineage.about-card",
+    "field": "Patterns",
+    "order": 6
+  },
+  {
+    "id": 297,
+    "entity_id": 29,
+    "cmp_id": 404,
+    "component_type": "history-lineage.about-card",
+    "field": "Patterns",
+    "order": 1
+  },
+  {
+    "id": 298,
+    "entity_id": 29,
+    "cmp_id": 405,
+    "component_type": "history-lineage.about-card",
+    "field": "Patterns",
+    "order": 2
+  },
+  {
+    "id": 299,
+    "entity_id": 29,
+    "cmp_id": 406,
+    "component_type": "history-lineage.about-card",
+    "field": "Patterns",
+    "order": 3
+  },
+  {
+    "id": 300,
+    "entity_id": 29,
+    "cmp_id": 407,
+    "component_type": "history-lineage.about-card",
+    "field": "Patterns",
+    "order": 4
+  },
+  {
+    "id": 301,
+    "entity_id": 29,
+    "cmp_id": 408,
+    "component_type": "history-lineage.about-card",
+    "field": "Patterns",
+    "order": 5
+  },
+  {
+    "id": 302,
+    "entity_id": 29,
+    "cmp_id": 409,
+    "component_type": "history-lineage.about-card",
+    "field": "Patterns",
+    "order": 6
+  }
+]

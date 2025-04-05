@@ -1,0 +1,170 @@
+[
+  {
+    "id": 9,
+    "product_id": 3558,
+    "curation_and_revival_id": 12,
+    "curation_and_revival_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 11,
+    "product_id": 5914,
+    "curation_and_revival_id": 13,
+    "curation_and_revival_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 12,
+    "product_id": 765,
+    "curation_and_revival_id": 3,
+    "curation_and_revival_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 14,
+    "product_id": 6013,
+    "curation_and_revival_id": 14,
+    "curation_and_revival_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 15,
+    "product_id": 508,
+    "curation_and_revival_id": 12,
+    "curation_and_revival_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 17,
+    "product_id": 1268,
+    "curation_and_revival_id": 3,
+    "curation_and_revival_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 26,
+    "product_id": 1272,
+    "curation_and_revival_id": 12,
+    "curation_and_revival_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 31,
+    "product_id": 6798,
+    "curation_and_revival_id": 13,
+    "curation_and_revival_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 33,
+    "product_id": 6866,
+    "curation_and_revival_id": 13,
+    "curation_and_revival_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 35,
+    "product_id": 6907,
+    "curation_and_revival_id": 14,
+    "curation_and_revival_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 36,
+    "product_id": 523,
+    "curation_and_revival_id": 12,
+    "curation_and_revival_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 40,
+    "product_id": 7088,
+    "curation_and_revival_id": 3,
+    "curation_and_revival_ord": 0,
+    "product_ord": 3
+  },
+  {
+    "id": 44,
+    "product_id": 7096,
+    "curation_and_revival_id": 14,
+    "curation_and_revival_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 45,
+    "product_id": 7092,
+    "curation_and_revival_id": 3,
+    "curation_and_revival_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 49,
+    "product_id": 7099,
+    "curation_and_revival_id": 14,
+    "curation_and_revival_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 50,
+    "product_id": 7100,
+    "curation_and_revival_id": 3,
+    "curation_and_revival_ord": 0,
+    "product_ord": 5
+  },
+  {
+    "id": 52,
+    "product_id": 7102,
+    "curation_and_revival_id": 14,
+    "curation_and_revival_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 53,
+    "product_id": 7105,
+    "curation_and_revival_id": 12,
+    "curation_and_revival_ord": 0,
+    "product_ord": 5
+  },
+  {
+    "id": 57,
+    "product_id": 7109,
+    "curation_and_revival_id": 13,
+    "curation_and_revival_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 58,
+    "product_id": 7128,
+    "curation_and_revival_id": 3,
+    "curation_and_revival_ord": 0,
+    "product_ord": 6
+  },
+  {
+    "id": 63,
+    "product_id": 7133,
+    "curation_and_revival_id": 14,
+    "curation_and_revival_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 64,
+    "product_id": 7147,
+    "curation_and_revival_id": 12,
+    "curation_and_revival_ord": 0,
+    "product_ord": 6
+  },
+  {
+    "id": 66,
+    "product_id": 7151,
+    "curation_and_revival_id": 13,
+    "curation_and_revival_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 67,
+    "product_id": 7686,
+    "curation_and_revival_id": 13,
+    "curation_and_revival_ord": 1,
+    "product_ord": 8
+  }
+]

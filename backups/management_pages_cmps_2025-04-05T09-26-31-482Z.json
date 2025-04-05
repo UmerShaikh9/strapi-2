@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "entity_id": 1,
+    "cmp_id": 1,
+    "component_type": "management.section-1",
+    "field": "Team_Details",
+    "order": null
+  },
+  {
+    "id": 18,
+    "entity_id": 1,
+    "cmp_id": 1,
+    "component_type": "management.section-2",
+    "field": "Our_Circle_Strength",
+    "order": null
+  },
+  {
+    "id": 23,
+    "entity_id": 1,
+    "cmp_id": 21,
+    "component_type": "components.book-an-appointment",
+    "field": "Book_An_Appointment",
+    "order": null
+  },
+  {
+    "id": 24,
+    "entity_id": 1,
+    "cmp_id": 48,
+    "component_type": "layout.connect-us",
+    "field": "Connect_Us",
+    "order": null
+  },
+  {
+    "id": 166,
+    "entity_id": 29,
+    "cmp_id": 29,
+    "component_type": "management.section-1",
+    "field": "Team_Details",
+    "order": null
+  },
+  {
+    "id": 167,
+    "entity_id": 29,
+    "cmp_id": 21,
+    "component_type": "management.section-2",
+    "field": "Our_Circle_Strength",
+    "order": null
+  },
+  {
+    "id": 168,
+    "entity_id": 29,
+    "cmp_id": 298,
+    "component_type": "components.book-an-appointment",
+    "field": "Book_An_Appointment",
+    "order": null
+  },
+  {
+    "id": 169,
+    "entity_id": 29,
+    "cmp_id": 385,
+    "component_type": "layout.connect-us",
+    "field": "Connect_Us",
+    "order": null
+  }
+]

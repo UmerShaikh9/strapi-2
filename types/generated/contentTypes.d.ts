@@ -990,7 +990,7 @@ export interface ApiPressAndMediaPressAndMedia extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Description: Schema.Attribute.String;
+    Description: Schema.Attribute.Blocks;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1100,6 +1100,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       'api::curation-and-revival.curation-and-revival'
     >;
     Description: Schema.Attribute.Text;
+    Descriptions: Schema.Attribute.Blocks;
     Fabric: Schema.Attribute.JSON &
       Schema.Attribute.CustomField<
         'plugin::multi-select.multi-select',
@@ -1195,7 +1196,11 @@ export interface ApiRasaPageRasaPage extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Description: Schema.Attribute.Text;
+    Description: Schema.Attribute.Blocks;
+    Descriptions: Schema.Attribute.Component<
+      'components.description-list',
+      false
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

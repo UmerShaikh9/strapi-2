@@ -14,12 +14,7 @@
       "repeatable": true,
       "component": "components.image-title"
     },
-    "Descriptions": {
-      "type": "component",
-      "repeatable": false,
-      "component": "components.description-list"
-    },
-    "Testing": {
+    "Description": {
       "type": "blocks"
     }
   }

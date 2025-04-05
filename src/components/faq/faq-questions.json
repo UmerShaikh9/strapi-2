@@ -1,17 +1,15 @@
 {
-  "collectionName": "components_faq_faq_questions",
-  "info": {
-    "displayName": "Faq_Questions"
-  },
-  "options": {},
-  "attributes": {
-    "Question": {
-      "type": "string"
+    "collectionName": "components_faq_faq_questions",
+    "info": {
+        "displayName": "Faq_Questions"
     },
-    "Answer": {
-      "type": "component",
-      "repeatable": false,
-      "component": "components.description-list"
+    "options": {},
+    "attributes": {
+        "Question": {
+            "type": "string"
+        },
+        "Answer": {
+            "type": "blocks"
+        }
     }
-  }
 }

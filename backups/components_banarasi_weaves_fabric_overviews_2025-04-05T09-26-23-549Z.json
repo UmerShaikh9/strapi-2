@@ -1,0 +1,936 @@
+[
+  {
+    "id": 2,
+    "title": "Sooti/Malmal/Mulmul/Muslin Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Cotton (sooti), malmal (mulmul) and translucent muslin textures are woven by a handful of skilled artisans. Light as air, they find mention in Indian texts as far back as the  5th - 6th century B.C.  “Cotton cloths of Kasi were exquisitely woven, smooth, bleached completely white, and their fibres were fine and soft”. (Source: textilescommittee.nic.in)",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "The Buddhist “Jataka” notes detail the Kasi Kingdom as the principal centre of manufacturing cotton fabric from yarn sourced from the Deccan Plateau.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Malmal Katan Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Silk-by-cotton weaves were popular in the early 20th century as they could be worn through summers and winters. They were also super soft. A handful of weavers have revived the weaving of this fabric in small quantities in recent times. The warp in such weaves is silk; the weft uses cotton twisted with silk. It is said that the raw cotton yarn used in such weaves is so soft and delicate that carrying it from one destination to another is itself a task mastered by just a handful of weavers.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Katan Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Katan silk is made using long filaments of mulberry silk. The silk from silkworms is harvested within 21 days of forming the pupa to get the long filaments. Double yarns of mulberry are twisted at 1800-2800 RPM in both, the warp as well as in the weft. The result is a smooth and lustrous silk fabric that is most popularly associated with Banarasi sarees.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Georgette Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Georgette is a grainy, heavy-falling fabric with elasticity due to the difference in twisting speeds of the warp and the weft. ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Unlike chiffon where warp and weft have the same highly twisted A and B count silk yarns (spun at 5600 RPM each), in georgette, lightly twisted katan silk warp thread (1800-2800 RPM) is woven with chiffon weft thread. ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "A frame called khaddi is used to stretch tie threads, hence this kind of fabric produced is often called Khaddi Georgette.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Chiffon Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Mulberry silk threads are twisted at a very high speed to make very thin yarn for chiffon fabric. One thread, called A count, is twisted clockwise at 5600 RPM and the second thread, B count, is twisted anticlockwise at 5600 RPM. The tightly woven output yarn forms the warp and weft of chiffon fabric. ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Compared to katan silk twisting where the twisting speed (clockwise and anticlockwise) is between 1800-2800 RPM, the twisting of Chiffon is at a much faster rate.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "title": "Kora Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Kora silk is made using virgin mulberry silk yarn. The threads are neither degummed nor twisted. The silk fibres are slightly stiff due to the natural gum and hence hold form and structure. They are used primarily to make diaphanous fabric. The look of fabric woven from kora fibres is that of a softly floating organza.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Kora silk comes in two forms: single and double. In single kora, the warp is single-ply silk and the weft is two-ply. In double kora, the warp is in two-ply yarn and the weft is in three-ply yarn.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "title": "Tissue Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Tissue fabric uses silk or cotton across the warp. The weft is zari threads.  (gold, silver, or other metals are wrapped around silk or cotton filaments to make zari yarn). The fabric that emerges from such a technique shimmers and gleams. It is akin to Lamé fabric found in Europe, though the weaving technique used in Banaras is different. ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "It is relatively expensive to make and store tissue fabric due to its delicate nature.  ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "The metallic zari woven in the base of the fabric makes it prone to crushing; it is often sold in crushed form as well. ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "format": "unordered",
+        "children": [
+          {
+            "type": "list-item",
+            "children": [
+              {
+                "text": "When made out of kora warp threads, the tissue fabric is translucent and is called kora tissue. ",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "format": "unordered",
+        "children": [
+          {
+            "type": "list-item",
+            "children": [
+              {
+                "text": "Katan tissue is denser and falls in softer folds. ",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "format": "unordered",
+        "children": [
+          {
+            "type": "list-item",
+            "children": [
+              {
+                "text": "Sometimes, malmal, georgette, muga and chiniya are also used in the warp for making soft tissue fabric.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "However, the most popular is the gossamer kora tissue.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "title": "Chiniya Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Chiniya silk fabrics are made using shorter filaments of mulberry silk. The longer yarns are degummed and separated for making katan fabric or other textures requiring longer filaments. The shorter, degummed silk filaments are then brought together to form long yarns using mechanised means. These long yarns created from shorter filaments are more shiny and dyeable. Fabric thans, dupattas and sarees can be created on a white base using these bleached yarns. Their easy dyeability after being woven is a desirable trait in Banarasi weaves.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "title": "Satin Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "In satin weaves of various densities, between five to seven weft threads of pure mulberry silk are woven over a single warp thread using a tool called heald shaft (or kaadi in local terminology). The weft threads are woven over and under the warp in a manner that the floats move upwards and give a shinier, fluffier satiny texture. Since more than double the amount of pure mulberry silk is used In weaving satin textures, the silk is heavier, creamier and denser.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "title": "Dupion Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Sometimes, late harvesting of silk or adverse climatic conditions creates silk yarn that has shorter filaments and slubs. These shorter or thicker filaments of mulberry silk are gathered to make yarn that has tussar or a raw silk-like fabric finish. Dupion is also made from the waste of longer mulberry silk yarns. ",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "title": "Muga Silk Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Highly prized long and golden silk filaments from Assam are brought to Banaras to make exceptionally soft products. This silk is neither easy to source nor easy to treat and weave; very few skilled artisans can honour its glorious golden skein and weave. Muga silk fabric tends to have the sheen of cotton but the fall of silk.  This highly prized fabric generally tends to take up mellow and soft shades while dyeing. Lightweight and suitable for all weather conditions throughout the year, it is a fabric worth possessing.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "title": "Tussar Silk Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Tussar georgette is an inventive fibre made from katan silk warp and tussar weft. Once woven, it is again bleached and dyed using another inventive approach. The end result is called tussar georgette as it tends to have the graininess of tussar silk and the fall of georgette. It flows beautifully and drapes very well. Again, only a few weavers can create this very soft, highly fluid fabric.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 304,
+    "title": null,
+    "description": null
+  },
+  {
+    "id": 309,
+    "title": null,
+    "description": null
+  },
+  {
+    "id": 312,
+    "title": null,
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Sangeeta's maternal family also has deep roots in Varanasi's textile industry. Her ancestors, Ramkishan Dasji and his sons, Rama Dasji and Shyama Dasji of Jaipuria Kothi in Thatheri Bazaar of Banaras are well known for the manufacturing and trade of their exquisite Banarasi weaves since over a century.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Ramkishan Das ji's daughter, Shyam Mani Devi ji was Sangeeta’s grandmother—Sangeeta was born to her daughter Geeta Agrawal.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "In fact, Shyam Mani Devi’s wardrobe was of such magnificence and of such refined taste that master weavers even today feel it is unmatched. Showcased here is her blouse from late 1930s – it was made from a peach pink asharfi boota kadhwa fabric in katan silk. It was worn with a pale pink kora tissue saree with gold and silver aada jangla boota work.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 313,
+    "title": "Inspiration",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Having spent much of their lives in Chennai, Banaras, Gaya, Allahabad, Bhopal, and New Delhi, the mother-daughter duo cultivated a fine eye for woven art hidden away in old trunks, both in their own homes and those of others across India. ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "The duo’s knowledge of zari-work and weaves is enriched by generous inputs from master craftsmen of Banaras who continue spending days teaching them the physics and chemistry of natural fibres; and who tutor them on techniques and patterns that can be revived or innovated upon. They keep experimenting with timeless handloom weaving techniques to ensure the craft remains relevant to the current times.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 319,
+    "title": "Curation & Revival",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Having spent much of their lives in Chennai, Banaras, Gaya, Allahabad, Bhopal, and New Delhi, the mother-daughter duo cultivated a fine eye for woven art hidden away in old trunks, both in their own homes and those of others across India. Each vintage piece sparked lively discussions about the art form, the era it belonged to, the intricacies of the fabric and weave, and the meticulous instructions passed down through generations to create these treasures. The preservation of these titbits forms an oral history that spans generations and translates into Banarasi Baithak’s rich and diverse weaves.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "The duo’s knowledge of zari-work and weaves is enriched by generous inputs from master craftsmen of Banaras who continue spending days teaching them the physics and chemistry of natural fibres; and who tutor them on techniques and patterns that can be revived or innovated upon. Their vision is to keep experimenting with timeless handloom weaving techniques and ensure the craft remains relevant to the current times.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 582,
+    "title": "Blog 1",
+    "description": null
+  },
+  {
+    "id": 584,
+    "title": "Blog 1",
+    "description": null
+  },
+  {
+    "id": 585,
+    "title": "Section 1",
+    "description": null
+  },
+  {
+    "id": 587,
+    "title": "Section 2",
+    "description": null
+  },
+  {
+    "id": 605,
+    "title": "Section 1",
+    "description": null
+  },
+  {
+    "id": 606,
+    "title": "Section 2",
+    "description": null
+  },
+  {
+    "id": 609,
+    "title": "sssa",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, soluta voluptatem nostrum nemo incidunt hic obcaecati mollitia atque autem commodi.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1019,
+    "title": "Tussar Georgette Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Tussar silk sourced from central India—largely from Madhya Pradesh and Bihar—has shorter and thicker filament when compared to mulberry silk filament.  Sarees woven from raw tussar fibres in Banaras tend to be thick, textured beautifully and are appropriate for winters. For summers, a handful of master craftspeople use bleaching and beating techniques to make the tough, highly gummed silk softer and thinner. Such sarees are rare in Banaras.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1192,
+    "title": "Press_And_Medias",
+    "description": null
+  },
+  {
+    "id": 1313,
+    "title": "Second 1 ",
+    "description": null
+  },
+  {
+    "id": 1320,
+    "title": "Section 1",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, soluta voluptatem nostrum nemo incidunt hic obcaecati mollitia atque autem commodi.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1366,
+    "title": "Press_And_Medias",
+    "description": null
+  },
+  {
+    "id": 1367,
+    "title": "Second 1 ",
+    "description": null
+  },
+  {
+    "id": 1390,
+    "title": null,
+    "description": null
+  },
+  {
+    "id": 1391,
+    "title": null,
+    "description": null
+  },
+  {
+    "id": 1392,
+    "title": null,
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Sangeeta's maternal family also has deep roots in Varanasi's textile industry. Her ancestors, Ramkishan Dasji and his sons, Rama Dasji and Shyama Dasji of Jaipuria Kothi in Thatheri Bazaar of Banaras are well known for the manufacturing and trade of their exquisite Banarasi weaves since over a century.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Ramkishan Das ji's daughter, Shyam Mani Devi ji was Sangeeta’s grandmother—Sangeeta was born to her daughter Geeta Agrawal.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "In fact, Shyam Mani Devi’s wardrobe was of such magnificence and of such refined taste that master weavers even today feel it is unmatched. Showcased here is her blouse from late 1930s – it was made from a peach pink asharfi boota kadhwa fabric in katan silk. It was worn with a pale pink kora tissue saree with gold and silver aada jangla boota work.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1393,
+    "title": "Inspiration",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Having spent much of their lives in Chennai, Banaras, Gaya, Allahabad, Bhopal, and New Delhi, the mother-daughter duo cultivated a fine eye for woven art hidden away in old trunks, both in their own homes and those of others across India. ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "The duo’s knowledge of zari-work and weaves is enriched by generous inputs from master craftsmen of Banaras who continue spending days teaching them the physics and chemistry of natural fibres; and who tutor them on techniques and patterns that can be revived or innovated upon. They keep experimenting with timeless handloom weaving techniques to ensure the craft remains relevant to the current times.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1394,
+    "title": "Curation & Revival",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Having spent much of their lives in Chennai, Banaras, Gaya, Allahabad, Bhopal, and New Delhi, the mother-daughter duo cultivated a fine eye for woven art hidden away in old trunks, both in their own homes and those of others across India. Each vintage piece sparked lively discussions about the art form, the era it belonged to, the intricacies of the fabric and weave, and the meticulous instructions passed down through generations to create these treasures. The preservation of these titbits forms an oral history that spans generations and translates into Banarasi Baithak’s rich and diverse weaves.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "The duo’s knowledge of zari-work and weaves is enriched by generous inputs from master craftsmen of Banaras who continue spending days teaching them the physics and chemistry of natural fibres; and who tutor them on techniques and patterns that can be revived or innovated upon. Their vision is to keep experimenting with timeless handloom weaving techniques and ensure the craft remains relevant to the current times.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1447,
+    "title": "Sooti/Malmal/Mulmul/Muslin Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Cotton (sooti), malmal (mulmul) and translucent muslin textures are woven by a handful of skilled artisans. Light as air, they find mention in Indian texts as far back as the  5th - 6th century B.C.  “Cotton cloths of Kasi were exquisitely woven, smooth, bleached completely white, and their fibres were fine and soft”. (Source: textilescommittee.nic.in)",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "The Buddhist “Jataka” notes detail the Kasi Kingdom as the principal centre of manufacturing cotton fabric from yarn sourced from the Deccan Plateau.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1448,
+    "title": "Malmal Katan Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Silk-by-cotton weaves were popular in the early 20th century as they could be worn through summers and winters. They were also super soft. A handful of weavers have revived the weaving of this fabric in small quantities in recent times. The warp in such weaves is silk; the weft uses cotton twisted with silk. It is said that the raw cotton yarn used in such weaves is so soft and delicate that carrying it from one destination to another is itself a task mastered by just a handful of weavers.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1449,
+    "title": "Chiffon Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Mulberry silk threads are twisted at a very high speed to make very thin yarn for chiffon fabric. One thread, called A count, is twisted clockwise at 5600 RPM and the second thread, B count, is twisted anticlockwise at 5600 RPM. The tightly woven output yarn forms the warp and weft of chiffon fabric. ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Compared to katan silk twisting where the twisting speed (clockwise and anticlockwise) is between 1800-2800 RPM, the twisting of Chiffon is at a much faster rate.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1450,
+    "title": "Georgette Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Georgette is a grainy, heavy-falling fabric with elasticity due to the difference in twisting speeds of the warp and the weft. ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Unlike chiffon where warp and weft have the same highly twisted A and B count silk yarns (spun at 5600 RPM each), in georgette, lightly twisted katan silk warp thread (1800-2800 RPM) is woven with chiffon weft thread. ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "A frame called khaddi is used to stretch tie threads, hence this kind of fabric produced is often called Khaddi Georgette.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1451,
+    "title": "Tissue Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Tissue fabric uses silk or cotton across the warp. The weft is zari threads.  (gold, silver, or other metals are wrapped around silk or cotton filaments to make zari yarn). The fabric that emerges from such a technique shimmers and gleams. It is akin to Lamé fabric found in Europe, though the weaving technique used in Banaras is different. ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "It is relatively expensive to make and store tissue fabric due to its delicate nature.  ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "The metallic zari woven in the base of the fabric makes it prone to crushing; it is often sold in crushed form as well. ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "format": "unordered",
+        "children": [
+          {
+            "type": "list-item",
+            "children": [
+              {
+                "text": "When made out of kora warp threads, the tissue fabric is translucent and is called kora tissue. ",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "format": "unordered",
+        "children": [
+          {
+            "type": "list-item",
+            "children": [
+              {
+                "text": "Katan tissue is denser and falls in softer folds. ",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "format": "unordered",
+        "children": [
+          {
+            "type": "list-item",
+            "children": [
+              {
+                "text": "Sometimes, malmal, georgette, muga and chiniya are also used in the warp for making soft tissue fabric.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "However, the most popular is the gossamer kora tissue.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1452,
+    "title": "Chiniya Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Chiniya silk fabrics are made using shorter filaments of mulberry silk. The longer yarns are degummed and separated for making katan fabric or other textures requiring longer filaments. The shorter, degummed silk filaments are then brought together to form long yarns using mechanised means. These long yarns created from shorter filaments are more shiny and dyeable. Fabric thans, dupattas and sarees can be created on a white base using these bleached yarns. Their easy dyeability after being woven is a desirable trait in Banarasi weaves.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1453,
+    "title": "Dupion Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Sometimes, late harvesting of silk or adverse climatic conditions creates silk yarn that has shorter filaments and slubs. These shorter or thicker filaments of mulberry silk are gathered to make yarn that has tussar or a raw silk-like fabric finish. Dupion is also made from the waste of longer mulberry silk yarns. ",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1454,
+    "title": "Muga Silk Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Highly prized long and golden silk filaments from Assam are brought to Banaras to make exceptionally soft products. This silk is neither easy to source nor easy to treat and weave; very few skilled artisans can honour its glorious golden skein and weave. Muga silk fabric tends to have the sheen of cotton but the fall of silk.  This highly prized fabric generally tends to take up mellow and soft shades while dyeing. Lightweight and suitable for all weather conditions throughout the year, it is a fabric worth possessing.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1455,
+    "title": "Tussar Georgette Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Tussar silk sourced from central India—largely from Madhya Pradesh and Bihar—has shorter and thicker filament when compared to mulberry silk filament.  Sarees woven from raw tussar fibres in Banaras tend to be thick, textured beautifully and are appropriate for winters. For summers, a handful of master craftspeople use bleaching and beating techniques to make the tough, highly gummed silk softer and thinner. Such sarees are rare in Banaras.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1456,
+    "title": "Katan Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Katan silk is made using long filaments of mulberry silk. The silk from silkworms is harvested within 21 days of forming the pupa to get the long filaments. Double yarns of mulberry are twisted at 1800-2800 RPM in both, the warp as well as in the weft. The result is a smooth and lustrous silk fabric that is most popularly associated with Banarasi sarees.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1457,
+    "title": "Kora Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Kora silk is made using virgin mulberry silk yarn. The threads are neither degummed nor twisted. The silk fibres are slightly stiff due to the natural gum and hence hold form and structure. They are used primarily to make diaphanous fabric. The look of fabric woven from kora fibres is that of a softly floating organza.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Kora silk comes in two forms: single and double. In single kora, the warp is single-ply silk and the weft is two-ply. In double kora, the warp is in two-ply yarn and the weft is in three-ply yarn.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1458,
+    "title": "Satin Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "In satin weaves of various densities, between five to seven weft threads of pure mulberry silk are woven over a single warp thread using a tool called heald shaft (or kaadi in local terminology). The weft threads are woven over and under the warp in a manner that the floats move upwards and give a shinier, fluffier satiny texture. Since more than double the amount of pure mulberry silk is used In weaving satin textures, the silk is heavier, creamier and denser.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1459,
+    "title": "Tussar Silk Fabric",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Tussar georgette is an inventive fibre made from katan silk warp and tussar weft. Once woven, it is again bleached and dyed using another inventive approach. The end result is called tussar georgette as it tends to have the graininess of tussar silk and the fall of georgette. It flows beautifully and drapes very well. Again, only a few weavers can create this very soft, highly fluid fabric.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1460,
+    "title": "sssa",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, soluta voluptatem nostrum nemo incidunt hic obcaecati mollitia atque autem commodi.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1461,
+    "title": "Section 1",
+    "description": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, soluta voluptatem nostrum nemo incidunt hic obcaecati mollitia atque autem commodi.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  }
+]

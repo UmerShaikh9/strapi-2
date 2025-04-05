@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "entity_id": 1,
+    "cmp_id": 1,
+    "component_type": "contact-page.contact-details",
+    "field": "Contact_Details",
+    "order": null
+  },
+  {
+    "id": 89,
+    "entity_id": 45,
+    "cmp_id": 45,
+    "component_type": "contact-page.contact-details",
+    "field": "Contact_Details",
+    "order": null
+  }
+]

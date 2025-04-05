@@ -1,0 +1,4356 @@
+[
+  {
+    "id": 2,
+    "product_id": 1064,
+    "motif_and_design_id": 44,
+    "motif_and_design_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 6,
+    "product_id": 1064,
+    "motif_and_design_id": 48,
+    "motif_and_design_ord": 2,
+    "product_ord": 1
+  },
+  {
+    "id": 12,
+    "product_id": 1064,
+    "motif_and_design_id": 46,
+    "motif_and_design_ord": 3,
+    "product_ord": 1
+  },
+  {
+    "id": 22,
+    "product_id": 1064,
+    "motif_and_design_id": 68,
+    "motif_and_design_ord": 4,
+    "product_ord": 1
+  },
+  {
+    "id": 32,
+    "product_id": 3508,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 36,
+    "product_id": 3526,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 39,
+    "product_id": 3528,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 42,
+    "product_id": 2327,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 44,
+    "product_id": 2355,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 46,
+    "product_id": 2367,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 48,
+    "product_id": 2385,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 50,
+    "product_id": 2359,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 54,
+    "product_id": 3530,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 57,
+    "product_id": 5669,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 66,
+    "product_id": 5672,
+    "motif_and_design_id": 53,
+    "motif_and_design_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 67,
+    "product_id": 5672,
+    "motif_and_design_id": 87,
+    "motif_and_design_ord": 2,
+    "product_ord": 1
+  },
+  {
+    "id": 68,
+    "product_id": 5672,
+    "motif_and_design_id": 55,
+    "motif_and_design_ord": 3,
+    "product_ord": 1
+  },
+  {
+    "id": 69,
+    "product_id": 5672,
+    "motif_and_design_id": 85,
+    "motif_and_design_ord": 4,
+    "product_ord": 1
+  },
+  {
+    "id": 70,
+    "product_id": 5673,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 71,
+    "product_id": 5674,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 74,
+    "product_id": 3532,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 77,
+    "product_id": 5683,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 78,
+    "product_id": 3534,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 81,
+    "product_id": 3536,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 82,
+    "product_id": 5697,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 85,
+    "product_id": 5704,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 86,
+    "product_id": 3538,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 89,
+    "product_id": 5779,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 90,
+    "product_id": 3542,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 92,
+    "product_id": 3544,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 15
+  },
+  {
+    "id": 93,
+    "product_id": 5839,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 94,
+    "product_id": 3510,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 95,
+    "product_id": 5849,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 96,
+    "product_id": 3546,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 100,
+    "product_id": 3548,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 102,
+    "product_id": 3550,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 104,
+    "product_id": 2349,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 107,
+    "product_id": 5872,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 108,
+    "product_id": 3553,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 111,
+    "product_id": 749,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 114,
+    "product_id": 5877,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 115,
+    "product_id": 767,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 116,
+    "product_id": 767,
+    "motif_and_design_id": 58,
+    "motif_and_design_ord": 2,
+    "product_ord": 1
+  },
+  {
+    "id": 117,
+    "product_id": 5880,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 118,
+    "product_id": 5880,
+    "motif_and_design_id": 59,
+    "motif_and_design_ord": 2,
+    "product_ord": 1
+  },
+  {
+    "id": 119,
+    "product_id": 769,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 120,
+    "product_id": 5882,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 121,
+    "product_id": 771,
+    "motif_and_design_id": 58,
+    "motif_and_design_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 122,
+    "product_id": 771,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 2,
+    "product_ord": 22
+  },
+  {
+    "id": 123,
+    "product_id": 5884,
+    "motif_and_design_id": 59,
+    "motif_and_design_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 124,
+    "product_id": 5884,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 2,
+    "product_ord": 27
+  },
+  {
+    "id": 126,
+    "product_id": 5886,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 127,
+    "product_id": 773,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 128,
+    "product_id": 5887,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 29
+  },
+  {
+    "id": 129,
+    "product_id": 775,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 130,
+    "product_id": 5888,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 131,
+    "product_id": 777,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 132,
+    "product_id": 5889,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 31
+  },
+  {
+    "id": 133,
+    "product_id": 779,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 138,
+    "product_id": 5894,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 32
+  },
+  {
+    "id": 139,
+    "product_id": 785,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 141,
+    "product_id": 5896,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 33
+  },
+  {
+    "id": 142,
+    "product_id": 3558,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 143,
+    "product_id": 3558,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 2,
+    "product_ord": 28
+  },
+  {
+    "id": 150,
+    "product_id": 3561,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 29
+  },
+  {
+    "id": 153,
+    "product_id": 5904,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 156,
+    "product_id": 3565,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 157,
+    "product_id": 5909,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 37
+  },
+  {
+    "id": 158,
+    "product_id": 3512,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 31
+  },
+  {
+    "id": 160,
+    "product_id": 3567,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 32
+  },
+  {
+    "id": 162,
+    "product_id": 3571,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 33
+  },
+  {
+    "id": 163,
+    "product_id": 5912,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 40
+  },
+  {
+    "id": 165,
+    "product_id": 5914,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 166,
+    "product_id": 5914,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 2,
+    "product_ord": 42
+  },
+  {
+    "id": 167,
+    "product_id": 5916,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 43
+  },
+  {
+    "id": 168,
+    "product_id": 3575,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 34
+  },
+  {
+    "id": 170,
+    "product_id": 751,
+    "motif_and_design_id": 58,
+    "motif_and_design_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 171,
+    "product_id": 751,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 2,
+    "product_ord": 35
+  },
+  {
+    "id": 172,
+    "product_id": 5919,
+    "motif_and_design_id": 59,
+    "motif_and_design_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 173,
+    "product_id": 5919,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 2,
+    "product_ord": 45
+  },
+  {
+    "id": 174,
+    "product_id": 789,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 36
+  },
+  {
+    "id": 175,
+    "product_id": 5920,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 46
+  },
+  {
+    "id": 176,
+    "product_id": 791,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 37
+  },
+  {
+    "id": 178,
+    "product_id": 793,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 38
+  },
+  {
+    "id": 179,
+    "product_id": 5923,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 48
+  },
+  {
+    "id": 180,
+    "product_id": 795,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 39
+  },
+  {
+    "id": 181,
+    "product_id": 795,
+    "motif_and_design_id": 58,
+    "motif_and_design_ord": 2,
+    "product_ord": 4
+  },
+  {
+    "id": 182,
+    "product_id": 5928,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 49
+  },
+  {
+    "id": 183,
+    "product_id": 5928,
+    "motif_and_design_id": 59,
+    "motif_and_design_ord": 2,
+    "product_ord": 4
+  },
+  {
+    "id": 184,
+    "product_id": 797,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 40
+  },
+  {
+    "id": 186,
+    "product_id": 5930,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 50
+  },
+  {
+    "id": 187,
+    "product_id": 799,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 41
+  },
+  {
+    "id": 189,
+    "product_id": 5932,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 51
+  },
+  {
+    "id": 190,
+    "product_id": 801,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 42
+  },
+  {
+    "id": 192,
+    "product_id": 5934,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 52
+  },
+  {
+    "id": 193,
+    "product_id": 803,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 196,
+    "product_id": 753,
+    "motif_and_design_id": 58,
+    "motif_and_design_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 197,
+    "product_id": 5937,
+    "motif_and_design_id": 59,
+    "motif_and_design_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 198,
+    "product_id": 765,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 200,
+    "product_id": 763,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 43
+  },
+  {
+    "id": 201,
+    "product_id": 5939,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 53
+  },
+  {
+    "id": 202,
+    "product_id": 903,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 203,
+    "product_id": 5940,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 204,
+    "product_id": 6012,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 205,
+    "product_id": 6013,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 206,
+    "product_id": 6014,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 54
+  },
+  {
+    "id": 207,
+    "product_id": 807,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 44
+  },
+  {
+    "id": 208,
+    "product_id": 6035,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 55
+  },
+  {
+    "id": 209,
+    "product_id": 3579,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 45
+  },
+  {
+    "id": 211,
+    "product_id": 6109,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 57
+  },
+  {
+    "id": 212,
+    "product_id": 6110,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 58
+  },
+  {
+    "id": 213,
+    "product_id": 6111,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 59
+  },
+  {
+    "id": 214,
+    "product_id": 6112,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 60
+  },
+  {
+    "id": 216,
+    "product_id": 6115,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 62
+  },
+  {
+    "id": 218,
+    "product_id": 6138,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 64
+  },
+  {
+    "id": 219,
+    "product_id": 3579,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 2,
+    "product_ord": 2
+  },
+  {
+    "id": 220,
+    "product_id": 6141,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 65
+  },
+  {
+    "id": 221,
+    "product_id": 6141,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 2
+  },
+  {
+    "id": 222,
+    "product_id": 6144,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 66
+  },
+  {
+    "id": 223,
+    "product_id": 3577,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 46
+  },
+  {
+    "id": 225,
+    "product_id": 6149,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 67
+  },
+  {
+    "id": 226,
+    "product_id": 6150,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 68
+  },
+  {
+    "id": 227,
+    "product_id": 3581,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 47
+  },
+  {
+    "id": 229,
+    "product_id": 6155,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 69
+  },
+  {
+    "id": 230,
+    "product_id": 3583,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 48
+  },
+  {
+    "id": 232,
+    "product_id": 6171,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 71
+  },
+  {
+    "id": 233,
+    "product_id": 6176,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 72
+  },
+  {
+    "id": 234,
+    "product_id": 3585,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 49
+  },
+  {
+    "id": 237,
+    "product_id": 6197,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 73
+  },
+  {
+    "id": 238,
+    "product_id": 6198,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 0,
+    "product_ord": 1
+  },
+  {
+    "id": 241,
+    "product_id": 6201,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 242,
+    "product_id": 6202,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 243,
+    "product_id": 6204,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 244,
+    "product_id": 6205,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 0,
+    "product_ord": 3
+  },
+  {
+    "id": 245,
+    "product_id": 6206,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 246,
+    "product_id": 6207,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 249,
+    "product_id": 6210,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 250,
+    "product_id": 6211,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 253,
+    "product_id": 6215,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 0,
+    "product_ord": 6
+  },
+  {
+    "id": 256,
+    "product_id": 6218,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 257,
+    "product_id": 6219,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 258,
+    "product_id": 6220,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 0,
+    "product_ord": 7
+  },
+  {
+    "id": 260,
+    "product_id": 6222,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 261,
+    "product_id": 521,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 50
+  },
+  {
+    "id": 262,
+    "product_id": 521,
+    "motif_and_design_id": 82,
+    "motif_and_design_ord": 2,
+    "product_ord": 1
+  },
+  {
+    "id": 269,
+    "product_id": 6237,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 74
+  },
+  {
+    "id": 270,
+    "product_id": 6237,
+    "motif_and_design_id": 83,
+    "motif_and_design_ord": 2,
+    "product_ord": 1
+  },
+  {
+    "id": 271,
+    "product_id": 1468,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 272,
+    "product_id": 1468,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 2,
+    "product_ord": 3
+  },
+  {
+    "id": 279,
+    "product_id": 443,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 51
+  },
+  {
+    "id": 287,
+    "product_id": 455,
+    "motif_and_design_id": 58,
+    "motif_and_design_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 288,
+    "product_id": 455,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 2,
+    "product_ord": 8
+  },
+  {
+    "id": 289,
+    "product_id": 455,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 3,
+    "product_ord": 4
+  },
+  {
+    "id": 303,
+    "product_id": 439,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 308,
+    "product_id": 6265,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 309,
+    "product_id": 3587,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 52
+  },
+  {
+    "id": 311,
+    "product_id": 3594,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 53
+  },
+  {
+    "id": 313,
+    "product_id": 6317,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 77
+  },
+  {
+    "id": 314,
+    "product_id": 3596,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 54
+  },
+  {
+    "id": 315,
+    "product_id": 6318,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 78
+  },
+  {
+    "id": 316,
+    "product_id": 3600,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 55
+  },
+  {
+    "id": 317,
+    "product_id": 6322,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 79
+  },
+  {
+    "id": 318,
+    "product_id": 2943,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 56
+  },
+  {
+    "id": 321,
+    "product_id": 6327,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 80
+  },
+  {
+    "id": 322,
+    "product_id": 3602,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 57
+  },
+  {
+    "id": 323,
+    "product_id": 6330,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 81
+  },
+  {
+    "id": 324,
+    "product_id": 3604,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 58
+  },
+  {
+    "id": 326,
+    "product_id": 6334,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 82
+  },
+  {
+    "id": 327,
+    "product_id": 3606,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 59
+  },
+  {
+    "id": 330,
+    "product_id": 6337,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 83
+  },
+  {
+    "id": 331,
+    "product_id": 6338,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 84
+  },
+  {
+    "id": 332,
+    "product_id": 3608,
+    "motif_and_design_id": 74,
+    "motif_and_design_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 333,
+    "product_id": 3608,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 2,
+    "product_ord": 60
+  },
+  {
+    "id": 334,
+    "product_id": 6339,
+    "motif_and_design_id": 75,
+    "motif_and_design_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 335,
+    "product_id": 6339,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 2,
+    "product_ord": 85
+  },
+  {
+    "id": 336,
+    "product_id": 3610,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 61
+  },
+  {
+    "id": 338,
+    "product_id": 6344,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 86
+  },
+  {
+    "id": 339,
+    "product_id": 2313,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 62
+  },
+  {
+    "id": 340,
+    "product_id": 6346,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 87
+  },
+  {
+    "id": 341,
+    "product_id": 3614,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 63
+  },
+  {
+    "id": 343,
+    "product_id": 6348,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 88
+  },
+  {
+    "id": 344,
+    "product_id": 3620,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 64
+  },
+  {
+    "id": 346,
+    "product_id": 6355,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 89
+  },
+  {
+    "id": 347,
+    "product_id": 3765,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 65
+  },
+  {
+    "id": 348,
+    "product_id": 6359,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 90
+  },
+  {
+    "id": 349,
+    "product_id": 3769,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 66
+  },
+  {
+    "id": 350,
+    "product_id": 6367,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 91
+  },
+  {
+    "id": 351,
+    "product_id": 3771,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 67
+  },
+  {
+    "id": 352,
+    "product_id": 6372,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 92
+  },
+  {
+    "id": 353,
+    "product_id": 3773,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 68
+  },
+  {
+    "id": 358,
+    "product_id": 6380,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 93
+  },
+  {
+    "id": 359,
+    "product_id": 3775,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 69
+  },
+  {
+    "id": 361,
+    "product_id": 6382,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 94
+  },
+  {
+    "id": 362,
+    "product_id": 3779,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 70
+  },
+  {
+    "id": 365,
+    "product_id": 6386,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 95
+  },
+  {
+    "id": 366,
+    "product_id": 1091,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 71
+  },
+  {
+    "id": 367,
+    "product_id": 6387,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 96
+  },
+  {
+    "id": 368,
+    "product_id": 3781,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 72
+  },
+  {
+    "id": 369,
+    "product_id": 6389,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 97
+  },
+  {
+    "id": 370,
+    "product_id": 2317,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 73
+  },
+  {
+    "id": 375,
+    "product_id": 6398,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 98
+  },
+  {
+    "id": 376,
+    "product_id": 3785,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 74
+  },
+  {
+    "id": 377,
+    "product_id": 6399,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 99
+  },
+  {
+    "id": 378,
+    "product_id": 3787,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 75
+  },
+  {
+    "id": 380,
+    "product_id": 6402,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 100
+  },
+  {
+    "id": 381,
+    "product_id": 3789,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 76
+  },
+  {
+    "id": 382,
+    "product_id": 6403,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 101
+  },
+  {
+    "id": 383,
+    "product_id": 3522,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 77
+  },
+  {
+    "id": 386,
+    "product_id": 6406,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 102
+  },
+  {
+    "id": 388,
+    "product_id": 6412,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 103
+  },
+  {
+    "id": 389,
+    "product_id": 6413,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 104
+  },
+  {
+    "id": 390,
+    "product_id": 6414,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 78
+  },
+  {
+    "id": 391,
+    "product_id": 6414,
+    "motif_and_design_id": 82,
+    "motif_and_design_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 392,
+    "product_id": 6415,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 105
+  },
+  {
+    "id": 393,
+    "product_id": 6415,
+    "motif_and_design_id": 83,
+    "motif_and_design_ord": 2,
+    "product_ord": 2
+  },
+  {
+    "id": 394,
+    "product_id": 6417,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 79
+  },
+  {
+    "id": 398,
+    "product_id": 6421,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 106
+  },
+  {
+    "id": 399,
+    "product_id": 6422,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 80
+  },
+  {
+    "id": 401,
+    "product_id": 6424,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 107
+  },
+  {
+    "id": 402,
+    "product_id": 6425,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 81
+  },
+  {
+    "id": 404,
+    "product_id": 6427,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 108
+  },
+  {
+    "id": 405,
+    "product_id": 6428,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 82
+  },
+  {
+    "id": 409,
+    "product_id": 6432,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 109
+  },
+  {
+    "id": 410,
+    "product_id": 6433,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 83
+  },
+  {
+    "id": 412,
+    "product_id": 6435,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 110
+  },
+  {
+    "id": 413,
+    "product_id": 6436,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 84
+  },
+  {
+    "id": 415,
+    "product_id": 6438,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 111
+  },
+  {
+    "id": 416,
+    "product_id": 6439,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 85
+  },
+  {
+    "id": 417,
+    "product_id": 6440,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 112
+  },
+  {
+    "id": 418,
+    "product_id": 6441,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 86
+  },
+  {
+    "id": 420,
+    "product_id": 6443,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 113
+  },
+  {
+    "id": 421,
+    "product_id": 6445,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 87
+  },
+  {
+    "id": 423,
+    "product_id": 6447,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 114
+  },
+  {
+    "id": 424,
+    "product_id": 6448,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 0,
+    "product_ord": 10
+  },
+  {
+    "id": 427,
+    "product_id": 6451,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 88
+  },
+  {
+    "id": 429,
+    "product_id": 6453,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 89
+  },
+  {
+    "id": 430,
+    "product_id": 6453,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 433,
+    "product_id": 6455,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 90
+  },
+  {
+    "id": 435,
+    "product_id": 6457,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 0,
+    "product_ord": 12
+  },
+  {
+    "id": 437,
+    "product_id": 6459,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 117
+  },
+  {
+    "id": 438,
+    "product_id": 6460,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 15
+  },
+  {
+    "id": 439,
+    "product_id": 6461,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 118
+  },
+  {
+    "id": 440,
+    "product_id": 6462,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 119
+  },
+  {
+    "id": 441,
+    "product_id": 6462,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 2,
+    "product_ord": 16
+  },
+  {
+    "id": 442,
+    "product_id": 6463,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 443,
+    "product_id": 1470,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 445,
+    "product_id": 6466,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 446,
+    "product_id": 504,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 447,
+    "product_id": 6468,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 448,
+    "product_id": 492,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 15
+  },
+  {
+    "id": 449,
+    "product_id": 492,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 2,
+    "product_ord": 91
+  },
+  {
+    "id": 454,
+    "product_id": 6476,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 455,
+    "product_id": 6476,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 2,
+    "product_ord": 120
+  },
+  {
+    "id": 456,
+    "product_id": 508,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 92
+  },
+  {
+    "id": 458,
+    "product_id": 494,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 460,
+    "product_id": 496,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 461,
+    "product_id": 496,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 2,
+    "product_ord": 93
+  },
+  {
+    "id": 466,
+    "product_id": 6482,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 469,
+    "product_id": 6484,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 470,
+    "product_id": 6484,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 2,
+    "product_ord": 122
+  },
+  {
+    "id": 471,
+    "product_id": 6485,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 123
+  },
+  {
+    "id": 472,
+    "product_id": 498,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 476,
+    "product_id": 6487,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 477,
+    "product_id": 488,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 479,
+    "product_id": 6490,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 480,
+    "product_id": 500,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 482,
+    "product_id": 6492,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 483,
+    "product_id": 1472,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 484,
+    "product_id": 1472,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 2,
+    "product_ord": 94
+  },
+  {
+    "id": 485,
+    "product_id": 1472,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 3,
+    "product_ord": 5
+  },
+  {
+    "id": 492,
+    "product_id": 6495,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 493,
+    "product_id": 6495,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 2,
+    "product_ord": 124
+  },
+  {
+    "id": 494,
+    "product_id": 6495,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 3,
+    "product_ord": 5
+  },
+  {
+    "id": 495,
+    "product_id": 479,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 497,
+    "product_id": 6502,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 29
+  },
+  {
+    "id": 498,
+    "product_id": 502,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 501,
+    "product_id": 6505,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 502,
+    "product_id": 435,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 505,
+    "product_id": 6508,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 31
+  },
+  {
+    "id": 506,
+    "product_id": 457,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 510,
+    "product_id": 6512,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 32
+  },
+  {
+    "id": 511,
+    "product_id": 459,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 512,
+    "product_id": 459,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 2,
+    "product_ord": 26
+  },
+  {
+    "id": 523,
+    "product_id": 6518,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 524,
+    "product_id": 6518,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 2,
+    "product_ord": 33
+  },
+  {
+    "id": 525,
+    "product_id": 1474,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 526,
+    "product_id": 6519,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 34
+  },
+  {
+    "id": 527,
+    "product_id": 461,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 528,
+    "product_id": 461,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 2,
+    "product_ord": 95
+  },
+  {
+    "id": 533,
+    "product_id": 6522,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 534,
+    "product_id": 6522,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 2,
+    "product_ord": 125
+  },
+  {
+    "id": 535,
+    "product_id": 1488,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 29
+  },
+  {
+    "id": 536,
+    "product_id": 1488,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 2,
+    "product_ord": 96
+  },
+  {
+    "id": 543,
+    "product_id": 467,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 544,
+    "product_id": 467,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 2,
+    "product_ord": 97
+  },
+  {
+    "id": 555,
+    "product_id": 6531,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 37
+  },
+  {
+    "id": 556,
+    "product_id": 6531,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 2,
+    "product_ord": 127
+  },
+  {
+    "id": 557,
+    "product_id": 465,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 31
+  },
+  {
+    "id": 558,
+    "product_id": 465,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 2,
+    "product_ord": 98
+  },
+  {
+    "id": 561,
+    "product_id": 6533,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 38
+  },
+  {
+    "id": 562,
+    "product_id": 6533,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 2,
+    "product_ord": 128
+  },
+  {
+    "id": 563,
+    "product_id": 1490,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 32
+  },
+  {
+    "id": 566,
+    "product_id": 6536,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 39
+  },
+  {
+    "id": 567,
+    "product_id": 483,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 33
+  },
+  {
+    "id": 571,
+    "product_id": 6541,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 40
+  },
+  {
+    "id": 572,
+    "product_id": 1492,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 34
+  },
+  {
+    "id": 573,
+    "product_id": 1492,
+    "motif_and_design_id": 82,
+    "motif_and_design_ord": 2,
+    "product_ord": 3
+  },
+  {
+    "id": 580,
+    "product_id": 469,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 99
+  },
+  {
+    "id": 584,
+    "product_id": 477,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 585,
+    "product_id": 477,
+    "motif_and_design_id": 82,
+    "motif_and_design_ord": 2,
+    "product_ord": 4
+  },
+  {
+    "id": 592,
+    "product_id": 6554,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 42
+  },
+  {
+    "id": 593,
+    "product_id": 6554,
+    "motif_and_design_id": 83,
+    "motif_and_design_ord": 2,
+    "product_ord": 4
+  },
+  {
+    "id": 594,
+    "product_id": 441,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 597,
+    "product_id": 6560,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 598,
+    "product_id": 490,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 36
+  },
+  {
+    "id": 599,
+    "product_id": 490,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 2,
+    "product_ord": 7
+  },
+  {
+    "id": 604,
+    "product_id": 6563,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 43
+  },
+  {
+    "id": 605,
+    "product_id": 6563,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 7
+  },
+  {
+    "id": 606,
+    "product_id": 485,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 37
+  },
+  {
+    "id": 607,
+    "product_id": 485,
+    "motif_and_design_id": 82,
+    "motif_and_design_ord": 2,
+    "product_ord": 5
+  },
+  {
+    "id": 610,
+    "product_id": 6565,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 44
+  },
+  {
+    "id": 611,
+    "product_id": 6565,
+    "motif_and_design_id": 83,
+    "motif_and_design_ord": 2,
+    "product_ord": 5
+  },
+  {
+    "id": 612,
+    "product_id": 481,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 38
+  },
+  {
+    "id": 614,
+    "product_id": 6567,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 45
+  },
+  {
+    "id": 615,
+    "product_id": 453,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 100
+  },
+  {
+    "id": 616,
+    "product_id": 6568,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 130
+  },
+  {
+    "id": 617,
+    "product_id": 449,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 101
+  },
+  {
+    "id": 622,
+    "product_id": 451,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 102
+  },
+  {
+    "id": 623,
+    "product_id": 451,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 2,
+    "product_ord": 8
+  },
+  {
+    "id": 632,
+    "product_id": 6577,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 132
+  },
+  {
+    "id": 633,
+    "product_id": 6577,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 8
+  },
+  {
+    "id": 634,
+    "product_id": 6578,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 133
+  },
+  {
+    "id": 635,
+    "product_id": 6579,
+    "motif_and_design_id": 59,
+    "motif_and_design_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 636,
+    "product_id": 6579,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 2,
+    "product_ord": 46
+  },
+  {
+    "id": 637,
+    "product_id": 6579,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 3,
+    "product_ord": 9
+  },
+  {
+    "id": 642,
+    "product_id": 6582,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 47
+  },
+  {
+    "id": 643,
+    "product_id": 6582,
+    "motif_and_design_id": 83,
+    "motif_and_design_ord": 2,
+    "product_ord": 7
+  },
+  {
+    "id": 644,
+    "product_id": 447,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 103
+  },
+  {
+    "id": 645,
+    "product_id": 6600,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 134
+  },
+  {
+    "id": 646,
+    "product_id": 463,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 39
+  },
+  {
+    "id": 648,
+    "product_id": 6602,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 48
+  },
+  {
+    "id": 649,
+    "product_id": 6606,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 49
+  },
+  {
+    "id": 650,
+    "product_id": 6606,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 2,
+    "product_ord": 135
+  },
+  {
+    "id": 651,
+    "product_id": 6608,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 40
+  },
+  {
+    "id": 654,
+    "product_id": 6610,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 41
+  },
+  {
+    "id": 655,
+    "product_id": 6610,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 2,
+    "product_ord": 9
+  },
+  {
+    "id": 664,
+    "product_id": 6613,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 42
+  },
+  {
+    "id": 668,
+    "product_id": 6621,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 43
+  },
+  {
+    "id": 669,
+    "product_id": 6621,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 2,
+    "product_ord": 10
+  },
+  {
+    "id": 678,
+    "product_id": 6624,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 44
+  },
+  {
+    "id": 685,
+    "product_id": 6665,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 56
+  },
+  {
+    "id": 686,
+    "product_id": 6665,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 12
+  },
+  {
+    "id": 689,
+    "product_id": 6653,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 45
+  },
+  {
+    "id": 690,
+    "product_id": 6653,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 2,
+    "product_ord": 11
+  },
+  {
+    "id": 693,
+    "product_id": 6669,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 58
+  },
+  {
+    "id": 694,
+    "product_id": 6669,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 13
+  },
+  {
+    "id": 698,
+    "product_id": 6672,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 60
+  },
+  {
+    "id": 699,
+    "product_id": 6673,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 61
+  },
+  {
+    "id": 700,
+    "product_id": 6631,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 46
+  },
+  {
+    "id": 701,
+    "product_id": 6631,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 2,
+    "product_ord": 12
+  },
+  {
+    "id": 702,
+    "product_id": 6674,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 62
+  },
+  {
+    "id": 703,
+    "product_id": 6674,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 15
+  },
+  {
+    "id": 704,
+    "product_id": 6675,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 63
+  },
+  {
+    "id": 705,
+    "product_id": 6675,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 16
+  },
+  {
+    "id": 706,
+    "product_id": 6676,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 64
+  },
+  {
+    "id": 707,
+    "product_id": 6677,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 136
+  },
+  {
+    "id": 708,
+    "product_id": 6626,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 47
+  },
+  {
+    "id": 709,
+    "product_id": 6626,
+    "motif_and_design_id": 82,
+    "motif_and_design_ord": 2,
+    "product_ord": 6
+  },
+  {
+    "id": 712,
+    "product_id": 6679,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 65
+  },
+  {
+    "id": 713,
+    "product_id": 6679,
+    "motif_and_design_id": 83,
+    "motif_and_design_ord": 2,
+    "product_ord": 8
+  },
+  {
+    "id": 714,
+    "product_id": 6647,
+    "motif_and_design_id": 82,
+    "motif_and_design_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 715,
+    "product_id": 6680,
+    "motif_and_design_id": 83,
+    "motif_and_design_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 724,
+    "product_id": 6687,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 137
+  },
+  {
+    "id": 731,
+    "product_id": 6691,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 66
+  },
+  {
+    "id": 732,
+    "product_id": 6691,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 17
+  },
+  {
+    "id": 733,
+    "product_id": 6695,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 104
+  },
+  {
+    "id": 735,
+    "product_id": 6700,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 105
+  },
+  {
+    "id": 743,
+    "product_id": 6709,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 106
+  },
+  {
+    "id": 746,
+    "product_id": 6718,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 107
+  },
+  {
+    "id": 748,
+    "product_id": 4464,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 749,
+    "product_id": 6722,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 750,
+    "product_id": 6712,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 108
+  },
+  {
+    "id": 757,
+    "product_id": 3004,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 48
+  },
+  {
+    "id": 763,
+    "product_id": 3000,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 109
+  },
+  {
+    "id": 773,
+    "product_id": 3010,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 49
+  },
+  {
+    "id": 775,
+    "product_id": 3010,
+    "motif_and_design_id": 82,
+    "motif_and_design_ord": 2,
+    "product_ord": 8
+  },
+  {
+    "id": 778,
+    "product_id": 3017,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 50
+  },
+  {
+    "id": 779,
+    "product_id": 3017,
+    "motif_and_design_id": 82,
+    "motif_and_design_ord": 2,
+    "product_ord": 9
+  },
+  {
+    "id": 784,
+    "product_id": 2992,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 790,
+    "product_id": 3006,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 51
+  },
+  {
+    "id": 791,
+    "product_id": 3006,
+    "motif_and_design_id": 82,
+    "motif_and_design_ord": 2,
+    "product_ord": 10
+  },
+  {
+    "id": 800,
+    "product_id": 1264,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 52
+  },
+  {
+    "id": 802,
+    "product_id": 6764,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 73
+  },
+  {
+    "id": 803,
+    "product_id": 6764,
+    "motif_and_design_id": 83,
+    "motif_and_design_ord": 2,
+    "product_ord": 13
+  },
+  {
+    "id": 807,
+    "product_id": 6768,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 76
+  },
+  {
+    "id": 808,
+    "product_id": 1266,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 809,
+    "product_id": 1266,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 2,
+    "product_ord": 53
+  },
+  {
+    "id": 822,
+    "product_id": 6776,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 81
+  },
+  {
+    "id": 823,
+    "product_id": 6776,
+    "motif_and_design_id": 83,
+    "motif_and_design_ord": 2,
+    "product_ord": 14
+  },
+  {
+    "id": 824,
+    "product_id": 6777,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 82
+  },
+  {
+    "id": 825,
+    "product_id": 6777,
+    "motif_and_design_id": 83,
+    "motif_and_design_ord": 2,
+    "product_ord": 15
+  },
+  {
+    "id": 830,
+    "product_id": 1268,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 831,
+    "product_id": 1268,
+    "motif_and_design_id": 68,
+    "motif_and_design_ord": 2,
+    "product_ord": 2
+  },
+  {
+    "id": 842,
+    "product_id": 1270,
+    "motif_and_design_id": 68,
+    "motif_and_design_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 843,
+    "product_id": 1270,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 2,
+    "product_ord": 15
+  },
+  {
+    "id": 854,
+    "product_id": 6793,
+    "motif_and_design_id": 85,
+    "motif_and_design_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 855,
+    "product_id": 6793,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 22
+  },
+  {
+    "id": 856,
+    "product_id": 1272,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 857,
+    "product_id": 1272,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 2,
+    "product_ord": 54
+  },
+  {
+    "id": 866,
+    "product_id": 6798,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 867,
+    "product_id": 6798,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 2,
+    "product_ord": 84
+  },
+  {
+    "id": 868,
+    "product_id": 6799,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 110
+  },
+  {
+    "id": 870,
+    "product_id": 6801,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 149
+  },
+  {
+    "id": 871,
+    "product_id": 6802,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 111
+  },
+  {
+    "id": 873,
+    "product_id": 6804,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 150
+  },
+  {
+    "id": 874,
+    "product_id": 6805,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 112
+  },
+  {
+    "id": 877,
+    "product_id": 6808,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 151
+  },
+  {
+    "id": 878,
+    "product_id": 6809,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 113
+  },
+  {
+    "id": 890,
+    "product_id": 6821,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 114
+  },
+  {
+    "id": 895,
+    "product_id": 6827,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 154
+  },
+  {
+    "id": 897,
+    "product_id": 6829,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 155
+  },
+  {
+    "id": 898,
+    "product_id": 6834,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 115
+  },
+  {
+    "id": 903,
+    "product_id": 6866,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 157
+  },
+  {
+    "id": 904,
+    "product_id": 3081,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 116
+  },
+  {
+    "id": 911,
+    "product_id": 6875,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 158
+  },
+  {
+    "id": 912,
+    "product_id": 1274,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 55
+  },
+  {
+    "id": 916,
+    "product_id": 5511,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 117
+  },
+  {
+    "id": 918,
+    "product_id": 6881,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 118
+  },
+  {
+    "id": 926,
+    "product_id": 6888,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 162
+  },
+  {
+    "id": 928,
+    "product_id": 6889,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 163
+  },
+  {
+    "id": 939,
+    "product_id": 1274,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 2,
+    "product_ord": 17
+  },
+  {
+    "id": 943,
+    "product_id": 6901,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 85
+  },
+  {
+    "id": 944,
+    "product_id": 6901,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 26
+  },
+  {
+    "id": 945,
+    "product_id": 1276,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 119
+  },
+  {
+    "id": 952,
+    "product_id": 6907,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 953,
+    "product_id": 6907,
+    "motif_and_design_id": 85,
+    "motif_and_design_ord": 2,
+    "product_ord": 6
+  },
+  {
+    "id": 956,
+    "product_id": 6910,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 166
+  },
+  {
+    "id": 957,
+    "product_id": 1278,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 120
+  },
+  {
+    "id": 965,
+    "product_id": 6917,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 966,
+    "product_id": 6917,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 2,
+    "product_ord": 86
+  },
+  {
+    "id": 970,
+    "product_id": 1280,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 121
+  },
+  {
+    "id": 974,
+    "product_id": 6924,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 168
+  },
+  {
+    "id": 975,
+    "product_id": 6925,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 169
+  },
+  {
+    "id": 976,
+    "product_id": 1282,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 122
+  },
+  {
+    "id": 983,
+    "product_id": 6932,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 170
+  },
+  {
+    "id": 984,
+    "product_id": 1284,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 123
+  },
+  {
+    "id": 986,
+    "product_id": 6934,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 171
+  },
+  {
+    "id": 987,
+    "product_id": 1286,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 56
+  },
+  {
+    "id": 993,
+    "product_id": 6940,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 87
+  },
+  {
+    "id": 994,
+    "product_id": 1288,
+    "motif_and_design_id": 58,
+    "motif_and_design_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 995,
+    "product_id": 1288,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 2,
+    "product_ord": 124
+  },
+  {
+    "id": 1002,
+    "product_id": 6944,
+    "motif_and_design_id": 59,
+    "motif_and_design_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 1003,
+    "product_id": 6944,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 2,
+    "product_ord": 172
+  },
+  {
+    "id": 1004,
+    "product_id": 1290,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 57
+  },
+  {
+    "id": 1008,
+    "product_id": 6948,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 88
+  },
+  {
+    "id": 1009,
+    "product_id": 1292,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 1010,
+    "product_id": 1292,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 2,
+    "product_ord": 18
+  },
+  {
+    "id": 1017,
+    "product_id": 1294,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 125
+  },
+  {
+    "id": 1021,
+    "product_id": 6955,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 173
+  },
+  {
+    "id": 1022,
+    "product_id": 1298,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 126
+  },
+  {
+    "id": 1030,
+    "product_id": 6963,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 175
+  },
+  {
+    "id": 1031,
+    "product_id": 6964,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 176
+  },
+  {
+    "id": 1032,
+    "product_id": 1302,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 58
+  },
+  {
+    "id": 1035,
+    "product_id": 1304,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 127
+  },
+  {
+    "id": 1036,
+    "product_id": 1304,
+    "motif_and_design_id": 58,
+    "motif_and_design_ord": 2,
+    "product_ord": 8
+  },
+  {
+    "id": 1037,
+    "product_id": 1304,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 3,
+    "product_ord": 19
+  },
+  {
+    "id": 1057,
+    "product_id": 1300,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 59
+  },
+  {
+    "id": 1069,
+    "product_id": 6983,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 93
+  },
+  {
+    "id": 1070,
+    "product_id": 6984,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 177
+  },
+  {
+    "id": 1071,
+    "product_id": 6984,
+    "motif_and_design_id": 59,
+    "motif_and_design_ord": 2,
+    "product_ord": 8
+  },
+  {
+    "id": 1072,
+    "product_id": 6984,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 3,
+    "product_ord": 30
+  },
+  {
+    "id": 1073,
+    "product_id": 6985,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 94
+  },
+  {
+    "id": 1074,
+    "product_id": 1306,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 60
+  },
+  {
+    "id": 1078,
+    "product_id": 6989,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 95
+  },
+  {
+    "id": 1079,
+    "product_id": 1308,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 128
+  },
+  {
+    "id": 1085,
+    "product_id": 6995,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 178
+  },
+  {
+    "id": 1086,
+    "product_id": 1310,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 129
+  },
+  {
+    "id": 1087,
+    "product_id": 1310,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 2,
+    "product_ord": 20
+  },
+  {
+    "id": 1092,
+    "product_id": 6998,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 179
+  },
+  {
+    "id": 1093,
+    "product_id": 6998,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 31
+  },
+  {
+    "id": 1094,
+    "product_id": 541,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 130
+  },
+  {
+    "id": 1096,
+    "product_id": 7000,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 180
+  },
+  {
+    "id": 1097,
+    "product_id": 543,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 131
+  },
+  {
+    "id": 1101,
+    "product_id": 7005,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 181
+  },
+  {
+    "id": 1102,
+    "product_id": 545,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 132
+  },
+  {
+    "id": 1105,
+    "product_id": 7008,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 182
+  },
+  {
+    "id": 1106,
+    "product_id": 547,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 1116,
+    "product_id": 7017,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 1117,
+    "product_id": 7017,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 32
+  },
+  {
+    "id": 1119,
+    "product_id": 7019,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 1120,
+    "product_id": 7020,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 1121,
+    "product_id": 7024,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 96
+  },
+  {
+    "id": 1122,
+    "product_id": 549,
+    "motif_and_design_id": 58,
+    "motif_and_design_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 1123,
+    "product_id": 549,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 2,
+    "product_ord": 133
+  },
+  {
+    "id": 1134,
+    "product_id": 7029,
+    "motif_and_design_id": 59,
+    "motif_and_design_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 1135,
+    "product_id": 7029,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 2,
+    "product_ord": 183
+  },
+  {
+    "id": 1136,
+    "product_id": 551,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 134
+  },
+  {
+    "id": 1139,
+    "product_id": 7032,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 184
+  },
+  {
+    "id": 1140,
+    "product_id": 553,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 135
+  },
+  {
+    "id": 1146,
+    "product_id": 7038,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 185
+  },
+  {
+    "id": 1147,
+    "product_id": 523,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 136
+  },
+  {
+    "id": 1150,
+    "product_id": 523,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 2,
+    "product_ord": 21
+  },
+  {
+    "id": 1159,
+    "product_id": 7044,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 0,
+    "product_ord": 13
+  },
+  {
+    "id": 1164,
+    "product_id": 7049,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 1168,
+    "product_id": 7054,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 1169,
+    "product_id": 7055,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 187
+  },
+  {
+    "id": 1170,
+    "product_id": 7056,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 188
+  },
+  {
+    "id": 1171,
+    "product_id": 7057,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 189
+  },
+  {
+    "id": 1172,
+    "product_id": 7058,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 190
+  },
+  {
+    "id": 1174,
+    "product_id": 7060,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 191
+  },
+  {
+    "id": 1175,
+    "product_id": 7061,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 1176,
+    "product_id": 7063,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 192
+  },
+  {
+    "id": 1177,
+    "product_id": 7064,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 137
+  },
+  {
+    "id": 1181,
+    "product_id": 7068,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 138
+  },
+  {
+    "id": 1188,
+    "product_id": 7075,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 0,
+    "product_ord": 61
+  },
+  {
+    "id": 1189,
+    "product_id": 7075,
+    "motif_and_design_id": 82,
+    "motif_and_design_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 1198,
+    "product_id": 7080,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 97
+  },
+  {
+    "id": 1199,
+    "product_id": 7080,
+    "motif_and_design_id": 83,
+    "motif_and_design_ord": 2,
+    "product_ord": 16
+  },
+  {
+    "id": 1200,
+    "product_id": 7081,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 139
+  },
+  {
+    "id": 1202,
+    "product_id": 7083,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 0,
+    "product_ord": 62
+  },
+  {
+    "id": 1203,
+    "product_id": 7084,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 98
+  },
+  {
+    "id": 1204,
+    "product_id": 7085,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 0,
+    "product_ord": 15
+  },
+  {
+    "id": 1206,
+    "product_id": 7087,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 1207,
+    "product_id": 7088,
+    "motif_and_design_id": 68,
+    "motif_and_design_ord": 0,
+    "product_ord": 4
+  },
+  {
+    "id": 1211,
+    "product_id": 7092,
+    "motif_and_design_id": 68,
+    "motif_and_design_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 1213,
+    "product_id": 7096,
+    "motif_and_design_id": 85,
+    "motif_and_design_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 1216,
+    "product_id": 7099,
+    "motif_and_design_id": 85,
+    "motif_and_design_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 1217,
+    "product_id": 7100,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 140
+  },
+  {
+    "id": 1218,
+    "product_id": 7100,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 1221,
+    "product_id": 7102,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 196
+  },
+  {
+    "id": 1222,
+    "product_id": 7102,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 34
+  },
+  {
+    "id": 1223,
+    "product_id": 7103,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 0,
+    "product_ord": 16
+  },
+  {
+    "id": 1224,
+    "product_id": 7104,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 1225,
+    "product_id": 7105,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 141
+  },
+  {
+    "id": 1229,
+    "product_id": 7109,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 197
+  },
+  {
+    "id": 1230,
+    "product_id": 7110,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 63
+  },
+  {
+    "id": 1235,
+    "product_id": 7116,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 99
+  },
+  {
+    "id": 1236,
+    "product_id": 7117,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 142
+  },
+  {
+    "id": 1242,
+    "product_id": 7123,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 198
+  },
+  {
+    "id": 1243,
+    "product_id": 7124,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 0,
+    "product_ord": 17
+  },
+  {
+    "id": 1246,
+    "product_id": 7127,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 1247,
+    "product_id": 7128,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 0,
+    "product_ord": 18
+  },
+  {
+    "id": 1252,
+    "product_id": 7133,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 1253,
+    "product_id": 7134,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 0,
+    "product_ord": 64
+  },
+  {
+    "id": 1256,
+    "product_id": 7137,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 100
+  },
+  {
+    "id": 1257,
+    "product_id": 7138,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 143
+  },
+  {
+    "id": 1258,
+    "product_id": 7138,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 1265,
+    "product_id": 7142,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 144
+  },
+  {
+    "id": 1266,
+    "product_id": 7142,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 1271,
+    "product_id": 7145,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 200
+  },
+  {
+    "id": 1272,
+    "product_id": 7145,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 36
+  },
+  {
+    "id": 1273,
+    "product_id": 7146,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 201
+  },
+  {
+    "id": 1274,
+    "product_id": 7146,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 37
+  },
+  {
+    "id": 1275,
+    "product_id": 7147,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 145
+  },
+  {
+    "id": 1276,
+    "product_id": 7147,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 1279,
+    "product_id": 7151,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 202
+  },
+  {
+    "id": 1280,
+    "product_id": 7151,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 38
+  },
+  {
+    "id": 1284,
+    "product_id": 7246,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 204
+  },
+  {
+    "id": 1287,
+    "product_id": 7174,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 146
+  },
+  {
+    "id": 1289,
+    "product_id": 7259,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 207
+  },
+  {
+    "id": 1290,
+    "product_id": 525,
+    "motif_and_design_id": 82,
+    "motif_and_design_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 1296,
+    "product_id": 7286,
+    "motif_and_design_id": 83,
+    "motif_and_design_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 1297,
+    "product_id": 1146,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 147
+  },
+  {
+    "id": 1298,
+    "product_id": 1146,
+    "motif_and_design_id": 62,
+    "motif_and_design_ord": 2,
+    "product_ord": 19
+  },
+  {
+    "id": 1303,
+    "product_id": 7297,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 208
+  },
+  {
+    "id": 1304,
+    "product_id": 7297,
+    "motif_and_design_id": 63,
+    "motif_and_design_ord": 2,
+    "product_ord": 27
+  },
+  {
+    "id": 1305,
+    "product_id": 575,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 1306,
+    "product_id": 575,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 2,
+    "product_ord": 148
+  },
+  {
+    "id": 1311,
+    "product_id": 7311,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 1,
+    "product_ord": 39
+  },
+  {
+    "id": 1312,
+    "product_id": 7311,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 2,
+    "product_ord": 209
+  },
+  {
+    "id": 1313,
+    "product_id": 7152,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 149
+  },
+  {
+    "id": 1314,
+    "product_id": 7434,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 210
+  },
+  {
+    "id": 1315,
+    "product_id": 7436,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 211
+  },
+  {
+    "id": 1317,
+    "product_id": 7438,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 212
+  },
+  {
+    "id": 1318,
+    "product_id": 7289,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 150
+  },
+  {
+    "id": 1321,
+    "product_id": 7442,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 213
+  },
+  {
+    "id": 1322,
+    "product_id": 7293,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 151
+  },
+  {
+    "id": 1324,
+    "product_id": 7444,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 214
+  },
+  {
+    "id": 1325,
+    "product_id": 7312,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 152
+  },
+  {
+    "id": 1327,
+    "product_id": 7479,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 215
+  },
+  {
+    "id": 1328,
+    "product_id": 7287,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 153
+  },
+  {
+    "id": 1330,
+    "product_id": 7481,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 216
+  },
+  {
+    "id": 1331,
+    "product_id": 7322,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 154
+  },
+  {
+    "id": 1335,
+    "product_id": 7597,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 217
+  },
+  {
+    "id": 1336,
+    "product_id": 7330,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 155
+  },
+  {
+    "id": 1340,
+    "product_id": 7607,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 218
+  },
+  {
+    "id": 1341,
+    "product_id": 7332,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 156
+  },
+  {
+    "id": 1345,
+    "product_id": 7612,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 219
+  },
+  {
+    "id": 1346,
+    "product_id": 7334,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 157
+  },
+  {
+    "id": 1349,
+    "product_id": 7616,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 220
+  },
+  {
+    "id": 1350,
+    "product_id": 7336,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 158
+  },
+  {
+    "id": 1351,
+    "product_id": 7617,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 221
+  },
+  {
+    "id": 1352,
+    "product_id": 7340,
+    "motif_and_design_id": 80,
+    "motif_and_design_ord": 1,
+    "product_ord": 65
+  },
+  {
+    "id": 1353,
+    "product_id": 7618,
+    "motif_and_design_id": 81,
+    "motif_and_design_ord": 1,
+    "product_ord": 101
+  },
+  {
+    "id": 1354,
+    "product_id": 7342,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 159
+  },
+  {
+    "id": 1356,
+    "product_id": 7620,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 222
+  },
+  {
+    "id": 1357,
+    "product_id": 7344,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 160
+  },
+  {
+    "id": 1359,
+    "product_id": 7622,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 223
+  },
+  {
+    "id": 1360,
+    "product_id": 7346,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 161
+  },
+  {
+    "id": 1362,
+    "product_id": 7624,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 224
+  },
+  {
+    "id": 1363,
+    "product_id": 7358,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 162
+  },
+  {
+    "id": 1366,
+    "product_id": 7627,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 225
+  },
+  {
+    "id": 1367,
+    "product_id": 7372,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 163
+  },
+  {
+    "id": 1369,
+    "product_id": 7678,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 226
+  },
+  {
+    "id": 1370,
+    "product_id": 7374,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 164
+  },
+  {
+    "id": 1372,
+    "product_id": 7681,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 227
+  },
+  {
+    "id": 1373,
+    "product_id": 7378,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 165
+  },
+  {
+    "id": 1374,
+    "product_id": 7682,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 228
+  },
+  {
+    "id": 1375,
+    "product_id": 7382,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 166
+  },
+  {
+    "id": 1376,
+    "product_id": 7684,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 229
+  },
+  {
+    "id": 1377,
+    "product_id": 7386,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 167
+  },
+  {
+    "id": 1378,
+    "product_id": 7386,
+    "motif_and_design_id": 78,
+    "motif_and_design_ord": 2,
+    "product_ord": 27
+  },
+  {
+    "id": 1379,
+    "product_id": 7685,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 230
+  },
+  {
+    "id": 1380,
+    "product_id": 7685,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 40
+  },
+  {
+    "id": 1381,
+    "product_id": 7686,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 231
+  },
+  {
+    "id": 1382,
+    "product_id": 7686,
+    "motif_and_design_id": 79,
+    "motif_and_design_ord": 2,
+    "product_ord": 41
+  },
+  {
+    "id": 1383,
+    "product_id": 7687,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 0,
+    "product_ord": 168
+  },
+  {
+    "id": 1384,
+    "product_id": 7688,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 232
+  },
+  {
+    "id": 1385,
+    "product_id": 7689,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 169
+  },
+  {
+    "id": 1388,
+    "product_id": 7693,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 233
+  },
+  {
+    "id": 1389,
+    "product_id": 7694,
+    "motif_and_design_id": 56,
+    "motif_and_design_ord": 1,
+    "product_ord": 170
+  },
+  {
+    "id": 1393,
+    "product_id": 7699,
+    "motif_and_design_id": 57,
+    "motif_and_design_ord": 1,
+    "product_ord": 234
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Email_Address",
+    "label": "Email Address",
+    "placeholder": "Email Address",
+    "type": "input",
+    "main_type": "email"
+  },
+  {
+    "id": 2,
+    "name": "Full_Name",
+    "label": "Full Name",
+    "placeholder": "Full Name ....",
+    "type": "input",
+    "main_type": null
+  },
+  {
+    "id": 5,
+    "name": "Phone_Number",
+    "label": "Phone Number",
+    "placeholder": "Phone Number ",
+    "type": "input",
+    "main_type": "simplePhoneNumber"
+  },
+  {
+    "id": 6,
+    "name": "Message",
+    "label": "Messge",
+    "placeholder": "Tell us about your needs.....",
+    "type": "input",
+    "main_type": null
+  },
+  {
+    "id": 139,
+    "name": "Full_Name",
+    "label": "Full Name",
+    "placeholder": "Full Name ....",
+    "type": "input",
+    "main_type": null
+  },
+  {
+    "id": 140,
+    "name": "Email_Address",
+    "label": "Email Address",
+    "placeholder": "Email Address",
+    "type": "input",
+    "main_type": "email"
+  },
+  {
+    "id": 141,
+    "name": "Phone_Number",
+    "label": "Phone Number",
+    "placeholder": "Phone Number ",
+    "type": "input",
+    "main_type": "simplePhoneNumber"
+  },
+  {
+    "id": 142,
+    "name": "Message",
+    "label": "Messge",
+    "placeholder": "Tell us about your needs.....",
+    "type": "input",
+    "main_type": null
+  }
+]

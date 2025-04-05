@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "entity_id": 1,
+    "cmp_id": 1,
+    "component_type": "history-lineage.about-card",
+    "field": "About_Card",
+    "order": 1
+  },
+  {
+    "id": 138,
+    "entity_id": 70,
+    "cmp_id": 383,
+    "component_type": "history-lineage.about-card",
+    "field": "About_Card",
+    "order": 1
+  }
+]

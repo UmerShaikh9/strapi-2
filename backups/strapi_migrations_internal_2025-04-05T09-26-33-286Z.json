@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "5.0.0-rename-identifiers-longer-than-max-length",
+    "time": "2024-12-25T07:04:54.000Z"
+  },
+  {
+    "id": 2,
+    "name": "5.0.0-02-created-document-id",
+    "time": "2024-12-25T07:04:55.000Z"
+  },
+  {
+    "id": 3,
+    "name": "5.0.0-03-created-locale",
+    "time": "2024-12-25T07:04:55.000Z"
+  },
+  {
+    "id": 4,
+    "name": "5.0.0-04-created-published-at",
+    "time": "2024-12-25T07:04:56.000Z"
+  },
+  {
+    "id": 5,
+    "name": "5.0.0-05-drop-slug-fields-index",
+    "time": "2024-12-25T07:04:56.000Z"
+  },
+  {
+    "id": 6,
+    "name": "core::5.0.0-discard-drafts",
+    "time": "2024-12-25T07:04:57.000Z"
+  }
+]

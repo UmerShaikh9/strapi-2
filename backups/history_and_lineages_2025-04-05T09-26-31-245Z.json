@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "document_id": "dfukxi4sfm6y57mu8l57o0s0",
+    "title": "History and lineage ",
+    "created_at": "2025-02-12T06:17:48.507Z",
+    "updated_at": "2025-04-05T05:58:42.821Z",
+    "published_at": null,
+    "created_by_id": 1,
+    "updated_by_id": 1,
+    "locale": null
+  },
+  {
+    "id": 70,
+    "document_id": "dfukxi4sfm6y57mu8l57o0s0",
+    "title": "History and lineage ",
+    "created_at": "2025-02-12T06:17:48.507Z",
+    "updated_at": "2025-04-05T05:58:42.821Z",
+    "published_at": "2025-04-05T05:58:47.666Z",
+    "created_by_id": 1,
+    "updated_by_id": 1,
+    "locale": null
+  }
+]

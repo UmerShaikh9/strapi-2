@@ -1,0 +1,614 @@
+[
+  {
+    "id": 1,
+    "permission_id": 2,
+    "role_id": 1,
+    "permission_ord": 1
+  },
+  {
+    "id": 2,
+    "permission_id": 1,
+    "role_id": 1,
+    "permission_ord": 1
+  },
+  {
+    "id": 3,
+    "permission_id": 3,
+    "role_id": 2,
+    "permission_ord": 1
+  },
+  {
+    "id": 4,
+    "permission_id": 9,
+    "role_id": 2,
+    "permission_ord": 1
+  },
+  {
+    "id": 5,
+    "permission_id": 6,
+    "role_id": 2,
+    "permission_ord": 1
+  },
+  {
+    "id": 6,
+    "permission_id": 8,
+    "role_id": 2,
+    "permission_ord": 1
+  },
+  {
+    "id": 7,
+    "permission_id": 4,
+    "role_id": 2,
+    "permission_ord": 1
+  },
+  {
+    "id": 8,
+    "permission_id": 5,
+    "role_id": 2,
+    "permission_ord": 1
+  },
+  {
+    "id": 9,
+    "permission_id": 7,
+    "role_id": 2,
+    "permission_ord": 1
+  },
+  {
+    "id": 10,
+    "permission_id": 10,
+    "role_id": 2,
+    "permission_ord": 2
+  },
+  {
+    "id": 11,
+    "permission_id": 11,
+    "role_id": 2,
+    "permission_ord": 2
+  },
+  {
+    "id": 12,
+    "permission_id": 12,
+    "role_id": 2,
+    "permission_ord": 3
+  },
+  {
+    "id": 13,
+    "permission_id": 13,
+    "role_id": 2,
+    "permission_ord": 3
+  },
+  {
+    "id": 14,
+    "permission_id": 14,
+    "role_id": 2,
+    "permission_ord": 4
+  },
+  {
+    "id": 16,
+    "permission_id": 15,
+    "role_id": 2,
+    "permission_ord": 4
+  },
+  {
+    "id": 18,
+    "permission_id": 18,
+    "role_id": 1,
+    "permission_ord": 2
+  },
+  {
+    "id": 19,
+    "permission_id": 19,
+    "role_id": 1,
+    "permission_ord": 2
+  },
+  {
+    "id": 20,
+    "permission_id": 20,
+    "role_id": 1,
+    "permission_ord": 3
+  },
+  {
+    "id": 21,
+    "permission_id": 21,
+    "role_id": 1,
+    "permission_ord": 3
+  },
+  {
+    "id": 32,
+    "permission_id": 32,
+    "role_id": 1,
+    "permission_ord": 5
+  },
+  {
+    "id": 33,
+    "permission_id": 33,
+    "role_id": 1,
+    "permission_ord": 5
+  },
+  {
+    "id": 34,
+    "permission_id": 34,
+    "role_id": 1,
+    "permission_ord": 5
+  },
+  {
+    "id": 35,
+    "permission_id": 35,
+    "role_id": 1,
+    "permission_ord": 5
+  },
+  {
+    "id": 36,
+    "permission_id": 36,
+    "role_id": 1,
+    "permission_ord": 6
+  },
+  {
+    "id": 57,
+    "permission_id": 57,
+    "role_id": 1,
+    "permission_ord": 8
+  },
+  {
+    "id": 61,
+    "permission_id": 61,
+    "role_id": 1,
+    "permission_ord": 9
+  },
+  {
+    "id": 62,
+    "permission_id": 62,
+    "role_id": 1,
+    "permission_ord": 10
+  },
+  {
+    "id": 63,
+    "permission_id": 63,
+    "role_id": 1,
+    "permission_ord": 11
+  },
+  {
+    "id": 64,
+    "permission_id": 64,
+    "role_id": 1,
+    "permission_ord": 12
+  },
+  {
+    "id": 65,
+    "permission_id": 65,
+    "role_id": 1,
+    "permission_ord": 13
+  },
+  {
+    "id": 66,
+    "permission_id": 66,
+    "role_id": 1,
+    "permission_ord": 14
+  },
+  {
+    "id": 67,
+    "permission_id": 67,
+    "role_id": 1,
+    "permission_ord": 15
+  },
+  {
+    "id": 68,
+    "permission_id": 68,
+    "role_id": 1,
+    "permission_ord": 16
+  },
+  {
+    "id": 69,
+    "permission_id": 69,
+    "role_id": 2,
+    "permission_ord": 5
+  },
+  {
+    "id": 70,
+    "permission_id": 70,
+    "role_id": 2,
+    "permission_ord": 5
+  },
+  {
+    "id": 71,
+    "permission_id": 72,
+    "role_id": 1,
+    "permission_ord": 17
+  },
+  {
+    "id": 72,
+    "permission_id": 71,
+    "role_id": 1,
+    "permission_ord": 17
+  },
+  {
+    "id": 73,
+    "permission_id": 73,
+    "role_id": 1,
+    "permission_ord": 18
+  },
+  {
+    "id": 74,
+    "permission_id": 74,
+    "role_id": 2,
+    "permission_ord": 6
+  },
+  {
+    "id": 75,
+    "permission_id": 75,
+    "role_id": 1,
+    "permission_ord": 19
+  },
+  {
+    "id": 76,
+    "permission_id": 76,
+    "role_id": 1,
+    "permission_ord": 19
+  },
+  {
+    "id": 77,
+    "permission_id": 77,
+    "role_id": 1,
+    "permission_ord": 19
+  },
+  {
+    "id": 78,
+    "permission_id": 78,
+    "role_id": 1,
+    "permission_ord": 19
+  },
+  {
+    "id": 79,
+    "permission_id": 79,
+    "role_id": 1,
+    "permission_ord": 19
+  },
+  {
+    "id": 80,
+    "permission_id": 81,
+    "role_id": 2,
+    "permission_ord": 7
+  },
+  {
+    "id": 81,
+    "permission_id": 80,
+    "role_id": 2,
+    "permission_ord": 7
+  },
+  {
+    "id": 82,
+    "permission_id": 82,
+    "role_id": 2,
+    "permission_ord": 8
+  },
+  {
+    "id": 83,
+    "permission_id": 83,
+    "role_id": 2,
+    "permission_ord": 9
+  },
+  {
+    "id": 84,
+    "permission_id": 84,
+    "role_id": 2,
+    "permission_ord": 9
+  },
+  {
+    "id": 85,
+    "permission_id": 85,
+    "role_id": 2,
+    "permission_ord": 9
+  },
+  {
+    "id": 86,
+    "permission_id": 86,
+    "role_id": 2,
+    "permission_ord": 10
+  },
+  {
+    "id": 87,
+    "permission_id": 87,
+    "role_id": 2,
+    "permission_ord": 10
+  },
+  {
+    "id": 88,
+    "permission_id": 88,
+    "role_id": 1,
+    "permission_ord": 20
+  },
+  {
+    "id": 89,
+    "permission_id": 89,
+    "role_id": 1,
+    "permission_ord": 20
+  },
+  {
+    "id": 96,
+    "permission_id": 96,
+    "role_id": 2,
+    "permission_ord": 11
+  },
+  {
+    "id": 97,
+    "permission_id": 97,
+    "role_id": 2,
+    "permission_ord": 11
+  },
+  {
+    "id": 98,
+    "permission_id": 98,
+    "role_id": 1,
+    "permission_ord": 22
+  },
+  {
+    "id": 101,
+    "permission_id": 101,
+    "role_id": 2,
+    "permission_ord": 12
+  },
+  {
+    "id": 106,
+    "permission_id": 106,
+    "role_id": 1,
+    "permission_ord": 23
+  },
+  {
+    "id": 107,
+    "permission_id": 107,
+    "role_id": 2,
+    "permission_ord": 14
+  },
+  {
+    "id": 112,
+    "permission_id": 112,
+    "role_id": 1,
+    "permission_ord": 25
+  },
+  {
+    "id": 113,
+    "permission_id": 113,
+    "role_id": 2,
+    "permission_ord": 16
+  },
+  {
+    "id": 114,
+    "permission_id": 114,
+    "role_id": 1,
+    "permission_ord": 26
+  },
+  {
+    "id": 115,
+    "permission_id": 115,
+    "role_id": 2,
+    "permission_ord": 17
+  },
+  {
+    "id": 118,
+    "permission_id": 118,
+    "role_id": 1,
+    "permission_ord": 28
+  },
+  {
+    "id": 119,
+    "permission_id": 119,
+    "role_id": 2,
+    "permission_ord": 19
+  },
+  {
+    "id": 120,
+    "permission_id": 120,
+    "role_id": 1,
+    "permission_ord": 29
+  },
+  {
+    "id": 121,
+    "permission_id": 121,
+    "role_id": 1,
+    "permission_ord": 29
+  },
+  {
+    "id": 122,
+    "permission_id": 122,
+    "role_id": 1,
+    "permission_ord": 30
+  },
+  {
+    "id": 123,
+    "permission_id": 123,
+    "role_id": 2,
+    "permission_ord": 20
+  },
+  {
+    "id": 124,
+    "permission_id": 125,
+    "role_id": 2,
+    "permission_ord": 20
+  },
+  {
+    "id": 125,
+    "permission_id": 124,
+    "role_id": 2,
+    "permission_ord": 20
+  },
+  {
+    "id": 126,
+    "permission_id": 126,
+    "role_id": 1,
+    "permission_ord": 31
+  },
+  {
+    "id": 127,
+    "permission_id": 127,
+    "role_id": 1,
+    "permission_ord": 31
+  },
+  {
+    "id": 128,
+    "permission_id": 128,
+    "role_id": 1,
+    "permission_ord": 31
+  },
+  {
+    "id": 129,
+    "permission_id": 129,
+    "role_id": 1,
+    "permission_ord": 32
+  },
+  {
+    "id": 134,
+    "permission_id": 135,
+    "role_id": 1,
+    "permission_ord": 33
+  },
+  {
+    "id": 135,
+    "permission_id": 134,
+    "role_id": 1,
+    "permission_ord": 33
+  },
+  {
+    "id": 136,
+    "permission_id": 136,
+    "role_id": 1,
+    "permission_ord": 34
+  },
+  {
+    "id": 137,
+    "permission_id": 137,
+    "role_id": 1,
+    "permission_ord": 34
+  },
+  {
+    "id": 138,
+    "permission_id": 138,
+    "role_id": 1,
+    "permission_ord": 35
+  },
+  {
+    "id": 139,
+    "permission_id": 139,
+    "role_id": 1,
+    "permission_ord": 35
+  },
+  {
+    "id": 140,
+    "permission_id": 141,
+    "role_id": 1,
+    "permission_ord": 36
+  },
+  {
+    "id": 141,
+    "permission_id": 140,
+    "role_id": 1,
+    "permission_ord": 36
+  },
+  {
+    "id": 142,
+    "permission_id": 143,
+    "role_id": 2,
+    "permission_ord": 21
+  },
+  {
+    "id": 143,
+    "permission_id": 147,
+    "role_id": 2,
+    "permission_ord": 21
+  },
+  {
+    "id": 144,
+    "permission_id": 144,
+    "role_id": 2,
+    "permission_ord": 21
+  },
+  {
+    "id": 145,
+    "permission_id": 148,
+    "role_id": 2,
+    "permission_ord": 21
+  },
+  {
+    "id": 146,
+    "permission_id": 145,
+    "role_id": 2,
+    "permission_ord": 21
+  },
+  {
+    "id": 147,
+    "permission_id": 146,
+    "role_id": 2,
+    "permission_ord": 21
+  },
+  {
+    "id": 148,
+    "permission_id": 149,
+    "role_id": 2,
+    "permission_ord": 21
+  },
+  {
+    "id": 149,
+    "permission_id": 142,
+    "role_id": 2,
+    "permission_ord": 21
+  },
+  {
+    "id": 150,
+    "permission_id": 150,
+    "role_id": 1,
+    "permission_ord": 37
+  },
+  {
+    "id": 151,
+    "permission_id": 151,
+    "role_id": 1,
+    "permission_ord": 38
+  },
+  {
+    "id": 152,
+    "permission_id": 153,
+    "role_id": 2,
+    "permission_ord": 22
+  },
+  {
+    "id": 153,
+    "permission_id": 152,
+    "role_id": 2,
+    "permission_ord": 22
+  },
+  {
+    "id": 154,
+    "permission_id": 154,
+    "role_id": 1,
+    "permission_ord": 39
+  },
+  {
+    "id": 155,
+    "permission_id": 156,
+    "role_id": 1,
+    "permission_ord": 40
+  },
+  {
+    "id": 156,
+    "permission_id": 157,
+    "role_id": 1,
+    "permission_ord": 40
+  },
+  {
+    "id": 157,
+    "permission_id": 155,
+    "role_id": 1,
+    "permission_ord": 40
+  },
+  {
+    "id": 167,
+    "permission_id": 167,
+    "role_id": 2,
+    "permission_ord": 25
+  },
+  {
+    "id": 168,
+    "permission_id": 168,
+    "role_id": 2,
+    "permission_ord": 26
+  }
+]

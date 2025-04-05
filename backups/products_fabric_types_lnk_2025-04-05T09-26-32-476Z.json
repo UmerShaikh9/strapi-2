@@ -1,0 +1,7128 @@
+[
+  {
+    "id": 5,
+    "product_id": 5637,
+    "fabric_type_id": 12,
+    "fabric_type_ord": 0,
+    "product_ord": 1
+  },
+  {
+    "id": 6,
+    "product_id": 5637,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 7,
+    "product_id": 5638,
+    "fabric_type_id": 13,
+    "fabric_type_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 8,
+    "product_id": 5638,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 2,
+    "product_ord": 1
+  },
+  {
+    "id": 9,
+    "product_id": 5641,
+    "fabric_type_id": 12,
+    "fabric_type_ord": 0,
+    "product_ord": 2
+  },
+  {
+    "id": 10,
+    "product_id": 5642,
+    "fabric_type_id": 13,
+    "fabric_type_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 11,
+    "product_id": 5646,
+    "fabric_type_id": 12,
+    "fabric_type_ord": 0,
+    "product_ord": 3
+  },
+  {
+    "id": 12,
+    "product_id": 5647,
+    "fabric_type_id": 13,
+    "fabric_type_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 13,
+    "product_id": 5639,
+    "fabric_type_id": 12,
+    "fabric_type_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 14,
+    "product_id": 5648,
+    "fabric_type_id": 13,
+    "fabric_type_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 15,
+    "product_id": 3508,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 19,
+    "product_id": 1066,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 24,
+    "product_id": 5656,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 25,
+    "product_id": 3526,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 28,
+    "product_id": 3528,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 31,
+    "product_id": 2327,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 33,
+    "product_id": 2355,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 35,
+    "product_id": 2367,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 37,
+    "product_id": 2385,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 39,
+    "product_id": 2359,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 43,
+    "product_id": 3530,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 46,
+    "product_id": 5669,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 47,
+    "product_id": 1064,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 52,
+    "product_id": 5672,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 53,
+    "product_id": 5673,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 54,
+    "product_id": 5674,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 57,
+    "product_id": 1052,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 58,
+    "product_id": 5677,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 59,
+    "product_id": 3107,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 60,
+    "product_id": 5678,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 61,
+    "product_id": 3234,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 62,
+    "product_id": 5679,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 63,
+    "product_id": 2974,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 64,
+    "product_id": 5681,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 65,
+    "product_id": 3532,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 68,
+    "product_id": 5683,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 69,
+    "product_id": 2972,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 70,
+    "product_id": 5684,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 71,
+    "product_id": 3232,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 74,
+    "product_id": 5686,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 75,
+    "product_id": 3228,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 76,
+    "product_id": 5687,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 77,
+    "product_id": 3220,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 78,
+    "product_id": 5688,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 79,
+    "product_id": 3216,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 80,
+    "product_id": 5689,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 81,
+    "product_id": 3222,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 82,
+    "product_id": 5690,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 83,
+    "product_id": 3218,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 84,
+    "product_id": 5691,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 85,
+    "product_id": 3534,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 87,
+    "product_id": 3093,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 15
+  },
+  {
+    "id": 88,
+    "product_id": 5693,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 15
+  },
+  {
+    "id": 89,
+    "product_id": 3002,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 90,
+    "product_id": 5694,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 92,
+    "product_id": 3536,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 93,
+    "product_id": 5697,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 94,
+    "product_id": 3008,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 95,
+    "product_id": 5698,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 96,
+    "product_id": 3109,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 97,
+    "product_id": 5699,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 98,
+    "product_id": 3021,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 99,
+    "product_id": 5700,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 100,
+    "product_id": 3087,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 101,
+    "product_id": 5701,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 104,
+    "product_id": 5704,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 105,
+    "product_id": 3280,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 106,
+    "product_id": 5705,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 107,
+    "product_id": 2970,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 108,
+    "product_id": 5706,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 109,
+    "product_id": 2968,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 110,
+    "product_id": 5707,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 111,
+    "product_id": 3097,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 112,
+    "product_id": 5708,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 113,
+    "product_id": 3095,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 114,
+    "product_id": 5709,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 115,
+    "product_id": 2986,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 116,
+    "product_id": 5710,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 117,
+    "product_id": 3238,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 118,
+    "product_id": 5711,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 119,
+    "product_id": 3099,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 120,
+    "product_id": 5712,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 121,
+    "product_id": 3256,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 29
+  },
+  {
+    "id": 122,
+    "product_id": 5713,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 29
+  },
+  {
+    "id": 123,
+    "product_id": 3240,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 124,
+    "product_id": 5714,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 125,
+    "product_id": 3105,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 31
+  },
+  {
+    "id": 126,
+    "product_id": 5715,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 31
+  },
+  {
+    "id": 127,
+    "product_id": 2994,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 32
+  },
+  {
+    "id": 128,
+    "product_id": 5716,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 32
+  },
+  {
+    "id": 129,
+    "product_id": 3250,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 33
+  },
+  {
+    "id": 130,
+    "product_id": 5717,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 33
+  },
+  {
+    "id": 131,
+    "product_id": 3278,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 34
+  },
+  {
+    "id": 132,
+    "product_id": 5718,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 34
+  },
+  {
+    "id": 133,
+    "product_id": 3066,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 136,
+    "product_id": 5720,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 137,
+    "product_id": 3272,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 36
+  },
+  {
+    "id": 138,
+    "product_id": 5721,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 36
+  },
+  {
+    "id": 139,
+    "product_id": 3254,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 37
+  },
+  {
+    "id": 140,
+    "product_id": 5722,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 37
+  },
+  {
+    "id": 141,
+    "product_id": 3101,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 38
+  },
+  {
+    "id": 142,
+    "product_id": 5724,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 38
+  },
+  {
+    "id": 143,
+    "product_id": 1060,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 39
+  },
+  {
+    "id": 144,
+    "product_id": 5725,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 39
+  },
+  {
+    "id": 145,
+    "product_id": 3030,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 40
+  },
+  {
+    "id": 146,
+    "product_id": 5726,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 40
+  },
+  {
+    "id": 147,
+    "product_id": 2055,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 41
+  },
+  {
+    "id": 148,
+    "product_id": 5727,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 41
+  },
+  {
+    "id": 149,
+    "product_id": 1804,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 42
+  },
+  {
+    "id": 150,
+    "product_id": 5728,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 42
+  },
+  {
+    "id": 151,
+    "product_id": 3201,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 43
+  },
+  {
+    "id": 152,
+    "product_id": 5729,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 43
+  },
+  {
+    "id": 153,
+    "product_id": 2071,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 44
+  },
+  {
+    "id": 154,
+    "product_id": 5730,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 44
+  },
+  {
+    "id": 155,
+    "product_id": 2198,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 45
+  },
+  {
+    "id": 156,
+    "product_id": 5731,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 45
+  },
+  {
+    "id": 157,
+    "product_id": 944,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 46
+  },
+  {
+    "id": 159,
+    "product_id": 3054,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 47
+  },
+  {
+    "id": 160,
+    "product_id": 5733,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 47
+  },
+  {
+    "id": 161,
+    "product_id": 2051,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 48
+  },
+  {
+    "id": 162,
+    "product_id": 5734,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 48
+  },
+  {
+    "id": 163,
+    "product_id": 938,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 49
+  },
+  {
+    "id": 164,
+    "product_id": 5735,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 49
+  },
+  {
+    "id": 165,
+    "product_id": 1788,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 50
+  },
+  {
+    "id": 166,
+    "product_id": 5736,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 50
+  },
+  {
+    "id": 167,
+    "product_id": 2187,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 51
+  },
+  {
+    "id": 168,
+    "product_id": 5737,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 51
+  },
+  {
+    "id": 169,
+    "product_id": 1784,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 52
+  },
+  {
+    "id": 170,
+    "product_id": 5738,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 52
+  },
+  {
+    "id": 171,
+    "product_id": 2202,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 53
+  },
+  {
+    "id": 172,
+    "product_id": 5739,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 53
+  },
+  {
+    "id": 173,
+    "product_id": 2194,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 54
+  },
+  {
+    "id": 174,
+    "product_id": 5740,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 54
+  },
+  {
+    "id": 175,
+    "product_id": 1802,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 55
+  },
+  {
+    "id": 176,
+    "product_id": 5741,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 55
+  },
+  {
+    "id": 177,
+    "product_id": 2179,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 56
+  },
+  {
+    "id": 178,
+    "product_id": 5742,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 56
+  },
+  {
+    "id": 179,
+    "product_id": 2185,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 57
+  },
+  {
+    "id": 180,
+    "product_id": 5743,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 57
+  },
+  {
+    "id": 181,
+    "product_id": 2192,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 58
+  },
+  {
+    "id": 182,
+    "product_id": 5744,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 58
+  },
+  {
+    "id": 183,
+    "product_id": 3224,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 59
+  },
+  {
+    "id": 184,
+    "product_id": 5745,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 59
+  },
+  {
+    "id": 185,
+    "product_id": 1014,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 60
+  },
+  {
+    "id": 186,
+    "product_id": 5747,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 60
+  },
+  {
+    "id": 187,
+    "product_id": 3064,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 61
+  },
+  {
+    "id": 188,
+    "product_id": 5748,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 61
+  },
+  {
+    "id": 189,
+    "product_id": 1062,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 62
+  },
+  {
+    "id": 190,
+    "product_id": 5749,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 62
+  },
+  {
+    "id": 191,
+    "product_id": 3062,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 63
+  },
+  {
+    "id": 192,
+    "product_id": 5750,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 63
+  },
+  {
+    "id": 193,
+    "product_id": 3060,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 64
+  },
+  {
+    "id": 194,
+    "product_id": 5751,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 64
+  },
+  {
+    "id": 195,
+    "product_id": 1046,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 65
+  },
+  {
+    "id": 196,
+    "product_id": 5752,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 65
+  },
+  {
+    "id": 197,
+    "product_id": 3014,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 66
+  },
+  {
+    "id": 198,
+    "product_id": 5753,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 66
+  },
+  {
+    "id": 199,
+    "product_id": 3028,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 67
+  },
+  {
+    "id": 200,
+    "product_id": 5754,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 67
+  },
+  {
+    "id": 201,
+    "product_id": 2045,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 68
+  },
+  {
+    "id": 202,
+    "product_id": 5755,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 68
+  },
+  {
+    "id": 203,
+    "product_id": 1048,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 69
+  },
+  {
+    "id": 204,
+    "product_id": 5756,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 69
+  },
+  {
+    "id": 205,
+    "product_id": 2057,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 70
+  },
+  {
+    "id": 206,
+    "product_id": 5757,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 70
+  },
+  {
+    "id": 207,
+    "product_id": 971,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 71
+  },
+  {
+    "id": 208,
+    "product_id": 5758,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 71
+  },
+  {
+    "id": 209,
+    "product_id": 979,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 72
+  },
+  {
+    "id": 210,
+    "product_id": 5759,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 72
+  },
+  {
+    "id": 211,
+    "product_id": 967,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 73
+  },
+  {
+    "id": 212,
+    "product_id": 5760,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 73
+  },
+  {
+    "id": 213,
+    "product_id": 1010,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 74
+  },
+  {
+    "id": 214,
+    "product_id": 5761,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 74
+  },
+  {
+    "id": 215,
+    "product_id": 961,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 75
+  },
+  {
+    "id": 216,
+    "product_id": 5762,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 75
+  },
+  {
+    "id": 217,
+    "product_id": 2059,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 76
+  },
+  {
+    "id": 220,
+    "product_id": 5764,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 76
+  },
+  {
+    "id": 221,
+    "product_id": 1796,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 77
+  },
+  {
+    "id": 222,
+    "product_id": 5765,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 77
+  },
+  {
+    "id": 223,
+    "product_id": 963,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 78
+  },
+  {
+    "id": 224,
+    "product_id": 5766,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 78
+  },
+  {
+    "id": 225,
+    "product_id": 3210,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 79
+  },
+  {
+    "id": 226,
+    "product_id": 5767,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 79
+  },
+  {
+    "id": 227,
+    "product_id": 1800,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 80
+  },
+  {
+    "id": 228,
+    "product_id": 5768,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 80
+  },
+  {
+    "id": 229,
+    "product_id": 1786,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 81
+  },
+  {
+    "id": 230,
+    "product_id": 5769,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 81
+  },
+  {
+    "id": 231,
+    "product_id": 3266,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 82
+  },
+  {
+    "id": 232,
+    "product_id": 5770,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 82
+  },
+  {
+    "id": 233,
+    "product_id": 965,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 83
+  },
+  {
+    "id": 234,
+    "product_id": 5771,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 83
+  },
+  {
+    "id": 235,
+    "product_id": 3264,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 84
+  },
+  {
+    "id": 236,
+    "product_id": 5772,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 84
+  },
+  {
+    "id": 237,
+    "product_id": 955,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 85
+  },
+  {
+    "id": 238,
+    "product_id": 5773,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 85
+  },
+  {
+    "id": 239,
+    "product_id": 3538,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 241,
+    "product_id": 2167,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 86
+  },
+  {
+    "id": 242,
+    "product_id": 5775,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 86
+  },
+  {
+    "id": 243,
+    "product_id": 3056,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 87
+  },
+  {
+    "id": 244,
+    "product_id": 5776,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 87
+  },
+  {
+    "id": 246,
+    "product_id": 3050,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 88
+  },
+  {
+    "id": 247,
+    "product_id": 5778,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 88
+  },
+  {
+    "id": 248,
+    "product_id": 5779,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 249,
+    "product_id": 983,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 89
+  },
+  {
+    "id": 250,
+    "product_id": 5780,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 89
+  },
+  {
+    "id": 251,
+    "product_id": 3042,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 90
+  },
+  {
+    "id": 252,
+    "product_id": 5781,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 90
+  },
+  {
+    "id": 253,
+    "product_id": 3205,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 91
+  },
+  {
+    "id": 254,
+    "product_id": 5782,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 91
+  },
+  {
+    "id": 255,
+    "product_id": 919,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 92
+  },
+  {
+    "id": 256,
+    "product_id": 5783,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 92
+  },
+  {
+    "id": 257,
+    "product_id": 981,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 93
+  },
+  {
+    "id": 258,
+    "product_id": 5784,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 93
+  },
+  {
+    "id": 259,
+    "product_id": 2047,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 94
+  },
+  {
+    "id": 260,
+    "product_id": 5785,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 94
+  },
+  {
+    "id": 261,
+    "product_id": 3032,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 95
+  },
+  {
+    "id": 262,
+    "product_id": 5786,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 95
+  },
+  {
+    "id": 263,
+    "product_id": 1041,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 96
+  },
+  {
+    "id": 264,
+    "product_id": 5787,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 96
+  },
+  {
+    "id": 265,
+    "product_id": 2204,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 97
+  },
+  {
+    "id": 266,
+    "product_id": 5788,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 97
+  },
+  {
+    "id": 267,
+    "product_id": 2165,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 98
+  },
+  {
+    "id": 268,
+    "product_id": 5789,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 98
+  },
+  {
+    "id": 269,
+    "product_id": 3542,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 271,
+    "product_id": 3058,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 99
+  },
+  {
+    "id": 272,
+    "product_id": 5791,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 99
+  },
+  {
+    "id": 273,
+    "product_id": 1806,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 100
+  },
+  {
+    "id": 274,
+    "product_id": 5792,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 100
+  },
+  {
+    "id": 275,
+    "product_id": 3242,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 101
+  },
+  {
+    "id": 276,
+    "product_id": 5793,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 101
+  },
+  {
+    "id": 277,
+    "product_id": 1056,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 102
+  },
+  {
+    "id": 278,
+    "product_id": 5794,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 102
+  },
+  {
+    "id": 279,
+    "product_id": 1782,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 103
+  },
+  {
+    "id": 280,
+    "product_id": 5795,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 103
+  },
+  {
+    "id": 281,
+    "product_id": 2196,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 104
+  },
+  {
+    "id": 282,
+    "product_id": 5796,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 104
+  },
+  {
+    "id": 283,
+    "product_id": 942,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 105
+  },
+  {
+    "id": 284,
+    "product_id": 5797,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 105
+  },
+  {
+    "id": 285,
+    "product_id": 2181,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 106
+  },
+  {
+    "id": 286,
+    "product_id": 5798,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 106
+  },
+  {
+    "id": 287,
+    "product_id": 2189,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 107
+  },
+  {
+    "id": 288,
+    "product_id": 5799,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 107
+  },
+  {
+    "id": 289,
+    "product_id": 1044,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 108
+  },
+  {
+    "id": 290,
+    "product_id": 5800,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 108
+  },
+  {
+    "id": 291,
+    "product_id": 2169,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 109
+  },
+  {
+    "id": 292,
+    "product_id": 5801,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 109
+  },
+  {
+    "id": 293,
+    "product_id": 959,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 110
+  },
+  {
+    "id": 294,
+    "product_id": 5802,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 110
+  },
+  {
+    "id": 295,
+    "product_id": 2038,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 111
+  },
+  {
+    "id": 296,
+    "product_id": 5803,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 111
+  },
+  {
+    "id": 297,
+    "product_id": 3025,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 112
+  },
+  {
+    "id": 298,
+    "product_id": 5804,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 112
+  },
+  {
+    "id": 299,
+    "product_id": 977,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 113
+  },
+  {
+    "id": 300,
+    "product_id": 5805,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 113
+  },
+  {
+    "id": 301,
+    "product_id": 1006,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 114
+  },
+  {
+    "id": 302,
+    "product_id": 5806,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 114
+  },
+  {
+    "id": 303,
+    "product_id": 1008,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 115
+  },
+  {
+    "id": 304,
+    "product_id": 5807,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 115
+  },
+  {
+    "id": 305,
+    "product_id": 2200,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 116
+  },
+  {
+    "id": 306,
+    "product_id": 5808,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 116
+  },
+  {
+    "id": 307,
+    "product_id": 2171,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 117
+  },
+  {
+    "id": 308,
+    "product_id": 5809,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 117
+  },
+  {
+    "id": 309,
+    "product_id": 3052,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 118
+  },
+  {
+    "id": 310,
+    "product_id": 5810,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 118
+  },
+  {
+    "id": 311,
+    "product_id": 3046,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 119
+  },
+  {
+    "id": 312,
+    "product_id": 5811,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 119
+  },
+  {
+    "id": 313,
+    "product_id": 1808,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 120
+  },
+  {
+    "id": 314,
+    "product_id": 5812,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 120
+  },
+  {
+    "id": 315,
+    "product_id": 3048,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 121
+  },
+  {
+    "id": 316,
+    "product_id": 5813,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 121
+  },
+  {
+    "id": 317,
+    "product_id": 1016,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 122
+  },
+  {
+    "id": 318,
+    "product_id": 5814,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 122
+  },
+  {
+    "id": 319,
+    "product_id": 2062,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 123
+  },
+  {
+    "id": 320,
+    "product_id": 5815,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 123
+  },
+  {
+    "id": 321,
+    "product_id": 949,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 124
+  },
+  {
+    "id": 325,
+    "product_id": 969,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 125
+  },
+  {
+    "id": 326,
+    "product_id": 5818,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 125
+  },
+  {
+    "id": 327,
+    "product_id": 1012,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 126
+  },
+  {
+    "id": 328,
+    "product_id": 5819,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 126
+  },
+  {
+    "id": 329,
+    "product_id": 3068,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 127
+  },
+  {
+    "id": 330,
+    "product_id": 5820,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 127
+  },
+  {
+    "id": 331,
+    "product_id": 2177,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 128
+  },
+  {
+    "id": 332,
+    "product_id": 5821,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 128
+  },
+  {
+    "id": 333,
+    "product_id": 2980,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 129
+  },
+  {
+    "id": 334,
+    "product_id": 5822,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 129
+  },
+  {
+    "id": 335,
+    "product_id": 3199,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 130
+  },
+  {
+    "id": 336,
+    "product_id": 5823,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 130
+  },
+  {
+    "id": 337,
+    "product_id": 3203,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 131
+  },
+  {
+    "id": 338,
+    "product_id": 5824,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 131
+  },
+  {
+    "id": 339,
+    "product_id": 3197,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 132
+  },
+  {
+    "id": 340,
+    "product_id": 5825,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 132
+  },
+  {
+    "id": 341,
+    "product_id": 3195,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 133
+  },
+  {
+    "id": 342,
+    "product_id": 5826,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 133
+  },
+  {
+    "id": 343,
+    "product_id": 975,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 134
+  },
+  {
+    "id": 344,
+    "product_id": 5827,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 134
+  },
+  {
+    "id": 345,
+    "product_id": 1054,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 135
+  },
+  {
+    "id": 346,
+    "product_id": 5828,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 135
+  },
+  {
+    "id": 347,
+    "product_id": 1798,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 136
+  },
+  {
+    "id": 348,
+    "product_id": 5829,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 136
+  },
+  {
+    "id": 349,
+    "product_id": 1794,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 137
+  },
+  {
+    "id": 350,
+    "product_id": 5830,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 137
+  },
+  {
+    "id": 351,
+    "product_id": 946,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 138
+  },
+  {
+    "id": 353,
+    "product_id": 2823,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 139
+  },
+  {
+    "id": 356,
+    "product_id": 5833,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 139
+  },
+  {
+    "id": 357,
+    "product_id": 3044,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 140
+  },
+  {
+    "id": 358,
+    "product_id": 5834,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 140
+  },
+  {
+    "id": 359,
+    "product_id": 1024,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 141
+  },
+  {
+    "id": 360,
+    "product_id": 5835,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 141
+  },
+  {
+    "id": 361,
+    "product_id": 3236,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 142
+  },
+  {
+    "id": 362,
+    "product_id": 5836,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 142
+  },
+  {
+    "id": 363,
+    "product_id": 3268,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 143
+  },
+  {
+    "id": 364,
+    "product_id": 5837,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 143
+  },
+  {
+    "id": 365,
+    "product_id": 3038,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 144
+  },
+  {
+    "id": 366,
+    "product_id": 5838,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 144
+  },
+  {
+    "id": 367,
+    "product_id": 3544,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 15
+  },
+  {
+    "id": 368,
+    "product_id": 5839,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 369,
+    "product_id": 3034,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 145
+  },
+  {
+    "id": 370,
+    "product_id": 5840,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 145
+  },
+  {
+    "id": 371,
+    "product_id": 3248,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 146
+  },
+  {
+    "id": 372,
+    "product_id": 5841,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 146
+  },
+  {
+    "id": 373,
+    "product_id": 3040,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 147
+  },
+  {
+    "id": 374,
+    "product_id": 5842,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 147
+  },
+  {
+    "id": 375,
+    "product_id": 3244,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 148
+  },
+  {
+    "id": 376,
+    "product_id": 5843,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 148
+  },
+  {
+    "id": 377,
+    "product_id": 3276,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 149
+  },
+  {
+    "id": 378,
+    "product_id": 5844,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 149
+  },
+  {
+    "id": 379,
+    "product_id": 953,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 150
+  },
+  {
+    "id": 380,
+    "product_id": 5845,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 150
+  },
+  {
+    "id": 381,
+    "product_id": 2049,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 151
+  },
+  {
+    "id": 382,
+    "product_id": 5846,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 151
+  },
+  {
+    "id": 383,
+    "product_id": 2173,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 152
+  },
+  {
+    "id": 384,
+    "product_id": 5847,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 152
+  },
+  {
+    "id": 385,
+    "product_id": 5643,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 153
+  },
+  {
+    "id": 386,
+    "product_id": 5848,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 153
+  },
+  {
+    "id": 387,
+    "product_id": 3510,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 388,
+    "product_id": 5849,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 389,
+    "product_id": 2067,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 154
+  },
+  {
+    "id": 390,
+    "product_id": 5850,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 154
+  },
+  {
+    "id": 391,
+    "product_id": 3226,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 155
+  },
+  {
+    "id": 392,
+    "product_id": 5851,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 155
+  },
+  {
+    "id": 393,
+    "product_id": 2206,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 156
+  },
+  {
+    "id": 394,
+    "product_id": 5852,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 156
+  },
+  {
+    "id": 395,
+    "product_id": 2183,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 157
+  },
+  {
+    "id": 396,
+    "product_id": 5853,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 157
+  },
+  {
+    "id": 397,
+    "product_id": 3246,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 158
+  },
+  {
+    "id": 398,
+    "product_id": 5854,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 158
+  },
+  {
+    "id": 399,
+    "product_id": 1792,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 159
+  },
+  {
+    "id": 400,
+    "product_id": 5855,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 159
+  },
+  {
+    "id": 401,
+    "product_id": 957,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 160
+  },
+  {
+    "id": 402,
+    "product_id": 5856,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 160
+  },
+  {
+    "id": 403,
+    "product_id": 3546,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 405,
+    "product_id": 2175,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 161
+  },
+  {
+    "id": 406,
+    "product_id": 5858,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 161
+  },
+  {
+    "id": 407,
+    "product_id": 1058,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 162
+  },
+  {
+    "id": 408,
+    "product_id": 5859,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 162
+  },
+  {
+    "id": 410,
+    "product_id": 2043,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 163
+  },
+  {
+    "id": 411,
+    "product_id": 5861,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 163
+  },
+  {
+    "id": 412,
+    "product_id": 1050,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 164
+  },
+  {
+    "id": 413,
+    "product_id": 5862,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 164
+  },
+  {
+    "id": 415,
+    "product_id": 3036,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 165
+  },
+  {
+    "id": 416,
+    "product_id": 5864,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 165
+  },
+  {
+    "id": 417,
+    "product_id": 951,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 166
+  },
+  {
+    "id": 418,
+    "product_id": 5865,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 166
+  },
+  {
+    "id": 419,
+    "product_id": 973,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 167
+  },
+  {
+    "id": 420,
+    "product_id": 5866,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 167
+  },
+  {
+    "id": 421,
+    "product_id": 3548,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 423,
+    "product_id": 3550,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 425,
+    "product_id": 2349,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 428,
+    "product_id": 5872,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 429,
+    "product_id": 3553,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 432,
+    "product_id": 749,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 435,
+    "product_id": 5877,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 436,
+    "product_id": 767,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 437,
+    "product_id": 5880,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 438,
+    "product_id": 769,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 439,
+    "product_id": 5882,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 440,
+    "product_id": 771,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 168
+  },
+  {
+    "id": 441,
+    "product_id": 5884,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 168
+  },
+  {
+    "id": 443,
+    "product_id": 5886,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 444,
+    "product_id": 773,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 169
+  },
+  {
+    "id": 445,
+    "product_id": 5887,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 169
+  },
+  {
+    "id": 446,
+    "product_id": 775,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 170
+  },
+  {
+    "id": 447,
+    "product_id": 5888,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 170
+  },
+  {
+    "id": 448,
+    "product_id": 777,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 449,
+    "product_id": 5889,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 450,
+    "product_id": 779,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 455,
+    "product_id": 5894,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 456,
+    "product_id": 785,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 458,
+    "product_id": 5896,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 459,
+    "product_id": 3558,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 463,
+    "product_id": 3561,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 466,
+    "product_id": 5904,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 469,
+    "product_id": 3565,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 470,
+    "product_id": 5909,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 471,
+    "product_id": 3512,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 473,
+    "product_id": 3567,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 475,
+    "product_id": 3571,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 476,
+    "product_id": 5912,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 33
+  },
+  {
+    "id": 478,
+    "product_id": 5914,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 479,
+    "product_id": 5916,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 36
+  },
+  {
+    "id": 480,
+    "product_id": 5917,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 171
+  },
+  {
+    "id": 481,
+    "product_id": 3575,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 483,
+    "product_id": 751,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 484,
+    "product_id": 5919,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 485,
+    "product_id": 789,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 486,
+    "product_id": 5920,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 487,
+    "product_id": 791,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 489,
+    "product_id": 793,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 490,
+    "product_id": 5923,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 491,
+    "product_id": 795,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 171
+  },
+  {
+    "id": 492,
+    "product_id": 5928,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 172
+  },
+  {
+    "id": 493,
+    "product_id": 797,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 495,
+    "product_id": 5930,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 496,
+    "product_id": 799,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 498,
+    "product_id": 5932,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 499,
+    "product_id": 801,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 501,
+    "product_id": 5934,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 6
+  },
+  {
+    "id": 502,
+    "product_id": 803,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 7
+  },
+  {
+    "id": 505,
+    "product_id": 753,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 506,
+    "product_id": 5937,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 507,
+    "product_id": 765,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 509,
+    "product_id": 763,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 510,
+    "product_id": 5939,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 511,
+    "product_id": 903,
+    "fabric_type_id": 20,
+    "fabric_type_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 512,
+    "product_id": 5940,
+    "fabric_type_id": 21,
+    "fabric_type_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 513,
+    "product_id": 3540,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 29
+  },
+  {
+    "id": 514,
+    "product_id": 5941,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 38
+  },
+  {
+    "id": 515,
+    "product_id": 2373,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 517,
+    "product_id": 2345,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 31
+  },
+  {
+    "id": 519,
+    "product_id": 2351,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 32
+  },
+  {
+    "id": 521,
+    "product_id": 2353,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 33
+  },
+  {
+    "id": 523,
+    "product_id": 2357,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 34
+  },
+  {
+    "id": 525,
+    "product_id": 2371,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 527,
+    "product_id": 2508,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 36
+  },
+  {
+    "id": 529,
+    "product_id": 2369,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 37
+  },
+  {
+    "id": 531,
+    "product_id": 2333,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 38
+  },
+  {
+    "id": 533,
+    "product_id": 2331,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 39
+  },
+  {
+    "id": 535,
+    "product_id": 2329,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 40
+  },
+  {
+    "id": 537,
+    "product_id": 2361,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 41
+  },
+  {
+    "id": 539,
+    "product_id": 2343,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 42
+  },
+  {
+    "id": 541,
+    "product_id": 2341,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 43
+  },
+  {
+    "id": 543,
+    "product_id": 2305,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 44
+  },
+  {
+    "id": 545,
+    "product_id": 2339,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 45
+  },
+  {
+    "id": 547,
+    "product_id": 2311,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 46
+  },
+  {
+    "id": 549,
+    "product_id": 2307,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 47
+  },
+  {
+    "id": 551,
+    "product_id": 2309,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 48
+  },
+  {
+    "id": 553,
+    "product_id": 2365,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 49
+  },
+  {
+    "id": 555,
+    "product_id": 2323,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 50
+  },
+  {
+    "id": 557,
+    "product_id": 2363,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 51
+  },
+  {
+    "id": 561,
+    "product_id": 3577,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 53
+  },
+  {
+    "id": 563,
+    "product_id": 3579,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 54
+  },
+  {
+    "id": 565,
+    "product_id": 3581,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 55
+  },
+  {
+    "id": 567,
+    "product_id": 3583,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 56
+  },
+  {
+    "id": 573,
+    "product_id": 3587,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 58
+  },
+  {
+    "id": 579,
+    "product_id": 3594,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 61
+  },
+  {
+    "id": 581,
+    "product_id": 3596,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 62
+  },
+  {
+    "id": 583,
+    "product_id": 3598,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 63
+  },
+  {
+    "id": 585,
+    "product_id": 3600,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 64
+  },
+  {
+    "id": 587,
+    "product_id": 2943,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 65
+  },
+  {
+    "id": 589,
+    "product_id": 3602,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 66
+  },
+  {
+    "id": 591,
+    "product_id": 3604,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 67
+  },
+  {
+    "id": 593,
+    "product_id": 3606,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 68
+  },
+  {
+    "id": 595,
+    "product_id": 3608,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 69
+  },
+  {
+    "id": 597,
+    "product_id": 3610,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 70
+  },
+  {
+    "id": 601,
+    "product_id": 2313,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 72
+  },
+  {
+    "id": 603,
+    "product_id": 3614,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 73
+  },
+  {
+    "id": 605,
+    "product_id": 3616,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 74
+  },
+  {
+    "id": 607,
+    "product_id": 3620,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 75
+  },
+  {
+    "id": 609,
+    "product_id": 3765,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 76
+  },
+  {
+    "id": 613,
+    "product_id": 3767,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 77
+  },
+  {
+    "id": 615,
+    "product_id": 3769,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 78
+  },
+  {
+    "id": 619,
+    "product_id": 3771,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 79
+  },
+  {
+    "id": 621,
+    "product_id": 3773,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 80
+  },
+  {
+    "id": 625,
+    "product_id": 3775,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 81
+  },
+  {
+    "id": 627,
+    "product_id": 3779,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 82
+  },
+  {
+    "id": 631,
+    "product_id": 3781,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 84
+  },
+  {
+    "id": 635,
+    "product_id": 3785,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 86
+  },
+  {
+    "id": 637,
+    "product_id": 3787,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 87
+  },
+  {
+    "id": 639,
+    "product_id": 3789,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 88
+  },
+  {
+    "id": 641,
+    "product_id": 2317,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 89
+  },
+  {
+    "id": 647,
+    "product_id": 3522,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 92
+  },
+  {
+    "id": 651,
+    "product_id": 2337,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 94
+  },
+  {
+    "id": 653,
+    "product_id": 3524,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 95
+  },
+  {
+    "id": 655,
+    "product_id": 6012,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 656,
+    "product_id": 6013,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 12
+  },
+  {
+    "id": 657,
+    "product_id": 6014,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 658,
+    "product_id": 807,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 11
+  },
+  {
+    "id": 659,
+    "product_id": 6035,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 665,
+    "product_id": 3585,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 97
+  },
+  {
+    "id": 669,
+    "product_id": 6109,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 109
+  },
+  {
+    "id": 670,
+    "product_id": 6110,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 110
+  },
+  {
+    "id": 671,
+    "product_id": 6111,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 111
+  },
+  {
+    "id": 672,
+    "product_id": 6112,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 112
+  },
+  {
+    "id": 674,
+    "product_id": 6114,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 114
+  },
+  {
+    "id": 675,
+    "product_id": 6115,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 115
+  },
+  {
+    "id": 676,
+    "product_id": 6116,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 116
+  },
+  {
+    "id": 677,
+    "product_id": 6117,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 117
+  },
+  {
+    "id": 678,
+    "product_id": 6118,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 118
+  },
+  {
+    "id": 679,
+    "product_id": 6119,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 119
+  },
+  {
+    "id": 680,
+    "product_id": 6120,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 120
+  },
+  {
+    "id": 681,
+    "product_id": 6121,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 121
+  },
+  {
+    "id": 682,
+    "product_id": 6122,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 122
+  },
+  {
+    "id": 683,
+    "product_id": 6123,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 123
+  },
+  {
+    "id": 684,
+    "product_id": 6124,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 124
+  },
+  {
+    "id": 685,
+    "product_id": 6125,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 125
+  },
+  {
+    "id": 687,
+    "product_id": 6127,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 127
+  },
+  {
+    "id": 688,
+    "product_id": 6128,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 128
+  },
+  {
+    "id": 690,
+    "product_id": 6130,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 130
+  },
+  {
+    "id": 691,
+    "product_id": 6131,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 131
+  },
+  {
+    "id": 692,
+    "product_id": 6132,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 132
+  },
+  {
+    "id": 693,
+    "product_id": 6133,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 133
+  },
+  {
+    "id": 694,
+    "product_id": 6134,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 134
+  },
+  {
+    "id": 695,
+    "product_id": 6135,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 135
+  },
+  {
+    "id": 696,
+    "product_id": 6136,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 136
+  },
+  {
+    "id": 697,
+    "product_id": 6137,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 137
+  },
+  {
+    "id": 698,
+    "product_id": 6138,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 138
+  },
+  {
+    "id": 701,
+    "product_id": 6141,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 141
+  },
+  {
+    "id": 704,
+    "product_id": 6144,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 144
+  },
+  {
+    "id": 709,
+    "product_id": 6149,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 149
+  },
+  {
+    "id": 710,
+    "product_id": 6150,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 150
+  },
+  {
+    "id": 715,
+    "product_id": 6155,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 155
+  },
+  {
+    "id": 731,
+    "product_id": 6171,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 170
+  },
+  {
+    "id": 736,
+    "product_id": 6176,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 174
+  },
+  {
+    "id": 756,
+    "product_id": 6196,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 194
+  },
+  {
+    "id": 757,
+    "product_id": 6197,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 195
+  },
+  {
+    "id": 758,
+    "product_id": 6198,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 0,
+    "product_ord": 12
+  },
+  {
+    "id": 759,
+    "product_id": 6198,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 764,
+    "product_id": 6201,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 14
+  },
+  {
+    "id": 765,
+    "product_id": 6201,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 2,
+    "product_ord": 9
+  },
+  {
+    "id": 766,
+    "product_id": 6202,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 767,
+    "product_id": 6202,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 2,
+    "product_ord": 9
+  },
+  {
+    "id": 768,
+    "product_id": 6204,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 15
+  },
+  {
+    "id": 769,
+    "product_id": 6204,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 2,
+    "product_ord": 10
+  },
+  {
+    "id": 770,
+    "product_id": 6205,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 0,
+    "product_ord": 14
+  },
+  {
+    "id": 771,
+    "product_id": 6205,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 10
+  },
+  {
+    "id": 772,
+    "product_id": 6206,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 773,
+    "product_id": 6206,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 2,
+    "product_ord": 11
+  },
+  {
+    "id": 774,
+    "product_id": 6207,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 15
+  },
+  {
+    "id": 775,
+    "product_id": 6207,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 2,
+    "product_ord": 11
+  },
+  {
+    "id": 780,
+    "product_id": 6210,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 781,
+    "product_id": 6210,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 2,
+    "product_ord": 12
+  },
+  {
+    "id": 782,
+    "product_id": 6211,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 783,
+    "product_id": 6211,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 2,
+    "product_ord": 12
+  },
+  {
+    "id": 788,
+    "product_id": 6215,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 0,
+    "product_ord": 17
+  },
+  {
+    "id": 789,
+    "product_id": 6215,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 13
+  },
+  {
+    "id": 794,
+    "product_id": 6218,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 795,
+    "product_id": 6218,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 2,
+    "product_ord": 14
+  },
+  {
+    "id": 796,
+    "product_id": 6219,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 797,
+    "product_id": 6219,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 2,
+    "product_ord": 15
+  },
+  {
+    "id": 798,
+    "product_id": 6220,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 14
+  },
+  {
+    "id": 799,
+    "product_id": 6220,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 802,
+    "product_id": 6222,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 803,
+    "product_id": 6222,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 2,
+    "product_ord": 21
+  },
+  {
+    "id": 804,
+    "product_id": 521,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 808,
+    "product_id": 6237,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 809,
+    "product_id": 1468,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 813,
+    "product_id": 443,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 172
+  },
+  {
+    "id": 821,
+    "product_id": 455,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 173
+  },
+  {
+    "id": 827,
+    "product_id": 471,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 831,
+    "product_id": 6260,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 832,
+    "product_id": 439,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 837,
+    "product_id": 6265,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 842,
+    "product_id": 6317,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 197
+  },
+  {
+    "id": 843,
+    "product_id": 6318,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 198
+  },
+  {
+    "id": 844,
+    "product_id": 6319,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 199
+  },
+  {
+    "id": 847,
+    "product_id": 6322,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 200
+  },
+  {
+    "id": 852,
+    "product_id": 6327,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 201
+  },
+  {
+    "id": 855,
+    "product_id": 6330,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 202
+  },
+  {
+    "id": 859,
+    "product_id": 6334,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 203
+  },
+  {
+    "id": 862,
+    "product_id": 6337,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 204
+  },
+  {
+    "id": 863,
+    "product_id": 6338,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 205
+  },
+  {
+    "id": 864,
+    "product_id": 6339,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 206
+  },
+  {
+    "id": 869,
+    "product_id": 6344,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 207
+  },
+  {
+    "id": 871,
+    "product_id": 6346,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 208
+  },
+  {
+    "id": 873,
+    "product_id": 6348,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 209
+  },
+  {
+    "id": 876,
+    "product_id": 6351,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 210
+  },
+  {
+    "id": 880,
+    "product_id": 6355,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 211
+  },
+  {
+    "id": 884,
+    "product_id": 6359,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 212
+  },
+  {
+    "id": 887,
+    "product_id": 6362,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 213
+  },
+  {
+    "id": 892,
+    "product_id": 6367,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 214
+  },
+  {
+    "id": 897,
+    "product_id": 6372,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 215
+  },
+  {
+    "id": 904,
+    "product_id": 6380,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 216
+  },
+  {
+    "id": 906,
+    "product_id": 6382,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 217
+  },
+  {
+    "id": 909,
+    "product_id": 6386,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 218
+  },
+  {
+    "id": 910,
+    "product_id": 1091,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 911,
+    "product_id": 6387,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 913,
+    "product_id": 6389,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 219
+  },
+  {
+    "id": 920,
+    "product_id": 6398,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 220
+  },
+  {
+    "id": 921,
+    "product_id": 6399,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 221
+  },
+  {
+    "id": 924,
+    "product_id": 6402,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 222
+  },
+  {
+    "id": 925,
+    "product_id": 6403,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 223
+  },
+  {
+    "id": 928,
+    "product_id": 6406,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 224
+  },
+  {
+    "id": 932,
+    "product_id": 6410,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 225
+  },
+  {
+    "id": 934,
+    "product_id": 6412,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 226
+  },
+  {
+    "id": 935,
+    "product_id": 6413,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 227
+  },
+  {
+    "id": 936,
+    "product_id": 6414,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 98
+  },
+  {
+    "id": 937,
+    "product_id": 6415,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 228
+  },
+  {
+    "id": 938,
+    "product_id": 6417,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 99
+  },
+  {
+    "id": 942,
+    "product_id": 6421,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 229
+  },
+  {
+    "id": 943,
+    "product_id": 6422,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 100
+  },
+  {
+    "id": 945,
+    "product_id": 6424,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 230
+  },
+  {
+    "id": 946,
+    "product_id": 6425,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 101
+  },
+  {
+    "id": 948,
+    "product_id": 6427,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 231
+  },
+  {
+    "id": 949,
+    "product_id": 6428,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 102
+  },
+  {
+    "id": 953,
+    "product_id": 6432,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 232
+  },
+  {
+    "id": 954,
+    "product_id": 6433,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 103
+  },
+  {
+    "id": 956,
+    "product_id": 6435,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 233
+  },
+  {
+    "id": 957,
+    "product_id": 6436,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 104
+  },
+  {
+    "id": 959,
+    "product_id": 6438,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 234
+  },
+  {
+    "id": 960,
+    "product_id": 6439,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 105
+  },
+  {
+    "id": 961,
+    "product_id": 6440,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 235
+  },
+  {
+    "id": 962,
+    "product_id": 6441,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 106
+  },
+  {
+    "id": 964,
+    "product_id": 6443,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 236
+  },
+  {
+    "id": 965,
+    "product_id": 6445,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 107
+  },
+  {
+    "id": 967,
+    "product_id": 6447,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 237
+  },
+  {
+    "id": 968,
+    "product_id": 6448,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 108
+  },
+  {
+    "id": 971,
+    "product_id": 6451,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 109
+  },
+  {
+    "id": 973,
+    "product_id": 6453,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 110
+  },
+  {
+    "id": 975,
+    "product_id": 6455,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 111
+  },
+  {
+    "id": 977,
+    "product_id": 6457,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 112
+  },
+  {
+    "id": 979,
+    "product_id": 6459,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 243
+  },
+  {
+    "id": 980,
+    "product_id": 6460,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 244
+  },
+  {
+    "id": 981,
+    "product_id": 6461,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 245
+  },
+  {
+    "id": 982,
+    "product_id": 6462,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 246
+  },
+  {
+    "id": 983,
+    "product_id": 6463,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 247
+  },
+  {
+    "id": 984,
+    "product_id": 1470,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 986,
+    "product_id": 6466,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 987,
+    "product_id": 504,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 25
+  },
+  {
+    "id": 988,
+    "product_id": 6468,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 989,
+    "product_id": 6472,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 248
+  },
+  {
+    "id": 990,
+    "product_id": 492,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 991,
+    "product_id": 492,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 2,
+    "product_ord": 15
+  },
+  {
+    "id": 996,
+    "product_id": 6476,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 29
+  },
+  {
+    "id": 997,
+    "product_id": 6476,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 2,
+    "product_ord": 17
+  },
+  {
+    "id": 998,
+    "product_id": 508,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 1000,
+    "product_id": 494,
+    "fabric_type_id": 31,
+    "fabric_type_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 1001,
+    "product_id": 6482,
+    "fabric_type_id": 32,
+    "fabric_type_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 1002,
+    "product_id": 496,
+    "fabric_type_id": 31,
+    "fabric_type_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 1005,
+    "product_id": 6484,
+    "fabric_type_id": 32,
+    "fabric_type_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 1006,
+    "product_id": 6485,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 249
+  },
+  {
+    "id": 1007,
+    "product_id": 498,
+    "fabric_type_id": 31,
+    "fabric_type_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 1009,
+    "product_id": 6487,
+    "fabric_type_id": 32,
+    "fabric_type_ord": 1,
+    "product_ord": 3
+  },
+  {
+    "id": 1010,
+    "product_id": 488,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 1012,
+    "product_id": 6490,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 31
+  },
+  {
+    "id": 1013,
+    "product_id": 500,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 29
+  },
+  {
+    "id": 1015,
+    "product_id": 6492,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 32
+  },
+  {
+    "id": 1016,
+    "product_id": 1472,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 1019,
+    "product_id": 6495,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 33
+  },
+  {
+    "id": 1020,
+    "product_id": 479,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 31
+  },
+  {
+    "id": 1022,
+    "product_id": 6502,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 34
+  },
+  {
+    "id": 1023,
+    "product_id": 502,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 32
+  },
+  {
+    "id": 1026,
+    "product_id": 6505,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 1027,
+    "product_id": 435,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 33
+  },
+  {
+    "id": 1030,
+    "product_id": 6508,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 36
+  },
+  {
+    "id": 1031,
+    "product_id": 457,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 174
+  },
+  {
+    "id": 1035,
+    "product_id": 6512,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 177
+  },
+  {
+    "id": 1036,
+    "product_id": 459,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 34
+  },
+  {
+    "id": 1042,
+    "product_id": 6518,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 37
+  },
+  {
+    "id": 1043,
+    "product_id": 1474,
+    "fabric_type_id": 31,
+    "fabric_type_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 1044,
+    "product_id": 6519,
+    "fabric_type_id": 32,
+    "fabric_type_ord": 1,
+    "product_ord": 4
+  },
+  {
+    "id": 1045,
+    "product_id": 461,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 1048,
+    "product_id": 6522,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 38
+  },
+  {
+    "id": 1049,
+    "product_id": 1488,
+    "fabric_type_id": 31,
+    "fabric_type_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 1053,
+    "product_id": 467,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 36
+  },
+  {
+    "id": 1059,
+    "product_id": 6531,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 39
+  },
+  {
+    "id": 1060,
+    "product_id": 465,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 37
+  },
+  {
+    "id": 1062,
+    "product_id": 6533,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 40
+  },
+  {
+    "id": 1063,
+    "product_id": 1490,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 38
+  },
+  {
+    "id": 1066,
+    "product_id": 6536,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 41
+  },
+  {
+    "id": 1067,
+    "product_id": 483,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 39
+  },
+  {
+    "id": 1071,
+    "product_id": 6541,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 42
+  },
+  {
+    "id": 1072,
+    "product_id": 1492,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 40
+  },
+  {
+    "id": 1076,
+    "product_id": 469,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 41
+  },
+  {
+    "id": 1080,
+    "product_id": 477,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 42
+  },
+  {
+    "id": 1084,
+    "product_id": 6554,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 45
+  },
+  {
+    "id": 1085,
+    "product_id": 441,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 43
+  },
+  {
+    "id": 1088,
+    "product_id": 6560,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 46
+  },
+  {
+    "id": 1089,
+    "product_id": 490,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 44
+  },
+  {
+    "id": 1092,
+    "product_id": 6563,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 47
+  },
+  {
+    "id": 1093,
+    "product_id": 485,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 45
+  },
+  {
+    "id": 1095,
+    "product_id": 6565,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 48
+  },
+  {
+    "id": 1096,
+    "product_id": 481,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 46
+  },
+  {
+    "id": 1098,
+    "product_id": 6567,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 49
+  },
+  {
+    "id": 1099,
+    "product_id": 453,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 175
+  },
+  {
+    "id": 1100,
+    "product_id": 6568,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 178
+  },
+  {
+    "id": 1101,
+    "product_id": 449,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 176
+  },
+  {
+    "id": 1106,
+    "product_id": 451,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 177
+  },
+  {
+    "id": 1111,
+    "product_id": 6577,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 180
+  },
+  {
+    "id": 1112,
+    "product_id": 6578,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 181
+  },
+  {
+    "id": 1113,
+    "product_id": 6579,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 182
+  },
+  {
+    "id": 1117,
+    "product_id": 6582,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 51
+  },
+  {
+    "id": 1118,
+    "product_id": 513,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 16
+  },
+  {
+    "id": 1122,
+    "product_id": 519,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 17
+  },
+  {
+    "id": 1125,
+    "product_id": 6588,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 19
+  },
+  {
+    "id": 1126,
+    "product_id": 6589,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 20
+  },
+  {
+    "id": 1127,
+    "product_id": 515,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 18
+  },
+  {
+    "id": 1129,
+    "product_id": 6591,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 21
+  },
+  {
+    "id": 1130,
+    "product_id": 517,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 113
+  },
+  {
+    "id": 1133,
+    "product_id": 6594,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 250
+  },
+  {
+    "id": 1134,
+    "product_id": 445,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 178
+  },
+  {
+    "id": 1138,
+    "product_id": 6598,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 183
+  },
+  {
+    "id": 1139,
+    "product_id": 447,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 1,
+    "product_ord": 179
+  },
+  {
+    "id": 1140,
+    "product_id": 6600,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 184
+  },
+  {
+    "id": 1141,
+    "product_id": 463,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 47
+  },
+  {
+    "id": 1143,
+    "product_id": 6602,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 52
+  },
+  {
+    "id": 1144,
+    "product_id": 6603,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 185
+  },
+  {
+    "id": 1145,
+    "product_id": 6604,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 186
+  },
+  {
+    "id": 1146,
+    "product_id": 6606,
+    "fabric_type_id": 32,
+    "fabric_type_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 1147,
+    "product_id": 6613,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 48
+  },
+  {
+    "id": 1151,
+    "product_id": 6621,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 0,
+    "product_ord": 49
+  },
+  {
+    "id": 1154,
+    "product_id": 6631,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 50
+  },
+  {
+    "id": 1158,
+    "product_id": 6608,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 51
+  },
+  {
+    "id": 1162,
+    "product_id": 6626,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 52
+  },
+  {
+    "id": 1164,
+    "product_id": 6624,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 53
+  },
+  {
+    "id": 1167,
+    "product_id": 6610,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 54
+  },
+  {
+    "id": 1173,
+    "product_id": 6647,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 0,
+    "product_ord": 55
+  },
+  {
+    "id": 1180,
+    "product_id": 6653,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 56
+  },
+  {
+    "id": 1189,
+    "product_id": 6665,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 70
+  },
+  {
+    "id": 1193,
+    "product_id": 6669,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 72
+  },
+  {
+    "id": 1196,
+    "product_id": 6672,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 74
+  },
+  {
+    "id": 1197,
+    "product_id": 6673,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 75
+  },
+  {
+    "id": 1198,
+    "product_id": 6674,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 76
+  },
+  {
+    "id": 1199,
+    "product_id": 6675,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 77
+  },
+  {
+    "id": 1200,
+    "product_id": 6676,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 78
+  },
+  {
+    "id": 1201,
+    "product_id": 6677,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 79
+  },
+  {
+    "id": 1203,
+    "product_id": 6679,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 80
+  },
+  {
+    "id": 1204,
+    "product_id": 6680,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 81
+  },
+  {
+    "id": 1211,
+    "product_id": 6687,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 187
+  },
+  {
+    "id": 1215,
+    "product_id": 6691,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 82
+  },
+  {
+    "id": 1216,
+    "product_id": 6695,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 114
+  },
+  {
+    "id": 1221,
+    "product_id": 6700,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 115
+  },
+  {
+    "id": 1229,
+    "product_id": 6709,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 116
+  },
+  {
+    "id": 1232,
+    "product_id": 6718,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 117
+  },
+  {
+    "id": 1234,
+    "product_id": 4464,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 57
+  },
+  {
+    "id": 1235,
+    "product_id": 6722,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 83
+  },
+  {
+    "id": 1236,
+    "product_id": 6712,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 1,
+    "product_ord": 118
+  },
+  {
+    "id": 1243,
+    "product_id": 3004,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 58
+  },
+  {
+    "id": 1249,
+    "product_id": 3000,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 59
+  },
+  {
+    "id": 1259,
+    "product_id": 3010,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 60
+  },
+  {
+    "id": 1262,
+    "product_id": 3017,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 61
+  },
+  {
+    "id": 1265,
+    "product_id": 2992,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 62
+  },
+  {
+    "id": 1271,
+    "product_id": 3006,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 63
+  },
+  {
+    "id": 1276,
+    "product_id": 1264,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 64
+  },
+  {
+    "id": 1278,
+    "product_id": 6764,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 94
+  },
+  {
+    "id": 1282,
+    "product_id": 6768,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 97
+  },
+  {
+    "id": 1283,
+    "product_id": 1266,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 65
+  },
+  {
+    "id": 1291,
+    "product_id": 6776,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 102
+  },
+  {
+    "id": 1292,
+    "product_id": 6777,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 103
+  },
+  {
+    "id": 1295,
+    "product_id": 1268,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 66
+  },
+  {
+    "id": 1301,
+    "product_id": 1270,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 67
+  },
+  {
+    "id": 1307,
+    "product_id": 6793,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 108
+  },
+  {
+    "id": 1308,
+    "product_id": 1272,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 68
+  },
+  {
+    "id": 1313,
+    "product_id": 6798,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 111
+  },
+  {
+    "id": 1314,
+    "product_id": 6799,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 19
+  },
+  {
+    "id": 1316,
+    "product_id": 6801,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 22
+  },
+  {
+    "id": 1317,
+    "product_id": 6802,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 20
+  },
+  {
+    "id": 1319,
+    "product_id": 6804,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 1320,
+    "product_id": 6805,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 21
+  },
+  {
+    "id": 1323,
+    "product_id": 6808,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 24
+  },
+  {
+    "id": 1324,
+    "product_id": 6809,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 22
+  },
+  {
+    "id": 1336,
+    "product_id": 6821,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 23
+  },
+  {
+    "id": 1341,
+    "product_id": 6827,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 1343,
+    "product_id": 6829,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 28
+  },
+  {
+    "id": 1344,
+    "product_id": 6830,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 24
+  },
+  {
+    "id": 1348,
+    "product_id": 6834,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 25
+  },
+  {
+    "id": 1352,
+    "product_id": 6838,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 26
+  },
+  {
+    "id": 1356,
+    "product_id": 6843,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 27
+  },
+  {
+    "id": 1362,
+    "product_id": 6850,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 28
+  },
+  {
+    "id": 1364,
+    "product_id": 6852,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 1372,
+    "product_id": 6860,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 42
+  },
+  {
+    "id": 1376,
+    "product_id": 6864,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 43
+  },
+  {
+    "id": 1378,
+    "product_id": 6866,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 112
+  },
+  {
+    "id": 1379,
+    "product_id": 3081,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 69
+  },
+  {
+    "id": 1386,
+    "product_id": 6875,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 113
+  },
+  {
+    "id": 1387,
+    "product_id": 1274,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 70
+  },
+  {
+    "id": 1391,
+    "product_id": 5511,
+    "fabric_type_id": 12,
+    "fabric_type_ord": 1,
+    "product_ord": 5
+  },
+  {
+    "id": 1393,
+    "product_id": 6881,
+    "fabric_type_id": 12,
+    "fabric_type_ord": 0,
+    "product_ord": 6
+  },
+  {
+    "id": 1401,
+    "product_id": 6888,
+    "fabric_type_id": 13,
+    "fabric_type_ord": 1,
+    "product_ord": 8
+  },
+  {
+    "id": 1403,
+    "product_id": 6889,
+    "fabric_type_id": 13,
+    "fabric_type_ord": 1,
+    "product_ord": 9
+  },
+  {
+    "id": 1415,
+    "product_id": 6901,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 114
+  },
+  {
+    "id": 1416,
+    "product_id": 1276,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 71
+  },
+  {
+    "id": 1422,
+    "product_id": 6907,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 117
+  },
+  {
+    "id": 1425,
+    "product_id": 6910,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 118
+  },
+  {
+    "id": 1426,
+    "product_id": 1278,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 72
+  },
+  {
+    "id": 1433,
+    "product_id": 6917,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 120
+  },
+  {
+    "id": 1437,
+    "product_id": 1280,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 73
+  },
+  {
+    "id": 1441,
+    "product_id": 6924,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 122
+  },
+  {
+    "id": 1442,
+    "product_id": 6925,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 123
+  },
+  {
+    "id": 1443,
+    "product_id": 1282,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 74
+  },
+  {
+    "id": 1450,
+    "product_id": 6932,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 124
+  },
+  {
+    "id": 1451,
+    "product_id": 1284,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 75
+  },
+  {
+    "id": 1453,
+    "product_id": 6934,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 125
+  },
+  {
+    "id": 1454,
+    "product_id": 1286,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 76
+  },
+  {
+    "id": 1460,
+    "product_id": 6940,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 126
+  },
+  {
+    "id": 1461,
+    "product_id": 1288,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 77
+  },
+  {
+    "id": 1465,
+    "product_id": 6944,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 127
+  },
+  {
+    "id": 1466,
+    "product_id": 1290,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 78
+  },
+  {
+    "id": 1470,
+    "product_id": 6948,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 128
+  },
+  {
+    "id": 1471,
+    "product_id": 1292,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 79
+  },
+  {
+    "id": 1475,
+    "product_id": 1294,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 80
+  },
+  {
+    "id": 1479,
+    "product_id": 6955,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 130
+  },
+  {
+    "id": 1480,
+    "product_id": 1298,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 81
+  },
+  {
+    "id": 1488,
+    "product_id": 6963,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 132
+  },
+  {
+    "id": 1489,
+    "product_id": 6964,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 133
+  },
+  {
+    "id": 1490,
+    "product_id": 1302,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 82
+  },
+  {
+    "id": 1493,
+    "product_id": 1304,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 83
+  },
+  {
+    "id": 1501,
+    "product_id": 1300,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 84
+  },
+  {
+    "id": 1511,
+    "product_id": 6983,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 142
+  },
+  {
+    "id": 1512,
+    "product_id": 6984,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 143
+  },
+  {
+    "id": 1513,
+    "product_id": 6985,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 144
+  },
+  {
+    "id": 1514,
+    "product_id": 1306,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 85
+  },
+  {
+    "id": 1518,
+    "product_id": 6989,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 145
+  },
+  {
+    "id": 1519,
+    "product_id": 1308,
+    "fabric_type_id": 33,
+    "fabric_type_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 1522,
+    "product_id": 6995,
+    "fabric_type_id": 34,
+    "fabric_type_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 1523,
+    "product_id": 1310,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 86
+  },
+  {
+    "id": 1526,
+    "product_id": 6998,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 146
+  },
+  {
+    "id": 1527,
+    "product_id": 541,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 87
+  },
+  {
+    "id": 1529,
+    "product_id": 7000,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 147
+  },
+  {
+    "id": 1530,
+    "product_id": 543,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 88
+  },
+  {
+    "id": 1534,
+    "product_id": 7005,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 148
+  },
+  {
+    "id": 1535,
+    "product_id": 545,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 89
+  },
+  {
+    "id": 1538,
+    "product_id": 7008,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 149
+  },
+  {
+    "id": 1539,
+    "product_id": 547,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 90
+  },
+  {
+    "id": 1548,
+    "product_id": 7017,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 153
+  },
+  {
+    "id": 1550,
+    "product_id": 7019,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 154
+  },
+  {
+    "id": 1551,
+    "product_id": 7020,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 155
+  },
+  {
+    "id": 1552,
+    "product_id": 7024,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 156
+  },
+  {
+    "id": 1553,
+    "product_id": 549,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 91
+  },
+  {
+    "id": 1559,
+    "product_id": 7029,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 157
+  },
+  {
+    "id": 1560,
+    "product_id": 551,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 92
+  },
+  {
+    "id": 1563,
+    "product_id": 7032,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 158
+  },
+  {
+    "id": 1564,
+    "product_id": 553,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 93
+  },
+  {
+    "id": 1570,
+    "product_id": 7038,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 159
+  },
+  {
+    "id": 1571,
+    "product_id": 523,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 94
+  },
+  {
+    "id": 1577,
+    "product_id": 7044,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 29
+  },
+  {
+    "id": 1578,
+    "product_id": 7044,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 95
+  },
+  {
+    "id": 1587,
+    "product_id": 7049,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 30
+  },
+  {
+    "id": 1588,
+    "product_id": 7049,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 2,
+    "product_ord": 96
+  },
+  {
+    "id": 1595,
+    "product_id": 7054,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 46
+  },
+  {
+    "id": 1596,
+    "product_id": 7054,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 2,
+    "product_ord": 163
+  },
+  {
+    "id": 1597,
+    "product_id": 7055,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 261
+  },
+  {
+    "id": 1598,
+    "product_id": 7056,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 262
+  },
+  {
+    "id": 1599,
+    "product_id": 7057,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 263
+  },
+  {
+    "id": 1600,
+    "product_id": 7058,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 264
+  },
+  {
+    "id": 1602,
+    "product_id": 7060,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 265
+  },
+  {
+    "id": 1603,
+    "product_id": 7061,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 47
+  },
+  {
+    "id": 1604,
+    "product_id": 7061,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 2,
+    "product_ord": 164
+  },
+  {
+    "id": 1605,
+    "product_id": 7062,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 48
+  },
+  {
+    "id": 1606,
+    "product_id": 7063,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 49
+  },
+  {
+    "id": 1607,
+    "product_id": 7064,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 31
+  },
+  {
+    "id": 1611,
+    "product_id": 7068,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 32
+  },
+  {
+    "id": 1618,
+    "product_id": 7075,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 0,
+    "product_ord": 97
+  },
+  {
+    "id": 1623,
+    "product_id": 7080,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 165
+  },
+  {
+    "id": 1624,
+    "product_id": 7081,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 33
+  },
+  {
+    "id": 1626,
+    "product_id": 7083,
+    "fabric_type_id": 1,
+    "fabric_type_ord": 0,
+    "product_ord": 180
+  },
+  {
+    "id": 1627,
+    "product_id": 7084,
+    "fabric_type_id": 3,
+    "fabric_type_ord": 1,
+    "product_ord": 188
+  },
+  {
+    "id": 1628,
+    "product_id": 7085,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 0,
+    "product_ord": 98
+  },
+  {
+    "id": 1630,
+    "product_id": 7087,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 166
+  },
+  {
+    "id": 1631,
+    "product_id": 7092,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 99
+  },
+  {
+    "id": 1633,
+    "product_id": 7088,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 100
+  },
+  {
+    "id": 1634,
+    "product_id": 7096,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 168
+  },
+  {
+    "id": 1637,
+    "product_id": 7099,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 169
+  },
+  {
+    "id": 1638,
+    "product_id": 7100,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 0,
+    "product_ord": 101
+  },
+  {
+    "id": 1640,
+    "product_id": 7102,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 170
+  },
+  {
+    "id": 1641,
+    "product_id": 7105,
+    "fabric_type_id": 26,
+    "fabric_type_ord": 0,
+    "product_ord": 1
+  },
+  {
+    "id": 1642,
+    "product_id": 7105,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 102
+  },
+  {
+    "id": 1649,
+    "product_id": 7109,
+    "fabric_type_id": 27,
+    "fabric_type_ord": 1,
+    "product_ord": 1
+  },
+  {
+    "id": 1650,
+    "product_id": 7109,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 2,
+    "product_ord": 171
+  },
+  {
+    "id": 1651,
+    "product_id": 7110,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 103
+  },
+  {
+    "id": 1656,
+    "product_id": 7116,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 172
+  },
+  {
+    "id": 1657,
+    "product_id": 7117,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 0,
+    "product_ord": 104
+  },
+  {
+    "id": 1663,
+    "product_id": 7123,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 173
+  },
+  {
+    "id": 1664,
+    "product_id": 7124,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 0,
+    "product_ord": 105
+  },
+  {
+    "id": 1667,
+    "product_id": 7127,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 174
+  },
+  {
+    "id": 1668,
+    "product_id": 7134,
+    "fabric_type_id": 4,
+    "fabric_type_ord": 0,
+    "product_ord": 119
+  },
+  {
+    "id": 1671,
+    "product_id": 7137,
+    "fabric_type_id": 5,
+    "fabric_type_ord": 1,
+    "product_ord": 266
+  },
+  {
+    "id": 1672,
+    "product_id": 7138,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 0,
+    "product_ord": 106
+  },
+  {
+    "id": 1676,
+    "product_id": 7142,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 0,
+    "product_ord": 107
+  },
+  {
+    "id": 1679,
+    "product_id": 7145,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 176
+  },
+  {
+    "id": 1680,
+    "product_id": 7146,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 177
+  },
+  {
+    "id": 1681,
+    "product_id": 7147,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 0,
+    "product_ord": 108
+  },
+  {
+    "id": 1683,
+    "product_id": 7151,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 178
+  },
+  {
+    "id": 1684,
+    "product_id": 7149,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 34
+  },
+  {
+    "id": 1686,
+    "product_id": 7152,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 35
+  },
+  {
+    "id": 1688,
+    "product_id": 7154,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 36
+  },
+  {
+    "id": 1690,
+    "product_id": 7156,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 37
+  },
+  {
+    "id": 1692,
+    "product_id": 7158,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 38
+  },
+  {
+    "id": 1694,
+    "product_id": 7160,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 39
+  },
+  {
+    "id": 1696,
+    "product_id": 7162,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 40
+  },
+  {
+    "id": 1698,
+    "product_id": 7164,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 41
+  },
+  {
+    "id": 1700,
+    "product_id": 7166,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 42
+  },
+  {
+    "id": 1702,
+    "product_id": 7168,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 43
+  },
+  {
+    "id": 1704,
+    "product_id": 7170,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 44
+  },
+  {
+    "id": 1706,
+    "product_id": 7172,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 45
+  },
+  {
+    "id": 1708,
+    "product_id": 7174,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 46
+  },
+  {
+    "id": 1760,
+    "product_id": 7239,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 94
+  },
+  {
+    "id": 1764,
+    "product_id": 7243,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 96
+  },
+  {
+    "id": 1766,
+    "product_id": 7245,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 98
+  },
+  {
+    "id": 1767,
+    "product_id": 7246,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 99
+  },
+  {
+    "id": 1768,
+    "product_id": 7247,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 100
+  },
+  {
+    "id": 1770,
+    "product_id": 7249,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 102
+  },
+  {
+    "id": 1771,
+    "product_id": 7250,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 103
+  },
+  {
+    "id": 1772,
+    "product_id": 7251,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 104
+  },
+  {
+    "id": 1773,
+    "product_id": 7252,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 105
+  },
+  {
+    "id": 1774,
+    "product_id": 7253,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 106
+  },
+  {
+    "id": 1778,
+    "product_id": 7257,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 109
+  },
+  {
+    "id": 1780,
+    "product_id": 7259,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 110
+  },
+  {
+    "id": 1781,
+    "product_id": 7260,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 47
+  },
+  {
+    "id": 1784,
+    "product_id": 7263,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 111
+  },
+  {
+    "id": 1785,
+    "product_id": 7264,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 48
+  },
+  {
+    "id": 1787,
+    "product_id": 7268,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 49
+  },
+  {
+    "id": 1788,
+    "product_id": 7270,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 113
+  },
+  {
+    "id": 1791,
+    "product_id": 7275,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 114
+  },
+  {
+    "id": 1792,
+    "product_id": 7271,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 50
+  },
+  {
+    "id": 1793,
+    "product_id": 7277,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 115
+  },
+  {
+    "id": 1794,
+    "product_id": 7278,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 51
+  },
+  {
+    "id": 1796,
+    "product_id": 7280,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 116
+  },
+  {
+    "id": 1797,
+    "product_id": 525,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 109
+  },
+  {
+    "id": 1803,
+    "product_id": 7286,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 179
+  },
+  {
+    "id": 1806,
+    "product_id": 7289,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 52
+  },
+  {
+    "id": 1808,
+    "product_id": 7293,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 53
+  },
+  {
+    "id": 1810,
+    "product_id": 1146,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 110
+  },
+  {
+    "id": 1813,
+    "product_id": 7297,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 180
+  },
+  {
+    "id": 1814,
+    "product_id": 7298,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 54
+  },
+  {
+    "id": 1816,
+    "product_id": 7301,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 55
+  },
+  {
+    "id": 1818,
+    "product_id": 7303,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 56
+  },
+  {
+    "id": 1820,
+    "product_id": 7305,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 57
+  },
+  {
+    "id": 1822,
+    "product_id": 575,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 111
+  },
+  {
+    "id": 1824,
+    "product_id": 7308,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 58
+  },
+  {
+    "id": 1827,
+    "product_id": 7311,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 181
+  },
+  {
+    "id": 1828,
+    "product_id": 7312,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 59
+  },
+  {
+    "id": 1830,
+    "product_id": 7314,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 60
+  },
+  {
+    "id": 1832,
+    "product_id": 7316,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 61
+  },
+  {
+    "id": 1834,
+    "product_id": 7318,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 62
+  },
+  {
+    "id": 1836,
+    "product_id": 7320,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 63
+  },
+  {
+    "id": 1838,
+    "product_id": 7322,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 64
+  },
+  {
+    "id": 1840,
+    "product_id": 7324,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 65
+  },
+  {
+    "id": 1842,
+    "product_id": 7326,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 66
+  },
+  {
+    "id": 1844,
+    "product_id": 7328,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 67
+  },
+  {
+    "id": 1846,
+    "product_id": 7330,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 68
+  },
+  {
+    "id": 1848,
+    "product_id": 7332,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 69
+  },
+  {
+    "id": 1850,
+    "product_id": 7334,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 70
+  },
+  {
+    "id": 1852,
+    "product_id": 7336,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 71
+  },
+  {
+    "id": 1856,
+    "product_id": 7340,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 73
+  },
+  {
+    "id": 1858,
+    "product_id": 7342,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 74
+  },
+  {
+    "id": 1860,
+    "product_id": 7344,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 75
+  },
+  {
+    "id": 1862,
+    "product_id": 7346,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 76
+  },
+  {
+    "id": 1864,
+    "product_id": 7348,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 77
+  },
+  {
+    "id": 1866,
+    "product_id": 7350,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 78
+  },
+  {
+    "id": 1868,
+    "product_id": 7352,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 79
+  },
+  {
+    "id": 1870,
+    "product_id": 7354,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 80
+  },
+  {
+    "id": 1872,
+    "product_id": 7356,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 81
+  },
+  {
+    "id": 1874,
+    "product_id": 7358,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 82
+  },
+  {
+    "id": 1880,
+    "product_id": 7364,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 83
+  },
+  {
+    "id": 1882,
+    "product_id": 7366,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 84
+  },
+  {
+    "id": 1884,
+    "product_id": 7368,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 85
+  },
+  {
+    "id": 1888,
+    "product_id": 7372,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 86
+  },
+  {
+    "id": 1890,
+    "product_id": 7374,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 87
+  },
+  {
+    "id": 1894,
+    "product_id": 7378,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 88
+  },
+  {
+    "id": 1898,
+    "product_id": 7382,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 90
+  },
+  {
+    "id": 1950,
+    "product_id": 7152,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 2,
+    "product_ord": 112
+  },
+  {
+    "id": 1951,
+    "product_id": 7434,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 209
+  },
+  {
+    "id": 1952,
+    "product_id": 7434,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 2,
+    "product_ord": 182
+  },
+  {
+    "id": 1953,
+    "product_id": 7166,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 2,
+    "product_ord": 113
+  },
+  {
+    "id": 1954,
+    "product_id": 7435,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 210
+  },
+  {
+    "id": 1955,
+    "product_id": 7435,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 2,
+    "product_ord": 183
+  },
+  {
+    "id": 1956,
+    "product_id": 7436,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 211
+  },
+  {
+    "id": 1958,
+    "product_id": 7438,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 212
+  },
+  {
+    "id": 1962,
+    "product_id": 7442,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 213
+  },
+  {
+    "id": 1964,
+    "product_id": 7444,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 214
+  },
+  {
+    "id": 1968,
+    "product_id": 7448,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 215
+  },
+  {
+    "id": 1980,
+    "product_id": 7460,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 217
+  },
+  {
+    "id": 1984,
+    "product_id": 7464,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 218
+  },
+  {
+    "id": 1991,
+    "product_id": 7471,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 219
+  },
+  {
+    "id": 1995,
+    "product_id": 7475,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 220
+  },
+  {
+    "id": 1999,
+    "product_id": 7479,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 221
+  },
+  {
+    "id": 2000,
+    "product_id": 7287,
+    "fabric_type_id": 33,
+    "fabric_type_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 2002,
+    "product_id": 7481,
+    "fabric_type_id": 34,
+    "fabric_type_ord": 1,
+    "product_ord": 2
+  },
+  {
+    "id": 2005,
+    "product_id": 7484,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 222
+  },
+  {
+    "id": 2006,
+    "product_id": 1212,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 114
+  },
+  {
+    "id": 2009,
+    "product_id": 7486,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 184
+  },
+  {
+    "id": 2011,
+    "product_id": 7589,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 223
+  },
+  {
+    "id": 2013,
+    "product_id": 7591,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 224
+  },
+  {
+    "id": 2014,
+    "product_id": 7592,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 225
+  },
+  {
+    "id": 2018,
+    "product_id": 7596,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 227
+  },
+  {
+    "id": 2019,
+    "product_id": 7597,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 228
+  },
+  {
+    "id": 2021,
+    "product_id": 7599,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 229
+  },
+  {
+    "id": 2022,
+    "product_id": 7600,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 230
+  },
+  {
+    "id": 2029,
+    "product_id": 7607,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 231
+  },
+  {
+    "id": 2034,
+    "product_id": 7612,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 232
+  },
+  {
+    "id": 2038,
+    "product_id": 7616,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 233
+  },
+  {
+    "id": 2039,
+    "product_id": 7617,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 234
+  },
+  {
+    "id": 2040,
+    "product_id": 7618,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 235
+  },
+  {
+    "id": 2042,
+    "product_id": 7620,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 236
+  },
+  {
+    "id": 2044,
+    "product_id": 7622,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 237
+  },
+  {
+    "id": 2046,
+    "product_id": 7624,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 238
+  },
+  {
+    "id": 2049,
+    "product_id": 7627,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 239
+  },
+  {
+    "id": 2052,
+    "product_id": 7630,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 240
+  },
+  {
+    "id": 2078,
+    "product_id": 7656,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 244
+  },
+  {
+    "id": 2079,
+    "product_id": 7657,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 245
+  },
+  {
+    "id": 2080,
+    "product_id": 7658,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 246
+  },
+  {
+    "id": 2081,
+    "product_id": 7659,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 247
+  },
+  {
+    "id": 2087,
+    "product_id": 7665,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 248
+  },
+  {
+    "id": 2091,
+    "product_id": 7669,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 249
+  },
+  {
+    "id": 2093,
+    "product_id": 7671,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 250
+  },
+  {
+    "id": 2096,
+    "product_id": 7678,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 251
+  },
+  {
+    "id": 2099,
+    "product_id": 7681,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 252
+  },
+  {
+    "id": 2100,
+    "product_id": 7682,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 253
+  },
+  {
+    "id": 2102,
+    "product_id": 7684,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 254
+  },
+  {
+    "id": 2103,
+    "product_id": 7386,
+    "fabric_type_id": 6,
+    "fabric_type_ord": 1,
+    "product_ord": 115
+  },
+  {
+    "id": 2104,
+    "product_id": 7685,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 185
+  },
+  {
+    "id": 2105,
+    "product_id": 7686,
+    "fabric_type_id": 7,
+    "fabric_type_ord": 1,
+    "product_ord": 186
+  },
+  {
+    "id": 2106,
+    "product_id": 7687,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 0,
+    "product_ord": 91
+  },
+  {
+    "id": 2107,
+    "product_id": 7688,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 255
+  },
+  {
+    "id": 2108,
+    "product_id": 7689,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 92
+  },
+  {
+    "id": 2111,
+    "product_id": 7693,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 256
+  },
+  {
+    "id": 2112,
+    "product_id": 7694,
+    "fabric_type_id": 8,
+    "fabric_type_ord": 1,
+    "product_ord": 93
+  },
+  {
+    "id": 2116,
+    "product_id": 7699,
+    "fabric_type_id": 9,
+    "fabric_type_ord": 1,
+    "product_ord": 257
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "About Us",
+    "href": "/history",
+    "is_external": 0
+  },
+  {
+    "id": 2,
+    "title": "Talk to Us",
+    "href": "/contact-us",
+    "is_external": 0
+  },
+  {
+    "id": 3,
+    "title": "Rasa",
+    "href": "/rasa",
+    "is_external": 0
+  },
+  {
+    "id": 4,
+    "title": "Press & Media",
+    "href": "/press-&-media",
+    "is_external": 0
+  },
+  {
+    "id": 149,
+    "title": "Banarasi Weaves",
+    "href": "/weaves",
+    "is_external": 0
+  },
+  {
+    "id": 570,
+    "title": "About Us",
+    "href": "/history",
+    "is_external": 0
+  },
+  {
+    "id": 571,
+    "title": "Banarasi Weaves",
+    "href": "/weaves",
+    "is_external": 0
+  },
+  {
+    "id": 572,
+    "title": "Talk to Us",
+    "href": "/contact-us",
+    "is_external": 0
+  },
+  {
+    "id": 573,
+    "title": "Rasa",
+    "href": "/rasa",
+    "is_external": 0
+  },
+  {
+    "id": 574,
+    "title": "Press & Media",
+    "href": "/press-&-media",
+    "is_external": 0
+  }
+]
