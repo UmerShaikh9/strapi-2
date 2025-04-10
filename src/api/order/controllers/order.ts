@@ -1,10 +1,21 @@
 import { factories } from "@strapi/strapi";
 import axios from "axios";
 import { processCartItems } from "../../cart/controllers/helpers";
+import crypto from "crypto";
+const qs = require("querystring");
 
 const PAYPAL_CLIENT_ID = process.env.PAYPAL_CLIENT_ID;
 const PAYPAL_SECRET = process.env.PAYPAL_SECRET_KEY;
 const PAYPAL_API = process.env.PAYPAL_API;
+
+// CCAvenue configuration
+const CCAVENUE_MERCHANT_ID = 4140852;
+const CCAVENUE_WORKING_KEY = "9A416AABF5AD78AC29E237FF90B60201";
+// const CCAVENUE_ACCESS_CODE = "ATVA54MB46BJ28AVJB";
+const CCAVENUE_ACCESS_CODE = "AVVA54MB46BJ28AVJB";
+const CCAVENUE_REDIRECT_URL = "https://banarasibaithak.com";
+const CCAVENUE_API_URL = "https://secure.ccavenue.com/transaction/transaction.do";
+const BACKEND_URL = "https://cms.banarasibaithak.com";
 
 export default factories.createCoreController("api::order.order", ({ strapi }) => ({
     async myOrder(ctx) {
@@ -294,7 +305,360 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             return ctx.internalServerError("An error occurred while fetching the cart. ");
         }
     },
+
+    async createCCAvenueOrder(ctx) {
+        try {
+            console.log("createCCAvenueOrder called with body:", ctx.request.body);
+
+            // Get the authenticated user ID
+            const id = ctx.state.user?.id;
+            if (!id) {
+                return ctx.unauthorized("You must be logged in to create an order.");
+            }
+
+            const { Full_Name, Address, City, Country, Email, Phone, State, Pincode, amount, currency, couponId } =
+                ctx.request.body;
+
+            // Validate required fields
+            if (!Full_Name || !Address || !City || !Country || !Email || !Phone || !State || !Pincode || !amount) {
+                return ctx.badRequest("Missing required fields");
+            }
+
+            // Fetch user's cart items
+            let carts = await strapi.documents("api::cart.cart").findMany({
+                filters: { User: { id: id } },
+                populate: {
+                    Product: { populate: { Product: true } },
+                    User: true,
+                },
+                status: "published",
+            });
+
+            if (!carts || carts.length === 0) {
+                return ctx.badRequest("Cart is empty");
+            }
+
+            // Process cart items and calculate total price
+            let cartsData = carts?.map((cart) => ({
+                ...cart,
+                Product: {
+                    ...cart?.Product,
+                    Product: cart?.Product?.Product?.documentId,
+                },
+            }));
+
+            // Process cart items (handling price and image things)
+            await processCartItems(cartsData, id);
+
+            // Fetch updated cart items after processing
+            let updatedCarts = await strapi.documents("api::cart.cart").findMany({
+                filters: { User: { id: id } },
+                populate: {
+                    Product: { populate: { Product: true } },
+                    User: true,
+                },
+                status: "published",
+            });
+
+            console.log("updatedCarts", updatedCarts);
+
+            // Validate required fields
+            if (updatedCarts?.length === 0) {
+                return ctx.badRequest("Cart is empty");
+            }
+
+            let totalPriceINR = 0;
+            const products = [];
+
+            for (let cart of updatedCarts) {
+                totalPriceINR += cart.Total_Price;
+                // Create a new product object with the correct structure
+                const productData = {
+                    ...cart.Product,
+                    Product: cart.Product?.Product?.documentId,
+                };
+                products.push(productData);
+            }
+
+            // Handle coupon if provided
+            let finalAmount = totalPriceINR;
+            let couponPayload = {};
+            if (couponId) {
+                console.log("coupon code present ", couponId);
+                const couponDetails = await strapi.documents("api::coupon.coupon").findOne({ documentId: couponId });
+                if (!couponDetails) {
+                    return ctx.badRequest("Invalid Coupon Code");
+                }
+                console.log("coupon details ", couponDetails);
+                finalAmount = totalPriceINR - couponDetails?.Price;
+                couponPayload = {
+                    Coupon: couponId,
+                };
+            }
+
+            // Generate a unique order ID
+            const orderId = `ORDER_${Date.now()}_${Math.floor(Math.random() * 1000)}`;
+
+            // Create order in database
+            const orderDetails = await strapi.documents("api::order.order").create({
+                data: {
+                    Products: products,
+                    User: id,
+                    Total_Price: finalAmount,
+                    Payment_Details: {
+                        Amount: finalAmount,
+                        Payment_Status: "INITIATED",
+                        Order_Uid: orderId,
+                        Payment_Method: "CCAVENUE",
+                    },
+                    Order_Status: "PENDING",
+                    Currency: currency || "INR",
+                    Full_Name,
+                    Address,
+                    City,
+                    Country,
+                    State,
+                    Pincode,
+                    Email,
+                    Phone,
+                    ...couponPayload,
+                },
+                status: "published",
+            });
+
+            // Format amount to 2 decimal places and convert to string
+            const formattedAmount = finalAmount.toFixed(2);
+
+            // Prepare data for CCAvenue
+            const orderData = {
+                merchant_id: CCAVENUE_MERCHANT_ID,
+                order_id: orderId,
+                currency: currency || "INR",
+                amount: formattedAmount,
+                redirect_url: `${BACKEND_URL}/api/order/ccavenue/callback`,
+                cancel_url: `${BACKEND_URL}/api/order/error-callback`,
+                language: "EN",
+                billing_name: Full_Name,
+                billing_address: Address,
+                billing_city: City,
+                billing_state: State,
+                billing_zip: Pincode,
+                billing_country: Country,
+                billing_tel: Phone,
+                billing_email: Email,
+                delivery_name: Full_Name,
+                delivery_address: Address,
+                delivery_city: City,
+                delivery_state: State,
+                delivery_zip: Pincode,
+                delivery_country: Country,
+                delivery_tel: Phone,
+                merchant_param1: orderDetails.documentId, // Store order document ID for reference
+                integration_type: "REDIRECT",
+            };
+
+            // Convert order data to string format
+            const postData = qs.stringify(orderData);
+
+            // Encrypt the data
+            const encRequest = encrypt(postData, CCAVENUE_WORKING_KEY);
+
+            // Create HTML form for redirection
+            const htmlForm = `
+                <form id="nonseamless" method="post" name="redirect" action="${CCAVENUE_API_URL}">
+                    <input type="hidden" name="command" value="initiateTransaction" />
+                    <input type="hidden" name="encRequest" value="${encRequest}" />
+                    <input type="hidden" name="access_code" value="${CCAVENUE_ACCESS_CODE}" />
+                </form>
+                <script type="text/javascript">document.redirect.submit();</script>
+            `;
+
+            return ctx.send({
+                success: true,
+                message: "Order created successfully",
+                orderId: orderId,
+                order: orderDetails,
+                paymentForm: htmlForm,
+                redirectUrl: CCAVENUE_API_URL,
+            });
+        } catch (error) {
+            console.error("Error creating CCAvenue order:", error);
+            return ctx.throw(500, {
+                success: false,
+                message: error.message || "Error creating CCAvenue order",
+            });
+        }
+    },
+
+    async handleCCAvenueCallback(ctx) {
+        try {
+            console.log("handleCCAvenueCallback called with body:", ctx.request.body);
+
+            const { encResp, order_id, tracking_id, bank_ref_no, order_status, merchant_param1 } = ctx.request.body;
+
+            if (!encResp) {
+                console.error("No encrypted response received");
+                return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/payment-failed?error=no_response`);
+            }
+
+            // Decrypt the response
+            const decryptedData = decrypt(encResp, CCAVENUE_WORKING_KEY);
+            console.log("Decrypted response:", decryptedData);
+
+            // Parse the decrypted data
+            const responseData = qs.parse(decryptedData);
+            console.log("Parsed response data:", responseData);
+
+            // // Get the order document ID from merchant_param1
+            const orderDocumentId = merchant_param1 || responseData.merchant_param1;
+
+            if (!orderDocumentId) {
+                console.error("No order document ID found in response");
+                return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/payment-failed?error=invalid_order`);
+            }
+
+            // Update order status in database
+            const order = await strapi.documents("api::order.order").findOne({
+                documentId: orderDocumentId,
+                status: "published",
+                populate: {
+                    Products: true,
+                    Payment_Details: true,
+                    User: true,
+                },
+            });
+
+            if (!order) {
+                console.error("Order not found:", orderDocumentId);
+                return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/payment-failed?error=order_not_found`);
+            }
+
+            console.log("order details ", order);
+
+            // Update order with payment details
+            await strapi.documents("api::order.order").update({
+                documentId: orderDocumentId,
+                data: {
+                    Payment_Details: {
+                        Amount: order?.Payment_Details?.Amount,
+                        Payment_Status: "COMPLETED",
+                        Order_Uid: order?.Payment_Details?.Order_Uid,
+                        Paypal_Response: responseData as any,
+                    },
+                    Order_Status: "CONFIRMED",
+                },
+                status: "published",
+            });
+
+            // If payment is successful, update product quantities and clear cart
+
+            // Update product quantities
+            const orderWithProducts = order as any;
+            if (orderWithProducts.Products && Array.isArray(orderWithProducts.Products)) {
+                for (let product of orderWithProducts.Products) {
+                    if (product.Product && product.Product.documentId) {
+                        await strapi.documents("api::product.product").update({
+                            documentId: product.Product.documentId,
+                            data: {
+                                Quantity: product.Product.Quantity - 1,
+                            },
+                            status: "published",
+                        });
+                    }
+                }
+            }
+
+            // Clear user's cart
+            if (orderWithProducts.User && orderWithProducts.User.id) {
+                const carts = await strapi.documents("api::cart.cart").findMany({
+                    filters: { User: { documentId: orderWithProducts.User.documentId } },
+                    status: "published",
+                });
+
+                for (let cart of carts) {
+                    await strapi.documents("api::cart.cart").delete({
+                        documentId: cart.documentId,
+                    });
+                }
+            }
+
+            return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/my-order?payment=success&order_id=${order_id}`);
+        } catch (error) {
+            console.error("Error handling CCAvenue callback:", error);
+            return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/payment-failed?error=processing_error`);
+        }
+    },
+
+    async handleCCAvenueErrorCallback(ctx) {
+        try {
+            console.log("handleCCAvenueErrorCallback called with body:", ctx.request.body);
+
+            const { encResp, order_id, tracking_id, bank_ref_no, order_status, merchant_param1 } = ctx.request.body;
+
+            // Log the error details
+            console.error("CCAvenue payment failed:", {
+                order_id,
+                tracking_id,
+                bank_ref_no,
+                order_status,
+            });
+
+            return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/payment-failed?order_id=${order_id}&status=${order_status}`);
+        } catch (error) {
+            console.error("Error handling CCAvenue error callback:", error);
+            return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/payment-failed?error=processing_error`);
+        }
+    },
 }));
+
+const encrypt = (plainText, workingKey) => {
+    try {
+        // Generate key using MD5 hash of workingKey
+        const key = crypto.createHash("md5").update(workingKey).digest();
+
+        // Fixed IV used by CCAvenue
+        const iv = Buffer.from([
+            0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f,
+        ]);
+
+        const cipher = crypto.createCipheriv("aes-128-cbc", key, iv);
+        let encrypted = cipher.update(plainText, "utf8", "hex");
+        encrypted += cipher.final("hex");
+
+        return encrypted;
+    } catch (err) {
+        console.error("Encryption error:", err);
+        throw err;
+    }
+};
+
+const decrypt = (encryptedText, workingKey) => {
+    try {
+        console.log("Decrypting data with key:", workingKey);
+        console.log("Data to decrypt:", encryptedText);
+
+        // Create MD5 hash of the working key
+        const key = crypto.createHash("md5").update(workingKey).digest();
+
+        // Fixed IV used by CCAvenue
+        const iv = Buffer.from([
+            0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f,
+        ]);
+
+        // Create decipher
+        const decipher = crypto.createDecipheriv("aes-128-cbc", key, iv);
+
+        // Decrypt the data
+        let decrypted = decipher.update(encryptedText, "hex", "utf8");
+        decrypted += decipher.final("utf8");
+
+        console.log("Decryption successful");
+        return decrypted;
+    } catch (error) {
+        console.error("Decryption error:", error);
+        throw error;
+    }
+};
 
 const exchangeRates = {
     USD: 0.012,

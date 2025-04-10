@@ -46,6 +46,15 @@ export async function processCartItems(carts, userId) {
                 throw new Error(`Product with ID ${productId} not found.`);
             }
 
+            // Check if product quantity is zero
+            if (productExists.Quantity === 0) {
+                // Remove the product from cart
+                await strapi.documents("api::cart.cart").delete({
+                    documentId: cart.documentId,
+                });
+                continue; // Skip to next cart item
+            }
+
             // Find the price section that matches the selected option
             const liveProduct = productExists?.Price_Section?.find((item) => item.Option === Product?.Option);
 

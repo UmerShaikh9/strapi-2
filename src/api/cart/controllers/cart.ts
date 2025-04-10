@@ -1,4 +1,5 @@
 import { factories } from "@strapi/strapi";
+import { processCartItems } from "./helpers";
 
 export default factories.createCoreController("api::cart.cart", ({ strapi }) => ({
     async myCart(ctx) {
@@ -181,7 +182,30 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
     async suggestions(ctx) {
         try {
             const { search } = ctx.request.body;
-            const Products = await strapi.documents("api::product.product").findMany({
+            console.log("Search term:", search);
+
+            // Create an array of possible search variations
+            const searchVariations = [];
+
+            if (search) {
+                // Add the original search term
+                searchVariations.push(search);
+
+                // Add partial word matches (for each word in the search)
+                const words = search.split(" ");
+                words.forEach((word) => {
+                    // Add progressively longer substrings of each word
+                    // Starting from 3 characters to avoid too many short matches
+                    for (let i = 3; i <= word.length; i++) {
+                        searchVariations.push(word.substring(0, i));
+                    }
+                });
+            }
+
+            console.log("Search variations:", searchVariations);
+
+            // First, try to find exact matches with the search term
+            const exactMatches = await strapi.documents("api::product.product").findMany({
                 filters: {
                     Name: {
                         $containsi: search,
@@ -192,8 +216,50 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                     Price_Section: true,
                 },
                 status: "published",
-                limit: 10,
+                limit: 20,
             });
+
+            console.log(`Found ${exactMatches.length} exact matches for "${search}"`);
+
+            // If we have enough exact matches, use those
+            let Products = exactMatches;
+
+            // If we don't have enough exact matches, try with partial matches
+            if (exactMatches.length < 10) {
+                const nameFilter =
+                    searchVariations.length > 0
+                        ? { $or: searchVariations.map((term) => ({ Name: { $containsi: term } })) }
+                        : { Name: { $containsi: search } };
+
+                console.log("Name filter for partial matches:", JSON.stringify(nameFilter));
+
+                const partialMatches = await strapi.documents("api::product.product").findMany({
+                    filters: nameFilter,
+                    populate: {
+                        Thumbnail: true,
+                        Price_Section: true,
+                    },
+                    status: "published",
+                    limit: 20,
+                });
+
+                console.log(`Found ${partialMatches.length} partial matches`);
+
+                // Combine exact and partial matches, removing duplicates
+                const allProducts = [...exactMatches];
+                const exactIds = new Set(exactMatches.map((p) => p.id));
+
+                partialMatches.forEach((product) => {
+                    if (!exactIds.has(product.id)) {
+                        allProducts.push(product);
+                    }
+                });
+
+                Products = allProducts;
+            }
+
+            console.log(`Returning ${Products.length} products`);
+
             const Collections = await strapi.documents("api::collection.collection").findMany({
                 filters: {
                     Name: {
@@ -204,6 +270,7 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                 status: "published",
                 limit: 10,
             });
+
             const Categories = await strapi.documents("api::collection.collection").findMany({
                 filters: {
                     Name: {
@@ -217,8 +284,8 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
 
             return ctx.send({ Products, Collections, Categories });
         } catch (error) {
-            console.error("Error fetching suggetions:", error);
-            return ctx.internalServerError("An error occurred while fetching suggetions ");
+            console.error("Error fetching suggestions:", error);
+            return ctx.internalServerError("An error occurred while fetching suggestions ");
         }
     },
 
@@ -348,49 +415,6 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             return ctx.internalServerError("An error occurred while fetching the blogs.");
         }
     },
-
-    async countProductDescriptionFields(ctx) {
-        // try {
-        //     const documents = await strapi.documents("api::product.product").findMany({});
-        //     let descriptionCount = 0;
-        //     let descriptionsCount = 0;
-        //     // Arrays to store product names
-        //     const descriptionProducts = [];
-        //     const descriptionsProducts = [];
-        //     const missingDescriptionsProducts = []; // Products with Description but not Descriptions
-        //     for (const doc of documents) {
-        //         const hasDescription = !!doc.Description;
-        //         const hasDescriptions = !!doc.Descriptions;
-        //         const productName = doc.Name || `Product ${doc.documentId}`;
-        //         if (hasDescription) {
-        //             descriptionCount++;
-        //             descriptionProducts.push(productName);
-        //             // Check if this product has Description but not Descriptions
-        //             if (!hasDescriptions) {
-        //                 missingDescriptionsProducts.push(productName);
-        //             }
-        //         }
-        //         if (hasDescriptions) {
-        //             descriptionsCount++;
-        //             descriptionsProducts.push(productName);
-        //         }
-        //     }
-        //     return ctx.send({
-        //         total: documents.length,
-        //         descriptionCount,
-        //         descriptionsCount,
-        //         match: descriptionCount === descriptionsCount,
-        //         descriptionProducts,
-        //         descriptionsProducts,
-        //         missingDescriptionsProducts, // Products that need migration
-        //         missingCount: missingDescriptionsProducts.length,
-        //         message: `Found ${documents.length} products. ${descriptionCount} have Description field, ${descriptionsCount} have Descriptions field. ${missingDescriptionsProducts.length} products have Description but not Descriptions.`,
-        //     });
-        // } catch (error) {
-        //     console.error("Error counting product description fields:", error);
-        //     return ctx.internalServerError("An error occurred while counting product description fields");
-        // }
-    },
 }));
 
 const validateRequestBody = async (body, keys) => {
@@ -414,83 +438,3 @@ const validateRequestBody = async (body, keys) => {
     }
     return payload;
 };
-
-export async function processCartItems(carts, userId) {
-    try {
-        console.log("[processCartItems]  execution started");
-        console.log("carts ", carts);
-        console.log("user id ", userId);
-        // Iterate over each cart item
-        for (let cart of carts) {
-            const { Product, Type, Total_Price } = cart;
-            const productId = Product?.Product;
-
-            // Validate product ID
-            if (!productId) {
-                throw new Error("Product document ID is required.");
-            }
-
-            // Fetch the product details along with the Price_Section
-            const products = await strapi.documents("api::product.product").findMany({
-                filters: { documentId: productId },
-                populate: { Price_Section: true },
-            });
-
-            const productExists = products[0];
-            if (!productExists) {
-                throw new Error(`Product with ID ${productId} not found.`);
-            }
-
-            // Find the price section that matches the selected option
-            const liveProduct = productExists?.Price_Section?.find((item) => item.Option === Product?.Option);
-
-            // Prepare the payload with updated pricing details
-            let payload = { Product, Type, Total_Price };
-            if (liveProduct) {
-                payload.Product.Price = liveProduct.Price;
-                payload.Product.Discounted_Price = liveProduct.Discounted_Price;
-                payload.Total_Price = liveProduct.Discount_Available ? liveProduct.Discounted_Price : liveProduct.Price;
-            }
-
-            // Check if the product already exists in the user's cart
-            const existingCartItem = await strapi.documents("api::cart.cart").findMany({
-                filters: {
-                    Product: {
-                        Product: {
-                            documentId: productId,
-                        },
-                    },
-                    User: { id: userId },
-                },
-            });
-
-            // If product exists in cart, update it
-            if (existingCartItem?.length > 0) {
-                await strapi.documents("api::cart.cart").update({
-                    documentId: existingCartItem?.[0]?.documentId,
-                    data: {
-                        Type,
-                        Total_Price: payload?.Total_Price,
-                        Product: {
-                            Discounted_Price: payload?.Product?.Discounted_Price,
-                            Price: payload?.Product?.Price,
-                            Size: payload?.Product?.Size,
-                            Color: payload?.Product?.Color,
-                            Discount_Available: payload?.Product?.Discount_Available,
-                            Option: payload?.Product?.Option,
-                            Product: payload?.Product?.Product,
-                            Quantity: payload?.Product?.Quantity,
-                        },
-                        User: { id: userId },
-                    },
-                    status: "published",
-                });
-            }
-
-            console.log("[processCartItems]  execution processed");
-        }
-    } catch (error) {
-        console.error("Error processing cart items:", error.message);
-        throw new Error("An error occurred while processing the cart items. Please try again later.");
-    }
-}

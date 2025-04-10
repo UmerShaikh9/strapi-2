@@ -34,5 +34,23 @@ export default {
             handler: "order.validateCoupon",
             config: { policies: [] },
         },
+        {
+            method: "POST",
+            path: "/order/ccavenue/create",
+            handler: "order.createCCAvenueOrder",
+            config: { policies: [] },
+        },
+        {
+            method: "POST",
+            path: "/order/ccavenue/callback",
+            handler: "order.handleCCAvenueCallback",
+            config: { policies: [] },
+        },
+        {
+            method: "POST",
+            path: "/order/ccavenue/error-callback",
+            handler: "order.handleCCAvenueErrorCallback",
+            config: { policies: [] },
+        },
     ],
 };

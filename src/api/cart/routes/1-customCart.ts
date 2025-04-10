@@ -79,13 +79,5 @@ export default {
                 middlewares: [],
             },
         },
-        {
-            method: "GET",
-            path: "/count-product-description-fields",
-            handler: "cart.countProductDescriptionFields",
-            config: {
-                auth: false,
-            },
-        },
     ],
 };
