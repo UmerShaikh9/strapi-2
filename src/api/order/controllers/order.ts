@@ -9,13 +9,12 @@ const PAYPAL_SECRET = process.env.PAYPAL_SECRET_KEY;
 const PAYPAL_API = process.env.PAYPAL_API;
 
 // CCAvenue configuration
-const CCAVENUE_MERCHANT_ID = 4140852;
-const CCAVENUE_WORKING_KEY = "9A416AABF5AD78AC29E237FF90B60201";
-// const CCAVENUE_ACCESS_CODE = "ATVA54MB46BJ28AVJB";
-const CCAVENUE_ACCESS_CODE = "AVVA54MB46BJ28AVJB";
-const CCAVENUE_REDIRECT_URL = "https://banarasibaithak.com";
-const CCAVENUE_API_URL = "https://secure.ccavenue.com/transaction/transaction.do";
-const BACKEND_URL = "https://cms.banarasibaithak.com";
+const CCAVENUE_MERCHANT_ID = process.env.CCAVENUE_MERCHANT_ID;
+const CCAVENUE_WORKING_KEY = process.env.CCAVENUE_WORKING_KEY;
+const CCAVENUE_ACCESS_CODE = process.env.CCAVENUE_ACCESS_CODE;
+const CCAVENUE_REDIRECT_URL = process.env.CCAVENUE_REDIRECT_URL;
+const CCAVENUE_API_URL = process.env.CCAVENUE_API_URL;
+const BACKEND_URL = process.env.BACKEND_URL;
 
 export default factories.createCoreController("api::order.order", ({ strapi }) => ({
     async myOrder(ctx) {
@@ -310,6 +309,12 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
         try {
             console.log("createCCAvenueOrder called with body:", ctx.request.body);
 
+            console.log("CCAVENUE_MERCHANT_ID", CCAVENUE_MERCHANT_ID);
+            console.log("CCAVENUE_WORKING_KEY", CCAVENUE_WORKING_KEY);
+            console.log("CCAVENUE_ACCESS_CODE", CCAVENUE_ACCESS_CODE);
+            console.log("CCAVENUE_REDIRECT_URL", CCAVENUE_REDIRECT_URL);
+            console.log("CCAVENUE_API_URL", CCAVENUE_API_URL);
+
             // Get the authenticated user ID
             const id = ctx.state.user?.id;
             if (!id) {
@@ -494,7 +499,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
         try {
             console.log("handleCCAvenueCallback called with body:", ctx.request.body);
 
-            const { encResp, order_id, tracking_id, bank_ref_no, order_status, merchant_param1 } = ctx.request.body;
+            const { encResp, order_id, tracking_id, bank_ref_no, merchant_param1 } = ctx.request.body;
 
             if (!encResp) {
                 console.error("No encrypted response received");
@@ -509,6 +514,8 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             const responseData = qs.parse(decryptedData);
             console.log("Parsed response data:", responseData);
 
+            const order_status = responseData?.order_status;
+
             // // Get the order document ID from merchant_param1
             const orderDocumentId = merchant_param1 || responseData.merchant_param1;
 
@@ -522,7 +529,11 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 documentId: orderDocumentId,
                 status: "published",
                 populate: {
-                    Products: true,
+                    Products: {
+                        populate: {
+                            Product: true,
+                        },
+                    },
                     Payment_Details: true,
                     User: true,
                 },
@@ -541,44 +552,43 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 data: {
                     Payment_Details: {
                         Amount: order?.Payment_Details?.Amount,
-                        Payment_Status: "COMPLETED",
+                        Payment_Status: order_status == "Success" ? "COMPLETED" : "FAILED",
                         Order_Uid: order?.Payment_Details?.Order_Uid,
                         Paypal_Response: responseData as any,
                     },
-                    Order_Status: "CONFIRMED",
+                    Order_Status: order_status == "Success" ? "CONFIRMED" : "PENDING",
                 },
                 status: "published",
             });
 
             // If payment is successful, update product quantities and clear cart
 
-            // Update product quantities
-            const orderWithProducts = order as any;
-            if (orderWithProducts.Products && Array.isArray(orderWithProducts.Products)) {
-                for (let product of orderWithProducts.Products) {
-                    if (product.Product && product.Product.documentId) {
-                        await strapi.documents("api::product.product").update({
-                            documentId: product.Product.documentId,
-                            data: {
-                                Quantity: product.Product.Quantity - 1,
-                            },
-                            status: "published",
+            if (order_status === "Success") {
+                // Update product quantities
+                console.log("transaction success");
+                for (let product of order.Products) {
+                    //Decrement product quantiy
+                    await strapi.documents("api::product.product").update({
+                        documentId: product.Product?.documentId,
+                        data: {
+                            Quantity: product?.Product?.Quantity - 1,
+                        },
+                        status: "published",
+                    });
+                }
+
+                // Clear user's cart
+                if (order.User && order.User.id) {
+                    const carts = await strapi.documents("api::cart.cart").findMany({
+                        filters: { User: { documentId: order.User.documentId } },
+                        status: "published",
+                    });
+
+                    for (let cart of carts) {
+                        await strapi.documents("api::cart.cart").delete({
+                            documentId: cart.documentId,
                         });
                     }
-                }
-            }
-
-            // Clear user's cart
-            if (orderWithProducts.User && orderWithProducts.User.id) {
-                const carts = await strapi.documents("api::cart.cart").findMany({
-                    filters: { User: { documentId: orderWithProducts.User.documentId } },
-                    status: "published",
-                });
-
-                for (let cart of carts) {
-                    await strapi.documents("api::cart.cart").delete({
-                        documentId: cart.documentId,
-                    });
                 }
             }
 
