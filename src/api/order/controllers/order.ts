@@ -104,11 +104,10 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 products.push(cart.Product);
             }
 
-            const convertedAmount = convertCurrency({ totalPriceINR, currency });
-            console.log(`Converted ${totalPriceINR} INR to ${convertedAmount} ${currency}`);
+            totalPriceINR = totalPriceINR; // Add 7% extra charge
 
-            // Create PayPal Order with converted amount
-            let TotalPrice = Number(convertedAmount);
+            let TotalPrice = 0;
+
             let couponPayload = {};
             if (couponId) {
                 console.log("coupon code present ", couponId);
@@ -119,7 +118,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
 
                 console.log("coupon details ", couponDetails);
                 const convertedAmount = convertCurrency({
-                    totalPriceINR: totalPriceINR - couponDetails?.Price,
+                    totalPriceINR: (totalPriceINR - couponDetails?.Price) * 1.07,
                     currency,
                 });
                 TotalPrice = Number(convertedAmount);
@@ -129,6 +128,11 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
 
                 console.log("coupon code payload ", couponPayload);
                 console.log("total price ", TotalPrice);
+            } else {
+                // Add 7% extra charge for international transactions
+                const convertedAmount = convertCurrency({ totalPriceINR: totalPriceINR * 1.07, currency });
+                console.log(`Converted ${totalPriceINR} INR to ${convertedAmount} ${currency}`);
+                TotalPrice = Number(convertedAmount);
             }
 
             const response = await axios.post(
