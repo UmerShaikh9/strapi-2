@@ -1165,6 +1165,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       > &
       Schema.Attribute.DefaultTo<'[]'>;
     Summary: Schema.Attribute.Text;
+    Tags: Schema.Attribute.String;
     Thumbnail: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     > &

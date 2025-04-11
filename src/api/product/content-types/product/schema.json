@@ -189,6 +189,9 @@
     "Product_Guide_Available": {
       "type": "boolean",
       "default": false
+    },
+    "Tags": {
+      "type": "string"
     }
   }
 }
