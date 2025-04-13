@@ -6,13 +6,13 @@
   },
   "options": {},
   "attributes": {
+    "Title": {
+      "type": "string"
+    },
     "Products": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product"
-    },
-    "Title": {
-      "type": "string"
     }
   }
 }
