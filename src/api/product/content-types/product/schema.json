@@ -123,9 +123,9 @@
       "default": "[]",
       "options": [
         "New Arrival",
-        "Ready To Ship",
         "Popular",
-        "Sold Out"
+        "Sold Out",
+        "Available "
       ],
       "customField": "plugin::multi-select.multi-select"
     },
