@@ -127,7 +127,8 @@
         "New Arrival",
         "Popular",
         "Sold Out",
-        "Available "
+        "Available",
+        "Pre Order"
       ],
       "customField": "plugin::multi-select.multi-select"
     },

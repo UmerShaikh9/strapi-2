@@ -1,7 +1,11 @@
 import { factories } from "@strapi/strapi";
 import { processCartItems } from "./helpers";
+import customHandlers from "./customHandlers";
 
 export default factories.createCoreController("api::cart.cart", ({ strapi }) => ({
+    // Import custom handlers
+    ...customHandlers,
+
     async myCart(ctx) {
         try {
             // Get the authenticated user ID

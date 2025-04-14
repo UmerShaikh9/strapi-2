@@ -5,6 +5,15 @@
 export default {
     routes: [
         {
+            method: "GET",
+            path: "/products/filters",
+            handler: "cart.getProductsFilters",
+            config: {
+                policies: [],
+                middlewares: [],
+            },
+        },
+        {
             method: "POST",
             path: "/suggetions",
             handler: "cart.suggestions",

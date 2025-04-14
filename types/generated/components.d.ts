@@ -446,7 +446,8 @@ export interface HomePageHeroSection extends Struct.ComponentSchema {
     displayName: 'Hero_Section';
   };
   attributes: {
-    Media: Schema.Attribute.Media<'videos', true>;
+    Href: Schema.Attribute.String;
+    Media: Schema.Attribute.Media<'videos' | 'images', true>;
   };
 }
 
@@ -482,7 +483,7 @@ export interface HomePageReadyToShip extends Struct.ComponentSchema {
   };
   attributes: {
     Button: Schema.Attribute.Component<'elements.button', false>;
-    Media: Schema.Attribute.Media<'images', true>;
+    Media: Schema.Attribute.Media<'images' | 'videos', true>;
     Title: Schema.Attribute.String;
   };
 }

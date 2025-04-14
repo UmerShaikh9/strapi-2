@@ -1051,7 +1051,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     Badges: Schema.Attribute.JSON &
       Schema.Attribute.CustomField<
         'plugin::multi-select.multi-select',
-        ['New Arrival', 'Popular', 'Sold Out', 'Available ']
+        ['New Arrival', 'Popular', 'Sold Out', 'Available', 'Pre Order']
       > &
       Schema.Attribute.DefaultTo<'[]'>;
     Categories: Schema.Attribute.Relation<

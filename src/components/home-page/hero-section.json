@@ -11,8 +11,12 @@
       "multiple": true,
       "required": false,
       "allowedTypes": [
-        "videos"
+        "videos",
+        "images"
       ]
+    },
+    "Href": {
+      "type": "string"
     }
   }
 }

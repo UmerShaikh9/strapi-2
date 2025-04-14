@@ -14,7 +14,8 @@
       "multiple": true,
       "required": false,
       "allowedTypes": [
-        "images"
+        "images",
+        "videos"
       ]
     },
     "Button": {
