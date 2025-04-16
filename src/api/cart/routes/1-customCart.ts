@@ -23,7 +23,7 @@ export default {
             },
         },
         {
-            method: "GET",
+            method: "POST",
             path: "/carts/user",
             handler: "cart.myCart",
             config: {

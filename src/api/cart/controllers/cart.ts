@@ -15,7 +15,12 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                 return ctx.unauthorized("You must be logged in to view the cart.");
             }
 
-            const carts = await strapi.documents("api::cart.cart").findMany({
+            // Check if cartIds are provided in the request body
+            const cartIds = ctx.request.body?.cartIds || [];
+            console.log("Received cartIds:", cartIds);
+
+            // Base query to find user's carts
+            const query: any = {
                 filters: {
                     User: {
                         id: id,
@@ -23,11 +28,21 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                 },
                 populate: {
                     Product: { populate: { Product: { populate: { Thumbnail: true } } } },
-
                     User: true,
                 },
                 status: "published",
-            });
+            };
+
+            // If cartIds array is provided and not empty, add filter for specific cart IDs
+            if (cartIds && cartIds.length > 0) {
+                query.filters.documentId = {
+                    $in: cartIds,
+                };
+                console.log("Filtering carts by IDs:", cartIds);
+            }
+
+            const carts = await strapi.documents("api::cart.cart").findMany(query);
+            console.log(`Found ${carts.length} carts`);
 
             return ctx.send({ carts });
         } catch (error) {

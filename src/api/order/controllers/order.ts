@@ -56,10 +56,12 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 return ctx.unauthorized("You must be logged in to view the cart.");
             }
 
-            const { Full_Name, Address, City, Country, currency, Email, Phone, State, Pincode, couponId } =
+            const { Full_Name, Address, City, Country, currency, Email, Phone, State, Pincode, couponId, cartIds } =
                 ctx.request.body;
 
-            console.log("coupon code", couponId);
+            if (!cartIds || cartIds?.length === 0) {
+                return ctx.badRequest("Please select at least one product");
+            }
 
             if (!currency) {
                 return ctx.badRequest("Currency is required.");
@@ -86,7 +88,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             await processCartItems(cartsData, id);
 
             let updatedCarts = await strapi.documents("api::cart.cart").findMany({
-                filters: { User: { id: id } },
+                filters: { User: { id: id }, documentId: { $in: cartIds } },
                 populate: {
                     Product: { populate: { Product: true } },
                     User: true,
@@ -267,15 +269,25 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                     });
                 }
 
+                // Get all cart items for the user
                 const carts = await strapi.documents("api::cart.cart").findMany({
                     filters: { User: { id: id } },
+                    populate: {
+                        Product: { populate: { Product: true } },
+                    },
                     status: "published",
                 });
 
+                // Create a map of product IDs from the order
+                const orderedProductIds = order.Products.map((product) => product.Product?.documentId);
+
+                // Only delete cart items that were included in the order
                 for (let cart of carts) {
-                    await strapi.documents("api::cart.cart").delete({
-                        documentId: cart.documentId,
-                    });
+                    if (orderedProductIds.includes(cart.Product?.Product?.documentId)) {
+                        await strapi.documents("api::cart.cart").delete({
+                            documentId: cart.documentId,
+                        });
+                    }
                 }
             }
 
@@ -325,12 +337,28 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 return ctx.unauthorized("You must be logged in to create an order.");
             }
 
-            const { Full_Name, Address, City, Country, Email, Phone, State, Pincode, amount, currency, couponId } =
-                ctx.request.body;
+            const {
+                Full_Name,
+                Address,
+                City,
+                Country,
+                Email,
+                Phone,
+                State,
+                Pincode,
+                amount,
+                currency,
+                couponId,
+                cartIds,
+            } = ctx.request.body;
 
             // Validate required fields
             if (!Full_Name || !Address || !City || !Country || !Email || !Phone || !State || !Pincode || !amount) {
                 return ctx.badRequest("Missing required fields");
+            }
+
+            if (!cartIds || cartIds?.length === 0) {
+                return ctx.badRequest("Please select at least one product");
             }
 
             // Fetch user's cart items
@@ -359,9 +387,9 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             // Process cart items (handling price and image things)
             await processCartItems(cartsData, id);
 
-            // Fetch updated cart items after processing
+            // Fetch updated cart items after processing, filtered by cartIds
             let updatedCarts = await strapi.documents("api::cart.cart").findMany({
-                filters: { User: { id: id } },
+                filters: { User: { id: id }, documentId: { $in: cartIds } },
                 populate: {
                     Product: { populate: { Product: true } },
                     User: true,
@@ -373,7 +401,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
 
             // Validate required fields
             if (updatedCarts?.length === 0) {
-                return ctx.badRequest("Cart is empty");
+                return ctx.badRequest("No products selected for order");
             }
 
             let totalPriceINR = 0;
@@ -471,6 +499,9 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
 
             // Encrypt the data
             const encRequest = encrypt(postData, CCAVENUE_WORKING_KEY);
+            console.log("encRequest", encRequest);
+            const decRequest = decrypt(encRequest, CCAVENUE_WORKING_KEY);
+            console.log("decRequest", decRequest);
 
             // Create HTML form for redirection
             const htmlForm = `
@@ -581,17 +612,26 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                     });
                 }
 
-                // Clear user's cart
+                // Clear only the ordered products from user's cart
                 if (order.User && order.User.id) {
                     const carts = await strapi.documents("api::cart.cart").findMany({
                         filters: { User: { documentId: order.User.documentId } },
+                        populate: {
+                            Product: { populate: { Product: true } },
+                        },
                         status: "published",
                     });
 
+                    // Create a map of product IDs from the order
+                    const orderedProductIds = order.Products.map((product) => product.Product?.documentId);
+
+                    // Only delete cart items that were included in the order
                     for (let cart of carts) {
-                        await strapi.documents("api::cart.cart").delete({
-                            documentId: cart.documentId,
-                        });
+                        if (orderedProductIds.includes(cart.Product?.Product?.documentId)) {
+                            await strapi.documents("api::cart.cart").delete({
+                                documentId: cart.documentId,
+                            });
+                        }
                     }
                 }
             }
@@ -615,7 +655,22 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 tracking_id,
                 bank_ref_no,
                 order_status,
+                merchant_param1,
             });
+
+            // If we have the order document ID, we can update the order status
+            if (merchant_param1) {
+                await strapi.documents("api::order.order").update({
+                    documentId: merchant_param1,
+                    data: {
+                        Payment_Details: {
+                            Payment_Status: "FAILED",
+                        },
+                        Order_Status: "PENDING",
+                    },
+                    status: "published",
+                });
+            }
 
             return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/payment-failed?order_id=${order_id}&status=${order_status}`);
         } catch (error) {
