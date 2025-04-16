@@ -42,6 +42,7 @@ export interface BanarasiWeavesFabricOverview extends Struct.ComponentSchema {
     Show_Four_Images: Schema.Attribute.Boolean &
       Schema.Attribute.DefaultTo<false>;
     Title: Schema.Attribute.String;
+    Videos: Schema.Attribute.Component<'components.video-title', true>;
   };
 }
 
@@ -176,6 +177,18 @@ export interface ComponentsTitleDescription extends Struct.ComponentSchema {
   attributes: {
     Description: Schema.Attribute.Blocks;
     Title: Schema.Attribute.String;
+  };
+}
+
+export interface ComponentsVideoTitle extends Struct.ComponentSchema {
+  collectionName: 'components_components_video_titles';
+  info: {
+    description: '';
+    displayName: 'Video_Title';
+  };
+  attributes: {
+    Media: Schema.Attribute.Media<'videos'>;
+    Title: Schema.Attribute.Blocks;
   };
 }
 
@@ -517,6 +530,7 @@ export interface HomePageShopSection extends Struct.ComponentSchema {
     displayName: 'Shop_Section';
   };
   attributes: {
+    Media: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
     Products: Schema.Attribute.Relation<'oneToMany', 'api::product.product'>;
     Title: Schema.Attribute.String;
   };
@@ -729,6 +743,7 @@ declare module '@strapi/strapi' {
       'components.input-field': ComponentsInputField;
       'components.social-network': ComponentsSocialNetwork;
       'components.title-description': ComponentsTitleDescription;
+      'components.video-title': ComponentsVideoTitle;
       'contact-page.contact-details': ContactPageContactDetails;
       'contact-page.contact-form': ContactPageContactForm;
       'contact-page.section-1': ContactPageSection1;
