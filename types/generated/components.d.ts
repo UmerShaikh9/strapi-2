@@ -39,6 +39,8 @@ export interface BanarasiWeavesFabricOverview extends Struct.ComponentSchema {
   attributes: {
     Description: Schema.Attribute.Blocks;
     Images: Schema.Attribute.Component<'components.image-title', true>;
+    Show_Four_Images: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
     Title: Schema.Attribute.String;
   };
 }

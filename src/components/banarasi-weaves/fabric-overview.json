@@ -16,6 +16,10 @@
     },
     "Description": {
       "type": "blocks"
+    },
+    "Show_Four_Images": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
