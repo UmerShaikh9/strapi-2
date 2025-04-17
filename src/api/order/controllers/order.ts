@@ -733,6 +733,11 @@ const exchangeRates = {
     USD: 0.012,
     EUR: 0.011,
     INR: 1,
+    CAD: 0.016,
+    GBP: 0.0095,
+    AUD: 0.018,
+    JPY: 1.78,
+    SGD: 0.016,
 };
 
 function convertCurrency({ totalPriceINR, currency }) {
