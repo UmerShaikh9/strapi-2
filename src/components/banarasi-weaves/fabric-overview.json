@@ -17,15 +17,21 @@
     "Description": {
       "type": "blocks"
     },
-    "Show_Four_Images": {
-      "type": "boolean",
-      "default": false
-    },
     "Videos": {
       "displayName": "Video_Title",
       "type": "component",
       "repeatable": true,
       "component": "components.video-title"
+    },
+    "Grid_Size": {
+      "type": "enumeration",
+      "enum": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "default": "Three"
     }
   }
 }
