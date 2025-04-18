@@ -203,33 +203,17 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             const { search } = ctx.request.body;
             console.log("Search term:", search);
 
-            // Create an array of possible search variations
-            const searchVariations = [];
-
-            if (search) {
-                // Add the original search term
-                searchVariations.push(search);
-
-                // Add partial word matches (for each word in the search)
-                const words = search.split(" ");
-                words.forEach((word) => {
-                    // Add progressively longer substrings of each word
-                    // Starting from 3 characters to avoid too many short matches
-                    for (let i = 3; i <= word.length; i++) {
-                        searchVariations.push(word.substring(0, i));
-                    }
-                });
-            }
-
-            console.log("Search variations:", searchVariations);
-
-            // First, try to find exact matches with the search term
-            const exactMatches = await strapi.documents("api::product.product").findMany({
-                filters: {
-                    Name: {
-                        $containsi: search,
-                    },
-                },
+            // Search for products based on Description, Tags, and Title
+            const Products = await strapi.documents("api::product.product").findMany({
+                filters: search
+                    ? {
+                          $or: [
+                              { Descriptions: { $containsi: search } },
+                              { Tags: { $containsi: search } },
+                              { Name: { $containsi: search } },
+                          ],
+                      }
+                    : {},
                 populate: {
                     Thumbnail: true,
                     Price_Section: true,
@@ -238,64 +222,29 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                 limit: 20,
             });
 
-            console.log(`Found ${exactMatches.length} exact matches for "${search}"`);
-
-            // If we have enough exact matches, use those
-            let Products = exactMatches;
-
-            // If we don't have enough exact matches, try with partial matches
-            if (exactMatches.length < 10) {
-                const nameFilter =
-                    searchVariations.length > 0
-                        ? { $or: searchVariations.map((term) => ({ Name: { $containsi: term } })) }
-                        : { Name: { $containsi: search } };
-
-                console.log("Name filter for partial matches:", JSON.stringify(nameFilter));
-
-                const partialMatches = await strapi.documents("api::product.product").findMany({
-                    filters: nameFilter,
-                    populate: {
-                        Thumbnail: true,
-                        Price_Section: true,
-                    },
-                    status: "published",
-                    limit: 20,
-                });
-
-                console.log(`Found ${partialMatches.length} partial matches`);
-
-                // Combine exact and partial matches, removing duplicates
-                const allProducts = [...exactMatches];
-                const exactIds = new Set(exactMatches.map((p) => p.id));
-
-                partialMatches.forEach((product) => {
-                    if (!exactIds.has(product.id)) {
-                        allProducts.push(product);
-                    }
-                });
-
-                Products = allProducts;
-            }
-
-            console.log(`Returning ${Products.length} products`);
+            console.log(`Found ${Products.length} products matching "${search || "all"}"`);
 
             const Collections = await strapi.documents("api::collection.collection").findMany({
-                filters: {
-                    Name: {
-                        $containsi: search,
-                    },
-                },
+                filters: search
+                    ? {
+                          Name: {
+                              $containsi: search,
+                          },
+                      }
+                    : {},
                 fields: ["Name"],
                 status: "published",
                 limit: 10,
             });
 
             const Categories = await strapi.documents("api::collection.collection").findMany({
-                filters: {
-                    Name: {
-                        $containsi: search,
-                    },
-                },
+                filters: search
+                    ? {
+                          Name: {
+                              $containsi: search,
+                          },
+                      }
+                    : {},
                 fields: ["Name"],
                 status: "published",
                 limit: 10,
