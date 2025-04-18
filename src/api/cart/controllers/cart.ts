@@ -272,6 +272,11 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                                             Media: true,
                                         },
                                     },
+                                    Videos: {
+                                        populate: {
+                                            Media: true,
+                                        },
+                                    },
                                 },
                             },
                             Thumbnail: true,
@@ -330,6 +335,11 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                             Blog_Section: {
                                 populate: {
                                     Images: {
+                                        populate: {
+                                            Media: true,
+                                        },
+                                    },
+                                    Videos: {
                                         populate: {
                                             Media: true,
                                         },
