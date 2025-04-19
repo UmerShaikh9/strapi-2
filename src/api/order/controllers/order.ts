@@ -634,9 +634,12 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                         }
                     }
                 }
+                return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/my-order?payment=success&order_id=${order_id}`);
             }
 
-            return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/my-order?payment=success&order_id=${order_id}`);
+            return ctx.redirect(
+                `${CCAVENUE_REDIRECT_URL}/payment-failed?tracking_id=${responseData?.tracking_id}&status=${responseData?.order_status}&order_id=${responseData?.order_id}&error=${responseData?.status_message}`
+            );
         } catch (error) {
             console.error("Error handling CCAvenue callback:", error);
             return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/payment-failed?error=processing_error`);
@@ -658,21 +661,9 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 merchant_param1,
             });
 
-            // If we have the order document ID, we can update the order status
-            if (merchant_param1) {
-                await strapi.documents("api::order.order").update({
-                    documentId: merchant_param1,
-                    data: {
-                        Payment_Details: {
-                            Payment_Status: "FAILED",
-                        },
-                        Order_Status: "PENDING",
-                    },
-                    status: "published",
-                });
-            }
-
-            return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/payment-failed?order_id=${order_id}&status=${order_status}`);
+            return ctx.redirect(
+                `${CCAVENUE_REDIRECT_URL}/payment-failed?tracking_id=${tracking_id}&status=${order_status}&order_id=${order_id}`
+            );
         } catch (error) {
             console.error("Error handling CCAvenue error callback:", error);
             return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/payment-failed?error=processing_error`);

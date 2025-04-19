@@ -42,9 +42,23 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             }
 
             const carts = await strapi.documents("api::cart.cart").findMany(query);
+
+            let cartsData = carts?.map((cart) => ({
+                ...cart,
+                Product: {
+                    // @ts-ignore
+                    ...cart?.Product,
+                    // @ts-ignore
+                    Product: cart?.Product?.Product?.documentId,
+                },
+            }));
+
+            await processCartItems(cartsData, id);
             console.log(`Found ${carts.length} carts`);
 
-            return ctx.send({ carts });
+            let updatedCarts = await strapi.documents("api::cart.cart").findMany(query);
+
+            return ctx.send({ carts: updatedCarts });
         } catch (error) {
             console.error("Error fetching user cart:", error);
             return ctx.internalServerError("An error occurred while fetching the cart. ");

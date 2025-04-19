@@ -28,12 +28,18 @@ export async function processCartItems(carts, userId) {
         // Iterate over each cart item
         for (let cart of carts) {
             const { Product, Type, Total_Price } = cart;
+            console.log("Product ", Product);
             const productId = Product?.Product;
 
             // Validate product ID
             if (!productId) {
-                throw new Error("Product document ID is required.");
+                // Remove the product from cart
+                await strapi.documents("api::cart.cart").delete({
+                    documentId: cart.documentId,
+                });
+                continue; // Skip to next cart item
             }
+            console.log("productId ", productId);
 
             // Fetch the product details along with the Price_Section
             const products = await strapi.documents("api::product.product").findMany({
@@ -43,7 +49,11 @@ export async function processCartItems(carts, userId) {
 
             const productExists = products[0];
             if (!productExists) {
-                throw new Error(`Product with ID ${productId} not found.`);
+                // Remove the product from cart
+                await strapi.documents("api::cart.cart").delete({
+                    documentId: cart.documentId,
+                });
+                continue; // Skip to next cart item
             }
 
             // Check if product quantity is zero
