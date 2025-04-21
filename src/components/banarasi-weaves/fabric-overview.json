@@ -32,6 +32,15 @@
         "Four"
       ],
       "default": "Three"
+    },
+    "Video_Grid_Size": {
+      "type": "enumeration",
+      "enum": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ]
     }
   }
 }

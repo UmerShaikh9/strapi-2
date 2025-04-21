@@ -42,6 +42,9 @@ export interface BanarasiWeavesFabricOverview extends Struct.ComponentSchema {
       Schema.Attribute.DefaultTo<'Three'>;
     Images: Schema.Attribute.Component<'components.image-title', true>;
     Title: Schema.Attribute.String;
+    Video_Grid_Size: Schema.Attribute.Enumeration<
+      ['One', 'Two', 'Three', 'Four']
+    >;
     Videos: Schema.Attribute.Component<'components.video-title', true>;
   };
 }

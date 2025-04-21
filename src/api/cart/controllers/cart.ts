@@ -57,6 +57,7 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             console.log(`Found ${carts.length} carts`);
 
             let updatedCarts = await strapi.documents("api::cart.cart").findMany(query);
+            console.log("updatedCarts", updatedCarts);
 
             return ctx.send({ carts: updatedCarts });
         } catch (error) {

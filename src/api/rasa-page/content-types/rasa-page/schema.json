@@ -1,33 +1,33 @@
 {
-    "kind": "singleType",
-    "collectionName": "rasa_pages",
-    "info": {
-        "singularName": "rasa-page",
-        "pluralName": "rasa-pages",
-        "displayName": "Rasa_Page",
-        "description": ""
+  "kind": "singleType",
+  "collectionName": "rasa_pages",
+  "info": {
+    "singularName": "rasa-page",
+    "pluralName": "rasa-pages",
+    "displayName": "Rasa_Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
     },
-    "options": {
-        "draftAndPublish": true
+    "Description": {
+      "type": "blocks"
     },
-    "pluginOptions": {},
-    "attributes": {
-        "Title": {
-            "type": "string"
-        },
-        "Description": {
-            "type": "blocks"
-        },
-        "Blogs": {
-            "displayName": "Blog_Section",
-            "type": "component",
-            "repeatable": true,
-            "component": "blogs.blog-section"
-        },
-        "Descriptions": {
-            "type": "component",
-            "repeatable": false,
-            "component": "components.description-list"
-        }
+    "Blogs": {
+      "displayName": "Blog_Section",
+      "type": "component",
+      "repeatable": true,
+      "component": "blogs.blog-section"
+    },
+    "Descriptions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.description-list"
     }
+  }
 }

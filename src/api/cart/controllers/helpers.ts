@@ -22,97 +22,99 @@ export const validateRequestBody = async (body, keys) => {
 
 export async function processCartItems(carts, userId) {
     try {
-        console.log("[processCartItems]  execution started");
-        console.log("carts ", carts);
-        console.log("user id ", userId);
-        // Iterate over each cart item
-        for (let cart of carts) {
+        console.log("[processCartItems] execution started");
+
+        if (!carts?.length) {
+            return;
+        }
+
+        // Extract all product IDs from carts
+        const productIds = carts.map((cart) => cart.Product?.Product).filter(Boolean);
+
+        // Batch fetch all products in a single query
+        const products = await strapi.documents("api::product.product").findMany({
+            filters: { documentId: { $in: productIds } },
+            populate: { Price_Section: true },
+        });
+
+        // Create a map for quick product lookup
+        const productMap = new Map(products.map((p) => [p.documentId, p]));
+
+        // Prepare batch operations
+        const updateOperations = [];
+        const deleteOperations = [];
+
+        // Process all cart items
+        for (const cart of carts) {
             const { Product, Type, Total_Price } = cart;
-            console.log("Product ", Product);
             const productId = Product?.Product;
 
-            // Validate product ID
             if (!productId) {
-                // Remove the product from cart
-                await strapi.documents("api::cart.cart").delete({
-                    documentId: cart.documentId,
-                });
-                continue; // Skip to next cart item
-            }
-            console.log("productId ", productId);
-
-            // Fetch the product details along with the Price_Section
-            const products = await strapi.documents("api::product.product").findMany({
-                filters: { documentId: productId },
-                populate: { Price_Section: true },
-            });
-
-            const productExists = products[0];
-            if (!productExists) {
-                // Remove the product from cart
-                await strapi.documents("api::cart.cart").delete({
-                    documentId: cart.documentId,
-                });
-                continue; // Skip to next cart item
+                deleteOperations.push(cart.documentId);
+                continue;
             }
 
-            // Check if product quantity is zero
-            if (productExists.Quantity === 0) {
-                // Remove the product from cart
-                await strapi.documents("api::cart.cart").delete({
-                    documentId: cart.documentId,
-                });
-                continue; // Skip to next cart item
+            const productExists = productMap.get(productId);
+
+            // Check if product exists and has quantity
+            if (!productExists || productExists.Quantity === 0) {
+                deleteOperations.push(cart.documentId);
+                continue;
             }
 
-            // Find the price section that matches the selected option
-            const liveProduct = productExists?.Price_Section?.find((item) => item.Option === Product?.Option);
+            // Find matching price section
+            const liveProduct = productExists.Price_Section?.find((item) => item.Option === Product?.Option);
 
-            // Prepare the payload with updated pricing details
-            let payload = { Product, Type, Total_Price };
-            if (liveProduct) {
-                payload.Product.Price = liveProduct.Price;
-                payload.Product.Discounted_Price = liveProduct.Discounted_Price;
-                payload.Total_Price = liveProduct.Discount_Available ? liveProduct.Discounted_Price : liveProduct.Price;
+            if (!liveProduct) {
+                deleteOperations.push(cart.documentId);
+                continue;
             }
 
-            // Check if the product already exists in the user's cart
-            const existingCartItem = await strapi.documents("api::cart.cart").findMany({
-                filters: {
-                    Product: {
-                        Product: {
-                            documentId: productId,
-                        },
-                    },
-                    User: { id: userId },
+            console.log("Product ", Product);
+
+            // Prepare update payload
+            const payload = {
+                Type,
+                Total_Price: liveProduct.Discount_Available ? liveProduct.Discounted_Price : liveProduct.Price,
+                Product: {
+                    Size: Product?.Size,
+                    Color: Product?.Color,
+                    Discount_Available: Product?.Discount_Available,
+                    Option: Product?.Option,
+                    Product: Product?.Product,
+                    Quantity: Product?.Quantity,
+                    Price: Product.Price,
+                    Discounted_Price: liveProduct.Discounted_Price,
                 },
+                User: { id: userId },
+            };
+
+            updateOperations.push({
+                documentId: cart.documentId,
+                data: payload,
             });
-
-            // If product exists in cart, update it
-            if (existingCartItem?.length > 0) {
-                await strapi.documents("api::cart.cart").update({
-                    documentId: existingCartItem?.[0]?.documentId,
-                    data: {
-                        Type,
-                        Total_Price: payload?.Total_Price,
-                        Product: {
-                            Discounted_Price: payload?.Product?.Discounted_Price,
-                            Price: payload?.Product?.Price,
-                            Size: payload?.Product?.Size,
-                            Color: payload?.Product?.Color,
-                            Discount_Available: payload?.Product?.Discount_Available,
-                            Option: payload?.Product?.Option,
-                            Product: payload?.Product?.Product,
-                            Quantity: payload?.Product?.Quantity,
-                        },
-                        User: { id: userId },
-                    },
-                    status: "published",
-                });
-            }
-
-            console.log("[processCartItems]  execution processed");
         }
+
+        // Execute batch operations in parallel
+        await Promise.all([
+            // Delete invalid items
+            ...deleteOperations.map((documentId) =>
+                strapi.documents("api::cart.cart").delete({
+                    documentId,
+                })
+            ),
+
+            // Update valid items
+            ...updateOperations.map((op) =>
+                strapi.documents("api::cart.cart").update({
+                    documentId: op.documentId,
+                    data: op.data,
+                    status: "published",
+                })
+            ),
+        ]);
+
+        console.log("[processCartItems] execution completed");
     } catch (error) {
         console.error("Error processing cart items:", error.message);
         throw new Error("An error occurred while processing the cart items. Please try again later.");
