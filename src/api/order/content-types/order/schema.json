@@ -75,6 +75,10 @@
       "relation": "manyToOne",
       "target": "api::coupon.coupon",
       "inversedBy": "Orders"
+    },
+    "Shipping_Charges": {
+      "type": "decimal",
+      "default": 0
     }
   }
 }

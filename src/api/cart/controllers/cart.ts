@@ -8,30 +8,35 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
 
     async myCart(ctx) {
         try {
-            // Get the authenticated user ID
-            const id = ctx.state.user?.id;
-
-            if (!id) {
-                return ctx.unauthorized("You must be logged in to view the cart.");
-            }
+            // Get the authenticated user ID if available
+            const userId = ctx.state.user?.id;
+            // Get guest session ID from request
+            const guestSessionId = ctx.request.body?.guestSessionId;
 
             // Check if cartIds are provided in the request body
             const cartIds = ctx.request.body?.cartIds || [];
             console.log("Received cartIds:", cartIds);
 
-            // Base query to find user's carts
+            // Base query to find carts
             const query: any = {
-                filters: {
-                    User: {
-                        id: id,
-                    },
-                },
+                filters: {},
                 populate: {
                     Product: { populate: { Product: { populate: { Thumbnail: true } } } },
                     User: true,
                 },
                 status: "published",
             };
+
+            // Add filter based on whether user is authenticated or guest
+            if (userId) {
+                query.filters.User = {
+                    id: userId,
+                };
+            } else if (guestSessionId) {
+                query.filters.GuestSessionId = guestSessionId;
+            } else {
+                return ctx.badRequest("Either user authentication or guest session ID is required.");
+            }
 
             // If cartIds array is provided and not empty, add filter for specific cart IDs
             if (cartIds && cartIds.length > 0) {
@@ -40,6 +45,8 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                 };
                 console.log("Filtering carts by IDs:", cartIds);
             }
+
+            console.log("query filter ", query);
 
             const carts = await strapi.documents("api::cart.cart").findMany(query);
 
@@ -53,7 +60,11 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                 },
             }));
 
-            await processCartItems(cartsData, id);
+            // Only process cart items for authenticated users
+            if (userId) {
+                await processCartItems(cartsData, userId);
+            }
+
             console.log(`Found ${carts.length} carts`);
 
             let updatedCarts = await strapi.documents("api::cart.cart").findMany(query);
@@ -68,12 +79,10 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
 
     async addToCart(ctx) {
         try {
-            // Get the authenticated user ID
+            // Get the authenticated user ID if available
             const userId = ctx.state.user?.id;
-
-            if (!userId) {
-                return ctx.unauthorized("You must be logged in to add items to the cart.");
-            }
+            // Get guest session ID from request or generate one if not present
+            const guestSessionId = ctx.request.body?.guestSessionId || `guest_${Date.now()}`;
 
             const { Product } = ctx.request.body;
             const productId = Product?.Product;
@@ -102,15 +111,24 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                 return ctx.notFound("Product not found.");
             }
 
-            const existingCartItem = await strapi.documents("api::cart.cart").findMany({
-                filters: {
+            // Build filter based on whether user is authenticated or guest
+            const filter: any = {
+                Product: {
                     Product: {
-                        Product: {
-                            documentId: productId,
-                        },
+                        documentId: productId,
                     },
-                    User: { id: userId },
                 },
+            };
+
+            // Add user filter if authenticated, otherwise use guest session ID
+            if (userId) {
+                filter.User = { id: userId };
+            } else {
+                filter.GuestSessionId = guestSessionId;
+            }
+
+            const existingCartItem = await strapi.documents("api::cart.cart").findMany({
+                filters: filter,
             });
 
             let cartDetails = {};
@@ -121,24 +139,23 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
 
                 cartDetails = await strapi.documents("api::cart.cart").update({
                     documentId: existingCartItem?.[0]?.documentId,
-
                     data: {
                         Total_Price: payload?.Total_Price,
                         // // @ts-ignore
                         // Product: {
                         //     Quantity: payload?.Product?.Quantity,
                         // },
-                        User: { id: userId },
+                        ...(userId ? { User: { id: userId } } : { GuestSessionId: guestSessionId }),
                     },
                     status: "published",
                 });
             } else {
-                console.log("adding existing product");
+                console.log("adding new product");
                 cartDetails = await strapi.documents("api::cart.cart").create({
                     data: {
                         ...payload,
                         Total_Price: payload?.TotalPrice,
-                        User: { id: userId },
+                        ...(userId ? { User: { id: userId } } : { GuestSessionId: guestSessionId }),
                     },
                     status: "published",
                 });
@@ -147,6 +164,7 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             return ctx.send({
                 message: "Item added to cart.",
                 cart: cartDetails,
+                guestSessionId: !userId ? guestSessionId : undefined,
             });
         } catch (error) {
             console.error("Error adding item to cart:", error);
@@ -155,20 +173,38 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
     },
     async addMultipleToCart(ctx) {
         try {
+            // Get the authenticated user ID if available
             const userId = ctx.state.user?.id;
-            if (!userId) {
-                return ctx.unauthorized("You must be logged in to add items to the cart.");
-            }
+            // Get guest session ID from request or generate one if not present
+            const guestSessionId = ctx.request.body?.guestSessionId || `guest_${Date.now()}`;
 
             const carts = ctx.request.body?.carts;
             if (!carts || carts.length === 0) {
                 return ctx.badRequest("No cart items provided.");
             }
 
-            await processCartItems(carts, userId);
+            // Add guest session ID to each cart item if user is not authenticated
+            const processedCarts = userId ? carts : carts.map((cart) => ({ ...cart, guestSessionId }));
+
+            // Process cart items
+            if (userId) {
+                await processCartItems(processedCarts, userId);
+            } else {
+                // For guest users, we need to handle the cart items differently
+                for (const cart of processedCarts) {
+                    await this.addToCart({
+                        ...ctx,
+                        request: {
+                            ...ctx.request,
+                            body: cart,
+                        },
+                    });
+                }
+            }
 
             return ctx.send({
                 message: "All items added to the cart.",
+                guestSessionId: !userId ? guestSessionId : undefined,
             });
         } catch (error) {
             console.error("Error adding item to cart:", error);
@@ -178,23 +214,34 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
 
     async removeFromCart(ctx) {
         try {
+            // Get the authenticated user ID if available
             const userId = ctx.state.user?.id;
-
-            if (!userId) {
-                return ctx.unauthorized("You must be logged in to remove items from the cart.");
-            }
+            // Get guest session ID from request
+            const guestSessionId = ctx.request.query?.guestSessionId;
 
             const { cartId } = ctx.query;
-            console.log(ctx.request);
+            console.log("ctx.request", ctx.request);
+            console.log("guestSessionId", guestSessionId);
             if (!cartId) {
                 return ctx.badRequest("Cart ID is required.");
             }
 
-            // Check if the cart item exists and belongs to the authenticated user
-            const cartItem = await strapi.documents("api::cart.cart").findOne({
+            // Build filter based on whether user is authenticated or guest
+            const filter: any = {
                 documentId: cartId as string,
-                filters: { User: { id: userId } },
-            });
+            };
+
+            // Add user filter if authenticated, otherwise use guest session ID
+            if (userId) {
+                filter.filters = { User: { id: userId } };
+            } else if (guestSessionId) {
+                filter.filters = { GuestSessionId: guestSessionId };
+            } else {
+                return ctx.badRequest("Either user authentication or guest session ID is required.");
+            }
+
+            // Check if the cart item exists and belongs to the authenticated user or guest
+            const cartItem = await strapi.documents("api::cart.cart").findOne(filter);
 
             if (!cartItem) {
                 return ctx.notFound("Cart item not found or does not belong to the user.");

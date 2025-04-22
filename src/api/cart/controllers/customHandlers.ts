@@ -14,6 +14,12 @@ export default {
                     Fabric_Types: {
                         fields: ["id", "Name"],
                     },
+                    Motif_And_Designs: {
+                        fields: ["id", "Name"],
+                    },
+                    Weaving_Techniques: {
+                        fields: ["id", "Name"],
+                    },
                 },
                 status: "published",
             });
@@ -36,6 +42,8 @@ export default {
             const allSizes = new Set();
             const allColors = new Set();
             const allFabricTypes = new Set();
+            const allMotifAndDesigns = new Set();
+            const allWeavingTechniques = new Set();
             const allBadges = new Set();
 
             // Add all predefined options to the sets
@@ -50,14 +58,53 @@ export default {
                 }
             });
 
+            // Add all motif and designs to the set
+            products.forEach((product) => {
+                if (product.Motif_And_Designs) {
+                    product.Motif_And_Designs.forEach((motif) => {
+                        if (motif.Name && typeof motif.Name === "string" && motif.Name.trim() !== "") {
+                            allMotifAndDesigns.add(motif.Name);
+                        }
+                    });
+                }
+            });
+
+            // Add all weaving techniques to the set
+            products.forEach((product) => {
+                if (product.Weaving_Techniques) {
+                    product.Weaving_Techniques.forEach((technique) => {
+                        if (technique.Name && typeof technique.Name === "string" && technique.Name.trim() !== "") {
+                            allWeavingTechniques.add(technique.Name);
+                        }
+                    });
+                }
+            });
+
             // Convert sets to arrays
             const sizeOptions = Array.from(allSizes);
             const colorOptions = Array.from(allColors);
             const fabricTypeOptions = Array.from(allFabricTypes);
+            const motifAndDesignsOptions = Array.from(allMotifAndDesigns);
+            const weavingTechniquesOptions = Array.from(allWeavingTechniques);
             const badgeOptions = Array.from(allBadges);
 
             // Format response to match FilterWrapper.jsx structure
             const filters = [
+                {
+                    title: "Fabric",
+                    operator: "$contains",
+                    options: fabricTypeOptions,
+                },
+                {
+                    title: "Motif & Design",
+                    operator: "$contains",
+                    options: motifAndDesignsOptions,
+                },
+                {
+                    title: "Weaving Technique",
+                    operator: "$contains",
+                    options: weavingTechniquesOptions,
+                },
                 {
                     title: "Colour",
                     operator: "$contains",
@@ -68,11 +115,7 @@ export default {
                     operator: "$contains",
                     options: sizeOptions,
                 },
-                {
-                    title: "Fabric",
-                    operator: "$contains",
-                    options: fabricTypeOptions,
-                },
+
                 {
                     title: "Availability",
                     operator: "$contains",

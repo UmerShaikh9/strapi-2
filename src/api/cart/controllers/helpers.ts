@@ -20,7 +20,7 @@ export const validateRequestBody = async (body, keys) => {
     return payload;
 };
 
-export async function processCartItems(carts, userId) {
+export async function processCartItems(carts, userId, isGuestUser = false) {
     try {
         console.log("[processCartItems] execution started");
 
@@ -101,6 +101,7 @@ export async function processCartItems(carts, userId) {
             ...deleteOperations.map((documentId) =>
                 strapi.documents("api::cart.cart").delete({
                     documentId,
+                    status: "published",
                 })
             ),
 

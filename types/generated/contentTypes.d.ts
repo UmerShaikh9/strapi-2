@@ -501,6 +501,7 @@ export interface ApiCartCart extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    GuestSessionId: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::cart.cart'> &
       Schema.Attribute.Private;
@@ -962,6 +963,7 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     Pincode: Schema.Attribute.String;
     Products: Schema.Attribute.Component<'user-product.product', true>;
     publishedAt: Schema.Attribute.DateTime;
+    Shipping_Charges: Schema.Attribute.Decimal & Schema.Attribute.DefaultTo<0>;
     State: Schema.Attribute.String;
     Total_Price: Schema.Attribute.Decimal;
     updatedAt: Schema.Attribute.DateTime;
