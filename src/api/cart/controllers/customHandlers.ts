@@ -131,4 +131,88 @@ export default {
             return ctx.internalServerError("An error occurred while fetching product filters");
         }
     },
+
+    async getHomePageData(ctx) {
+        try {
+            const homePageData = await strapi.documents("api::home-page.home-page").findMany({
+                populate: {
+                    Hero_Section: {
+                        populate: {
+                            Media: true,
+                        },
+                    },
+                    Top_Nav: {
+                        populate: {
+                            Link: {
+                                populate: {
+                                    Media: true,
+                                    SubLinks: true,
+                                },
+                            },
+                            Categories: true,
+                            Collections: true,
+                            Curation_And_Revivals: true,
+                            Fabric_Types: true,
+                            Motif_And_Designs: true,
+                            Weaving_Techniques: true,
+                        },
+                    },
+                    Shop_Section: {
+                        populate: {
+                            Products: {
+                                populate: {
+                                    Thumbnail: true,
+                                },
+                            },
+                            Media: true,
+                        },
+                    },
+                    Advertisement_Section: {
+                        populate: {
+                            Media: true,
+                            Button: true,
+                        },
+                    },
+                    Shop_By_Category: true,
+                    Shop_By_Collection: true,
+                    Ready_To_Ship: {
+                        populate: {
+                            Button: true,
+                            Media: true,
+                        },
+                    },
+                    Connect_Us: {
+                        populate: {
+                            Connect_Us_Items: {
+                                populate: {
+                                    Address: true,
+                                },
+                            },
+                        },
+                    },
+                    Book_An_Appointment: {
+                        populate: {
+                            Address: true,
+                            Button: true,
+                            Media: true,
+                        },
+                    },
+                    Instagram_Section: {
+                        populate: {
+                            Instagram_Cards: {
+                                populate: {
+                                    Thumbnail: true,
+                                },
+                            },
+                        },
+                    },
+                },
+            });
+
+            return ctx.send({ data: homePageData?.[0] ?? {} });
+        } catch (error) {
+            console.error("Error fetching home page data:", error);
+            return ctx.internalServerError("An error occurred while fetching home page data.");
+        }
+    },
 };

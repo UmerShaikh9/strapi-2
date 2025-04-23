@@ -88,5 +88,13 @@ export default {
                 middlewares: [],
             },
         },
+        {
+            method: "GET",
+            path: "/home-page",
+            handler: "cart.getHomePageData",
+            config: {
+                policies: [],
+            },
+        },
     ],
 };
