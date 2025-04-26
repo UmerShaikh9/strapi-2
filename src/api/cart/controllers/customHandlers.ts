@@ -215,4 +215,77 @@ export default {
             return ctx.internalServerError("An error occurred while fetching home page data.");
         }
     },
+
+    async getProducts(ctx) {
+        try {
+            let search = ctx.query.search;
+            let filters = {};
+            if (search) {
+                filters = {
+                    Name: { $contains: search },
+                };
+            }
+            // Get top 50 products with their price information
+            const products = await strapi.documents("api::product.product").findMany({
+                filters: filters,
+                status: "published",
+            });
+
+            // Process products to include price information
+            const processedProducts = products.map((product) => {
+                return {
+                    documentId: product.documentId,
+                    name: product.Name,
+                };
+            });
+
+            return ctx.send({
+                message: "Top 50 products retrieved successfully",
+                products: processedProducts,
+            });
+        } catch (error) {
+            console.error("Error fetching products:", error);
+            return ctx.internalServerError("An error occurred while fetching products");
+        }
+    },
+
+    async updateAllProductPriceFilters() {
+        try {
+            const BATCH_SIZE = 50; // Process 50 products at a time
+            const products = await strapi.documents("api::product.product").findMany({
+                sort: {
+                    Name: "asc",
+                },
+            });
+
+            // Process products in batches
+            for (let i = 0; i < products.length; i += BATCH_SIZE) {
+                const batch = products.slice(i, i + BATCH_SIZE);
+                const batchOperations = batch.map((product) => ({
+                    documentId: product.documentId,
+                    status: "published",
+                }));
+
+                // Execute batch operations
+                await Promise.all(
+                    batchOperations.map((op) =>
+                        strapi.documents("api::product.product").update({
+                            documentId: op.documentId,
+                            status: "published",
+                        })
+                    )
+                );
+
+                console.log(`Processed batch ${i / BATCH_SIZE + 1} of ${Math.ceil(products.length / BATCH_SIZE)}`);
+            }
+
+            console.log("Product publish process completed!");
+            return {
+                message: "Product publish process completed",
+            };
+        } catch (error) {
+            console.error("Error publishing products:", error);
+            throw error;
+        }
+    },
 };

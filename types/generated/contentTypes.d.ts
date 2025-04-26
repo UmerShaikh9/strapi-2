@@ -1144,6 +1144,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     Preorder_Available: Schema.Attribute.Boolean &
       Schema.Attribute.DefaultTo<false>;
     Preorder_Timeline: Schema.Attribute.String;
+    Price_Filter: Schema.Attribute.Decimal;
     Price_Section: Schema.Attribute.Component<
       'user-product.prize-section',
       true

@@ -195,6 +195,9 @@
     },
     "Tags": {
       "type": "string"
+    },
+    "Price_Filter": {
+      "type": "decimal"
     }
   }
 }

@@ -96,5 +96,15 @@ export default {
                 policies: [],
             },
         },
+        {
+            method: "GET",
+            path: "/products/sort",
+            handler: "cart.getProducts",
+        },
+        {
+            method: "GET",
+            path: "/update-price-filters",
+            handler: "cart.updateAllProductPriceFilters",
+        },
     ],
 };
