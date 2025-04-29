@@ -46,7 +46,7 @@ export async function processCartItems(carts, userId, isGuestUser = false) {
 
         // Process all cart items
         for (const cart of carts) {
-            const { Product, Type, Total_Price } = cart;
+            const { Product, Type } = cart;
             const productId = Product?.Product;
 
             if (!productId) {
@@ -72,10 +72,12 @@ export async function processCartItems(carts, userId, isGuestUser = false) {
 
             console.log("Product ", Product);
 
+            const Total_Price = (liveProduct.Discount_Available ? liveProduct.Discounted_Price : liveProduct.Price) * Product?.Quantity;
+
             // Prepare update payload
             const payload = {
                 Type,
-                Total_Price: liveProduct.Discount_Available ? liveProduct.Discounted_Price : liveProduct.Price,
+                Total_Price: Total_Price,
                 Product: {
                     Size: Product?.Size,
                     Color: Product?.Color,

@@ -25,6 +25,9 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                             id: id,
                         },
                     },
+                    sort: {
+                        createdAt: "desc",
+                    },
                     populate: {
                         Products: { populate: { Product: { populate: { Thumbnail: true } } } },
                         User: true,
