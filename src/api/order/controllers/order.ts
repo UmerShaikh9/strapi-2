@@ -2,6 +2,7 @@ import { factories } from "@strapi/strapi";
 import { processCartItems } from "../../cart/controllers/helpers";
 import paypalController from "./paypal";
 import ccavenueController from "./ccavenue";
+import { sendOrderConfirmationEmail } from "./orderUtils";
 
 export default factories.createCoreController("api::order.order", ({ strapi }) => {
     // Create instances of the controllers
@@ -75,5 +76,8 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
         createCCAvenueOrder: ccavenueCtrl.createCCAvenueOrder,
         handleCCAvenueCallback: ccavenueCtrl.handleCCAvenueCallback,
         handleCCAvenueErrorCallback: ccavenueCtrl.handleCCAvenueErrorCallback,
+
+        // Import order utils methods
+        sendOrderConfirmationEmail,
     };
 });

@@ -38,6 +38,8 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                 return ctx.badRequest("Either user authentication or guest session ID is required.");
             }
 
+            console.log(`query ${JSON.stringify(query, null, 2)}`);
+
             // If cartIds array is provided and not empty, add filter for specific cart IDs
             if (cartIds && cartIds.length > 0) {
                 query.filters.documentId = {
@@ -60,10 +62,7 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                 },
             }));
 
-            // Only process cart items for authenticated users
-            if (userId) {
-                await processCartItems(cartsData, userId);
-            }
+            await processCartItems(cartsData, userId, guestSessionId ? true : false);
 
             console.log(`Found ${carts.length} carts`);
 
@@ -79,6 +78,7 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
 
     async addToCart(ctx) {
         try {
+            console.log("ctx ", ctx);
             // Get the authenticated user ID if available
             const userId = ctx.state.user?.id;
             // Get guest session ID from request or generate one if not present
@@ -98,16 +98,19 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             console.log("body data", ctx.request.body);
 
             if (typeof payload === "string") {
+                console.log("payload is a string");
                 return ctx.badRequest(payload);
             }
 
             if (!productId) {
+                console.log("productId is required");
                 return ctx.badRequest("Product document id is required.");
             }
 
             const productExists = await strapi.documents("api::product.product").findOne({ documentId: productId });
 
             if (!productExists) {
+                console.log("product not found");
                 return ctx.notFound("Product not found.");
             }
 
@@ -133,6 +136,10 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
 
             let cartDetails = {};
 
+            const Total_Price =
+                (payload?.Product?.Discount_Available ? payload?.Product?.Discounted_Price : payload?.Product?.Price) *
+                payload?.Product?.Quantity;
+
             console.log("payload", payload);
             if (existingCartItem?.length > 0) {
                 console.log("updating existing product");
@@ -140,11 +147,18 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                 cartDetails = await strapi.documents("api::cart.cart").update({
                     documentId: existingCartItem?.[0]?.documentId,
                     data: {
-                        Total_Price: payload?.Total_Price,
-                        // // @ts-ignore
-                        // Product: {
-                        //     Quantity: payload?.Product?.Quantity,
-                        // },
+                        Total_Price: Total_Price,
+                        //  @ts-ignore
+                        Product: {
+                            Quantity: payload?.Product?.Quantity,
+                            Discounted_Price: payload?.Product?.Discounted_Price,
+                            Price: payload?.Product?.Price,
+                            Size: payload?.Product?.Size,
+                            Color: payload?.Product?.Color,
+                            Discount_Available: payload?.Product?.Discount_Available,
+                            Option: payload?.Product?.Option,
+                            Product: payload?.Product?.Product,
+                        },
                         ...(userId ? { User: { id: userId } } : { GuestSessionId: guestSessionId }),
                     },
                     status: "published",
@@ -154,7 +168,7 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                 cartDetails = await strapi.documents("api::cart.cart").create({
                     data: {
                         ...payload,
-                        Total_Price: payload?.TotalPrice,
+                        Total_Price: Total_Price,
                         ...(userId ? { User: { id: userId } } : { GuestSessionId: guestSessionId }),
                     },
                     status: "published",
@@ -192,13 +206,24 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             } else {
                 // For guest users, we need to handle the cart items differently
                 for (const cart of processedCarts) {
-                    await this.addToCart({
+                    // Create a new context object with all necessary properties
+                    const newCtx = {
                         ...ctx,
+                        badRequest: ctx?.badRequest,
+                        notFound: ctx?.notFound,
+                        internalServerError: ctx?.internalServerError,
+                        state: { ...ctx.state },
                         request: {
                             ...ctx.request,
-                            body: cart,
+                            body: {
+                                ...cart,
+                                TotalPrice: cart?.Total_Price,
+                                guestSessionId,
+                            },
                         },
-                    });
+                    };
+
+                    await this.addToCart(newCtx);
                 }
             }
 

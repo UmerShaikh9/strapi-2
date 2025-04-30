@@ -2,6 +2,7 @@ import { factories } from "@strapi/strapi";
 import axios from "axios";
 import { processCartItems } from "../../cart/controllers/helpers";
 import crypto from "crypto";
+import { convertCurrency } from "./orderUtils";
 const qs = require("querystring");
 
 const CCAVENUE_MERCHANT_ID = process.env.CCAVENUE_MERCHANT_ID;
@@ -10,23 +11,6 @@ const CCAVENUE_ACCESS_CODE = process.env.CCAVENUE_ACCESS_CODE;
 const CCAVENUE_REDIRECT_URL = process.env.CCAVENUE_REDIRECT_URL;
 const CCAVENUE_API_URL = process.env.CCAVENUE_API_URL;
 const BACKEND_URL = process.env.BACKEND_URL;
-
-// Exchange rates for currency conversion
-const exchangeRates = {
-    USD: 0.012,
-    EUR: 0.011,
-    INR: 1,
-    CAD: 0.016,
-    GBP: 0.0095,
-    AUD: 0.018,
-    JPY: 1.78,
-    SGD: 0.016,
-};
-
-function convertCurrency({ totalPriceINR, currency }) {
-    const exchangeRate = exchangeRates[currency] || 1; // Default to 1 if currency not found
-    return (totalPriceINR * exchangeRate).toFixed(2);
-}
 
 export default factories.createCoreController("api::order.order", ({ strapi }) => ({
     async createCCAvenueOrder(ctx) {
@@ -43,20 +27,8 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             //     return ctx.unauthorized("You must be logged in to create an order.");
             // }
 
-            const {
-                Full_Name,
-                Address,
-                City,
-                Country,
-                Email,
-                Phone,
-                State,
-                Pincode,
-                amount,
-                currency,
-                couponId,
-                cartIds,
-            } = ctx.request.body;
+            const { Full_Name, Address, City, Country, Email, Phone, State, Pincode, amount, currency, couponId, cartIds } =
+                ctx.request.body;
 
             // Validate required fields
             if (!Full_Name || !Address || !City || !Country || !Email || !Phone || !State || !Pincode) {
@@ -155,9 +127,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                             )
                         );
 
-                        console.log(
-                            `Transferred ${guestCartItems.length} cart items from guest session to user account`
-                        );
+                        console.log(`Transferred ${guestCartItems.length} cart items from guest session to user account`);
                     }
                 }
             }
@@ -254,6 +224,9 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             }
             finalAmount += shippingCharges;
 
+            // Convert currency if needed
+            const TotalPrice = convertCurrency({ totalPriceINR: finalAmount, currency });
+
             // Generate a unique order ID
             const orderId = `ORDER_${Date.now()}_${Math.floor(Math.random() * 1000)}`;
 
@@ -262,9 +235,9 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 data: {
                     Products: products,
                     User: userId || null, // Allow null for guest users
-                    Total_Price: finalAmount,
+                    Total_Price: TotalPrice,
                     Payment_Details: {
-                        Amount: finalAmount,
+                        Amount: TotalPrice,
                         Payment_Status: "INITIATED",
                         Order_Uid: orderId,
                         Payment_Method: "CCAVENUE",
@@ -287,7 +260,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             });
 
             // Format amount to 2 decimal places and convert to string
-            const formattedAmount = finalAmount.toFixed(2);
+            const formattedAmount = TotalPrice;
 
             // Prepare data for CCAvenue
             const orderData = {
@@ -507,9 +480,7 @@ const encrypt = (plainText, workingKey) => {
         const key = crypto.createHash("md5").update(workingKey).digest();
 
         // Fixed IV used by CCAvenue
-        const iv = Buffer.from([
-            0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f,
-        ]);
+        const iv = Buffer.from([0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f]);
 
         const cipher = crypto.createCipheriv("aes-128-cbc", key, iv);
         let encrypted = cipher.update(plainText, "utf8", "hex");
@@ -531,9 +502,7 @@ const decrypt = (encryptedText, workingKey) => {
         const key = crypto.createHash("md5").update(workingKey).digest();
 
         // Fixed IV used by CCAvenue
-        const iv = Buffer.from([
-            0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f,
-        ]);
+        const iv = Buffer.from([0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f]);
 
         // Create decipher
         const decipher = crypto.createDecipheriv("aes-128-cbc", key, iv);

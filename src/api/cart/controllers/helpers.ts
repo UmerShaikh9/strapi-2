@@ -70,12 +70,10 @@ export async function processCartItems(carts, userId, isGuestUser = false) {
                 continue;
             }
 
-            console.log("Product ", Product);
-
             const Total_Price = (liveProduct.Discount_Available ? liveProduct.Discounted_Price : liveProduct.Price) * Product?.Quantity;
 
-            // Prepare update payload
-            const payload = {
+            // Prepare new payload
+            const newPayload = {
                 Type,
                 Total_Price: Total_Price,
                 Product: {
@@ -88,14 +86,31 @@ export async function processCartItems(carts, userId, isGuestUser = false) {
                     Price: Product.Price,
                     Discounted_Price: liveProduct.Discounted_Price,
                 },
-                User: { id: userId },
             };
 
-            updateOperations.push({
-                documentId: cart.documentId,
-                data: payload,
-            });
+            // Check if any values have actually changed
+            const hasChanges =
+                cart.Type !== newPayload.Type ||
+                cart.Total_Price !== newPayload.Total_Price ||
+                cart.Product.Size !== newPayload.Product.Size ||
+                cart.Product.Color !== newPayload.Product.Color ||
+                cart.Product.Discount_Available !== newPayload.Product.Discount_Available ||
+                cart.Product.Option !== newPayload.Product.Option ||
+                cart.Product.Quantity !== newPayload.Product.Quantity ||
+                cart.Product.Price !== newPayload.Product.Price ||
+                cart.Product.Discounted_Price !== newPayload.Product.Discounted_Price;
+
+            // Only add to update operations if there are actual changes
+            if (hasChanges) {
+                updateOperations.push({
+                    documentId: cart.documentId,
+                    data: newPayload,
+                });
+            }
         }
+
+        console.log("updateOperations", updateOperations);
+        console.log("deleteOperations", deleteOperations);
 
         // Execute batch operations in parallel
         await Promise.all([
@@ -107,7 +122,7 @@ export async function processCartItems(carts, userId, isGuestUser = false) {
                 })
             ),
 
-            // Update valid items
+            // Update valid items that have changes
             ...updateOperations.map((op) =>
                 strapi.documents("api::cart.cart").update({
                     documentId: op.documentId,

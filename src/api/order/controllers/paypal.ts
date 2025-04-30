@@ -2,27 +2,11 @@ import { factories } from "@strapi/strapi";
 import axios from "axios";
 import { processCartItems } from "../../cart/controllers/helpers";
 import crypto from "crypto";
+import { convertCurrency } from "./orderUtils";
 
 const PAYPAL_CLIENT_ID = process.env.PAYPAL_CLIENT_ID;
 const PAYPAL_SECRET = process.env.PAYPAL_SECRET_KEY;
 const PAYPAL_API = process.env.PAYPAL_API;
-
-// Exchange rates for currency conversion
-const exchangeRates = {
-    USD: 0.012,
-    EUR: 0.011,
-    INR: 1,
-    CAD: 0.016,
-    GBP: 0.0095,
-    AUD: 0.018,
-    JPY: 1.78,
-    SGD: 0.016,
-};
-
-function convertCurrency({ totalPriceINR, currency }) {
-    const exchangeRate = exchangeRates[currency] || 1; // Default to 1 if currency not found
-    return (totalPriceINR * exchangeRate).toFixed(2);
-}
 
 export default factories.createCoreController("api::order.order", ({ strapi }) => ({
     async createOrder(ctx) {
@@ -37,20 +21,8 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             //     return ctx.unauthorized("You must be logged in to create an order.");
             // }
 
-            const {
-                Full_Name,
-                Address,
-                City,
-                Country,
-                Email,
-                Phone,
-                State,
-                Pincode,
-                amount,
-                currency,
-                couponId,
-                cartIds,
-            } = ctx.request.body;
+            const { Full_Name, Address, City, Country, Email, Phone, State, Pincode, amount, currency, couponId, cartIds } =
+                ctx.request.body;
 
             // Validate required fields
             if (!Full_Name || !Address || !City || !Country || !Email || !Phone || !State || !Pincode) {
@@ -149,9 +121,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                             )
                         );
 
-                        console.log(
-                            `Transferred ${guestCartItems.length} cart items from guest session to user account`
-                        );
+                        console.log(`Transferred ${guestCartItems.length} cart items from guest session to user account`);
                     }
                 }
             }

@@ -52,5 +52,11 @@ export default {
             handler: "order.handleCCAvenueErrorCallback",
             config: { policies: [] },
         },
+        {
+            method: "POST",
+            path: "/order/send-email",
+            handler: "order.sendOrderConfirmationEmail",
+            config: { policies: [] },
+        },
     ],
 };
