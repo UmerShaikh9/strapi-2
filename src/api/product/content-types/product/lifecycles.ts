@@ -59,7 +59,7 @@ export default {
         }
 
         // Add badge update if needed
-        if (result.Quantity === 0 && !result.Badges.includes("Sold Out")) {
+        if (result.Quantity <= 0 && !result.Badges.includes("Sold Out")) {
             updateData.Badges = ["Sold Out"];
         }
 

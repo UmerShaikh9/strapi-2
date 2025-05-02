@@ -81,19 +81,19 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
 
                     // Send email with login credentials
                     try {
-                        await strapi.plugins["email"].services.email.send({
-                            to: Email,
-                            subject: "Your Banarasi Baithak Account",
-                            text: `Thank you for your order! We've created an account for you.\n\nYour login credentials:\nEmail: ${Email}\nPassword: ${randomPassword}\n\nYou can change your password after logging in.`,
-                            html: `
-                                <h1>Welcome to Banarasi Baithak!</h1>
-                                <p>Thank you for your order! We've created an account for you.</p>
-                                <p><strong>Your login credentials:</strong></p>
-                                <p>Email: ${Email}</p>
-                                <p>Password: ${randomPassword}</p>
-                                <p>You can change your password after logging in.</p>
-                            `,
-                        });
+                        // await strapi.plugins["email"].services.email.send({
+                        //     to: Email,
+                        //     subject: "Your Banarasi Baithak Account",
+                        //     text: `Thank you for your order! We've created an account for you.\n\nYour login credentials:\nEmail: ${Email}\nPassword: ${randomPassword}\n\nYou can change your password after logging in.`,
+                        //     html: `
+                        //         <h1>Welcome to Banarasi Baithak!</h1>
+                        //         <p>Thank you for your order! We've created an account for you.</p>
+                        //         <p><strong>Your login credentials:</strong></p>
+                        //         <p>Email: ${Email}</p>
+                        //         <p>Password: ${randomPassword}</p>
+                        //         <p>You can change your password after logging in.</p>
+                        //     `,
+                        // });
                     } catch (emailError) {
                         console.error("Error sending email:", emailError);
                         // Continue with the order process even if email fails
@@ -155,6 +155,12 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 return ctx.badRequest("Cart is empty");
             }
 
+            // Check soft hold dates before proceeding
+            const softHoldValid = await checkSoftHoldDates(carts);
+            if (softHoldValid) {
+                return ctx.badRequest("some products is in soft hold");
+            }
+
             // Process cart items and calculate total price
             let cartsData = carts?.map((cart) => ({
                 ...cart,
@@ -183,7 +189,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
 
             // Validate required fields
             if (updatedCarts?.length === 0) {
-                return ctx.badRequest("No products selected for order");
+                return ctx.badRequest("no product selected for order");
             }
 
             let totalPriceINR = 0;
@@ -218,8 +224,8 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             // Calculate shipping charges
             let shippingCharges = 0;
             if (Country !== "India") {
-                if (finalAmount <= 30000) {
-                    shippingCharges = 2500; // Flat 2500 INR for international orders under 30000
+                if (finalAmount <= 50000) {
+                    shippingCharges = 3000; // Flat 3000 INR for international orders under 50000
                 }
             }
             finalAmount += shippingCharges;
@@ -516,5 +522,56 @@ const decrypt = (encryptedText, workingKey) => {
     } catch (error) {
         console.error("Decryption error:", error);
         throw error;
+    }
+};
+
+const checkSoftHoldDates = async (carts) => {
+    try {
+        const currentDate = new Date();
+
+        console.log("I am in checkSoftHoldDates");
+
+        // Get all product IDs from the carts
+        const productIds = carts.map((cart) => cart.Product?.Product?.documentId).filter(Boolean);
+
+        if (productIds.length === 0) {
+            return true; // No products to check
+        }
+
+        // Fetch all products with their soft hold dates
+        const products = await strapi.documents("api::product.product").findMany({
+            filters: { documentId: { $in: productIds } },
+            populate: {},
+            status: "published",
+        });
+
+        // Check if any product has a soft hold date less than current date
+        for (const product of products) {
+            if ((product.Soft_Hold && new Date(product.Soft_Hold) > currentDate) || product.Quantity <= 0) {
+                return true;
+            }
+        }
+
+        // Add 10 minutes to current date
+        const softHoldDate = new Date(currentDate.getTime() + 10 * 60000); // 10 minutes in milliseconds
+
+        console.log("updating soft hold for all products");
+        // Update soft hold for all products
+        await Promise.all(
+            productIds.map(async (id) => {
+                await strapi.documents("api::product.product").update({
+                    documentId: id,
+                    data: {
+                        Soft_Hold: softHoldDate,
+                    },
+                    status: "published",
+                });
+            })
+        );
+
+        return false; // All products have valid soft hold dates
+    } catch (error) {
+        console.error("Error checking soft hold dates:", error);
+        return false; // Return false on error to be safe
     }
 };

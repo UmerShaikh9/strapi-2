@@ -726,7 +726,7 @@ export interface UserProductProduct extends Struct.ComponentSchema {
     Price: Schema.Attribute.Integer & Schema.Attribute.Required;
     Product: Schema.Attribute.Relation<'oneToOne', 'api::product.product'>;
     Quantity: Schema.Attribute.Integer & Schema.Attribute.Required;
-    Size: Schema.Attribute.String & Schema.Attribute.Required;
+    Size: Schema.Attribute.String;
   };
 }
 

@@ -11,7 +11,7 @@
     },
     "Size": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "Quantity": {
       "required": true,

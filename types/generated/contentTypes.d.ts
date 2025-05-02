@@ -1167,6 +1167,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
         ['S', 'M', 'L', 'XL', 'XS', 'XXL', 'FREE SIZE']
       > &
       Schema.Attribute.DefaultTo<'[]'>;
+    Soft_Hold: Schema.Attribute.DateTime;
     Summary: Schema.Attribute.Text;
     Tags: Schema.Attribute.String;
     Thumbnail: Schema.Attribute.Media<

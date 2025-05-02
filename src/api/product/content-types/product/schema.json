@@ -198,6 +198,9 @@
     },
     "Price_Filter": {
       "type": "decimal"
+    },
+    "Soft_Hold": {
+      "type": "datetime"
     }
   }
 }
