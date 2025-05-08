@@ -106,5 +106,17 @@ export default {
             path: "/update-price-filters",
             handler: "cart.updateAllProductPriceFilters",
         },
+        {
+            method: "POST",
+            path: "/carts/assign-to-user",
+            handler: "cart.assignCartToUser",
+            config: {
+                auth: {
+                    enabled: true,
+                },
+                policies: [],
+                middlewares: [],
+            },
+        },
     ],
 };

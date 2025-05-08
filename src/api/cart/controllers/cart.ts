@@ -75,7 +75,6 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             return ctx.internalServerError("An error occurred while fetching the cart. ");
         }
     },
-
     async addToCart(ctx) {
         try {
             console.log("ctx ", ctx);
@@ -236,7 +235,6 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             return ctx.internalServerError("An error occurred while adding the item to the cart.");
         }
     },
-
     async removeFromCart(ctx) {
         try {
             // Get the authenticated user ID if available
@@ -284,7 +282,6 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             return ctx.internalServerError("An error occurred while removing the item from the cart.");
         }
     },
-
     async suggestions(ctx) {
         try {
             const { search } = ctx.request.body;
@@ -343,7 +340,6 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
             return ctx.internalServerError("An error occurred while fetching suggestions ");
         }
     },
-
     async allBlogs(ctx) {
         try {
             const name = ctx?.request?.body?.name;
@@ -478,6 +474,61 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
         } catch (error) {
             console.error("Error fetching blogs:", error);
             return ctx.internalServerError("An error occurred while fetching the blogs.");
+        }
+    },
+    async assignCartToUser(ctx) {
+        try {
+            // Get the authenticated user ID
+            const userId = ctx.state.user?.id;
+            if (!userId) {
+                return ctx.unauthorized("User must be logged in to assign cart.");
+            }
+
+            // Get guest session ID from request body
+            const guestSessionId = ctx.request.body?.guestSessionId;
+            if (!guestSessionId) {
+                return ctx.badRequest("Guest session ID is required.");
+            }
+
+            // Find all cart items associated with the guest session
+            const guestCartItems = await strapi.documents("api::cart.cart").findMany({
+                filters: {
+                    GuestSessionId: guestSessionId,
+                },
+            });
+
+            if (!guestCartItems || guestCartItems.length === 0) {
+                return ctx.send({
+                    message: "No cart items found for the guest session.",
+                    assigned: false,
+                });
+            }
+
+            console.log("guestCartItems", guestCartItems?.length);
+            console.log("user id", userId);
+
+            // Update each cart item to be associated with the user
+            const updatedItems = await Promise.all(
+                guestCartItems.map(async (item) => {
+                    return await strapi.documents("api::cart.cart").update({
+                        documentId: item.documentId,
+                        data: {
+                            User: { id: userId },
+                            GuestSessionId: null,
+                        },
+                        status: "published",
+                    });
+                })
+            );
+
+            return ctx.send({
+                message: "Cart items successfully assigned to user.",
+                assigned: true,
+                items: updatedItems,
+            });
+        } catch (error) {
+            console.error("Error assigning cart to user:", error);
+            return ctx.internalServerError("An error occurred while assigning cart to user.");
         }
     },
 }));
