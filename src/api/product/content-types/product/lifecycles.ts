@@ -22,7 +22,7 @@ export default {
         }
 
         // Add badge update if needed
-        if (result.Quantity === 0 && !result.Badges.includes("Sold Out")) {
+        if (result.Quantity <= 0 && !result.Badges.includes("Sold Out")) {
             updateData.Badges = ["Sold Out"];
         }
 
@@ -39,26 +39,24 @@ export default {
     async afterUpdate(event) {
         const { result } = event;
 
-        // Check if Price_Section exists and has items
-        if (!result.Price_Section || !Array.isArray(result.Price_Section) || result.Price_Section.length === 0) {
-            return;
-        }
-
-        // Get the highest price from Price_Section
-        const highestPrice = Math.max(...result.Price_Section.map((ps) => ps.Price || 0));
-
         console.log("result", result);
-        console.log("highestPrice", highestPrice);
 
         // Prepare update data
         const updateData: any = {};
 
-        // Add price filter update if different
-        if (result.Price_Filter !== highestPrice) {
-            updateData.Price_Filter = highestPrice;
+        // Handle price filter update
+        if (result.Price_Section && Array.isArray(result.Price_Section) && result.Price_Section.length > 0) {
+            // Get the highest price from Price_Section
+            const highestPrice = Math.max(...result.Price_Section.map((ps) => ps.Price || 0));
+            console.log("highestPrice", highestPrice);
+
+            // Add price filter update if different
+            if (result.Price_Filter !== highestPrice) {
+                updateData.Price_Filter = highestPrice;
+            }
         }
 
-        // Add badge update if needed
+        // Add badge update if needed - this runs regardless of Price_Section
         if (result.Quantity <= 0 && !result.Badges.includes("Sold Out")) {
             updateData.Badges = ["Sold Out"];
         }
