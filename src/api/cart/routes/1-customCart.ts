@@ -118,5 +118,10 @@ export default {
                 middlewares: [],
             },
         },
+        {
+            method: "GET",
+            path: "/update-product-image-urls",
+            handler: "cart.updateProductImageUrls",
+        },
     ],
 };

@@ -17,6 +17,7 @@ module.exports = [
                         "blob:",
                         "dl.airtable.com",
                         "banarasi-baithak-all-images.s3.ap-south-1.amazonaws.com",
+                        "https://d32glc9kywfr2k.cloudfront.net",
                     ],
                     "media-src": [
                         "'self'",
@@ -24,6 +25,7 @@ module.exports = [
                         "blob:",
                         "dl.airtable.com",
                         "banarasi-baithak-all-images.s3.ap-south-1.amazonaws.com",
+                        "https://d32glc9kywfr2k.cloudfront.net",
                     ],
                     upgradeInsecureRequests: null,
                 },

@@ -8,7 +8,9 @@ module.exports = ({ env }) => ({
                 region: env("AWS_REGION"),
                 params: {
                     Bucket: env("AWS_BUCKET"),
+                    CacheControl: "public, max-age=31536000",
                 },
+                baseUrl: env("AWS_CDN_BASE_URL"),
             },
             actionOptions: {
                 upload: {},

@@ -3,6 +3,7 @@
  */
 
 import { factories } from "@strapi/strapi";
+import { stringify } from "querystring";
 
 export default {
     async getProductsFilters(ctx) {
@@ -286,6 +287,139 @@ export default {
         } catch (error) {
             console.error("Error publishing products:", error);
             throw error;
+        }
+    },
+
+    async updateContactPageImageUrls(ctx) {
+        try {
+            const s3Url = "banarasi-baithak-all-images.s3.ap-south-1.amazonaws.com";
+            const cloudFrontUrl = "d32glc9kywfr2k.cloudfront.net";
+            let updatedCount = 0;
+
+            // Get all contact page entries
+            const entries = await strapi.documents("api::contact-page.contact-page").findMany({
+                populate: "*",
+            });
+
+            for (const entry of entries) {
+                let needsUpdate = false;
+
+                // Recursive function to update URLs in nested objects
+                const updateUrlsInObject = (obj: any) => {
+                    if (!obj) return;
+
+                    if (typeof obj === "string" && obj.includes(s3Url)) {
+                        needsUpdate = true;
+                        return obj.replace(s3Url, cloudFrontUrl);
+                    }
+
+                    if (Array.isArray(obj)) {
+                        return obj.map((item) => updateUrlsInObject(item));
+                    }
+
+                    if (typeof obj === "object") {
+                        const updatedObj: any = {};
+                        for (const key in obj) {
+                            updatedObj[key] = updateUrlsInObject(obj[key]);
+                        }
+                        return updatedObj;
+                    }
+
+                    return obj;
+                };
+
+                // Process the entry data
+                const updatedData = updateUrlsInObject(entry);
+
+                if (needsUpdate) {
+                    await strapi.documents("api::contact-page.contact-page").update({
+                        documentId: entry.documentId,
+                        data: updatedData,
+                        status: "published",
+                    });
+                    updatedCount++;
+                }
+            }
+
+            return ctx.send({
+                message: "Contact page image URLs update completed",
+                updatedEntries: updatedCount,
+            });
+        } catch (error) {
+            console.error("Error updating contact page image URLs:", error);
+            return ctx.internalServerError("An error occurred while updating image URLs");
+        }
+    },
+
+    async updateProductImageUrls(ctx) {
+        try {
+            const s3BaseUrl = "https://banarasi-baithak-all-images.s3.ap-south-1.amazonaws.com";
+            const cloudfrontBaseUrl = "https://d32glc9kywfr2k.cloudfront.net";
+            const startTime = Date.now();
+            let updatedCount = 0;
+
+            console.log("Starting image URL update process...");
+
+            // Get all files
+            const files = await strapi.documents("plugin::upload.file").findMany({
+                filters: {},
+            });
+
+            // Process files in batches of 50
+            const BATCH_SIZE = 50;
+            // for (let i = 0; i < files.length; i += BATCH_SIZE) {
+            //     const batch = files.slice(i, i + BATCH_SIZE);
+            //     console.log(`Processing batch ${Math.floor(i / BATCH_SIZE) + 1} of ${Math.ceil(files.length / BATCH_SIZE)}`);
+
+            //     // Process each file in the batch
+            //     await Promise.all(
+            //         batch.map(async (file) => {
+            //             try {
+            //                 // Prepare update data with all formats
+            //                 const updatedData = {
+            //                     url: file.url.replace(s3BaseUrl, cloudfrontBaseUrl),
+            //                     formats: file.formats
+            //                         ? Object.keys(file.formats).reduce((acc, format) => {
+            //                               acc[format] = {
+            //                                   ...file.formats[format],
+            //                                   url: file.formats[format].url.replace(s3BaseUrl, cloudfrontBaseUrl),
+            //                               };
+            //                               return acc;
+            //                           }, {})
+            //                         : undefined,
+            //                 };
+
+            //                 // Update the file
+            //                 await strapi.documents("plugin::upload.file").update({
+            //                     documentId: file.documentId,
+            //                     data: updatedData,
+            //                     status: "published",
+            //                 });
+
+            //                 updatedCount++;
+            //             } catch (error) {
+            //                 console.error(`Error updating file ${file.documentId}:`, error);
+            //             }
+            //         })
+            //     );
+            // }
+
+            const endTime = Date.now();
+            const duration = (endTime - startTime) / 1000; // Convert to seconds
+
+            console.log(JSON.stringify(files, null, 2));
+
+            console.log(`Found ${files.length} files to update`);
+
+            return ctx.send({
+                message: "Image URL update completed",
+                totalFiles: files.length,
+                updatedFiles: updatedCount,
+                duration: `${duration.toFixed(2)} seconds`,
+            });
+        } catch (error) {
+            console.error("Error updating image URLs:", error);
+            return ctx.internalServerError("An error occurred while updating image URLs");
         }
     },
 };
