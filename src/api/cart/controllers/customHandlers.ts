@@ -353,8 +353,8 @@ export default {
 
     async updateProductImageUrls(ctx) {
         try {
-            const s3BaseUrl = "https://banarasi-baithak-all-images.s3.ap-south-1.amazonaws.com";
-            const cloudfrontBaseUrl = "https://d32glc9kywfr2k.cloudfront.net";
+            const s3BaseUrl = "https://d32glc9kywfr2k.cloudfront.net";
+            const cloudfrontBaseUrl = "https://d7debfom36s1q.cloudfront.net";
             const startTime = Date.now();
             let updatedCount = 0;
 
@@ -367,42 +367,42 @@ export default {
 
             // Process files in batches of 50
             const BATCH_SIZE = 50;
-            // for (let i = 0; i < files.length; i += BATCH_SIZE) {
-            //     const batch = files.slice(i, i + BATCH_SIZE);
-            //     console.log(`Processing batch ${Math.floor(i / BATCH_SIZE) + 1} of ${Math.ceil(files.length / BATCH_SIZE)}`);
+            for (let i = 0; i < files.length; i += BATCH_SIZE) {
+                const batch = files.slice(i, i + BATCH_SIZE);
+                console.log(`Processing batch ${Math.floor(i / BATCH_SIZE) + 1} of ${Math.ceil(files.length / BATCH_SIZE)}`);
 
-            //     // Process each file in the batch
-            //     await Promise.all(
-            //         batch.map(async (file) => {
-            //             try {
-            //                 // Prepare update data with all formats
-            //                 const updatedData = {
-            //                     url: file.url.replace(s3BaseUrl, cloudfrontBaseUrl),
-            //                     formats: file.formats
-            //                         ? Object.keys(file.formats).reduce((acc, format) => {
-            //                               acc[format] = {
-            //                                   ...file.formats[format],
-            //                                   url: file.formats[format].url.replace(s3BaseUrl, cloudfrontBaseUrl),
-            //                               };
-            //                               return acc;
-            //                           }, {})
-            //                         : undefined,
-            //                 };
+                // Process each file in the batch
+                await Promise.all(
+                    batch.map(async (file) => {
+                        try {
+                            // Prepare update data with all formats
+                            const updatedData = {
+                                url: file.url.replace(s3BaseUrl, cloudfrontBaseUrl),
+                                formats: file.formats
+                                    ? Object.keys(file.formats).reduce((acc, format) => {
+                                          acc[format] = {
+                                              ...file.formats[format],
+                                              url: file.formats[format].url.replace(s3BaseUrl, cloudfrontBaseUrl),
+                                          };
+                                          return acc;
+                                      }, {})
+                                    : undefined,
+                            };
 
-            //                 // Update the file
-            //                 await strapi.documents("plugin::upload.file").update({
-            //                     documentId: file.documentId,
-            //                     data: updatedData,
-            //                     status: "published",
-            //                 });
+                            // Update the file
+                            await strapi.documents("plugin::upload.file").update({
+                                documentId: file.documentId,
+                                data: updatedData,
+                                status: "published",
+                            });
 
-            //                 updatedCount++;
-            //             } catch (error) {
-            //                 console.error(`Error updating file ${file.documentId}:`, error);
-            //             }
-            //         })
-            //     );
-            // }
+                            updatedCount++;
+                        } catch (error) {
+                            console.error(`Error updating file ${file.documentId}:`, error);
+                        }
+                    })
+                );
+            }
 
             const endTime = Date.now();
             const duration = (endTime - startTime) / 1000; // Convert to seconds
