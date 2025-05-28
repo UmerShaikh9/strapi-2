@@ -27,8 +27,28 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             //     return ctx.unauthorized("You must be logged in to create an order.");
             // }
 
-            const { Full_Name, Address, City, Country, Email, Phone, State, Pincode, amount, currency, couponId, cartIds } =
-                ctx.request.body;
+            const {
+                Full_Name,
+                Address,
+                City,
+                Country,
+                Email,
+                Phone,
+                State,
+                Pincode,
+                amount,
+                currency,
+                couponId,
+                cartIds,
+                Shipping_Full_Name,
+                Shipping_Country,
+                Shipping_State,
+                Shipping_Phone,
+                Shipping_Address,
+                Shipping_Email,
+                Shipping_City,
+                Shipping_Pincode,
+            } = ctx.request.body;
 
             // Validate required fields
             if (!Full_Name || !Address || !City || !Country || !Email || !Phone || !State || !Pincode) {
@@ -127,7 +147,9 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                             )
                         );
 
-                        console.log(`Transferred ${guestCartItems.length} cart items from guest session to user account`);
+                        console.log(
+                            `Transferred ${guestCartItems.length} cart items from guest session to user account`
+                        );
                     }
                 }
             }
@@ -261,6 +283,16 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                     GuestSessionId: guestSessionId || null, // Store guest session ID
                     ...couponPayload,
                     Shipping_Charges: shippingCharges,
+                    Shipping_Details: {
+                        Shipping_Full_Name,
+                        Shipping_Country,
+                        Shipping_State,
+                        Shipping_Phone,
+                        Shipping_Address,
+                        Shipping_Email,
+                        Shipping_City,
+                        Shipping_Pincode,
+                    },
                 },
                 status: "published",
             });
@@ -486,7 +518,9 @@ const encrypt = (plainText, workingKey) => {
         const key = crypto.createHash("md5").update(workingKey).digest();
 
         // Fixed IV used by CCAvenue
-        const iv = Buffer.from([0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f]);
+        const iv = Buffer.from([
+            0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f,
+        ]);
 
         const cipher = crypto.createCipheriv("aes-128-cbc", key, iv);
         let encrypted = cipher.update(plainText, "utf8", "hex");
@@ -508,7 +542,9 @@ const decrypt = (encryptedText, workingKey) => {
         const key = crypto.createHash("md5").update(workingKey).digest();
 
         // Fixed IV used by CCAvenue
-        const iv = Buffer.from([0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f]);
+        const iv = Buffer.from([
+            0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f,
+        ]);
 
         // Create decipher
         const decipher = crypto.createDecipheriv("aes-128-cbc", key, iv);

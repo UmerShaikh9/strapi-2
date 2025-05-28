@@ -964,6 +964,10 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     Products: Schema.Attribute.Component<'user-product.product', true>;
     publishedAt: Schema.Attribute.DateTime;
     Shipping_Charges: Schema.Attribute.Decimal & Schema.Attribute.DefaultTo<0>;
+    Shipping_Details: Schema.Attribute.Component<
+      'product.shipping-details',
+      false
+    >;
     State: Schema.Attribute.String;
     Total_Price: Schema.Attribute.Decimal;
     updatedAt: Schema.Attribute.DateTime;

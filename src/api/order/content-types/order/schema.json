@@ -79,6 +79,12 @@
     "Shipping_Charges": {
       "type": "decimal",
       "default": 0
+    },
+    "Shipping_Details": {
+      "displayName": "Shipping Details",
+      "type": "component",
+      "repeatable": false,
+      "component": "product.shipping-details"
     }
   }
 }

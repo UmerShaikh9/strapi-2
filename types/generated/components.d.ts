@@ -680,6 +680,23 @@ export interface ProductProductSizes extends Struct.ComponentSchema {
   };
 }
 
+export interface ProductShippingDetails extends Struct.ComponentSchema {
+  collectionName: 'components_product_shipping_details';
+  info: {
+    displayName: 'Shipping Details';
+  };
+  attributes: {
+    Shipping_Address: Schema.Attribute.String;
+    Shipping_City: Schema.Attribute.String;
+    Shipping_Country: Schema.Attribute.String;
+    Shipping_Email: Schema.Attribute.String;
+    Shipping_Full_Name: Schema.Attribute.String;
+    Shipping_Phone: Schema.Attribute.String;
+    Shipping_Pincode: Schema.Attribute.String;
+    Shipping_State: Schema.Attribute.String;
+  };
+}
+
 export interface UserProductPaymentDetails extends Struct.ComponentSchema {
   collectionName: 'components_user_product_payment_details';
   info: {
@@ -784,6 +801,7 @@ declare module '@strapi/strapi' {
       'product.product-details': ProductProductDetails;
       'product.product-guide': ProductProductGuide;
       'product.product-sizes': ProductProductSizes;
+      'product.shipping-details': ProductShippingDetails;
       'user-product.payment-details': UserProductPaymentDetails;
       'user-product.prize-section': UserProductPrizeSection;
       'user-product.product': UserProductProduct;

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_product_shipping_details",
+  "info": {
+    "displayName": "Shipping Details"
+  },
+  "options": {},
+  "attributes": {
+    "Shipping_Full_Name": {
+      "type": "string"
+    },
+    "Shipping_Country": {
+      "type": "string"
+    },
+    "Shipping_State": {
+      "type": "string"
+    },
+    "Shipping_Phone": {
+      "type": "string"
+    },
+    "Shipping_Address": {
+      "type": "string"
+    },
+    "Shipping_Email": {
+      "type": "string"
+    },
+    "Shipping_City": {
+      "type": "string"
+    },
+    "Shipping_Pincode": {
+      "type": "string"
+    }
+  }
+}
