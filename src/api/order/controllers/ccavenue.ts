@@ -147,9 +147,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                             )
                         );
 
-                        console.log(
-                            `Transferred ${guestCartItems.length} cart items from guest session to user account`
-                        );
+                        console.log(`Transferred ${guestCartItems.length} cart items from guest session to user account`);
                     }
                 }
             }
@@ -245,7 +243,8 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
 
             // Calculate shipping charges
             let shippingCharges = 0;
-            if (Country !== "India") {
+            if (Shipping_Country !== "India") {
+                console.log("Shipping Country ", Shipping_Country);
                 if (finalAmount <= 50000) {
                     shippingCharges = 3000; // Flat 3000 INR for international orders under 50000
                 }
@@ -518,9 +517,7 @@ const encrypt = (plainText, workingKey) => {
         const key = crypto.createHash("md5").update(workingKey).digest();
 
         // Fixed IV used by CCAvenue
-        const iv = Buffer.from([
-            0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f,
-        ]);
+        const iv = Buffer.from([0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f]);
 
         const cipher = crypto.createCipheriv("aes-128-cbc", key, iv);
         let encrypted = cipher.update(plainText, "utf8", "hex");
@@ -542,9 +539,7 @@ const decrypt = (encryptedText, workingKey) => {
         const key = crypto.createHash("md5").update(workingKey).digest();
 
         // Fixed IV used by CCAvenue
-        const iv = Buffer.from([
-            0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f,
-        ]);
+        const iv = Buffer.from([0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f]);
 
         // Create decipher
         const decipher = crypto.createDecipheriv("aes-128-cbc", key, iv);
