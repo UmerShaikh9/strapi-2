@@ -128,7 +128,8 @@
         "Popular",
         "Sold Out",
         "Available",
-        "Pre Order"
+        "Pre Order",
+        "On Sale"
       ],
       "customField": "plugin::multi-select.multi-select"
     },

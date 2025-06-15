@@ -8,7 +8,7 @@ export default {
         }
 
         // Get the highest price from Price_Section
-        const highestPrice = Math.max(...result.Price_Section.map((ps) => ps.Price || 0));
+        const highestPrice = Math.max(...result.Price_Section.map((ps) => (ps.Discount_Available ? ps.Discounted_Price : ps.Price || 0)));
 
         console.log("result", result);
         console.log("highestPrice", highestPrice);
@@ -47,7 +47,9 @@ export default {
         // Handle price filter update
         if (result.Price_Section && Array.isArray(result.Price_Section) && result.Price_Section.length > 0) {
             // Get the highest price from Price_Section
-            const highestPrice = Math.max(...result.Price_Section.map((ps) => ps.Price || 0));
+            const highestPrice = Math.max(
+                ...result.Price_Section.map((ps) => (ps.Discount_Available ? ps.Discounted_Price : ps.Price || 0))
+            );
             console.log("highestPrice", highestPrice);
 
             // Add price filter update if different
