@@ -353,8 +353,8 @@ export default {
 
     async updateProductImageUrls(ctx) {
         try {
-            const s3BaseUrl = "https://d32glc9kywfr2k.cloudfront.net";
-            const cloudfrontBaseUrl = "https://d7debfom36s1q.cloudfront.net";
+            const s3BaseUrl = "https://d7debfom36s1q.cloudfront.net";
+            const cloudfrontBaseUrl = "https://d18uanb8c276u5.cloudfront.net";
             const startTime = Date.now();
             let updatedCount = 0;
 
