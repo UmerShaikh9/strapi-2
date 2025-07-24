@@ -528,7 +528,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                         html: emailHtml,
                     });
 
-                    const adminEmailHtml = generateAdminOrderNotificationEmail(orderDetails);
+                    const adminEmailHtml = generateOrderConfirmationEmail(orderDetails);
 
                     await strapi.plugins["email"].services.email.send({
                         to: "sales@banarasibaithak.com",
