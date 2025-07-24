@@ -4,7 +4,6 @@
 import path from "path";
 import { factories } from "@strapi/strapi";
 import { generateOrderConfirmationEmail } from "./emailTemplates";
-import { sendTextMessage } from "./whatsapp";
 
 export interface IAddress {
     name: string;
@@ -114,9 +113,6 @@ export const sendOrderConfirmationEmail = async (ctx) => {
 
         // Generate the email HTML
         const emailHtml = generateOrderConfirmationEmail(orderDetails);
-
-        // const response = await sendTextMessage("+7385815109", "Hello, this is a test message");
-        // console.log("response", response);
 
         // console.log("emailHtml", emailHtml);
 
