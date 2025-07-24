@@ -2,7 +2,8 @@ import { factories } from "@strapi/strapi";
 import axios from "axios";
 import { processCartItems } from "../../cart/controllers/helpers";
 import crypto from "crypto";
-import { convertCurrency } from "./orderUtils";
+import { convertCurrency, formatPrice, ITemplateOrderDetails } from "./orderUtils";
+import { generateAdminOrderNotificationEmail, generateOrderConfirmationEmail } from "./emailTemplates";
 const qs = require("querystring");
 
 const CCAVENUE_MERCHANT_ID = process.env.CCAVENUE_MERCHANT_ID;
@@ -386,7 +387,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
 
             const order_status = responseData?.order_status;
 
-            // // Get the order document ID from merchant_param1
+            // Get the order document ID from merchant_param1
             const orderDocumentId = merchant_param1 || responseData.merchant_param1;
 
             if (!orderDocumentId) {
@@ -394,18 +395,19 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/payment-failed?error=invalid_order`);
             }
 
-            // Update order status in database
+            // // Update order status in database
             const order = await strapi.documents("api::order.order").findOne({
                 documentId: orderDocumentId,
                 status: "published",
                 populate: {
                     Products: {
                         populate: {
-                            Product: true,
+                            Product: { populate: { Thumbnail: true } },
                         },
                     },
                     Payment_Details: true,
                     User: true,
+                    Shipping_Details: true,
                 },
             });
 
@@ -432,6 +434,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             });
 
             // If payment is successful, update product quantities and clear cart
+
             if (order_status === "Success") {
                 // Update product quantities
                 console.log("transaction success");
@@ -473,6 +476,67 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                             });
                         }
                     }
+                }
+
+                // Format order details for the email template
+                const orderDetails: ITemplateOrderDetails = {
+                    orderNumber: order.Payment_Details?.Order_Uid,
+                    orderDate: new Date(order.createdAt).toLocaleDateString(),
+                    totalAmount: formatPrice(order.Total_Price, order.Currency),
+                    customerName: `${order.Shipping_Details.Shipping_Full_Name} `,
+                    shippingAddress: {
+                        name: order.Shipping_Details.Shipping_Full_Name,
+                        address: order.Shipping_Details.Shipping_Address,
+                        city: order.Shipping_Details.Shipping_City,
+                        state: order.Shipping_Details.Shipping_State,
+                        pincode: order.Shipping_Details.Shipping_Pincode,
+                        email: order.Shipping_Details.Shipping_Email,
+                        phone: order.Shipping_Details.Shipping_Phone,
+                        country: order.Shipping_Details.Shipping_Country,
+                    },
+                    billingAddress: {
+                        name: order.Full_Name,
+                        address: order.Address,
+                        city: order.City,
+                        state: order.State,
+                        pincode: order.Pincode,
+                        email: order.Email,
+                        phone: order.Phone,
+                        country: order.Country,
+                    },
+                    items: order.Products.map((item) => ({
+                        name: item.Product.Name,
+                        price: formatPrice(item.Price, order.Currency),
+                        image: item.Product.Thumbnail?.formats?.small?.url,
+                    })),
+                    shippingCharges: formatPrice(order.Shipping_Charges, order.Currency),
+                    subTotal: order.Shipping_Charges
+                        ? formatPrice(order.Total_Price - order.Shipping_Charges, order.Currency)
+                        : formatPrice(order.Total_Price, order.Currency),
+                };
+
+                console.log("orderDetails", orderDetails);
+
+                try {
+                    // Generate the email HTML
+                    const emailHtml = generateOrderConfirmationEmail(orderDetails);
+
+                    // Send the email
+                    await strapi.plugins["email"].services.email.send({
+                        to: order.Shipping_Details?.Shipping_Email,
+                        subject: `Order Confirmation - #${order.Payment_Details?.Order_Uid}`,
+                        html: emailHtml,
+                    });
+
+                    const adminEmailHtml = generateAdminOrderNotificationEmail(orderDetails);
+
+                    await strapi.plugins["email"].services.email.send({
+                        to: "sales@banarasibaithak.com",
+                        subject: `New Order - #${order.Payment_Details?.Order_Uid}`,
+                        html: adminEmailHtml,
+                    });
+                } catch (error) {
+                    console.error("Error sending email:", error);
                 }
                 return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/my-order?payment=success&order_id=${order_id}`);
             }
