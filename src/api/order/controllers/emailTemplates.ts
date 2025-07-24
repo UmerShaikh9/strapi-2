@@ -230,7 +230,7 @@ export function generateOrderConfirmationEmail(details: OrderEmailDetails): stri
                        <div style="font-size:15px;line-height:22px;text-align:center;text-align-last:center;color:#000000;font-family:'Outfit', Arial, Helvetica, sans-serif;font-style:normal;letter-spacing:-0.2px;">
                         <div style="font-family:'Outfit', Arial, Helvetica, sans-serif;">
                          <span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; font-weight: 300; font-size: 15px; line-height: 156%;">Hi </span>
-                         <span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; color: rgb(0, 51, 47); font-weight: 300; font-size: 15px; line-height: 156%;">${details.customerName}!</span>
+                         <span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; color: rgb(0, 51, 47); font-weight: 300; font-size: 15px; line-height: 156%;">${details.customerName}</span>
                          <span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; font-weight: 300; font-size: 15px; line-height: 156%;"> Your Banarasi Baithak order <span style="font-weight: 400; font-size: 15px;">IN#-${details.orderNumber}</span> is confirmed. Thank you for shopping with us!</span>
                         </div>
                        </div>
