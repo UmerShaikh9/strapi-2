@@ -77,7 +77,7 @@ export const sendOrderConfirmationEmail = async (ctx) => {
             orderNumber: order.Payment_Details?.Order_Uid,
             orderDate: new Date(order.createdAt).toLocaleDateString(),
             totalAmount: formatPrice(order.Total_Price, order.Currency),
-            customerName: `${order.Shipping_Details.Shipping_Full_Name} `,
+            customerName: `${order.Shipping_Details.Shipping_Full_Name}! `,
             shippingAddress: {
                 name: order.Shipping_Details.Shipping_Full_Name,
                 address: order.Shipping_Details.Shipping_Address,

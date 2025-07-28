@@ -231,7 +231,7 @@ export function generateOrderConfirmationEmail(details: OrderEmailDetails): stri
                         <div style="font-family:'Outfit', Arial, Helvetica, sans-serif;">
                          <span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; font-weight: 300; font-size: 15px; line-height: 156%;">Hi </span>
                          <span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; color: rgb(0, 51, 47); font-weight: 300; font-size: 15px; line-height: 156%;">${details.customerName}</span>
-                         <span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; font-weight: 300; font-size: 15px; line-height: 156%;"> Your Banarasi Baithak order <span style="font-weight: 400; font-size: 15px;">IN#-${details.orderNumber}</span> is confirmed. Thank you for shopping with us!</span>
+                         <span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; font-weight: 300; font-size: 15px; line-height: 156%;"> Your Banarasi Baithak order <span style="font-weight: 400; font-size: 15px;">${details.orderNumber}</span> is confirmed. Thank you for shopping with us!</span>
                         </div>
                        </div>
                       </div>
@@ -663,7 +663,9 @@ export function generateOrderConfirmationEmail(details: OrderEmailDetails): stri
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="margin-right: auto; margin-left: auto;">
                   <tr>
                         <td align="center" valign="top" style="line-height: 1;">
-                            <img src="https://banarasi-baithak-files.s3.ap-south-1.amazonaws.com/email-template-images/193c7e94406b9a9160b8842fcba96582.png" class="" width="20" height="20" style="display: block; border: 0; outline: 0; line-height: 100%; -ms-interpolation-mode: bicubic; width: 20px; height: 20px;" alt="instagram" />
+                            <a href="https://www.instagram.com/banarasi_baithak/" target="_blank" style="text-decoration: none;">
+                                <img src="https://banarasi-baithak-files.s3.ap-south-1.amazonaws.com/email-template-images/193c7e94406b9a9160b8842fcba96582.png" class="" width="20" height="20" style="display: block; border: 0; outline: 0; line-height: 100%; -ms-interpolation-mode: bicubic; width: 20px; height: 20px;" alt="instagram" />
+                            </a>
                         </td>
                   </tr>
                  <tr>
