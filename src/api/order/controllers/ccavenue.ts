@@ -3,7 +3,7 @@ import axios from "axios";
 import { processCartItems } from "../../cart/controllers/helpers";
 import crypto from "crypto";
 import { convertCurrency, formatPrice, ITemplateOrderDetails } from "./orderUtils";
-import { generateAdminOrderNotificationEmail, generateOrderConfirmationEmail } from "./emailTemplates";
+import { generateOrderConfirmationEmail } from "./emailTemplates";
 const qs = require("querystring");
 
 const CCAVENUE_MERCHANT_ID = process.env.CCAVENUE_MERCHANT_ID;

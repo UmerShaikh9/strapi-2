@@ -34,10 +34,12 @@ export function generateOrderConfirmationEmail(details: OrderEmailDetails): stri
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
  <meta name="x-apple-disable-message-reformatting" />
+ <meta name="color-scheme" content="light" />
+ <meta name="supported-color-schemes" content="light" />
  <link href="https://fonts.googleapis.com/css?family=Outfit:ital,wght@0,400;0,500;0,600" rel="stylesheet" />
  <title>Order Confirmation</title>
  <style>
- html, body { margin: 0 !important; padding: 0 !important; min-height: 100% !important; width: 100% !important; -webkit-font-smoothing: antialiased; }
+ html, body { margin: 0 !important; padding: 0 !important; min-height: 100% !important; width: 100% !important; -webkit-font-smoothing: antialiased; color-scheme: light; }
          * { -ms-text-size-adjust: 100%; }
          #outlook a { padding: 0; }
          .ReadMsgBody, .ExternalClass { width: 100%; }
@@ -51,6 +53,19 @@ export function generateOrderConfirmationEmail(details: OrderEmailDetails): stri
          @media (min-width: 621px) {
              .pc-lg-hide {  display: none; } 
              .pc-lg-bg-img-hide { background-image: none !important; }
+         }
+         /* Force light mode colors */
+         [data-ogsc] { color-scheme: light !important; }
+         [data-ogsc] * { color-scheme: light !important; }
+         
+         /* Ensure all text colors are explicitly set for light mode */
+         .pc-font-alt, .pc-font-alt * { color: inherit !important; }
+         div, p, span, td, th { color: inherit !important; }
+         
+         /* Override any potential dark mode styles */
+         @media (prefers-color-scheme: dark) {
+             * { color-scheme: light !important; }
+             body, html { background-color: #f5f5f5 !important; color: #2D3A41 !important; }
          }
  </style>
  <style>
@@ -142,7 +157,7 @@ export function generateOrderConfirmationEmail(details: OrderEmailDetails): stri
     </xml>
     <![endif]-->
 </head>
-<body class="body pc-font-alt" style="width: 100% !important; min-height: 100% !important; margin: 0 !important; padding: 0 !important; font-weight: normal; color: #2D3A41; mso-line-height-rule: exactly; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-variant-ligatures: normal; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; background-color: #f5f5f5;" bgcolor="#f5f5f5">
+<body class="body pc-font-alt" style="width: 100% !important; min-height: 100% !important; margin: 0 !important; padding: 0 !important; font-weight: normal; color: #2D3A41 !important; mso-line-height-rule: exactly; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-variant-ligatures: normal; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; background-color: #f5f5f5 !important; color-scheme: light;" bgcolor="#f5f5f5" data-ogsc="">
  <table class="pc-project-body" style="table-layout: fixed; width: 100%; min-width: 600px; background-color: #f5f5f5;" bgcolor="#f5f5f5" border="0" cellspacing="0" cellpadding="0" role="presentation">
   <tr>
    <td align="center" valign="top" style="width:auto;">
@@ -670,10 +685,10 @@ export function generateOrderConfirmationEmail(details: OrderEmailDetails): stri
                   </tr>
                  <tr>
                   <td valign="top" align="center">
-                   <div class="pc-font-alt" style="text-decoration: none;">
-                    <div style="font-size:13px;color:#fff;opacity:0.8; font-weight:300; margin-top:4px;">Gurgaon, Haryana. 122002</div>
-                    <div style="font-size:13px;color:#fff;opacity:0.8; font-weight:300; margin-top:4px;">Email: sales@banarasibaithak.com</div>
-                    <div style="font-size:13px;color:#fff;opacity:0.8; font-weight:300;">Phone: +91 78382 80041, +91 99110 74381</div>
+                   <div class="pc-font-alt" style="text-decoration: none; color: #ffffff !important;">
+                    <div style="font-size:13px;color:#ffffff !important;opacity:0.8; font-weight:300; margin-top:4px;">Gurgaon, Haryana. 122002</div>
+                    <div style="font-size:13px;color:#ffffff !important;opacity:0.8; font-weight:300; margin-top:4px;">Email: sales@banarasibaithak.com</div>
+                    <div style="font-size:13px;color:#ffffff !important;opacity:0.8; font-weight:300;">Phone: +91 78382 80041, +91 99110 74381</div>
                    </div>
                   </td>
                  </tr>
@@ -695,98 +710,6 @@ export function generateOrderConfirmationEmail(details: OrderEmailDetails): stri
    </td>
   </tr>
  </table>
-</body>
-</html>`;
-}
-
-export function generateAdminOrderNotificationEmail(details: OrderEmailDetails): string {
-    return `<!DOCTYPE html>
-<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-<head>
- <meta charset="UTF-8" />
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>New Order Notification</title>
- <style>
-  body { font-family: 'Outfit', Arial, Helvetica, sans-serif; background: #f5f5f5; color: #222; }
-  .container { background: #fff; max-width: 600px; margin: 30px auto; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 32px; }
-  h1 { color: #00332f; font-size: 26px; margin-bottom: 12px; }
-  h2 { color: #240300; font-size: 20px; margin-top: 24px; margin-bottom: 8px; }
-  .order-info, .address, .items, .totals { margin-bottom: 18px; }
-  .address-block { margin-bottom: 10px; }
-  .items-table { width: 100%; border-collapse: collapse; margin-bottom: 12px; }
-  .items-table th, .items-table td { border: 1px solid #eee; padding: 8px; text-align: left; }
-  .items-table th { background: #f0f0f0; }
- </style>
-</head>
-<body>
-  <div class="container">
-    <h1>New Order Received</h1>
-    <div class="order-info">
-      <strong>Order Number:</strong> IN#-${details.orderNumber}<br/>
-      <strong>Order Date:</strong> ${details.orderDate}<br/>
-      <strong>Customer Name:</strong> ${details.customerName}<br/>
-    </div>
-    <h2>Customer Contact</h2>
-    <div class="address-block">
-      <strong>Email:</strong> ${details.shippingAddress.email}<br/>
-      <strong>Phone:</strong> ${details.shippingAddress.phone}
-    </div>
-    <h2>Shipping Address</h2>
-    <div class="address address-block">
-      ${details.shippingAddress.name}<br/>
-      ${details.shippingAddress.address}<br/>
-      ${details.shippingAddress.city}, ${details.shippingAddress.state} ${details.shippingAddress.pincode}<br/>
-      ${details.shippingAddress.country || "India"}
-    </div>
-    <h2>Billing Address</h2>
-    <div class="address address-block">
-      ${details.billingAddress.name}<br/>
-      ${details.billingAddress.address}<br/>
-      ${details.billingAddress.city}, ${details.billingAddress.state} ${details.billingAddress.pincode}<br/>
-      ${details.billingAddress.country || "India"}
-    </div>
-    <h2>Order Items</h2>
-    <table class="items-table">
-      <thead>
-        <tr>
-          <th>Product</th>
-          <th>Price</th>
-          <th>Quantity</th>
-        </tr>
-      </thead>
-      <tbody>
-        ${details.items
-            .map(
-                (item) => `
-          <tr>
-            <td>${item.name}</td>
-            <td>${item.price}</td>
-            <td>${item.quantity || 1}</td>
-          </tr>
-        `
-            )
-            .join("")}
-      </tbody>
-    </table>
-    <h2>Order Summary</h2>
-    <table class="totals-table" style=" width: 100%; margin:0 auto 16px auto;">
-      <tr>
-        <td class="label" style="text-align:left; color:#555;">Subtotal:</td>
-        <td class="value" style="text-align:right;">${details.subTotal || "-"}</td>
-      </tr>
-      <tr>
-        <td class="label" style="text-align:left; color:#555;">Shipping:</td>
-        <td class="value" style="text-align:right;">${details.shippingCharges || "0"}</td>
-      </tr>
-      <tr>
-        <td class="label" style="text-align:left; font-weight:700; border-top:2px solid #eee; padding-top:8px;">Total:</td>
-        <td class="value" style="text-align:right; font-weight:700; border-top:2px solid #eee; padding-top:8px;">${details.totalAmount}</td>
-      </tr>
-    </table>
-    <div style="margin-top: 32px; color: #888; font-size: 13px;">This is an automated notification for a new order placed on Banarasi Baithak.</div>
-  </div>
 </body>
 </html>`;
 }

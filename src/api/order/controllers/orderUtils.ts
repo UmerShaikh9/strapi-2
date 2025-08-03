@@ -47,11 +47,10 @@ export const sendOrderConfirmationEmail = async (ctx) => {
 
         const orders = await strapi.documents("api::order.order").findMany({
             filters: {
-                // User: {
-                //     id: id,
-                // },
-                Order_Status: "PENDING",
-                Full_Name: "Umer Shaikh ",
+                Order_Status: "CONFIRMED",
+                Full_Name: "SHILPA BOHRA",
+                Currency: "USD",
+                Total_Price: 559.2,
             },
             sort: {
                 createdAt: "desc",
@@ -71,6 +70,11 @@ export const sendOrderConfirmationEmail = async (ctx) => {
         }
 
         console.log("order details ", order);
+
+        let shippingCharges = 0;
+        if (order.Shipping_Charges) {
+            shippingCharges = parseFloat(convertCurrency({ totalPriceINR: order.Shipping_Charges, currency: order.Currency }));
+        }
 
         // Format order details for the email template
         const orderDetails: ITemplateOrderDetails = {
@@ -98,18 +102,21 @@ export const sendOrderConfirmationEmail = async (ctx) => {
                 phone: order.Phone,
                 country: order.Country,
             },
-            items: order.Products.map((item) => ({
-                name: item.Product.Name,
-                price: formatPrice(item.Price, order.Currency),
-                image: item.Product.Thumbnail?.url,
-            })),
-            shippingCharges: formatPrice(order.Shipping_Charges, order.Currency),
-            subTotal: order.Shipping_Charges
-                ? formatPrice(order.Total_Price - order.Shipping_Charges, order.Currency)
-                : formatPrice(order.Total_Price, order.Currency),
-        };
+            items: order.Products.map((item) => {
+                const price = parseFloat(convertCurrency({ totalPriceINR: item.Price, currency: order.Currency }));
 
-        console.log("orderDetails", orderDetails);
+                console.log(`price ${price} currency ${order.Currency}`);
+                console.log(`formatted price ${formatPrice(price, order.Currency)}`);
+
+                return {
+                    name: item.Product.Name,
+                    price: formatPrice(price, order.Currency),
+                    image: item.Product.Thumbnail?.url,
+                };
+            }),
+            shippingCharges: formatPrice(shippingCharges, order.Currency),
+            subTotal: formatPrice(order.Total_Price - shippingCharges, order.Currency),
+        };
 
         // Generate the email HTML
         const emailHtml = generateOrderConfirmationEmail(orderDetails);
@@ -118,7 +125,7 @@ export const sendOrderConfirmationEmail = async (ctx) => {
 
         // Send the email
         await strapi.plugins["email"].services.email.send({
-            to: "umershaikh8805@gmail.com",
+            to: "umer.shaikh@blackcheriemedia.com",
             subject: `Order Confirmation - #${order.Payment_Details?.Order_Uid}`,
             html: emailHtml,
         });
