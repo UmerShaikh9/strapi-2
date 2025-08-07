@@ -478,12 +478,17 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                     }
                 }
 
+                let shippingCharges = 0;
+                if (order.Shipping_Charges) {
+                    shippingCharges = parseFloat(convertCurrency({ totalPriceINR: order.Shipping_Charges, currency: order.Currency }));
+                }
+
                 // Format order details for the email template
                 const orderDetails: ITemplateOrderDetails = {
                     orderNumber: order.Payment_Details?.Order_Uid,
                     orderDate: new Date(order.createdAt).toLocaleDateString(),
                     totalAmount: formatPrice(order.Total_Price, order.Currency),
-                    customerName: `${order.Shipping_Details.Shipping_Full_Name}!`,
+                    customerName: `${order.Shipping_Details.Shipping_Full_Name}! `,
                     shippingAddress: {
                         name: order.Shipping_Details.Shipping_Full_Name,
                         address: order.Shipping_Details.Shipping_Address,
@@ -504,15 +509,20 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                         phone: order.Phone,
                         country: order.Country,
                     },
-                    items: order.Products.map((item) => ({
-                        name: item.Product.Name,
-                        price: formatPrice(item.Price, order.Currency),
-                        image: item.Product.Thumbnail?.formats?.small?.url,
-                    })),
-                    shippingCharges: formatPrice(order.Shipping_Charges, order.Currency),
-                    subTotal: order.Shipping_Charges
-                        ? formatPrice(order.Total_Price - order.Shipping_Charges, order.Currency)
-                        : formatPrice(order.Total_Price, order.Currency),
+                    items: order.Products.map((item) => {
+                        const price = parseFloat(convertCurrency({ totalPriceINR: item.Price, currency: order.Currency }));
+
+                        console.log(`price ${price} currency ${order.Currency}`);
+                        console.log(`formatted price ${formatPrice(price, order.Currency)}`);
+
+                        return {
+                            name: item.Product.Name,
+                            price: formatPrice(price, order.Currency),
+                            image: item.Product.Thumbnail?.url,
+                        };
+                    }),
+                    shippingCharges: formatPrice(shippingCharges, order.Currency),
+                    subTotal: formatPrice(order.Total_Price - shippingCharges, order.Currency),
                 };
 
                 console.log("orderDetails", orderDetails);
