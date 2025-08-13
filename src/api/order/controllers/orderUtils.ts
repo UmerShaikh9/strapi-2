@@ -48,9 +48,9 @@ export const sendOrderConfirmationEmail = async (ctx) => {
         const orders = await strapi.documents("api::order.order").findMany({
             filters: {
                 Order_Status: "CONFIRMED",
-                Full_Name: "SHILPA BOHRA",
-                Currency: "USD",
-                Total_Price: 559.2,
+                Full_Name: "Rashima Jain",
+                Currency: "INR",
+                Total_Price: 23900,
             },
             sort: {
                 createdAt: "desc",
@@ -104,6 +104,11 @@ export const sendOrderConfirmationEmail = async (ctx) => {
             },
             items: order.Products.map((item) => {
                 const price = parseFloat(convertCurrency({ totalPriceINR: item.Price, currency: order.Currency }));
+                let discountedPrice = 0;
+
+                if (item.Discount_Available) {
+                    discountedPrice = parseFloat(convertCurrency({ totalPriceINR: item.Discounted_Price, currency: order.Currency }));
+                }
 
                 console.log(`price ${price} currency ${order.Currency}`);
                 console.log(`formatted price ${formatPrice(price, order.Currency)}`);
@@ -112,6 +117,8 @@ export const sendOrderConfirmationEmail = async (ctx) => {
                     name: item.Product.Name,
                     price: formatPrice(price, order.Currency),
                     image: item.Product.Thumbnail?.url,
+                    Discount_Available: item.Discount_Available,
+                    Discounted_Price: formatPrice(discountedPrice, order.Currency),
                 };
             }),
             shippingCharges: formatPrice(shippingCharges, order.Currency),

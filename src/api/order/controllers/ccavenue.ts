@@ -511,6 +511,13 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                     },
                     items: order.Products.map((item) => {
                         const price = parseFloat(convertCurrency({ totalPriceINR: item.Price, currency: order.Currency }));
+                        let discountedPrice = 0;
+
+                        if (item.Discount_Available) {
+                            discountedPrice = parseFloat(
+                                convertCurrency({ totalPriceINR: item.Discounted_Price, currency: order.Currency })
+                            );
+                        }
 
                         console.log(`price ${price} currency ${order.Currency}`);
                         console.log(`formatted price ${formatPrice(price, order.Currency)}`);
@@ -519,6 +526,8 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                             name: item.Product.Name,
                             price: formatPrice(price, order.Currency),
                             image: item.Product.Thumbnail?.url,
+                            Discount_Available: item.Discount_Available,
+                            Discounted_Price: formatPrice(discountedPrice, order.Currency),
                         };
                     }),
                     shippingCharges: formatPrice(shippingCharges, order.Currency),
