@@ -411,10 +411,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 },
             });
 
-            if (!order) {
-                console.error("Order not found:", orderDocumentId);
-                return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/payment-failed?error=order_not_found`);
-            }
+            if (!order) return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/payment-failed?error=order_not_found`);
 
             console.log("order details ", order);
 
@@ -526,6 +523,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                             name: item.Product.Name,
                             price: formatPrice(price, order.Currency),
                             image: item.Product.Thumbnail?.url,
+                            quantity: item.Quantity,
                             Discount_Available: item.Discount_Available,
                             Discounted_Price: formatPrice(discountedPrice, order.Currency),
                         };
