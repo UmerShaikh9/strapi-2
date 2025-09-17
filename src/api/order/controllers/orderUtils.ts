@@ -48,9 +48,8 @@ export const sendOrderConfirmationEmail = async (ctx) => {
         const orders = await strapi.documents("api::order.order").findMany({
             filters: {
                 Order_Status: "CONFIRMED",
-                Full_Name: "Rashima Jain",
-                Currency: "INR",
-                Total_Price: 23900,
+                Full_Name: "Neelambari W",
+                Total_Price: 9000,
             },
             sort: {
                 createdAt: "desc",
@@ -68,8 +67,6 @@ export const sendOrderConfirmationEmail = async (ctx) => {
         if (!order) {
             throw new Error("No confirmed orders found for this user");
         }
-
-        console.log("order details ", order);
 
         let shippingCharges = 0;
         if (order.Shipping_Charges) {
@@ -119,11 +116,14 @@ export const sendOrderConfirmationEmail = async (ctx) => {
                     image: item.Product.Thumbnail?.url,
                     Discount_Available: item.Discount_Available,
                     Discounted_Price: formatPrice(discountedPrice, order.Currency),
+                    quantity: item.Quantity,
                 };
             }),
             shippingCharges: formatPrice(shippingCharges, order.Currency),
             subTotal: formatPrice(order.Total_Price - shippingCharges, order.Currency),
         };
+
+        console.log("order details ", orderDetails);
 
         // Generate the email HTML
         const emailHtml = generateOrderConfirmationEmail(orderDetails);

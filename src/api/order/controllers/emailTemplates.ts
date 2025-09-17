@@ -381,7 +381,7 @@ export function generateOrderConfirmationEmail(details: OrderEmailDetails): stri
                             <td valign="top" class="pc-w620-align-left" align="left">
                              <div class="pc-font-alt pc-w620-align-left" style="text-decoration: none;">
                               <div style="font-size:13px;line-height:20px;text-align:left;text-align-last:left;color:#240300;font-family:'Outfit', Arial, Helvetica, sans-serif;letter-spacing:-0.2px;font-style:normal;">
-                               <div style="font-family:'Outfit', Arial, Helvetica, sans-serif;"><span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px; font-weight: 400;">QTY : ${item.quantity || 1}</span></div>
+                               <div style="font-family:'Outfit', Arial, Helvetica, sans-serif;"><span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px; font-weight: 400;">QTY : ${item?.quantity || 1}</span></div>
                               </div>
                              </div>
                             </td>
