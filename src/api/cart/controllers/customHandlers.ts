@@ -92,6 +92,11 @@ export default {
             // Format response to match FilterWrapper.jsx structure
             const filters = [
                 {
+                    title: "Colour",
+                    operator: "$contains",
+                    options: colorOptions,
+                },
+                {
                     title: "Fabric",
                     operator: "$contains",
                     options: fabricTypeOptions,
@@ -105,11 +110,6 @@ export default {
                     title: "Weaving Technique",
                     operator: "$contains",
                     options: weavingTechniquesOptions,
-                },
-                {
-                    title: "Colour",
-                    operator: "$contains",
-                    options: colorOptions,
                 },
                 {
                     title: "Size",
