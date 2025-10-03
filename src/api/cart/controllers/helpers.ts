@@ -79,11 +79,11 @@ export async function processCartItems(carts, userId, isGuestUser = false) {
                 Product: {
                     Size: Product?.Size,
                     Color: Product?.Color,
-                    Discount_Available: Product?.Discount_Available,
+                    Discount_Available: liveProduct?.Discount_Available,
                     Option: Product?.Option,
                     Product: Product?.Product,
                     Quantity: Product?.Quantity,
-                    Price: Product.Price,
+                    Price: liveProduct.Price,
                     Discounted_Price: liveProduct.Discounted_Price,
                 },
             };
