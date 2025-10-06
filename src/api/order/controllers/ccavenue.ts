@@ -467,7 +467,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
 
                     // Only delete cart items that were included in the order
                     for (let cart of carts) {
-                        if (orderedProductIds.includes(cart.Product?.Product?.documentId)) {
+                        if (orderedProductIds?.includes(cart.Product?.Product?.documentId)) {
                             await strapi.documents("api::cart.cart").delete({
                                 documentId: cart.documentId,
                             });
@@ -668,22 +668,73 @@ const checkSoftHoldDates = async (carts) => {
         const softHoldDate = new Date(currentDate.getTime() + 10 * 60000); // 10 minutes in milliseconds
 
         console.log("updating soft hold for all products");
-        // Update soft hold for all products
-        await Promise.all(
+
+        // Update soft hold for all products with individual error handling
+        // Use a more targeted update to avoid triggering relationship updates
+        const updateResults = await Promise.allSettled(
             productIds.map(async (id) => {
-                await strapi.documents("api::product.product").update({
-                    documentId: id,
-                    data: {
-                        Soft_Hold: softHoldDate,
-                    },
-                    status: "published",
-                });
+                try {
+                    // Use direct database update to avoid Strapi's relationship handling
+                    await strapi.db.query("api::product.product").update({
+                        where: { documentId: id },
+                        data: {
+                            Soft_Hold: softHoldDate,
+                        },
+                    });
+                    console.log(`✅ Successfully updated soft hold for product ${id}`);
+                    return { success: true, productId: id };
+                } catch (updateError) {
+                    console.error(`❌ Error updating product ${id}:`, updateError);
+
+                    // If direct update fails, try the Strapi document update as fallback
+                    try {
+                        await strapi.documents("api::product.product").update({
+                            documentId: id,
+                            data: {
+                                Soft_Hold: softHoldDate,
+                            },
+                            status: "published",
+                        });
+                        console.log(`✅ Fallback update successful for product ${id}`);
+                        return { success: true, productId: id };
+                    } catch (fallbackError) {
+                        console.error(`❌ Fallback update also failed for product ${id}:`, fallbackError);
+                        return { success: false, productId: id, error: fallbackError };
+                    }
+                }
             })
         );
+
+        // Check if any updates failed
+        const failedUpdates = updateResults.filter(
+            (result) => result.status === "rejected" || (result.status === "fulfilled" && !result.value.success)
+        );
+
+        if (failedUpdates.length > 0) {
+            console.error(`⚠️ ${failedUpdates.length} product updates failed:`, failedUpdates);
+            // Continue with the order process even if some updates fail
+            // This prevents the entire order from failing due to soft hold update issues
+        }
+
+        const successfulUpdates = updateResults.filter((result) => result.status === "fulfilled" && result.value.success);
+
+        console.log(`✅ Successfully updated soft hold for ${successfulUpdates.length}/${productIds.length} products`);
 
         return false; // All products have valid soft hold dates
     } catch (error) {
         console.error("Error checking soft hold dates:", error);
+
+        // Log additional error details for debugging
+        if (error.code === "ER_DUP_ENTRY") {
+            console.error("Duplicate entry error detected - this might be related to wishlist relationships");
+            console.error("Error details:", {
+                code: error.code,
+                errno: error.errno,
+                sqlState: error.sqlState,
+                sqlMessage: error.sqlMessage,
+            });
+        }
+
         return false; // Return false on error to be safe
     }
 };

@@ -210,6 +210,7 @@ export default factories.createCoreController("api::cart.cart", ({ strapi }) => 
                         ...ctx,
                         badRequest: ctx?.badRequest,
                         notFound: ctx?.notFound,
+                        send: ctx?.send,
                         internalServerError: ctx?.internalServerError,
                         state: { ...ctx.state },
                         request: {
