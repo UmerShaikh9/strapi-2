@@ -28,14 +28,15 @@ module.exports = ({ env }) => ({
             providerOptions: {
                 host: env("SMTP_HOST", "smtp.gmail.com"),
                 port: env("SMTP_PORT", 587),
+                secure: false, // true for 465, false for other ports
                 auth: {
-                    user: env("SMTP_USERNAME"),
-                    pass: env("SMTP_PASSWORD"),
+                    user: env("SMTP_USER", "sales@banarasibaithak.com"),
+                    pass: env("SMTP_PASS", "vkqbwuciuwhqtgya"),
                 },
             },
             settings: {
-                defaultFrom: "hello@example.com",
-                defaultReplyTo: "hello@example.com",
+                defaultFrom: "sales@banarasibaithak.com",
+                defaultReplyTo: "sales@banarasibaithak.com",
             },
         },
     },
