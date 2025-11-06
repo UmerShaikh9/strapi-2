@@ -23,11 +23,6 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             // Get guest session ID from request
             const guestSessionId = ctx.request.body?.guestSessionId;
 
-            // Remove authentication requirement
-            // if (!id) {
-            //     return ctx.unauthorized("You must be logged in to create an order.");
-            // }
-
             const {
                 Full_Name,
                 Address,
@@ -81,23 +76,23 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                     const randomPassword = Math.random().toString(36).slice(-8);
 
                     // Create a new user account
-                    const newUser = await strapi.plugins["users-permissions"].services.user.add({
-                        username: Email,
-                        email: Email,
-                        password: randomPassword,
-                        provider: "local",
-                        confirmed: true,
-                        blocked: false,
-                        fullName: Full_Name,
-                        phone: Phone,
-                        address: Address,
-                        city: City,
-                        country: Country,
-                        state: State,
-                        pincode: Pincode,
-                    });
+                    // const newUser = await strapi.plugins["users-permissions"].services.user.add({
+                    //     username: Email,
+                    //     email: Email,
+                    //     password: randomPassword,
+                    //     provider: "local",
+                    //     confirmed: true,
+                    //     blocked: false,
+                    //     fullName: Full_Name,
+                    //     phone: Phone,
+                    //     address: Address,
+                    //     city: City,
+                    //     country: Country,
+                    //     state: State,
+                    //     pincode: Pincode,
+                    // });
 
-                    userId = newUser.id;
+                    userId = null;
                     isGuestUser = true;
 
                     // Send email with login credentials
@@ -125,32 +120,32 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
 
                 console.log("user id ", userId);
                 // If this was a guest user, update the cart items to associate them with the new user
-                if (guestSessionId) {
-                    // Find all cart items with the guest session ID
-                    const guestCartItems = await strapi.documents("api::cart.cart").findMany({
-                        filters: { GuestSessionId: guestSessionId },
-                        status: "published",
-                    });
+                // if (guestSessionId) {
+                //     // Find all cart items with the guest session ID
+                //     const guestCartItems = await strapi.documents("api::cart.cart").findMany({
+                //         filters: { GuestSessionId: guestSessionId },
+                //         status: "published",
+                //     });
 
-                    console.log("guestSession data ", guestCartItems);
+                //     console.log("guestSession data ", guestCartItems);
 
-                    if (guestCartItems && guestCartItems.length > 0) {
-                        // Process all cart items in parallel using Promise.all
-                        await Promise.all(
-                            guestCartItems.map((cartItem) =>
-                                strapi.documents("api::cart.cart").update({
-                                    documentId: cartItem.documentId,
-                                    data: {
-                                        User: { id: userId },
-                                    },
-                                    status: "published",
-                                })
-                            )
-                        );
+                //     if (guestCartItems && guestCartItems.length > 0) {
+                //         // Process all cart items in parallel using Promise.all
+                //         await Promise.all(
+                //             guestCartItems.map((cartItem) =>
+                //                 strapi.documents("api::cart.cart").update({
+                //                     documentId: cartItem.documentId,
+                //                     data: {
+                //                         User: { id: userId },
+                //                     },
+                //                     status: "published",
+                //                 })
+                //             )
+                //         );
 
-                        console.log(`Transferred ${guestCartItems.length} cart items from guest session to user account`);
-                    }
-                }
+                //         console.log(`Transferred ${guestCartItems.length} cart items from guest session to user account`);
+                //     }
+                // }
             }
 
             // Fetch user's cart items based on whether user is authenticated or guest
@@ -192,9 +187,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             }));
 
             // Process cart items (handling price and image things)
-            if (userId) {
-                await processCartItems(cartsData, userId);
-            }
+            await processCartItems(cartsData, userId);
 
             // Fetch updated cart items after processing, filtered by cartIds
             let updatedCarts = await strapi.documents("api::cart.cart").findMany({
@@ -371,6 +364,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
             console.log("handleCCAvenueCallback called with body:", ctx.request.body);
 
             const { encResp, order_id, tracking_id, bank_ref_no, merchant_param1 } = ctx.request.body;
+            console.log("handleCCAvenueCallback order id", order_id);
 
             if (!encResp) {
                 console.error("No encrypted response received");
@@ -449,8 +443,10 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 // Clear only the ordered products from user's cart
                 // Get cart items based on whether user is authenticated or guest
                 let cartFilter = {};
-                if (order.User && order.User.id) {
+                if (order?.User && order?.User?.id) {
                     cartFilter = { User: { documentId: order.User.documentId } };
+                } else if (order?.GuestSessionId) {
+                    cartFilter = { GuestSessionId: order.GuestSessionId };
                 }
 
                 if (Object.keys(cartFilter).length > 0) {
@@ -540,11 +536,15 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
 
                     // Send the email
                     await strapi.plugins["email"].services.email.send({
-                        to: order.Shipping_Details?.Shipping_Email,
+                        to: order.Email,
                         subject: `Order Confirmation - #${order.Payment_Details?.Order_Uid}`,
                         html: emailHtml,
                     });
+                } catch (error) {
+                    console.error("Error sending email:", error);
+                }
 
+                try {
                     const adminEmailHtml = generateOrderConfirmationEmail(orderDetails);
 
                     await strapi.plugins["email"].services.email.send({
@@ -555,6 +555,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 } catch (error) {
                     console.error("Error sending email:", error);
                 }
+
                 return ctx.redirect(`${CCAVENUE_REDIRECT_URL}/my-order?payment=success&order_id=${order_id}`);
             }
 

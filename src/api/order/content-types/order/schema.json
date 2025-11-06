@@ -85,6 +85,9 @@
       "type": "component",
       "repeatable": false,
       "component": "product.shipping-details"
+    },
+    "GuestSessionId": {
+      "type": "string"
     }
   }
 }

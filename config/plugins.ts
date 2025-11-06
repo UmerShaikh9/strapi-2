@@ -29,8 +29,8 @@ module.exports = ({ env }) => ({
                 host: env("SMTP_HOST", "smtp.gmail.com"),
                 port: env("SMTP_PORT", 587),
                 auth: {
-                    user: env("SMTP_USER", "sales@banarasibaithak.com"),
-                    pass: env("SMTP_PASS", "vkqbwuciuwhqtgya"),
+                    user: env("SMTP_USERNAME", "sales@banarasibaithak.com"),
+                    pass: env("SMTP_PASSWORD", "vkqbwuciuwhqtgya"),
                 },
             },
             settings: {

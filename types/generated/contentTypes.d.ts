@@ -940,6 +940,7 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     Currency: Schema.Attribute.String;
     Email: Schema.Attribute.String;
     Full_Name: Schema.Attribute.String;
+    GuestSessionId: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::order.order'> &
       Schema.Attribute.Private;
