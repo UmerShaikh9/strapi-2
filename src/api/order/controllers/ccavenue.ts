@@ -434,7 +434,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                     await strapi.documents("api::product.product").update({
                         documentId: product.Product?.documentId,
                         data: {
-                            Quantity: product?.Product?.Quantity - 1,
+                            Quantity: product?.Product?.Quantity - (product?.Quantity ?? 1),
                         },
                         status: "published",
                     });
