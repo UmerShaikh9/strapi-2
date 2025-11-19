@@ -177,6 +177,8 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 return ctx.badRequest("some products is in soft hold");
             }
 
+            console.log(`softhold not on any product continue`);
+
             // Process cart items and calculate total price
             let cartsData = carts?.map((cart) => ({
                 ...cart,
@@ -186,8 +188,10 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 },
             }));
 
+            console.log(`process cart items`);
             // Process cart items (handling price and image things)
             await processCartItems(cartsData, userId);
+            console.log(`cart item processed successfully`);
 
             // Fetch updated cart items after processing, filtered by cartIds
             let updatedCarts = await strapi.documents("api::cart.cart").findMany({
@@ -647,6 +651,7 @@ const checkSoftHoldDates = async (carts) => {
         // Get all product IDs from the carts
         const productIds = carts.map((cart) => cart.Product?.Product?.documentId).filter(Boolean);
 
+        console.log(`product ids ${productIds}`);
         if (productIds.length === 0) {
             return true; // No products to check
         }
@@ -658,8 +663,11 @@ const checkSoftHoldDates = async (carts) => {
             status: "published",
         });
 
+        console.log(`product ids ${JSON.stringify(products)}`);
+
         // Check if any product has a soft hold date less than current date
         for (const product of products) {
+            console.log(`soft hold -> ${product.Soft_Hold} , product id ${product.documentId}`);
             if ((product.Soft_Hold && new Date(product.Soft_Hold) > currentDate) || product.Quantity <= 0) {
                 return true;
             }

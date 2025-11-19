@@ -31,11 +31,15 @@ export async function processCartItems(carts, userId, isGuestUser = false) {
         // Extract all product IDs from carts
         const productIds = carts.map((cart) => cart.Product?.Product).filter(Boolean);
 
+        console.log(`[processCartItems] process product ids ${productIds}`);
+
         // Batch fetch all products in a single query
         const products = await strapi.documents("api::product.product").findMany({
             filters: { documentId: { $in: productIds } },
             populate: { Price_Section: true },
         });
+
+        console.log(`[processCartItems] process fetched products ${products?.length}`);
 
         // Create a map for quick product lookup
         const productMap = new Map(products.map((p) => [p.documentId, p]));
@@ -48,6 +52,8 @@ export async function processCartItems(carts, userId, isGuestUser = false) {
         for (const cart of carts) {
             const { Product, Type } = cart;
             const productId = Product?.Product;
+
+            console.log(`process product from cart productId ${productId} `);
 
             if (!productId) {
                 deleteOperations.push(cart.documentId);
@@ -62,10 +68,12 @@ export async function processCartItems(carts, userId, isGuestUser = false) {
                 continue;
             }
 
+            console.log(`[processCartItems] vaidate product is live or not`);
             // Find matching price section
             const liveProduct = productExists.Price_Section?.find((item) => item.Option === Product?.Option);
 
             if (!liveProduct) {
+                console.log(`this product is not live  ${liveProduct}`);
                 deleteOperations.push(cart.documentId);
                 continue;
             }
@@ -101,7 +109,10 @@ export async function processCartItems(carts, userId, isGuestUser = false) {
                 cart.Product.Discounted_Price !== newPayload.Product.Discounted_Price;
 
             // Only add to update operations if there are actual changes
+
+            console.log(`[processCartItems] check file is change do the operation hasChanges=${hasChanges} `);
             if (hasChanges) {
+                console.log(`[processCartItems] file is change do the operation `);
                 updateOperations.push({
                     documentId: cart.documentId,
                     data: newPayload,
