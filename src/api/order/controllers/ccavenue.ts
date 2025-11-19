@@ -60,65 +60,65 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
 
             // If user is not logged in, check if user with this email exists
             if (!userId) {
-                if (!Email || !Full_Name || !Phone) {
-                    return ctx.badRequest("Email, Full Name, and Phone are required for guest checkout");
-                }
+                // if (!Email || !Full_Name || !Phone) {
+                //     return ctx.badRequest("Email, Full Name, and Phone are required for guest checkout");
+                // }
 
-                // Check if user with this email already exists
-                const existingUser = await strapi.plugins["users-permissions"].services.user.fetchAll({
-                    filters: { email: Email },
-                    limit: 1,
-                });
-                console.log("existing user ", existingUser);
+                // // Check if user with this email already exists
+                // const existingUser = await strapi.plugins["users-permissions"].services.user.fetchAll({
+                //     filters: { email: Email },
+                //     limit: 1,
+                // });
+                // console.log("existing user ", existingUser);
 
-                if (!existingUser || existingUser.length == 0) {
-                    // Generate a random password
-                    const randomPassword = Math.random().toString(36).slice(-8);
+                // if (!existingUser || existingUser.length == 0) {
+                // Generate a random password
+                // const randomPassword = Math.random().toString(36).slice(-8);
 
-                    // Create a new user account
-                    // const newUser = await strapi.plugins["users-permissions"].services.user.add({
-                    //     username: Email,
-                    //     email: Email,
-                    //     password: randomPassword,
-                    //     provider: "local",
-                    //     confirmed: true,
-                    //     blocked: false,
-                    //     fullName: Full_Name,
-                    //     phone: Phone,
-                    //     address: Address,
-                    //     city: City,
-                    //     country: Country,
-                    //     state: State,
-                    //     pincode: Pincode,
-                    // });
+                // Create a new user account
+                // const newUser = await strapi.plugins["users-permissions"].services.user.add({
+                //     username: Email,
+                //     email: Email,
+                //     password: randomPassword,
+                //     provider: "local",
+                //     confirmed: true,
+                //     blocked: false,
+                //     fullName: Full_Name,
+                //     phone: Phone,
+                //     address: Address,
+                //     city: City,
+                //     country: Country,
+                //     state: State,
+                //     pincode: Pincode,
+                // });
 
-                    userId = null;
-                    isGuestUser = true;
+                userId = null;
+                isGuestUser = true;
 
-                    // Send email with login credentials
-                    try {
-                        // await strapi.plugins["email"].services.email.send({
-                        //     to: Email,
-                        //     subject: "Your Banarasi Baithak Account",
-                        //     text: `Thank you for your order! We've created an account for you.\n\nYour login credentials:\nEmail: ${Email}\nPassword: ${randomPassword}\n\nYou can change your password after logging in.`,
-                        //     html: `
-                        //         <h1>Welcome to Banarasi Baithak!</h1>
-                        //         <p>Thank you for your order! We've created an account for you.</p>
-                        //         <p><strong>Your login credentials:</strong></p>
-                        //         <p>Email: ${Email}</p>
-                        //         <p>Password: ${randomPassword}</p>
-                        //         <p>You can change your password after logging in.</p>
-                        //     `,
-                        // });
-                    } catch (emailError) {
-                        console.error("Error sending email:", emailError);
-                        // Continue with the order process even if email fails
-                    }
-                } else {
-                    userId = existingUser[0].id;
-                }
+                // Send email with login credentials
+                // try {
+                //     // await strapi.plugins["email"].services.email.send({
+                //     //     to: Email,
+                //     //     subject: "Your Banarasi Baithak Account",
+                //     //     text: `Thank you for your order! We've created an account for you.\n\nYour login credentials:\nEmail: ${Email}\nPassword: ${randomPassword}\n\nYou can change your password after logging in.`,
+                //     //     html: `
+                //     //         <h1>Welcome to Banarasi Baithak!</h1>
+                //     //         <p>Thank you for your order! We've created an account for you.</p>
+                //     //         <p><strong>Your login credentials:</strong></p>
+                //     //         <p>Email: ${Email}</p>
+                //     //         <p>Password: ${randomPassword}</p>
+                //     //         <p>You can change your password after logging in.</p>
+                //     //     `,
+                //     // });
+                // } catch (emailError) {
+                //     console.error("Error sending email:", emailError);
+                //     // Continue with the order process even if email fails
+                // }
+                // } else {
+                //     userId = existingUser[0].id;
+                // }
 
-                console.log("user id ", userId);
+                // console.log("user id ", userId);
                 // If this was a guest user, update the cart items to associate them with the new user
                 // if (guestSessionId) {
                 //     // Find all cart items with the guest session ID
@@ -158,6 +158,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
                 return ctx.badRequest("Either user authentication or guest session ID is required.");
             }
 
+            console.log(`[createCCAvenueOrder] : cartFilter ${cartFilter}`);
             let carts = await strapi.documents("api::cart.cart").findMany({
                 filters: cartFilter,
                 populate: {
