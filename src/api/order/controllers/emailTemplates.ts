@@ -599,8 +599,18 @@ export function generateOrderConfirmationEmail(details: OrderEmailDetails): stri
                   <td valign="top" align="center" style="padding: 10px 0px 0px 0px; height: auto;">
                    <div class="pc-font-alt" style="text-decoration: none;">
                     <div style="font-size:14px;line-height:143%;text-align:center;text-align-last:center;color:#000000cc;font-family:'Outfit', Arial, Helvetica, sans-serif;font-style:normal;letter-spacing:-0.2px;">
-                     <div style="font-family:'Outfit', Arial, Helvetica, sans-serif;"><span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; font-weight: 400; font-size: 14px; line-height: 143%;">Shipping timelines vary by location and garment. Please check the specific product page for details.</span>
+                     <div style="font-family:'Outfit', Arial, Helvetica, sans-serif;">
+                      <span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; font-weight: 400; font-size: 14px; line-height: 143%;">Shipping timelines vary by location and garment. Please check the specific product page for details.</span>
                      </div>
+                     ${
+                         details.shippingCharges && details.shippingCharges.toString() !== "₹0.00"
+                             ? `<div style="font-family:'Outfit', Arial, Helvetica, sans-serif; margin-top: 6px;">
+                                  <span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; font-weight: 400; font-size: 14px; line-height: 143%;">
+                                    You have agreed to pay any applicable custom duties or other charges at the destination end during check out.
+                                  </span>
+                                </div>`
+                             : ""
+                     }
                     </div>
                    </div>
                   </td>
