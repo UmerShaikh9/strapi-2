@@ -48,7 +48,8 @@ export const sendOrderConfirmationEmail = async (ctx) => {
         const orders = await strapi.documents("api::order.order").findMany({
             filters: {
                 Order_Status: "CONFIRMED",
-                Total_Price: 382.8,
+                Total_Price: 22900,
+                Full_Name: "Shreya  Sathiamurthy",
             },
             sort: {
                 createdAt: "desc",

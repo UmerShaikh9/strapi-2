@@ -603,10 +603,10 @@ export function generateOrderConfirmationEmail(details: OrderEmailDetails): stri
                       <span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; font-weight: 400; font-size: 14px; line-height: 143%;">Shipping timelines vary by location and garment. Please check the specific product page for details.</span>
                      </div>
                      ${
-                         details.shippingCharges && details.shippingCharges.toString() !== "₹0.00"
+                         details.shippingAddress.country && details.shippingAddress.country !== "India"
                              ? `<div style="font-family:'Outfit', Arial, Helvetica, sans-serif; margin-top: 6px;">
                                   <span style="font-family: 'Outfit', Arial, Helvetica, sans-serif; font-weight: 400; font-size: 14px; line-height: 143%;">
-                                    You have agreed to pay any applicable custom duties or other charges at the destination end during check out.
+                                    Please note that during the check out process, you have agreed to pay all applicable custom duties at the end destination.
                                   </span>
                                 </div>`
                              : ""
