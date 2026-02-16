@@ -65,6 +65,10 @@
       "required": true,
       "default": 0
     },
+    "isSoldOut": {
+      "type": "boolean",
+      "default": false
+    },
     "Color": {
       "type": "customField",
       "default": "[]",

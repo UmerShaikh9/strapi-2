@@ -26,6 +26,12 @@ export default {
             updateData.Badges = ["Sold Out"];
         }
 
+        // Set isSoldOut flag based on Quantity or Badges
+        const isSoldOutFlag = result.Quantity <= 0 || (Array.isArray(result.Badges) && result.Badges.includes("Sold Out"));
+        if (result.isSoldOut !== isSoldOutFlag) {
+            updateData.isSoldOut = isSoldOutFlag;
+        }
+
         // Only make update call if there are changes
         if (Object.keys(updateData).length > 0) {
             await strapi.documents("api::product.product").update({
@@ -61,6 +67,12 @@ export default {
         // Add badge update if needed - this runs regardless of Price_Section
         if (result.Quantity <= 0 && !result.Badges.includes("Sold Out")) {
             updateData.Badges = ["Sold Out"];
+        }
+
+        // Update isSoldOut flag based on Quantity or Badges
+        const isSoldOutFlag = result.Quantity <= 0 || (Array.isArray(result.Badges) && result.Badges.includes("Sold Out"));
+        if (result.isSoldOut !== isSoldOutFlag) {
+            updateData.isSoldOut = isSoldOutFlag;
         }
 
         // Only make update call if there are changes
